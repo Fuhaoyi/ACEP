@@ -50,7 +50,7 @@ def evaluate_model(label,pred_prob):
 
 
 
-comparison_data = pd.read_csv('comparison_data_ACEP.csv')
+comparison_data = pd.read_csv('results\\comparison_data_ACEP.csv')
 label = comparison_data['label'].values
 model_best_pred_prob = comparison_data['ACEP'].values
 
@@ -123,5 +123,5 @@ plt.ylabel('True Positive Rate (Sensitivity)',fontdict=text_font4)
 plt.grid(linestyle='--')
 
 
-plt.savefig('fig5.svg',dpi=600,format='svg')
+#plt.savefig('fig5.svg',dpi=600,format='svg')
 plt.show()
