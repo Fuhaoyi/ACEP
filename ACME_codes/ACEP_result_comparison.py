@@ -209,14 +209,14 @@ def ConvertSequence2Feature(sequence_data, pssmdir):
 
 #--------------------------------------------------------
 
-data_all = pd.read_csv('pssm_files0_3555_all\\seq_all_data.csv', index_col=0)
+data_all = pd.read_csv('AMPs_Experiment_Dataset\\AMP_sequecnces\\seq_all_data.csv', index_col=0)
 
 train = data_all.iloc[0:2132].reset_index(drop=True)
 test = data_all.iloc[2132:3556].reset_index(drop=True)
 
 
-x_train_index, x_train_length, x_train_pssm, x_train_onehot,x_train_aac,y_train= ConvertSequence2Feature(sequence_data=train, pssmdir=os.path.join('pssm_files0_3555_all','cut','train'))
-x_test_index, x_test_length, x_test_pssm, x_test_onehot, x_test_aac, y_test = ConvertSequence2Feature(sequence_data=test, pssmdir=os.path.join('pssm_files0_3555_all','cut','test'))
+x_train_index, x_train_length, x_train_pssm, x_train_onehot,x_train_aac,y_train= ConvertSequence2Feature(sequence_data=train, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','train_tune'))
+x_test_index, x_test_length, x_test_pssm, x_test_onehot, x_test_aac, y_test = ConvertSequence2Feature(sequence_data=test, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','test'))
 
 
 def length_index(length_list, feature_data, label):
@@ -789,7 +789,7 @@ def creat_model_R123():
 
 model_R123 = creat_model_R123()
 print(model_R123.summary())
-plot_model(model_R123, to_file='ACEP_model_R123.png',show_shapes=True)
+#plot_model(model_R123, to_file='ACEP_model_R123.png',show_shapes=True)
 model_R123.fit([x_train_aac,x_train_onehot, x_train_pssm], y_train, batch_size=16, epochs=30)
 y_pre_all = model_R123.predict([x_test_aac,x_test_onehot, x_test_pssm])
 y_pre_1_29 = model_R123.predict([x_test_aac1_29,x_test_onehot1_29, x_test_pssm1_29])
