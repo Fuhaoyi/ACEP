@@ -211,7 +211,7 @@ def ConvertSequence2Feature(sequence_data, pssmdir):
 
 
 
-data_all = pd.read_csv('pssm_files0_3555_all\\seq_all_data.csv', index_col=0)
+data_all = pd.read_csv('AMPs_Experiment_Dataset\\AMP_sequecnces\\seq_all_data.csv', index_col=0)
 
 train = data_all.iloc[0:1424].reset_index(drop=True)
 tune = data_all.iloc[1424:2132].reset_index(drop=True)
@@ -221,15 +221,15 @@ train_tune_test = data_all.iloc[0:3556].reset_index(drop=True)
 
 
 
-# x_train_index, x_train_length, x_train_pssm, x_train_onehot,x_train_aac,y_train= ConvertSequence2Feature(sequence_data=train, pssmdir=os.path.join('pssm_files0_3555_all','cut','train'))
-x_test_index, x_test_length, x_test_pssm, x_test_onehot, x_test_aac, y_test = ConvertSequence2Feature(sequence_data=test, pssmdir=os.path.join('pssm_files0_3555_all','cut','test'))
-# x_tune_index, x_tune_length, x_tune_pssm, x_tune_onehot,x_tune_aac,y_tune= ConvertSequence2Feature(sequence_data=tune, pssmdir=os.path.join('pssm_files0_3555_all','cut','tune'))
-x_train_tune_index, x_train_tune_length, x_train_tune_pssm, x_train_tune_onehot,x_train_tune_aac,y_train_tune= ConvertSequence2Feature(sequence_data=train_tune, pssmdir=os.path.join('pssm_files0_3555_all','cut','train_tune'))
-# x_train_tune_test_index, x_train_tune_test_length, x_train_tune_test_pssm, x_train_tune_test_onehot,x_train_tune_test_aac,y_train_tune_test= ConvertSequence2Feature(sequence_data=train_tune_test, pssmdir=os.path.join('pssm_files0_3555_all','cut','train_tune_test'))
+x_train_index, x_train_length, x_train_pssm, x_train_onehot,x_train_aac,y_train= ConvertSequence2Feature(sequence_data=train, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','train'))
+x_test_index, x_test_length, x_test_pssm, x_test_onehot, x_test_aac, y_test = ConvertSequence2Feature(sequence_data=test, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','test'))
+x_tune_index, x_tune_length, x_tune_pssm, x_tune_onehot,x_tune_aac,y_tune= ConvertSequence2Feature(sequence_data=tune, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','tune'))
+x_train_tune_index, x_train_tune_length, x_train_tune_pssm, x_train_tune_onehot,x_train_tune_aac,y_train_tune= ConvertSequence2Feature(sequence_data=train_tune, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','train_tune'))
+x_train_tune_test_index, x_train_tune_test_length, x_train_tune_test_pssm, x_train_tune_test_onehot,x_train_tune_test_aac,y_train_tune_test= ConvertSequence2Feature(sequence_data=train_tune_test, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','train_tune_test'))
 
 
 
-model = load_model('result_data//ACEP_model_train_241_9304.h5',
+model = load_model('models//ACEP_model_train_241_9304.h5',
                         custom_objects={'EmbeddingRST_model': EmbeddingRST_model})
 print(model.evaluate([x_test_aac,x_test_onehot, x_test_pssm], y_test, batch_size=16, verbose=0))
 print(model.summary())
@@ -290,7 +290,7 @@ axes.set_xlabel('Clusters k',fontdict=text_font2)
 axes.set_ylabel('Distances',fontdict=text_font2)
 axes.tick_params(colors='k',labelsize = 20)
 plt.grid(linestyle='--')
-plt.savefig('result_figure//fig4a.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig4a.svg',dpi=600,format='svg')
 plt.show()
 
 
@@ -318,7 +318,7 @@ axes.set_ylabel('Silhouette',fontdict=text_font2)
 axes.tick_params(colors='k',labelsize = 20)
 plt.grid(linestyle='--')
 
-plt.savefig('result_figure//fig4b.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig4b.svg',dpi=600,format='svg')
 plt.show()
 
 import seaborn as sns
@@ -376,7 +376,7 @@ for i in range(1,21):
     plt.text(emb_tsne[i,0]+10, emb_tsne[i,1]+8, aac_alphabet[i], fontsize=14,color=text_color[i])
 plt.xlim(-400,400)
 plt.ylim(-400,400)
-plt.savefig('result_figure//fig6.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig6.svg',dpi=600,format='svg')
 plt.show()
 
 
@@ -421,7 +421,7 @@ plt.setp(g.get_xticklabels(), rotation='vertical')
 plt.title('Attention intensity of 10 AMPs',fontsize=18)
 
 plt.yticks(fontsize=16)
-plt.savefig('result_figure//fig7a.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig7a.svg',dpi=600,format='svg')
 plt.show()
 
 
@@ -448,7 +448,7 @@ plt.xticks(fontsize=18)
 plt.yticks(fontsize=18)
 plt.setp(g.get_yticklabels(), rotation='horizontal')
 plt.setp(g.get_xticklabels(), rotation='vertical')
-plt.savefig('result_figure//fig7b.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig7b.svg',dpi=600,format='svg')
 plt.show()
 
 
@@ -475,7 +475,7 @@ plt.title('Attention intensity of 10 AMPs',fontsize=14)
 
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
-plt.savefig('result_figure//fig7a40.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig7a40.svg',dpi=600,format='svg')
 plt.show()
 
 att_pos = np.array(range(1,41))
@@ -502,7 +502,7 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.setp(g.get_yticklabels(), rotation='horizontal')
 plt.setp(g.get_xticklabels(), rotation='vertical')
-plt.savefig('result_figure//fig7b40.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig7b40.svg',dpi=600,format='svg')
 plt.show()
 
 
@@ -536,7 +536,7 @@ sns.scatterplot(x="Dim1", y="Dim2",
             hue="Category",
             data=feature_vector_pd)
 plt.title('The feature vectors of AMPs and non-AMPs',fontdict=text_font3)
-plt.savefig('result_figure//fig9.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig9.svg',dpi=600,format='svg')
 
 plt.show()
 
@@ -589,7 +589,7 @@ plt.xlabel('The length of the sequence',fontdict=text_font4)
 plt.ylabel('The fusion ratio',fontdict=text_font4)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
-plt.savefig('result_figure//fig8.svg',dpi=600,format='svg')
+#plt.savefig('result_figure//fig8.svg',dpi=600,format='svg')
 plt.show()
 
 
