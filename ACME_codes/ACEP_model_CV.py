@@ -209,13 +209,13 @@ def ConvertSequence2Feature(sequence_data, pssmdir):
     return index_out, length_list, feature_pssm, feature_onehot, feature_aac, label_list
 
 
-data_all = pd.read_csv('pssm_files0_3555_all\\seq_all_data.csv', index_col=0)
+data_all = pd.read_csv('AMPs_Experiment_Dataset\\AMP_sequecnces\\seq_all_data.csv', index_col=0)
 train = data_all.iloc[0:2132].reset_index(drop=True)
 test = data_all.iloc[2132:3556].reset_index(drop=True)
 
 
-x_train_index, x_train_length, x_train_pssm, x_train_onehot,x_train_aac,y_train= ConvertSequence2Feature(sequence_data=train, pssmdir=os.path.join('pssm_files0_3555_all','cut','train_tune'))
-x_test_index, x_test_length, x_test_pssm, x_test_onehot, x_test_aac, y_test = ConvertSequence2Feature(sequence_data=test, pssmdir=os.path.join('pssm_files0_3555_all','cut','test'))
+x_train_index, x_train_length, x_train_pssm, x_train_onehot,x_train_aac,y_train= ConvertSequence2Feature(sequence_data=train, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','train_tune'))
+x_test_index, x_test_length, x_test_pssm, x_test_onehot, x_test_aac, y_test = ConvertSequence2Feature(sequence_data=test, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','test'))
 
 
 def length_index(length_list, feature_data, label):
@@ -429,8 +429,8 @@ def CV_fun(randomstate=0):
         print('ROC Curves and Area Under the Curve (AUC):', AUC)
         auc_cv = np.append(auc_cv, AUC)
 
-        if (count % 5 == 0):
-            time.sleep(600)
+        #if (count % 5 == 0):
+         #   time.sleep(600)
 
 
 
@@ -444,6 +444,6 @@ def CV_fun(randomstate=0):
     print('\n\n\n')
 
 
-time.sleep(600)
+#time.sleep(600)
 for i in range(3):
     CV_fun(i)
