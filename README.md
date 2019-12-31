@@ -10,7 +10,8 @@ Input the peptide sequences and PSSM file, the model can predict whether the seq
 1.2 Requirements
 #
 Python3
-Python packages: Tensorfollow(vr.1.6.0), Keras(vr.2.15), Matplotlib, scikit-learn, numpy, pandas and senborn(for Visualization).
+Python packages: Tensorfollow(vr.1.6.0), Keras(vr.2.15), Matplotlib, scikit-learn, numpy, pandas and senborn(The senborn package is used for visualization).
+We recommend using a GPU to speed up the calculations;
 
 Updating...
 
