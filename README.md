@@ -11,7 +11,14 @@ Input the peptide sequences and PSSM file, the model can predict whether the seq
 #
 Python3
 Python packages: Tensorfollow(vr.1.6.0), Keras(vr.2.15), Matplotlib, scikit-learn, numpy, pandas and senborn(The senborn package is used for visualization).
-We recommend using a GPU to speed up the calculations;
+
+We recommend using a GPU to speed up the calculations; if you use GPU acceleration, you also need to install cuda and cudnn.
+
+1.3 Starting a prediction
+#
+Step 1.
+Download all files in the folderthe ACME_codes folder. 
+
 
 Updating...
 
