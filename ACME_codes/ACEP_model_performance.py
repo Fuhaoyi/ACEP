@@ -1,6 +1,7 @@
 
 from EmbeddingRST import EmbeddingRST_model
-
+from feature_generation_train import ConvertSequence2Feature
+from model_evaluation import evaluation
 
 from keras.models import Sequential, Model
 from keras.layers import Input, Dense, Dropout, Activation, Lambda, Permute, Reshape, Flatten, Masking
@@ -19,194 +20,7 @@ import numpy as np
 #--------------------------------------------------------
 
 import os
-import math
 
-
-def getpssm(filename):
-    f = open(filename, 'r')
-    f.readline()
-    f.readline()
-    f.readline()
-    linelist = f.readlines()
-    pssm = []
-    for i in linelist:
-        if i!='\n':
-            oneline = i.split()
-            m = []
-            m.append(oneline[1])
-            m.extend([int(i) for i in oneline[2:22]])
-            pssm.append(m)
-        else:
-            break
-    f.close()
-
-    pssmdf = pd.DataFrame(pssm,columns=['seq','A','R','N','D','C','Q','E','G','H','I',
-                                        'L','K','M','F','P','S','T','W','Y','V'])
-    col = pssmdf.columns.insert(1, 'X')
-    pssmdf = pssmdf.reindex(columns=col, fill_value=0)
-
-    return pssmdf
-
-
-def getpssmlist(dir):
-    filenamelist = os.listdir(dir)
-    pssmlist = []
-    pssm_file_list = []
-    for i in filenamelist:
-        filename = os.path.join(dir,i)
-        pssmlist.append(getpssm(filename))
-        pssm_file_list.append(i)
-    print('pssmlist is ok')
-    print(len(pssm_file_list))
-    return  pssmlist, pssm_file_list
-
-
-
-
-def psssmfeature(sequence_index,one_sequence, label, pssm_matrix_list):
-
-    str1 = one_sequence
-    padding_vst_pssm = -1
-    sequence_pssm = []
-    str2 = ''.join(pssm_matrix_list[sequence_index].iloc[:, 0].values)
-    if str1 == str2:
-        pssm = pssm_matrix_list[sequence_index].iloc[:, 1:22].values
-        padding = np.zeros((200 - pssm.shape[0], 21), dtype=np.float32)
-        padding_vst_pssm = np.vstack([padding, pssm])
-        sequence_pssm = [sequence_index, pssm_matrix_list[sequence_index]]
-
-    if type(padding_vst_pssm) == type(-1):
-        print('error pssm in empty')
-        print(sequence_index)
-        print(one_sequence)
-
-    sequence_label = label
-    sequence_index_out = sequence_index
-    return sequence_index_out, padding_vst_pssm, sequence_label, sequence_pssm
-
-
-
-def encode2numerical(sequence_index, one_sequence, label):
-    dict1 = {'X':0,
-             'A':1,
-             'R':2,
-             'N':3,
-             'D':4,
-             'C':5,
-             'Q':6,
-             'E':7,
-             'G':8,
-             'H':9,
-             'I':10,
-             'L':11,
-             'K':12,
-             'M':13,
-             'F':14,
-             'P':15,
-             'S':16,
-             'T':17,
-             'W':18,
-             'Y':19,
-             'V':20
-             }
-
-    str1 = one_sequence
-    str1 = 'X' * (200 - len(str1)) + str1
-    str2 = ''
-    for j in str1:
-        if j not in dict1.keys():
-            j = 'X'
-        str2 =str2 + str(dict1[j]) + ' '
-
-    sequence_num = str2.split()
-    sequence_num = [int(k) for k in sequence_num]
-    sequence_label = label
-    sequence_index_out = sequence_index
-
-    return sequence_index_out ,sequence_num, sequence_label
-
-
-
-def one_hot_vector(sequence_index, one_sequence, label):
-    sequence_index_out, sequence_num, sequence_label = encode2numerical(sequence_index, one_sequence, label)
-    one_hot_matrix = np.zeros((200, 21), dtype=np.float32)
-    for i in range(200):
-        if sequence_num[i]!=0:
-            one_hot_matrix[i,sequence_num[i]] = 1.0
-
-    return one_hot_matrix
-
-def AAC_ft(sequence_index_x, one_sequence_x, label_x):
-    dict1 = {'X': 0,
-             'A': 1,
-             'R': 2,
-             'N': 3,
-             'D': 4,
-             'C': 5,
-             'Q': 6,
-             'E': 7,
-             'G': 8,
-             'H': 9,
-             'I': 10,
-             'L': 11,
-             'K': 12,
-             'M': 13,
-             'F': 14,
-             'P': 15,
-             'S': 16,
-             'T': 17,
-             'W': 18,
-             'Y': 19,
-             'V': 20
-             }
-
-    str1 = one_sequence_x
-    str2 = ''
-    for j in str1:
-        if j not in dict1.keys():
-            j = 'X'
-        str2 = str2 + str(dict1[j]) + ' '
-
-    sequence_num = str2.split()
-    sequence_num = [int(k) for k in sequence_num]
-    sequence_aac = np.zeros((21,),dtype=np.float32)
-    for i in range(21):
-        count = 0
-        for j in sequence_num:
-            if i == j:
-                count = count+1
-        sequence_aac[i] = count
-    sequence_label = label_x
-    sequence_index_out = sequence_index_x
-
-    return sequence_aac
-
-
-def ConvertSequence2Feature(sequence_data, pssmdir):
-    sequence_count = sequence_data.shape[0]
-    feature_pssm = np.zeros((sequence_count, 200, 21), dtype=np.float32)
-    feature_onehot = np.zeros((sequence_count, 200, 21), dtype=np.float32)
-    feature_aac = np.zeros((sequence_count, 21), dtype=np.float32)
-
-    label_list = np.zeros((sequence_count), dtype=np.int32)
-    index_out = np.zeros((sequence_count), dtype=np.int32)
-    pssm_list, pssm_file_list = getpssmlist(pssmdir)
-    length_list = []
-    for i in range(sequence_count):
-        length_list.append(len(sequence_data.iloc[i, 0]))
-    count_1 = 0
-    for i in range(sequence_count):
-        one_sequence = sequence_data.iloc[i,0]
-        label = sequence_data.iloc[i,2]
-        index_out[i], feature_pssm[i], label_list[i], sequence_pssm = psssmfeature(i, one_sequence, label, pssm_list)
-        feature_onehot[i] = one_hot_vector(i, one_sequence, label)
-        feature_aac[i] = AAC_ft(i, one_sequence, label)
-        count_1 = count_1 +1
-    print('total    ',count_1)
-    return index_out, length_list, feature_pssm, feature_onehot, feature_aac, label_list
-
-
-#--------------------------------------------------------
 
 
 
@@ -225,55 +39,6 @@ x_test_index, x_test_length, x_test_pssm, x_test_onehot, x_test_aac, y_test = Co
 x_tune_index, x_tune_length, x_tune_pssm, x_tune_onehot,x_tune_aac,y_tune= ConvertSequence2Feature(sequence_data=tune, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','tune'))
 x_train_tune_index, x_train_tune_length, x_train_tune_pssm, x_train_tune_onehot,x_train_tune_aac,y_train_tune= ConvertSequence2Feature(sequence_data=train_tune, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','train_tune'))
 x_train_tune_test_index, x_train_tune_test_length, x_train_tune_test_pssm, x_train_tune_test_onehot,x_train_tune_test_aac,y_train_tune_test= ConvertSequence2Feature(sequence_data=train_tune_test, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','train_tune_test'))
-
-
-
-#-------------------------evaluation----------------------
-from sklearn.preprocessing import binarize
-from sklearn import metrics
-
-
-def evaluate_model(y_pre,y_test):
-    y_pred_prob = y_pre
-    y_pred_prob = y_pred_prob.flatten()
-    y_pred_class = binarize([y_pred_prob], 0.5)[0]
-    # print(y_pred_prob)
-    # print(y_pred_class)
-
-    confusion = metrics.confusion_matrix(y_test, y_pred_class)
-    TP = confusion[1, 1]
-    TN = confusion[0, 0]
-    FP = confusion[0, 1]
-    FN = confusion[1, 0]
-    print(confusion)
-
-    ACC = metrics.accuracy_score(y_test, y_pred_class)
-    print('Classification Accuracy:', ACC)
-
-    Error = 1 - metrics.accuracy_score(y_test, y_pred_class)
-    print('Classification Error:', Error)
-
-    Sens = metrics.recall_score(y_test, y_pred_class)
-    print('Sensitivity:', Sens)
-
-    Spec = TN / float(TN + FP)
-    print('Specificity:', Spec)
-
-    FPR = FP / float(TN + FP)
-    print('False Positive Rate:', FPR)
-
-    Precision = metrics.precision_score(y_test, y_pred_class)
-    print('Precision:', Precision)
-
-    F1_score = metrics.f1_score(y_test, y_pred_class)
-    print('F1 score:', F1_score)
-
-    MCC = metrics.matthews_corrcoef(y_test, y_pred_class)
-    print('Matthews correlation coefficient:', MCC)
-
-    AUC = metrics.roc_auc_score(y_test, y_pred_prob)
-    print('ROC Curves and Area Under the Curve (AUC):', AUC)
-
 
 
 
@@ -356,33 +121,33 @@ def creat_model():
 
 
 
-# model_train = creat_model()
-# model_train.fit([x_train_aac,x_train_onehot, x_train_pssm], y_train, batch_size=16, epochs=30)
-# y_pre_train = model_train.predict([x_train_aac,x_train_onehot, x_train_pssm])
-# y_pre_tune = model_train.predict([x_tune_aac,x_tune_onehot, x_tune_pssm])
-#
-# print('####################       train     train       ######################')
-# evaluate_model(y_pre_train,y_train)
-# print('####################       train     tune       ######################')
-# evaluate_model(y_pre_tune,y_tune)
-# print()
+model_train = creat_model()
+model_train.fit([x_train_aac,x_train_onehot, x_train_pssm], y_train, batch_size=16, epochs=30)
+y_pre_train = model_train.predict([x_train_aac,x_train_onehot, x_train_pssm])
+y_pre_tune = model_train.predict([x_tune_aac,x_tune_onehot, x_tune_pssm])
+
+print('####################       train     train       ######################')
+evaluation(y_pre_train.flatten(),y_train)
+print('####################       train     tune       ######################')
+evaluation(y_pre_tune.flatten(),y_tune)
+print()
 
 
 
-# model_train_tune = creat_model()
-# model_train_tune.fit([x_train_tune_aac,x_train_tune_onehot, x_train_tune_pssm], y_train_tune, batch_size=16, epochs=30)
-# y_pre_train_tune = model_train_tune.predict([x_train_tune_aac,x_train_tune_onehot, x_train_tune_pssm])
-# y_pre_test = model_train_tune.predict([x_test_aac,x_test_onehot, x_test_pssm])
-# print('####################       train+tune     train+tune       ######################')
-# evaluate_model(y_pre_train_tune,y_train_tune)
-# print('####################       train+tune      test       ######################')
-# evaluate_model(y_pre_test,y_test)
-# print()
+model_train_tune = creat_model()
+model_train_tune.fit([x_train_tune_aac,x_train_tune_onehot, x_train_tune_pssm], y_train_tune, batch_size=16, epochs=30)
+y_pre_train_tune = model_train_tune.predict([x_train_tune_aac,x_train_tune_onehot, x_train_tune_pssm])
+y_pre_test = model_train_tune.predict([x_test_aac,x_test_onehot, x_test_pssm])
+print('####################       train+tune     train+tune       ######################')
+evaluation(y_pre_train_tune.flatten(),y_train_tune)
+print('####################       train+tune      test       ######################')
+evaluation(y_pre_test.flatten(),y_test)
+print()
 
 
 model_train_tune_test = creat_model()
 model_train_tune_test.fit([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm], y_train_tune_test, batch_size=16, epochs=30)
 y_pre_train_tune_test = model_train_tune_test.predict([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm])
 print('####################       train+tune+test     train+tune+test       ######################')
-evaluate_model(y_pre_train_tune_test,y_train_tune_test)
+evaluation(y_pre_train_tune_test.flatten(),y_train_tune_test)
 print()
