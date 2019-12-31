@@ -5,7 +5,7 @@ Open source software and datasets for the ACEP algorithm
 ---
 1.1 Description
 #
-Input the peptide sequences and PSSM file, the model can predict whether the sequences are AMPs or non-AMPs.
+Input the peptide sequences and PSSM file, the model can predict whether the sequences are AMPs or non-AMPs. PSSM files of Sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). This software supports high-throughput predictions. The prediction results are stored in a file.
 
 Updating...
 
