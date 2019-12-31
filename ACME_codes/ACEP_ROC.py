@@ -3,54 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import binarize
 from sklearn import metrics
+from model_evaluation import evaluation
 
 
 
-def evaluate_model(label,pred_prob):
-    y_pred_prob = pred_prob
-    y_label = label
-    y_pred_class = binarize([y_pred_prob], 0.5)[0]
-    # print(y_pred_prob)
-    # print(y_pred_class)
 
-    confusion = metrics.confusion_matrix(y_label, y_pred_class)
-    TP = confusion[1, 1]
-    TN = confusion[0, 0]
-    FP = confusion[0, 1]
-    FN = confusion[1, 0]
-    print(confusion)
-
-    ACC = metrics.accuracy_score(y_label, y_pred_class)
-    print('Classification Accuracy:', ACC)
-
-    Error = 1 - metrics.accuracy_score(y_label, y_pred_class)
-    print('Classification Error:', Error)
-
-    Sens = metrics.recall_score(y_label, y_pred_class)
-    print('Sensitivity:', Sens)
-
-    Spec = TN / float(TN + FP)
-    print('Specificity:', Spec)
-
-    FPR = FP / float(TN + FP)
-    print('False Positive Rate:', FPR)
-
-    Precision = metrics.precision_score(y_label, y_pred_class)
-    print('Precision:', Precision)
-
-    F1_score = metrics.f1_score(y_label, y_pred_class)
-    print('F1 score:', F1_score)
-
-    MCC = metrics.matthews_corrcoef(y_label, y_pred_class)
-    print('Matthews correlation coefficient:', MCC)
-
-
-    AUC = metrics.roc_auc_score(y_label, y_pred_prob)
-    print('ROC Curves and Area Under the Curve (AUC):', AUC)
-
-
-
-comparison_data = pd.read_csv('results\\comparison_data_ACEP.csv')
+comparison_data = pd.read_csv('experiment_results\\comparison_data_ACEP.csv')
 label = comparison_data['label'].values
 model_best_pred_prob = comparison_data['ACEP'].values
 
@@ -63,22 +21,22 @@ CAMPr3_DA = comparison_data['CAMPr3_DA'].values
 
 
 print('-------------model093_pred_prob-------------')
-evaluate_model(label, model_best_pred_prob)
+evaluation(model_best_pred_prob, label)
 print()
 print('-------------AMPScanner-------------')
-evaluate_model(label, AMPScanner)
+evaluation(AMPScanner, label)
 print()
 print('-------------CAMPr3_SVM-------------')
-evaluate_model(label, CAMPr3_SVM)
+evaluation(CAMPr3_SVM, label)
 print()
 print('-------------CAMPr3_RF-------------')
-evaluate_model(label, CAMPr3_RF)
+evaluation(CAMPr3_RF, label)
 print()
 print('-------------CAMPr3_ANN-------------')
-evaluate_model(label, CAMPr3_ANN)
+evaluation(CAMPr3_ANN, label)
 print()
 print('-------------CAMPr3_DA-------------')
-evaluate_model(label, CAMPr3_DA)
+evaluation(CAMPr3_DA, label)
 print()
 
 
@@ -123,5 +81,5 @@ plt.ylabel('True Positive Rate (Sensitivity)',fontdict=text_font4)
 plt.grid(linestyle='--')
 
 
-#plt.savefig('fig5.svg',dpi=600,format='svg')
+plt.savefig('experiment_results\\ROC_curve.png',dpi=600,format='png')
 plt.show()
