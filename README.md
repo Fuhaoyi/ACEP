@@ -17,7 +17,20 @@ We recommend using a GPU to speed up the calculations; if you use GPU accelerati
 1.3 Starting a prediction
 #
 Step 1.
+
 Download all files in the folderthe ACME_codes folder. 
+
+Step 2.
+
+Enter the sequences into the AMP_prediction/inputs/sequences.csv file and put the PSSM files into the AMP_prediction/inputs/PSSM_files/ directory.
+
+Step 3.
+
+Run ACEP_prediction.py.
+
+Step 4.
+
+View predicted results in AMP_prediction/outputs/outputs.csv file.
 
 
 Updating...
