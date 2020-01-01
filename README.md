@@ -30,7 +30,7 @@ We recommend using a GPU to speed up the calculations; if you use GPU accelerati
 We use convolutional layer, pooling layer, LSTM layer, fully connected layer and attention mechanism to build the model.
 The yellow module, the blue module and the red module are used to generate features. The green module is used to fuse features; the purple module corresponds to the sigmoid node that outputs the prediction results.
 
-<div align=center><img width="60%" height="60%" alt="Model_Structure" src="https://raw.githubusercontent.com/Fuhaoyi/ACEP/master/model_structure.png"/></div>
+<div align=center><img width="50%" height="50%" alt="Model_Structure" src="https://raw.githubusercontent.com/Fuhaoyi/ACEP/master/model_structure.png"/></div>
 
 
 3.Repeating the experiments in the paper.
