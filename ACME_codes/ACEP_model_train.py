@@ -17,8 +17,8 @@ from keras.callbacks import TensorBoard
 
 import pandas as pd
 import numpy as np
-import os
 
+import os
 
 
 data_all = pd.read_csv('AMPs_Experiment_Dataset\\AMP_sequecnces\\seq_all_data.csv', index_col=0)
@@ -37,6 +37,7 @@ x_train_tune_index, x_train_tune_length, x_train_tune_pssm, x_train_tune_onehot,
 x_train_tune_test_index, x_train_tune_test_length, x_train_tune_test_pssm, x_train_tune_test_onehot,x_train_tune_test_aac,y_train_tune_test= ConvertSequence2Feature(sequence_data=train_tune_test, pssmdir=os.path.join('AMPs_Experiment_Dataset','PSSM_files','train_tune_test'))
 
 
+
 def length_index(length_list, feature_data, label):
     index30_200 = []
     index1_29 = []
@@ -50,7 +51,8 @@ def length_index(length_list, feature_data, label):
     labelnp30_200 = labelnp[index30_200]
     feature_data1_29 = feature_data[index1_29]
     labelnp1_29 = labelnp[index1_29]
-
+    # print(index_60_200)
+    # print(index_1_59)
 
 
     return feature_data30_200,labelnp30_200,feature_data1_29,labelnp1_29
@@ -80,39 +82,39 @@ def creat_model():
     inputs_ot = Input(shape=(200,21),name='main_input_ot')
 
     emb_ot = EmbeddingRST_model(input_dim=21,output_dim=e_dim,input_length=200,
-                             name='emb_tensor_ot')(inputs_ot) 
-
+                             name='emb_tensor_ot')(inputs_ot)   #output (none,200,128)
     cov1d_ot = Conv1D(64, 16, activation='relu',strides=1, padding='same',
-                   kernel_initializer='random_normal')(emb_ot)  
-    maxpool_ot = MaxPooling1D(3)(cov1d_ot)   
+                   kernel_initializer='random_normal')(emb_ot)  #output (none,200,64)
+    maxpool_ot = MaxPooling1D(3)(cov1d_ot)    #output (none,100,64)
 
-    lstm_out_ot = LSTM(feture_dim,dropout=droupot_para,return_sequences=True,unroll=True)(maxpool_ot)   
-    
+    lstm_out_ot = LSTM(feture_dim,dropout=droupot_para,return_sequences=True,unroll=True)(maxpool_ot)   #(none,25,100)
+
     inputs_pm = Input(shape=(200,21),name='main_input_pm')
 
     emb_pm = EmbeddingRST_model(input_dim=21,output_dim=e_dim,input_length=200,
-                             name='emb_tensor_pm')(inputs_pm)   
+                             name='emb_tensor_pm')(inputs_pm)   #output (none,200,128)
 
     cov1d_pm = Conv1D(64, 16, activation='relu',strides=1, padding='same',
-                   kernel_initializer='random_normal')(emb_pm) 
-    maxpool_pm = MaxPooling1D(5)(cov1d_pm) 
-    lstm_out_pm = LSTM(feture_dim,dropout=droupot_para,return_sequences=True,unroll=True)(maxpool_pm)
+                   kernel_initializer='random_normal')(emb_pm)  #output (none,200,64)
+    maxpool_pm = MaxPooling1D(5)(cov1d_pm)    #output (none,100,64)
+
+    lstm_out_pm = LSTM(feture_dim,dropout=droupot_para,return_sequences=True,unroll=True)(maxpool_pm)   #(none,25,100)
 
 
-    lstm_out_permute_ot = Permute((2,1))(lstm_out_ot)
-    attention_weights_ot = TimeDistributed(Dense(1))(lstm_out_ot)
-    attention_weights_ot = Flatten()(attention_weights_ot)
-    attention_weights_ot = Activation('softmax',name='attention_weights_ot')(attention_weights_ot)
+    lstm_out_permute_ot = Permute((2,1))(lstm_out_ot)     #(none,100,25)
+    attention_weights_ot = TimeDistributed(Dense(1))(lstm_out_ot)     #(none,25,1)
+    attention_weights_ot = Flatten()(attention_weights_ot)   #(none,25)
+    attention_weights_ot = Activation('softmax',name='attention_weights_ot')(attention_weights_ot)    #(none,25)
     attention_weights_ot = Dropout(droupot_para)(attention_weights_ot)
-    merge_out_ot = Dot(-1,name='merge_out1')([attention_weights_ot,lstm_out_permute_ot])
+    merge_out_ot = Dot(-1,name='merge_out1')([attention_weights_ot,lstm_out_permute_ot])  #(none,100)
     merge_out_ot = Reshape((1,-1))(merge_out_ot)
 
-    lstm_out_permute_pm = Permute((2,1))(lstm_out_pm)
-    attention_weights_pm = TimeDistributed(Dense(1))(lstm_out_pm)
-    attention_weights_pm = Flatten()(attention_weights_pm)
-    attention_weights_pm = Activation('softmax',name='attention_weights_pm')(attention_weights_pm)
+    lstm_out_permute_pm = Permute((2,1))(lstm_out_pm)     #(none,100,25)
+    attention_weights_pm = TimeDistributed(Dense(1))(lstm_out_pm)     #(none,25,1)
+    attention_weights_pm = Flatten()(attention_weights_pm)   #(none,25)
+    attention_weights_pm = Activation('softmax',name='attention_weights_pm')(attention_weights_pm)    #(none,25)
     attention_weights_pm = Dropout(droupot_para)(attention_weights_pm)
-    merge_out_pm = Dot(-1,name='merge_out2')([attention_weights_pm,lstm_out_permute_pm])
+    merge_out_pm = Dot(-1,name='merge_out2')([attention_weights_pm,lstm_out_permute_pm])  #(none,100)
     merge_out_pm = Reshape((1,-1))(merge_out_pm)
 
 
@@ -134,6 +136,7 @@ def creat_model():
     concat_attention_weights = Dropout(droupot_para)(concat_attention_weights)
     merge_out = Dot(-1, name='merge_select')([concat_attention_weights, concat_permute])
 
+
     y_out = Dense(1, activation='sigmoid')(merge_out)
 
     model = Model(inputs=[inputs_aac, inputs_ot, inputs_pm], outputs=y_out)
@@ -145,24 +148,15 @@ def creat_model():
 
 
 
-#-----------Training history visualization---------
-model = creat_model()
-history = model.fit([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm], y_train_tune_test,
-                    validation_split=0.4, epochs=30, batch_size=16, verbose=30)
 
-plt.plot(history.history['acc'],color='firebrick', linestyle='-', marker='o')
-plt.plot(history.history['val_acc'],color='forestgreen',linestyle='-', marker='o')
-plt.title('Model accuracy')
-plt.ylabel('Accuracy')
-plt.xlabel('Epoch')
-plt.legend(['Train', 'Test'], loc='upper left')
-plt.grid(linestyle='--')
-#plt.savefig('resuts//fig_s2_2.svg',dpi=600,format='svg')
-plt.show()
+model_train = creat_model()
+print(model_train.summary())
+#plot_model(model_train, to_file='ACEP_model_train.png',show_shapes=True)
+model_train.fit([x_train_aac,x_train_onehot, x_train_pssm], y_train, batch_size=16, epochs=30)
+score0_11 = model_train.evaluate([x_test_aac,x_test_onehot, x_test_pssm], y_test, batch_size=16)
+score0_12 = model_train.evaluate([x_test_aac1_29,x_test_onehot1_29, x_test_pssm1_29], y_test_onehot1_29, batch_size=16)
+score0_13 = model_train.evaluate([x_test_aac30_200,x_test_onehot30_200, x_test_pssm30_200],y_test_pssm30_200, batch_size=16)
+print(score0_11,score0_12,score0_13)
+#model_train.save(os.path.join('test_model.h5'))
 
-
-
-#-------------------------evaluation----------------------
-evaluation(model.predict([x_test_aac,x_test_onehot, x_test_pssm]).flatten(), y_test)
-
-
+evaluation(model_train.predict([x_test_aac,x_test_onehot, x_test_pssm]).flatten(), y_test)
