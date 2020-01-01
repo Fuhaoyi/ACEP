@@ -3,166 +3,119 @@ import numpy as np
 import os
 
 
-def getpssm(filename):
+def getallseq():
+    train = pd.read_csv('amp.tr.all.csv')
+    eval = pd.read_csv('amp.eval.all.csv')
+    test = pd.read_csv('amp.te.all.csv')
+
+    seq_all = pd.concat([train, eval, test], axis = 0, ignore_index=True)
+    seq_all.to_csv('concat_allseq.csv')
+
+    seq_repeat = seq_all
+    col = seq_repeat.columns.insert(2, 'repeat')
+    seq_repeat = seq_repeat.reindex(columns=col, fill_value=0)
+
+    for i in range(seq_repeat.shape[0]):
+        one_sequence = seq_repeat.iloc[i,0]
+        k = 1
+        while(len(one_sequence)*k<60):
+            k = k+1
+        one_sequence_k = one_sequence*k
+        seq_repeat.iloc[i, 0] = one_sequence_k
+        seq_repeat.iloc[i, 2] = k
+
+    seq_repeat.to_csv('seq_repeat_k.csv')
+
+    seq_list = []
+    for i in range(seq_repeat.shape[0]):
+        seq_list.append(seq_repeat.iloc[i,0])
+
+    fo = open("seq_repeat.fasta", "w")
+    count=0
+    for i in seq_list:
+        fo.write('>seq'+str(count)+'_'+str(seq_repeat.iloc[count,2])+'\n')
+        fo.write(i+'\n')
+        count = count+1
+    fo.close()
+
+#getallseq()
+
+
+def cutpssm(filename,out_name,k):
     f = open(filename, 'r')
-    f.readline()
-    f.readline()
-    f.readline()
     linelist = f.readlines()
-    pssm = []
-    for i in linelist:
-        if i!='\n':
-            oneline = i.split()
-            m = []
-            m.append(oneline[1])
-            #m.extend([int(i) for i in oneline[22:42]])   #--------------------------
-            m.extend([int(i) for i in oneline[2:22]])
-            pssm.append(m)
-        else:
-            break
+    #print(linelist)
+    linelist_cut = []
+    cut_point = int((len(linelist)-9)/k+3)
+    for i in range(cut_point):
+        linelist_cut.append(linelist[i])
     f.close()
 
-    pssmdf = pd.DataFrame(pssm,columns=['seq','A','R','N','D','C','Q','E','G','H','I',
-                                        'L','K','M','F','P','S','T','W','Y','V'])
-    col = pssmdf.columns.insert(1, 'X')
-    pssmdf = pssmdf.reindex(columns=col, fill_value=0)
+    f2 = open(out_name, 'w')
+    f2.writelines(linelist_cut)
+    f2.close()
 
-    return pssmdf
+#cutpssm('6e60daedd6bc8a5654f41c016ec0593f_1.pssm','pssm_30_200\seq_30_60_1.pssm')
 
 
 def getpssmlist(dir):
     filenamelist = os.listdir(dir)
-    pssmlist = []
-    pssm_file_list = []
+    seq_repeat_k = pd.read_csv('seq_repeat_k.csv', index_col=0)
+    #print(seq_repeat_k)
+    #print(filenamelist)
     for i in filenamelist:
         filename = os.path.join(dir,i)
-        pssmlist.append(getpssm(filename))
-        pssm_file_list.append(i)
-    print('pssmlist is ok')
-    print(len(pssm_file_list))
-    #print(pssm_file_list)
-    return  pssmlist, pssm_file_list
+        pssm_id = i.split('_', 1)[1]
+        pssm_id = pssm_id.split('.', 1)[0]
+        pssm_id = int(pssm_id)
+        pssm_id = pssm_id-1+3500
+        #k = seq_repeat_k.iloc[pssm_id,2]
+        k = 1
+        out_name = '{:0>4d}'.format(pssm_id)+'.pssm'
+        out_path =os.path.join('all_pssm_data','pssm_files0_3555',out_name)
+        cutpssm(filename,out_path,k)
+
+getpssmlist('all_pssm_data\pssm_files3500_3555')
 
 
+def renamefun(dir):
+    filenamelist = os.listdir(dir)
+    for i in filenamelist:
+        filename = os.path.join(dir,i)
+        f1 = open(filename, 'r')
+        linelist = f1.readlines()
+        f1.close()
+
+        rename1 = i.split('.', 1)[0]
+        rename1 = int(rename1)
+        rename1 = '{:0>4d}'.format(rename1)+'.pssm'
+
+        out_path =os.path.join('all_pssm_data','pssm_files0_3555_cut','train_rename',rename1)
+        f2 = open(out_path, 'w')
+        f2.writelines(linelist)
+        f2.close()
+
+#renamefun(os.path.join('all_pssm_data','pssm_files0_3555_cut','train'))
 
 
-def psssmfeature(sequence_index,one_sequence, label, pssm_matrix_list):
+def proccess2csv():
+    f = open('DECOY.eval.fa', 'r')
+    str1 = f.read()
+    f.close()
+    list1 = str1.split()
+    list2 = []
+    for i in list1:
+        if i[0] != '>':
+            list2.append(i)
+    print(list2)
+    print(len(list2))
 
-    str1 = one_sequence
-    padding_vst_pssm = -1
-    sequence_pssm = []
-    str2 = ''.join(pssm_matrix_list[sequence_index].iloc[:, 0].values)
-    if str1 == str2:
-        pssm = pssm_matrix_list[sequence_index].iloc[:, 1:22].values
-        padding = np.zeros((200 - pssm.shape[0], 21), dtype=np.float32)
-        padding_vst_pssm = np.vstack([padding, pssm])
-        sequence_pssm = [sequence_index, pssm_matrix_list[sequence_index]]
+    ng_ps = 0
+    dt = pd.DataFrame({'seq': list2, 'label': [ng_ps] * len(list2)})
+    dt = dt.reindex(columns=['seq', 'label'])
+    print(dt)
 
-    if type(padding_vst_pssm) == type(-1):
-        print('error pssm in empty')
-        print(sequence_index)
-        print(one_sequence)
+    dt.to_csv('amp.eval.ng.res.csv', index=False, header=True)
 
-    sequence_label = label
-    sequence_index_out = sequence_index
-    return sequence_index_out, padding_vst_pssm, sequence_label, sequence_pssm   #numpy  shape:(None,200,21)  (None,)
+#
 
-
-
-def encode2numerical(sequence_index, one_sequence, label):
-    dict1 = {'X':0,
-             'A':1,
-             'R':2,
-             'N':3,
-             'D':4,
-             'C':5,
-             'Q':6,
-             'E':7,
-             'G':8,
-             'H':9,
-             'I':10,
-             'L':11,
-             'K':12,
-             'M':13,
-             'F':14,
-             'P':15,
-             'S':16,
-             'T':17,
-             'W':18,
-             'Y':19,
-             'V':20
-             }
-
-    str1 = one_sequence
-    str1 = 'X' * (200 - len(str1)) + str1
-    str2 = ''
-    for j in str1:
-        if j not in dict1.keys():
-            j = 'X'
-        str2 =str2 + str(dict1[j]) + ' '
-
-    sequence_num = str2.split()
-    sequence_num = [int(k) for k in sequence_num]
-    sequence_label = label
-    sequence_index_out = sequence_index
-
-    return sequence_index_out ,sequence_num, sequence_label
-
-
-
-def one_hot_vector(sequence_index, one_sequence, label):
-    sequence_index_out, sequence_num, sequence_label = encode2numerical(sequence_index, one_sequence, label)
-    one_hot_matrix = np.zeros((200, 21), dtype=np.float32)
-    for i in range(200):
-        if sequence_num[i]!=0:
-            one_hot_matrix[i,sequence_num[i]] = 1.0
-
-    #return sequence_index_out, one_hot_matrix, sequence_label   #numpy   shape:(None,200,21) (None,)
-    return one_hot_matrix   #numpy   shape:(None,200,21) (None,)
-
-
-
-
-def ConvertSequence2Feature(sequence_data, pssmdir):
-    sequence_count = sequence_data.shape[0]
-    #print(sequence_data)
-    feature_pssm = np.zeros((sequence_count, 200, 21), dtype=np.float32)
-    feature_onehot = np.zeros((sequence_count, 200, 21), dtype=np.float32)
-    label_list = np.zeros((sequence_count), dtype=np.int32)
-    index_out = np.zeros((sequence_count), dtype=np.int32)
-    pssm_list, pssm_file_list = getpssmlist(pssmdir)
-    #print(pssm_file_list)
-    length_list = []
-    for i in range(sequence_count):
-        #length_list.append(len(sequence_data.iloc[i, 0])/sequence_data.iloc[i, 2])    #------------------------
-        length_list.append(len(sequence_data.iloc[i, 0]))
-    count_1 = 0
-    for i in range(sequence_count):
-        one_sequence = sequence_data.iloc[i,0]
-        label = sequence_data.iloc[i,2]
-        index_out[i], feature_pssm[i], label_list[i], sequence_pssm = psssmfeature(i, one_sequence, label, pssm_list)
-        feature_onehot[i] = one_hot_vector(i, one_sequence, label)
-        count_1 = count_1 +1
-    print('total    ',count_1)
-    return index_out, length_list, feature_pssm, feature_onehot, label_list
-
-
-
-def length_index(length_list, feature_data, label):
-    index30_200 = []
-    index1_29 = []
-    labelnp = np.array(label)
-    for i in range(len(length_list)):
-        if(length_list[i])>29:
-            index30_200.append(i)
-        else:
-            index1_29.append(i)
-    feature_data30_200 = feature_data[index30_200]
-    labelnp30_200 = labelnp[index30_200]
-    feature_data1_29 = feature_data[index1_29]
-    labelnp1_29 = labelnp[index1_29]
-    # print(index_60_200)
-    # print(index_1_59)
-
-
-    return feature_data30_200,labelnp30_200,feature_data1_29,labelnp1_29
