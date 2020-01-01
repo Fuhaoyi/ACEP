@@ -54,10 +54,9 @@ Observe the amino acid clustering by running ACEP_cluster.py. Observe the attent
 If your sequence is a fasta file, you can call the function in Data_pre_processing.py to convert the fasta file to a csv file so that it can be imported into the model.
 If you want to see false negative sequences, you can run ACEP_false_negtive.py file.
 
+## Contact Us
 
 If you have any problems, please contact fhy11235813@gmail.com
-
-## Contact Us
 
 Haoyi Fu
 
