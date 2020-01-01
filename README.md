@@ -50,7 +50,7 @@ You can view the performance of the model by running ACEP_model_performance.py. 
 
 Observe the amino acid clustering by running ACEP_cluster.py. Observe the attention intensity and the the fusion ratio by running ACEP_attention_intensity.py and ACEM_fusion_ratio.py. Observe the distribution of fusion features in space by running ACEP_fusion_feature.py.
 
-4.4 Others
+3.4 Others
 
 
 If your sequence is a fasta file, you can call the function in Data_pre_processing.py to convert the fasta file to a csv file so that it can be imported into the model.
