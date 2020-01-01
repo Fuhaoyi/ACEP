@@ -44,8 +44,11 @@ You can train a new model by running ACEP_model_train.py files. And the code for
 
 3.2 Experimental comparison
 
+You can view the performance of the model by running ACEP_model_performance.py. It can also be compared with other state-of-the-art antimicrobial peptides recognition methods by running ACEP_comparison_test.py and ACEP_ROC.py. In addition, run ACEP_R1_xxx.py to understand the role of different functional modules. Evaluate model performance using cross validation on all datasets by running ACEP_model_CV.py
 
 3.3 Visualization
+
+4.4 Others
 
 
 
