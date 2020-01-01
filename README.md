@@ -36,8 +36,7 @@ The yellow module, the blue module and the red module are used to generate featu
 3.Repeating the experiments in the paper.
 -
 
-
-
+Experiments in the paper can be repeated by running the code in the ACME_codes/ folder. When running the codes, all experimental results will be displayed and stored in the ACME_codes/experiment_results/ folder.
 
 
 
