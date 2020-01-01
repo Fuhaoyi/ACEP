@@ -46,7 +46,8 @@ You can train a new model by running ACEP_model_train.py files. And the code for
 
 You can view the performance of the model by running ACEP_model_performance.py. It can also be compared with other state-of-the-art antimicrobial peptides recognition methods by running ACEP_comparison_test.py and ACEP_ROC.py. In addition, run ACEP_R1_xxx.py to understand the role of different functional modules. Evaluate model performance using cross validation on all datasets by running ACEP_model_CV.py
 
-3.3 Visualization
+3.3 Experimental analysis and visualization
+Observe the amino acid clustering by running ACEP_cluster.py. Observe the attention intensity and the the fusion ratio by running ACEP_attention_intensity.py and ACEM_fusion_ratio.py. Observe the distribution of fusion features in space by running ACEP_fusion_feature.py.
 
 4.4 Others
 
