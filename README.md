@@ -38,6 +38,15 @@ The yellow module, the blue module and the red module are used to generate featu
 
 Experiments in the paper can be repeated by running the code in the ACME_codes/ folder. When running the codes, all experimental results will be displayed and stored in the ACME_codes/experiment_results/ folder.
 
+3.1 Training model
+
+You can train a new model by running ACEP_model_train.py files. And the code for the amino acid embedding tensor can be found in the EmbeddingRST.py file. The training data is placed in the AMPs_Experiment_Dataset / AMPs_Experiment_Dataset.zip file. This file needs to be decompressed before training the model. In addition, you can observe the training history by running the ACEP_training_history.py file.
+
+3.2 Experimental comparison
+
+
+3.3 Visualization
+
 
 
 If you have any problems, please contact fhy11235813@gmail.com
