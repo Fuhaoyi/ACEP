@@ -25,7 +25,7 @@ We recommend using a GPU to speed up the calculations; if you use GPU accelerati
 * **Step 4.** View predicted results in AMP_prediction/outputs/outputs.csv file. And sequences with probability greater than or equal to 0.5 are identified as AMPs, and sequences with probability less than 0.5 are identified as non-AMPs.
 
 2.Architecture of the ACEP modle.
--
+---
 
 We use convolutional layer, pooling layer, LSTM layer, fully connected layer and attention mechanism to build the model.
 The yellow module, the blue module and the red module are used to generate features. The green module is used to fuse features; the purple module corresponds to the sigmoid node that outputs the prediction results.
@@ -34,7 +34,7 @@ The yellow module, the blue module and the red module are used to generate featu
 
 
 3.Repeating the experiments in the paper.
--
+---
 
 Experiments in the paper can be repeated by running the code in the ACME_codes/ folder. When running the codes, all experimental results will be displayed and stored in the ACME_codes/experiment_results/ folder.
 
@@ -58,6 +58,9 @@ If you want to see false negative sequences, you can run ACEP_false_negtive.py f
 
 
 If you have any problems, please contact fhy11235813@gmail.com
+
+Contact Us
+---
 
 Haoyi Fu
 
