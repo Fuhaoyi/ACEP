@@ -40,3 +40,11 @@ The yellow module, the blue module and the red module are used to generate featu
 
 
 
+
+If you have any problems, please contact fhy11235813@gmail.com
+
+Haoyi Fu
+
+School of Information Science and Engineering, Yunnan University
+
+
