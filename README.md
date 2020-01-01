@@ -24,10 +24,10 @@ Step 3. Run ACEP_prediction.py.
 
 Step 4. View predicted results in AMP_prediction/outputs/outputs.csv file. And sequences with probability greater than or equal to 0.5 are identified as AMPs, and sequences with probability less than 0.5 are identified as non-AMPs.
 
+2.Repeating the experiments in the ACME paper.
+-
 
-Updating...
 
-We are collating the codes, and the entire codes will be uploaded before December 31th.
 
-<div align=center><img width="70%" height="70%" alt="Model_Structure" src="https://raw.githubusercontent.com/Fuhaoyi/ACEP/master/model_structure.png"/></div>
+<div align=center><img width="60%" height="60%" alt="Model_Structure" src="https://raw.githubusercontent.com/Fuhaoyi/ACEP/master/model_structure.png"/></div>
 
