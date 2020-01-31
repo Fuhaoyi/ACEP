@@ -74,7 +74,7 @@ text_font4={
 
 plt.xlim([0.0, 1.0])
 plt.ylim([0.0, 1.0])
-plt.title('ROC curve for diabetes classifier',fontdict=text_font3)
+plt.title('ROC curve for various methods',fontdict=text_font3)
 plt.legend()
 plt.xlabel('False Positive Rate (1 - Specificity)',fontdict=text_font4)
 plt.ylabel('True Positive Rate (Sensitivity)',fontdict=text_font4)
