@@ -95,6 +95,7 @@ plt.setp(g.get_xticklabels(), rotation='vertical')
 plt.title('Attention intensity of 10 AMPs',fontsize=18)
 
 plt.yticks(fontsize=16)
+plt.xticks(fontsize=16)
 plt.savefig('experiment_results\\Heatmap_AMP10_1.png',dpi=600,format='png')
 plt.show()
 
