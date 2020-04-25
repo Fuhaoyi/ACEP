@@ -7,7 +7,7 @@ Open source software and datasets for the ACEP algorithm
 
 Input the peptide sequences and PSSM file, the model can predict whether the sequences are AMPs or non-AMPs. PSSM files of sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). This software supports high-throughput predictions. The prediction results are stored in a file.
 
-Note：On the POSSUM server page, the parameters of descriptors are all set to ‘off’ and the parameters for Blast are set to defaults. After submitting the sequence, wait for the server to complete the calculation and download the original PSSM profiles.
+Note：On the POSSUM server page, the parameters of descriptors are all set to ‘off’ and the parameters for Blast are set to defaults. After submitting the sequence, wait for the server to complete the calculation and download the original PSSM profiles. PSSMs can also be obtained in any ways, such as the local Blast service, if you want to use the POSSUM online service, you have to fill the short sequence less than 50AA to more than 50AA in length by repeatedly copying the sequence, due to server restrictions on sequence length. 
 
 ### 1.2 Requirements
 
