@@ -22,7 +22,7 @@ We recommend using a GPU to speed up the calculations; if you use GPU accelerati
 
 * **Step 2.** Enter the sequences into the AMP_prediction/inputs/sequences.csv file and put the PSSM files into the AMP_prediction/inputs/PSSM_files/ directory.
 
-   (In order to increase the speed of high-throughput sequence prediction without generating additional errors, the PSSM files placed in the directory can only be named using numbers, such as 00001.pssm, 00002.pssm, 0003.pssm ..., and the order of these files that are sorted by file names must be the same as the order of sequences in the sequences.csv file. The refun() function in Data_pre_processing.py file will help to do this.)
+   Note: In order to increase the speed of high-throughput sequence prediction without generating additional errors, the PSSM files placed in the directory can only be named using numbers, such as 00001.pssm, 00002.pssm, 0003.pssm ..., and the order of these files that are sorted by file names must be the same as the order of sequences in the sequences.csv file. The refun() function in Data_pre_processing.py file will help to do this.
 
 * **Step 3.** Run ACEP_prediction.py.
 
