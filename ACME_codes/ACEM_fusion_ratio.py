@@ -107,9 +107,9 @@ sns.set(style="darkgrid")
 sns.lineplot(x="length_class", y="attention",hue = 'Ratio', marker='o',
              data=select_pd)
 
-plt.title('Sequence length and fusion ratio',fontdict=text_font3)
-plt.xlabel('The length of the sequence',fontdict=text_font4)
-plt.ylabel('The fusion ratio',fontdict=text_font4)
+plt.title('Sequence length vs. fusion percentage',fontdict=text_font3)
+plt.xlabel('Sequence length',fontdict=text_font4)
+plt.ylabel('Fusion percentage',fontdict=text_font4)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.savefig('experiment_results//Fusion_ratio.png',dpi=600,format='png')
