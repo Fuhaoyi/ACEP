@@ -167,3 +167,10 @@ all_p_c,all_p_l,all_n_c,all_n_l = length_n_p(x_train_tune_test_length,y_train_tu
 print(all_p_c,all_n_c)
 amp_pd = pd.Series(all_p_l)
 print(amp_pd.describe())
+
+count = 0
+for i in (all_p_l+all_n_l):
+    if i>=100:
+        count = count +1
+print(count)
+print(len(all_p_l+all_n_l))
