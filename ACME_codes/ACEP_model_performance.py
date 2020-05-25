@@ -121,33 +121,73 @@ def creat_model():
 
 
 
+# model_train = creat_model()
+# model_train.fit([x_train_aac,x_train_onehot, x_train_pssm], y_train, batch_size=16, epochs=30)
+# y_pre_train = model_train.predict([x_train_aac,x_train_onehot, x_train_pssm])
+# y_pre_tune = model_train.predict([x_tune_aac,x_tune_onehot, x_tune_pssm])
+#
+# print('####################       train     train       ######################')
+# evaluation(y_pre_train.flatten(),y_train)
+# print('####################       train     tune       ######################')
+# evaluation(y_pre_tune.flatten(),y_tune)
+# print()
+#
+#
+#
+# model_train_tune = creat_model()
+# model_train_tune.fit([x_train_tune_aac,x_train_tune_onehot, x_train_tune_pssm], y_train_tune, batch_size=16, epochs=30)
+# y_pre_train_tune = model_train_tune.predict([x_train_tune_aac,x_train_tune_onehot, x_train_tune_pssm])
+# y_pre_test = model_train_tune.predict([x_test_aac,x_test_onehot, x_test_pssm])
+# print('####################       train+tune     train+tune       ######################')
+# evaluation(y_pre_train_tune.flatten(),y_train_tune)
+# print('####################       train+tune      test       ######################')
+# evaluation(y_pre_test.flatten(),y_test)
+# print()
+#
+#
+# model_train_tune_test = creat_model()
+# model_train_tune_test.fit([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm], y_train_tune_test, batch_size=16, epochs=30)
+# y_pre_train_tune_test = model_train_tune_test.predict([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm])
+# print('####################       train+tune+test     train+tune+test       ######################')
+# evaluation(y_pre_train_tune_test.flatten(),y_train_tune_test)
+# print()
+#
+#
+# model_train_tune_test = creat_model()
+# model_train_tune_test.fit([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm], y_train_tune_test, batch_size=16, epochs=30)
+# y_pre_train_tune_test = model_train_tune_test.predict([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm])
+# print('####################       train+tune+test     train+tune+test       ######################')
+# evaluation(y_pre_train_tune_test.flatten(),y_train_tune_test)
+# print()
+
+
+
 model_train = creat_model()
 model_train.fit([x_train_aac,x_train_onehot, x_train_pssm], y_train, batch_size=16, epochs=30)
-y_pre_train = model_train.predict([x_train_aac,x_train_onehot, x_train_pssm])
-y_pre_tune = model_train.predict([x_tune_aac,x_tune_onehot, x_tune_pssm])
+y_pre_test = model_train.predict([x_test_aac,x_test_onehot, x_test_pssm])
 
-print('####################       train     train       ######################')
-evaluation(y_pre_train.flatten(),y_train)
-print('####################       train     tune       ######################')
-evaluation(y_pre_tune.flatten(),y_tune)
-print()
-
-
-
-model_train_tune = creat_model()
-model_train_tune.fit([x_train_tune_aac,x_train_tune_onehot, x_train_tune_pssm], y_train_tune, batch_size=16, epochs=30)
-y_pre_train_tune = model_train_tune.predict([x_train_tune_aac,x_train_tune_onehot, x_train_tune_pssm])
-y_pre_test = model_train_tune.predict([x_test_aac,x_test_onehot, x_test_pssm])
-print('####################       train+tune     train+tune       ######################')
-evaluation(y_pre_train_tune.flatten(),y_train_tune)
-print('####################       train+tune      test       ######################')
+print('####################       train     test       ######################')
 evaluation(y_pre_test.flatten(),y_test)
 print()
 
+####################       train     test       ######################
+# [[644  68]
+#  [ 47 665]]
+# Classification Accuracy: 0.9192415730337079
+# Classification Error: 0.0807584269662921
+# Sensitivity: 0.9339887640449438
+# Specificity: 0.9044943820224719
+# False Positive Rate: 0.09550561797752809
+# Precision: 0.9072305593451568
+# F1 score: 0.9204152249134948
+# Matthews correlation coefficient: 0.838848090218525
+# ROC Curves and Area Under the Curve (AUC): 0.9722898387198585
 
-model_train_tune_test = creat_model()
-model_train_tune_test.fit([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm], y_train_tune_test, batch_size=16, epochs=30)
-y_pre_train_tune_test = model_train_tune_test.predict([x_train_tune_test_aac,x_train_tune_test_onehot, x_train_tune_test_pssm])
-print('####################       train+tune+test     train+tune+test       ######################')
-evaluation(y_pre_train_tune_test.flatten(),y_train_tune_test)
-print()
+
+
+
+
+
+
+
+
