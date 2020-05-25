@@ -117,5 +117,18 @@ def proccess2csv():
 
     dt.to_csv('amp.eval.ng.res.csv', index=False, header=True)
 
-#
 
+def get_seq_fasta():
+    seq_all = pd.read_csv('pssm_files0_3555_all\seq_all_data.csv',index_col=0)
+    print(seq_all)
+    seq_list = []
+    for i in range(seq_all.shape[0]):
+        seq_list.append(seq_all.iloc[i,0])
+
+    fo = open("pssm_files0_3555_all\seq_all_fasta.fasta", "w")
+    count=0
+    for i in seq_list:
+        fo.write('>seq'+str(count)+'\n')
+        fo.write(i+'\n')
+        count = count+1
+    fo.close()
