@@ -60,18 +60,19 @@ from sklearn.metrics import silhouette_score
 merge_out = Model(inputs=model.input,
                                  outputs=model.get_layer('merge_select').output)
 #merge_out.summary()
-samples = np.arange(400,900,1)
-x_pm1 = x_train_tune_pssm[samples]
-x_ot1 = x_train_tune_onehot[samples]
-x_aac1 = x_train_tune_aac[samples]
-y_1 = y_train_tune[samples]
+samples_count = y_test.shape[0]
+x_pm1 = x_test_pssm
+x_ot1 = x_test_onehot
+x_aac1 = x_test_aac
+y_1 = y_test
 merge_out = merge_out.predict([x_aac1,x_ot1,x_pm1])
 #print(merge_out,merge_out.shape)
 #print(y_small_test,y_small_test.shape)
-x_feature_vector = TSNE(n_components=2,init='pca',perplexity=40,method='exact').fit_transform(merge_out)
+x_feature_vector = TSNE(n_components=2,init='pca',perplexity=40,method='exact',
+                        random_state=0).fit_transform(merge_out)
 
-amp_non = ['null']*samples.shape[0]
-for i in range(samples.shape[0]):
+amp_non = ['null']*samples_count
+for i in range(samples_count):
     if y_1[i]==1:
         amp_non[i]='Antimicrobial '
     else:
@@ -98,9 +99,48 @@ sns.set(style="darkgrid")
 sns.scatterplot(x="Dim1", y="Dim2",
             hue="Category",
             data=feature_vector_pd)
-plt.title('The feature vectors of AMPs and non-AMPs',fontdict=text_font3)
+plt.title('The processed sequences by ACEP',fontdict=text_font3)
 plt.savefig('experiment_results//Fusion_feature.png',dpi=600,format='png')
-
+plt.savefig('experiment_results//Fusion_feature.svg',format='svg')
 plt.show()
 
 
+
+#--------------------------------------
+numerical_sequence_train = pd.read_csv('AMPs_Experiment_Dataset\\Numerical_sequences\\amp.tr.200.csv')
+
+x_feature_vector = TSNE(n_components=2,init='pca', perplexity=40,
+                        method='exact',random_state=0).fit_transform(numerical_sequence_train.iloc[:,0:200])
+
+samples_count = numerical_sequence_train.shape[0]
+amp_non = ['null']*samples_count
+for i in range(samples_count):
+    if numerical_sequence_train.iloc[i,200]==1:
+        amp_non[i]='Antimicrobial '
+    else:
+        amp_non[i]='Non-antimicrobial '
+amp_non = pd.Categorical(amp_non)
+feature_vector_pd = pd.DataFrame({'Dim1':x_feature_vector[:,0],'Dim2':x_feature_vector[:,1],'Category':amp_non})
+
+text_font3={
+    #'family':'Times New Roman',
+    'style':'normal',
+    'weight':'normal',
+      'color':'k',
+      'size':14}
+
+text_font4={
+    #'family':'Times New Roman',
+    'style':'normal',
+    'weight':'normal',
+      'color':'k',
+      'size':12}
+
+
+sns.set(style="darkgrid")
+sns.scatterplot(x="Dim1", y="Dim2",
+            hue="Category",
+            data=feature_vector_pd)
+plt.title('The original sequences',fontdict=text_font3)
+plt.savefig('experiment_results//Numerical_sequences.png',dpi=600,format='png')
+plt.show()
