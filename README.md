@@ -5,7 +5,9 @@ Open source software and datasets for the ACEP algorithm
 
 ### 1.1 Description
 
-Input the peptide sequences and PSSM file, the model can predict whether the sequences are AMPs or non-AMPs. PSSM files of Sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). This software supports high-throughput predictions. The prediction results are stored in a file.
+Input the peptide sequences and PSSM file, the model can predict whether the sequences are AMPs or non-AMPs. PSSM files of sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). This software supports high-throughput predictions. The prediction results are stored in a file.
+
+Note：On the POSSUM server page, the parameters of descriptors are all set to ‘off’ and the parameters for Blast are set to defaults. After submitting the sequence, wait for the server to complete the calculation and download the original PSSM profiles. PSSMs can also be obtained in any ways, such as the local Blast service, if you want to use the POSSUM online service, you have to fill the short sequence less than 50AA to more than 50AA in length by repeatedly copying the sequence, due to server restrictions on sequence length(Or splicing signal peptide and propeptide to the sequence to extend the sequence.). 
 
 ### 1.2 Requirements
 
@@ -19,6 +21,8 @@ We recommend using a GPU to speed up the calculations; if you use GPU accelerati
 * **Step 1.** Download all files in the folderthe ACME_codes folder. 
 
 * **Step 2.** Enter the sequences into the AMP_prediction/inputs/sequences.csv file and put the PSSM files into the AMP_prediction/inputs/PSSM_files/ directory.
+
+   Note: In order to increase the speed of high-throughput sequence prediction without generating additional errors, the PSSM files placed in the directory can only be named using numbers, such as 00001.pssm, 00002.pssm, 0003.pssm ..., and the order of these files that are sorted by file names must be the same as the order of sequences in the sequences.csv file. The refun() function in Data_pre_processing.py file will help to do this.
 
 * **Step 3.** Run ACEP_prediction.py.
 
