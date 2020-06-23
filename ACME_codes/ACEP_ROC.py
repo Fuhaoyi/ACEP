@@ -44,17 +44,17 @@ import seaborn as sns
 sns.set(style="white")
 
 fpr, tpr, thresholds = metrics.roc_curve(label, model_best_pred_prob)
-plt.plot(fpr, tpr, label='Our Method:97.23%')
+plt.plot(fpr, tpr, label='ACEP:97.78%')
 fpr, tpr, thresholds = metrics.roc_curve(label, AMPScanner)
 plt.plot(fpr, tpr, label='AMPScanner:96.30%')
 fpr, tpr, thresholds = metrics.roc_curve(label, CAMPr3_RF)
-plt.plot(fpr, tpr, label='CAMPr3_RF:93.63')
+plt.plot(fpr, tpr, label='CAMPr3-RF:93.63%')
 fpr, tpr, thresholds = metrics.roc_curve(label, CAMPr3_SVM)
-plt.plot(fpr, tpr, label='CAMPr3_SVM:90.62%')
+plt.plot(fpr, tpr, label='CAMPr3-SVM:90.62%')
 fpr, tpr, thresholds = metrics.roc_curve(label, CAMPr3_DA)
-plt.plot(fpr, tpr, label='CAMPr3_DA:89.97%')
+plt.plot(fpr, tpr, label='CAMPr3-DA:89.97%')
 fpr, tpr, thresholds = metrics.roc_curve(label, CAMPr3_ANN)
-plt.plot(fpr, tpr, label='CAMPr3_ANN:84.05%')
+plt.plot(fpr, tpr, label='CAMPr3-ANN:84.05%')
 
 
 text_font3={
