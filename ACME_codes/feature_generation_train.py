@@ -26,6 +26,7 @@ def getpssm(filename):
                                         'L','K','M','F','P','S','T','W','Y','V'])
     col = pssmdf.columns.insert(1, 'X')
     pssmdf = pssmdf.reindex(columns=col, fill_value=0)
+	#pssmdf.insert(len(pssmdf.columns), 'X', [x for x in  range(len(pssmdf.index))])
 
     return pssmdf
 
