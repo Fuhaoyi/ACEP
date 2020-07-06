@@ -8,11 +8,11 @@ Open source software and datasets for the ACEP algorithm
 ACEP is a deep learning model for high-throughput antibacterial peptide recognition. By loading a pre-trained model, the software can be deployed on a common computer to perform antimicrobial peptide recognition, important motif discovery, and visualization analysis.
 Both the peptide sequences and PSSM profiles need to be input the model.
 
-### 1.2 Get PSSM profiles
+### 1.2 Getting PSSM profiles
 
 There are two ways to obtain PSSMs, a web servers or a standalone BLAST program. If your computer's memory is large enough (about 64GB), then you can run the standalone BLAST as described in section 1.2.2, otherwise we recommend to use an online server to obtain PSSMs.
 
-### 1.2.1 Get PSSM through online server
+### 1.2.1 Getting PSSM through online server
 
 PSSM profiles of sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). 
 
@@ -20,7 +20,7 @@ On POSSUM server page, the parameters of descriptors are all set to 'off' and th
 
 Note: if you want to use POSSUM online service, you have to fill the short sequence less than 50AA to more than 50AA in length by repeatedly copying the sequence, due to server restrictions on sequence length. (Or splicing signal peptide and propeptide to sequences to extend them.)
 
-### 1.2.2 Get PSSM through standalone BLAST program
+### 1.2.2 Getting PSSM through standalone BLAST program
 
 * **Step 1.** Go to the NCBI website to download the BLAST program (ncbi-blast-2.10.1+-win64.exe, https://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/). <br />
     Go to UniProt's website to download protein sequences (UniRef90 or UniRef50, fasta format, https://www.uniprot.org/downloads).<br />
