@@ -1,3 +1,3736 @@
 PSIBLAST 2.9.0+
 
 
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: refseq_protein.fasta
+           99,657,864 sequences; 33,175,535,772 total letters
+
+Results from round 1
+
+
+Query= AP02150
+
+Length=65
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+UniRef90_C0KJQ4-2 Isoform 2 of Anti-lipopolysaccharide factor n=1...  140        4e-42
+UniRef90_C0KJQ4 Anti-lipopolysaccharide factor n=1 Tax=Portunus t...  129        2e-37
+UniRef90_I1VGP3 ALF1 n=3 Tax=Scylla TaxID=6760 RepID=I1VGP3_SCYPA     118        5e-33
+UniRef90_B5TTX7 Anti-lipopolysaccharide factor n=6 Tax=Portunidae...  105        8e-28
+UniRef90_H6TCF4 Anti-lipopolysaccharide factor 3 n=1 Tax=Eriochei...  94.4       1e-23
+UniRef90_H9MYZ3 Anti-lipopolysaccharide factor isoform 7 n=8 Tax=...  88.2       3e-21
+UniRef90_A5A3I6 Anti-lipopolysaccharide factor isoform 1 n=1 Tax=...  77.0       3e-17
+UniRef90_M4HXT1 Antilipopolysaccharide factor isoform 4 n=4 Tax=P...  75.5       3e-16
+UniRef90_A5A3I7 Anti-lipopolysaccharide factor isoform 2 n=1 Tax=...  74.7       5e-16
+UniRef90_A5HES6 Anti-lipopolysaccharide factor n=1 Tax=Pacifastac...  74.7       6e-16
+UniRef90_B9A7T8 Anti-lipopolysaccharide factor 2 n=1 Tax=Penaeus ...  73.9       1e-15
+UniRef90_A0A1L2DC15 ALF-A1 n=1 Tax=Penaeus japonicus TaxID=27405 ...  74.3       2e-15
+UniRef90_A0A0M3ULK7 Anti-lipopolysaccharide factor 2 n=1 Tax=Macr...  72.0       1e-14
+UniRef90_A0A125S9L6 ALFC2 n=2 Tax=Decapoda TaxID=6683 RepID=A0A12...  70.1       4e-14
+UniRef90_A5Z0L1 Anti-lipopolysaccharide factor isoform 3 (Fragmen...  68.2       6e-14
+UniRef90_A0A1S5RQT0 ALF3 n=1 Tax=Procambarus clarkii TaxID=6728 R...  69.3       7e-14
+UniRef90_A0A423T909 Anti-lipopolysaccharide factor isoform 6 n=1 ...  68.9       1e-13
+UniRef90_A0A385L4B5 Anti-lipopolysaccharide factor 1 (Fragment) n...  68.9       1e-13
+UniRef90_M4QV27 Anti-lipopolysaccharide factor-B1 n=7 Tax=Penaeus...  68.6       2e-13
+UniRef90_A0A3G3CBB3 Anti-lipopolysaccharide factor n=1 Tax=Neocar...  68.2       2e-13
+UniRef90_F1ASU1 Anti-lipopolysaccharide factor-like protein n=1 T...  67.8       3e-13
+UniRef90_A0A0M4RDN2 Anti-lipopolysaccharide factor 1 n=1 Tax=Macr...  68.2       3e-13
+UniRef90_A0A0A8KB40 Antilipopolysaccharide factor n=3 Tax=Macrobr...  67.0       7e-13
+UniRef90_B2MVV6 Anti-lipopolysaccharide factor 2 n=1 Tax=Homarus ...  67.0       8e-13
+UniRef90_A5A3I5 Anti-lipopolysaccharide factor isoform 3 n=11 Tax...  66.6       1e-12
+UniRef90_A0A1B2ZDP5 Antilipolysacchride factor n=2 Tax=Cherax qua...  66.2       1e-12
+UniRef90_W6MH75 Anti-LPS-factor-like-3 protein (Fragment) n=1 Tax...  66.2       2e-12
+UniRef90_A0A1S5RQS7 ALF8 n=1 Tax=Procambarus clarkii TaxID=6728 R...  65.9       2e-12
+UniRef90_H2D5V5 Anti-lipopolysaccharide factor isoform 6 n=4 Tax=...  65.5       2e-12
+UniRef90_G8A3H9 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobra...  65.5       3e-12
+UniRef90_D3JU55 Antilipopolysaccharide factor n=2 Tax=Penaeus mon...  65.1       3e-12
+UniRef90_A0A0M4S7F5 Anti-lipopolysaccharide factor 4 n=3 Tax=Macr...  65.1       5e-12
+UniRef90_S4TVB5 Anti-lipopolysaccharide factor isoform 1 n=1 Tax=...  64.7       6e-12
+UniRef90_I4BZJ5 Anti-lipopolysaccharide factor n=1 Tax=Portunus p...  64.7       6e-12
+UniRef90_Q1XI22 ALF-C1 n=1 Tax=Penaeus japonicus TaxID=27405 RepI...  64.3       8e-12
+UniRef90_K9MP07 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobra...  64.3       1e-11
+UniRef90_UPI00084A8BCB uncharacterized protein LOC108676095 n=1 T...  66.2       1e-11
+UniRef90_W6MNF6 Anti-LPS-factor-like-3 protein (Fragment) n=1 Tax...  61.2       8e-11
+UniRef90_A0A1S5RQT4 ALF9 n=1 Tax=Procambarus clarkii TaxID=6728 R...  61.2       1e-10
+UniRef90_A0A1S5RQT2 ALF5 n=1 Tax=Procambarus clarkii TaxID=6728 R...  60.8       1e-10
+UniRef90_W6MEN5 Anti-LPS-factor-like-1 protein n=1 Tax=Pagurus be...  60.8       1e-10
+UniRef90_A0A1S5RQU4 ALF11 n=1 Tax=Procambarus clarkii TaxID=6728 ...  60.5       3e-10
+UniRef90_A0A1S5RQT1 ALF2 n=1 Tax=Procambarus clarkii TaxID=6728 R...  60.5       3e-10
+UniRef90_B2MVV5 Anti-lipopolysaccharide factor 1 n=1 Tax=Homarus ...  60.1       4e-10
+UniRef90_A0A222YUG6 Antilipopolysaccharide factor B1 n=1 Tax=Pena...  59.7       5e-10
+UniRef90_M4HYA8 Antilipopolysaccharide factor isoform 3 n=2 Tax=P...  58.9       1e-09
+UniRef90_A5Z0L0 Anti-lipopolysaccharide factor isoform 2 (Fragmen...  57.8       1e-09
+UniRef90_P07087 Anti-lipopolysaccharide factor n=2 Tax=Tachypleus...  57.4       2e-09
+UniRef90_A9YT52 Anti-lipopolysaccharide factor n=1 Tax=Macrobrach...  57.4       4e-09
+UniRef90_P07086 Anti-lipopolysaccharide factor n=1 Tax=Limulus po...  55.5       1e-08
+UniRef90_UPI00084B56AB anti-lipopolysaccharide factor-like isofor...  55.5       2e-08
+UniRef90_UPI00084B2FEC anti-lipopolysaccharide factor-like isofor...  55.5       2e-08
+UniRef90_A4UMS3 Anti-lipopolysaccharide factor (Fragment) n=1 Tax...  51.6       1e-07
+UniRef90_A0A444T4M0 Anti-lipopolysaccharide factor n=1 Tax=Armadi...  51.6       3e-07
+UniRef90_M4HYN1 Antilipopolysaccharide factor isoform 1 n=1 Tax=P...  51.6       7e-07
+UniRef90_W6MEV0 Anti-LPS-factor-like-1 protein (Fragment) n=1 Tax...  49.7       1e-06
+UniRef90_M4HYN4 Antilipopolysaccharide factor isoform 6 n=1 Tax=P...  50.4       2e-06
+UniRef90_A0A1S5RQS9 ALF6 n=1 Tax=Procambarus clarkii TaxID=6728 R...  49.3       6e-06
+UniRef90_H9MYY8 Anti-lipopolysaccharide factor isoform 6 n=2 Tax=...  47.8       2e-05
+UniRef90_A0A423TC79 Anti-lipopolysaccharide factor n=3 Tax=Penaeu...  48.1       2e-05
+UniRef90_A0A0P4WDC5 Uncharacterized protein n=1 Tax=Scylla olivac...  47.8       2e-05
+UniRef90_UPI000F67D186 anti-lipopolysaccharide factor-like n=1 Ta...  46.6       7e-05
+UniRef90_W6MES5 Anti-LPS-factor-like-4 protein (Fragment) n=1 Tax...  45.4       9e-05
+UniRef90_A6XIA2 Anti-lipopolysaccharide factor n=1 Tax=Eriocheir ...  45.8       1e-04
+UniRef90_D0V3Y7 Anti-lipopolysaccharide factor 2 n=1 Tax=Eriochei...  45.4       1e-04
+UniRef90_A0A125S9L7 ALFD1 n=1 Tax=Penaeus japonicus TaxID=27405 R...  45.4       2e-04
+UniRef90_A0A1B3LHI9 Anti-lipopolysaccharide factor 4 (Fragment) n...  45.8       2e-04
+UniRef90_A0A0M3ULR7 Anti-lipopolysaccharide factor 5 n=1 Tax=Macr...  44.7       4e-04
+UniRef90_A0A067YRQ4 Anti-lipopolysaccharide factor isoform 1 n=1 ...  43.9       6e-04
+
+
+>UniRef90_C0KJQ4-2 Isoform 2 of Anti-lipopolysaccharide factor 
+n=1 Tax=Portunus trituberculatus TaxID=210409 RepID=C0KJQ4-2
+Length=92
+
+ Score = 140 bits (352),  Expect = 4e-42, Method: Compositional matrix adjust.
+ Identities = 65/65 (100%), Positives = 65/65 (100%), Gaps = 0/65 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK
+Sbjct  28  YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  87
+
+Query  61  YCVVF  65
+           YCVVF
+Sbjct  88  YCVVF  92
+
+
+>UniRef90_C0KJQ4 Anti-lipopolysaccharide factor n=1 Tax=Portunus 
+trituberculatus TaxID=210409 RepID=ALPS_PORTR
+Length=123
+
+ Score = 129 bits (323),  Expect = 2e-37, Method: Compositional matrix adjust.
+ Identities = 58/60 (97%), Positives = 59/60 (98%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR +
+Sbjct  28  YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRSR  87
+
+
+>UniRef90_I1VGP3 ALF1 n=3 Tax=Scylla TaxID=6760 RepID=I1VGP3_SCYPA
+Length=123
+
+ Score = 118 bits (295),  Expect = 5e-33, Method: Compositional matrix adjust.
+ Identities = 49/60 (82%), Positives = 56/60 (93%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YE L+ S+LGKLTGLWHN+SVDFMGH C+FRRRPK+R+FKLYHEGKFWCPGWAPFEGR +
+Sbjct  28  YETLIASVLGKLTGLWHNNSVDFMGHTCHFRRRPKVRKFKLYHEGKFWCPGWAPFEGRSR  87
+
+
+>UniRef90_B5TTX7 Anti-lipopolysaccharide factor n=6 Tax=Portunidae 
+TaxID=6757 RepID=ALPS_SCYSE
+Length=123
+
+ Score = 105 bits (261),  Expect = 8e-28, Method: Compositional matrix adjust.
+ Identities = 44/60 (73%), Positives = 51/60 (85%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALV SILGKL+GLWH+D+VDFMGH C+ RR+PK R+FKLYHEGKFWCPGW   EG  +
+Sbjct  28  YEALVASILGKLSGLWHSDTVDFMGHTCHIRRKPKFRKFKLYHEGKFWCPGWTHLEGNSR  87
+
+
+>UniRef90_H6TCF4 Anti-lipopolysaccharide factor 3 n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=H6TCF4_ERISI
+Length=123
+
+ Score = 94.4 bits (233),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 39/57 (68%), Positives = 49/57 (86%), Gaps = 0/57 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+           ++ALV  ++ K++GLWHND+VDFMG  C FRR PKI+R++LYHEGKFWCPGWAPF G
+Sbjct  28  WQALVGPLIEKVSGLWHNDTVDFMGRECKFRRSPKIKRWELYHEGKFWCPGWAPFSG  84
+
+
+>UniRef90_H9MYZ3 Anti-lipopolysaccharide factor isoform 7 n=8 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYZ3_PORTR
+Length=123
+
+ Score = 88.2 bits (217),  Expect = 3e-21, Method: Compositional matrix adjust.
+ Identities = 34/60 (57%), Positives = 47/60 (78%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEAL  +IL KL+ +WH+D+++F+GH C+  R P ++RFKLY +GKFWCPGWAPF G  +
+Sbjct  28  YEALTAAILTKLSKMWHSDTLNFLGHTCHVSRTPTVKRFKLYWKGKFWCPGWAPFSGTSR  87
+
+
+>UniRef90_A5A3I6 Anti-lipopolysaccharide factor isoform 1 n=1 
+Tax=Penaeus monodon TaxID=6687 RepID=A5A3I6_PENMO
+Length=84
+
+ Score = 77.0 bits (188),  Expect = 3e-17, Method: Compositional matrix adjust.
+ Identities = 29/59 (49%), Positives = 44/59 (75%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ K+ GLWH+D V+F+GH C + +RP   R++LY  G+ WCPGWAPF GRC+
+Sbjct  26  QDLLPALVEKIAGLWHSDEVEFLGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRCE  84
+
+
+>UniRef90_M4HXT1 Antilipopolysaccharide factor isoform 4 n=4 Tax=Penaeus 
+TaxID=133894 RepID=M4HXT1_PENCE
+Length=120
+
+ Score = 75.5 bits (184),  Expect = 3e-16, Method: Compositional matrix adjust.
+ Identities = 28/59 (47%), Positives = 43/59 (73%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G+ WCPGWAPF GR +
+Sbjct  26  QDLLPALVDRIVGLWHSDEVEFMGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRSR  84
+
+
+>UniRef90_A5A3I7 Anti-lipopolysaccharide factor isoform 2 n=1 
+Tax=Penaeus monodon TaxID=6687 RepID=A5A3I7_PENMO
+Length=120
+
+ Score = 74.7 bits (182),  Expect = 5e-16, Method: Compositional matrix adjust.
+ Identities = 28/59 (47%), Positives = 43/59 (73%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ K+ GLWH+D V+F+GH C + +RP   R++LY  G+ WCPGWAPF GR +
+Sbjct  26  QDLLPALVEKIAGLWHSDEVEFLGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRSR  84
+
+
+>UniRef90_A5HES6 Anti-lipopolysaccharide factor n=1 Tax=Pacifastacus 
+leniusculus TaxID=6720 RepID=A5HES6_PACLE
+Length=120
+
+ Score = 74.7 bits (182),  Expect = 6e-16, Method: Compositional matrix adjust.
+ Identities = 29/57 (51%), Positives = 39/57 (68%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +V+ I+ KL  LW +  V+FMGH C +   P I +F+LY++GK WCPGWAPF G  K
+Sbjct  28  VVSLIISKLVNLWSDGQVEFMGHTCNYSYSPTISKFQLYYKGKMWCPGWAPFSGNSK  84
+
+
+>UniRef90_B9A7T8 Anti-lipopolysaccharide factor 2 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=B9A7T8_PENJP
+Length=120
+
+ Score = 73.9 bits (180),  Expect = 1e-15, Method: Compositional matrix adjust.
+ Identities = 28/58 (48%), Positives = 41/58 (71%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G  WCPGWAPF GR 
+Sbjct  26  QDLIPALVQRIVGLWHSDEVEFMGHSCRYSQRPTFYRWELYFRGSMWCPGWAPFTGRS  83
+
+
+>UniRef90_A0A1L2DC15 ALF-A1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=A0A1L2DC15_PENJP
+Length=160
+
+ Score = 74.3 bits (181),  Expect = 2e-15, Method: Compositional matrix adjust.
+ Identities = 28/58 (48%), Positives = 41/58 (71%), Gaps = 0/58 (0%)
+
+Query  2    EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G  WCPGWAPF GR 
+Sbjct  66   QDLIPALVQRIVGLWHSDEVEFMGHSCRYSQRPTFYRWELYFRGSMWCPGWAPFTGRS  123
+
+
+>UniRef90_A0A0M3ULK7 Anti-lipopolysaccharide factor 2 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M3ULK7_MACNP
+Length=133
+
+ Score = 72.0 bits (175),  Expect = 1e-14, Method: Compositional matrix adjust.
+ Identities = 26/58 (45%), Positives = 39/58 (67%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+             LV ++  K+ GLW +  + F+ H+C F+ +PK+R+F+LY EGKFWCPGW   +G  
+Sbjct  39  SGLVEALTSKIVGLWRSGDIVFLDHVCSFQVKPKLRKFQLYFEGKFWCPGWTSIKGEA  96
+
+
+>UniRef90_A0A125S9L6 ALFC2 n=2 Tax=Decapoda TaxID=6683 RepID=A0A125S9L6_PENJP
+Length=122
+
+ Score = 70.1 bits (170),  Expect = 4e-14, Method: Compositional matrix adjust.
+ Identities = 28/60 (47%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLTGLW    ++ +GH C F   PK +R++LY  G+ WCPGW P  G  +
+Sbjct  27  WEALVPAIAEKLTGLWQTGELELLGHYCNFSVTPKFKRWQLYFRGRMWCPGWTPIRGEAE  86
+
+
+>UniRef90_A5Z0L1 Anti-lipopolysaccharide factor isoform 3 (Fragment) 
+n=1 Tax=Penaeus paulensis TaxID=71413 RepID=A5Z0L1_PENPU
+Length=70
+
+ Score = 68.2 bits (165),  Expect = 6e-14, Method: Compositional matrix adjust.
+ Identities = 25/59 (42%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P I+R +LY+ GK WCPGW P  G  
+Sbjct  1   WEAVAAAVGSKIVGLWRNEETELLGHKCRFTVKPYIKRIQLYYRGKMWCPGWTPIRGEA  59
+
+
+>UniRef90_A0A1S5RQT0 ALF3 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT0_PROCL
+Length=122
+
+ Score = 69.3 bits (168),  Expect = 7e-14, Method: Compositional matrix adjust.
+ Identities = 27/60 (45%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++  +T I+ KL GLWH     FMGH C +  +P   R+K+Y++GK WCPGW PF G  +
+Sbjct  27  WDDTITLIINKLAGLWHEGEAKFMGHSCRYSYKPTFYRWKMYYKGKMWCPGWVPFSGHSR  86
+
+
+>UniRef90_A0A423T909 Anti-lipopolysaccharide factor isoform 6 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A423T909_PENVA
+Length=122
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 27/60 (45%), Positives = 39/60 (65%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLTGLW +  ++ +GH C F   PK +R++LY  G+ WCPGW    G+ +
+Sbjct  27  WEALVPAIANKLTGLWESGELELLGHYCNFSVTPKFKRWQLYFRGRMWCPGWTAIRGQAE  86
+
+
+>UniRef90_A0A385L4B5 Anti-lipopolysaccharide factor 1 (Fragment) 
+n=2 Tax=Procambarus clarkii TaxID=6728 RepID=A0A385L4B5_PROCL
+Length=122
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 28/57 (49%), Positives = 38/57 (67%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L+  I+ KL GLW +  V+FMG  C +   PKI  ++LY++GK WCPGWAPF G  +
+Sbjct  30  LINLIINKLGGLWKDGEVEFMGRACNYSYSPKISGWRLYYKGKMWCPGWAPFSGDSQ  86
+
+
+>UniRef90_M4QV27 Anti-lipopolysaccharide factor-B1 n=7 Tax=Penaeus 
+TaxID=133894 RepID=M4QV27_PENSY
+Length=123
+
+ Score = 68.6 bits (166),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 23/60 (38%), Positives = 39/60 (65%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++A+  ++  K+ GLW N+  + +GH C F  +P I+R +L+++GK WCPGW P  G  +
+Sbjct  28  WQAVAAAVASKIVGLWRNEETELLGHKCRFTVKPYIKRIQLHYKGKMWCPGWTPITGEAR  87
+
+
+>UniRef90_A0A3G3CBB3 Anti-lipopolysaccharide factor n=1 Tax=Neocaridina 
+heteropoda TaxID=1789729 RepID=A0A3G3CBB3_9EUCA
+Length=124
+
+ Score = 68.2 bits (165),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 27/59 (46%), Positives = 39/59 (66%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EAL  ++  KL GLW+  +++FMG  C +  +P IRRF+LY +G+ WCPGW P  G  
+Sbjct  28  WEALAIAVGEKLVGLWNLGNLEFMGRSCEYSVKPTIRRFELYFKGRMWCPGWTPIRGEA  86
+
+
+>UniRef90_F1ASU1 Anti-lipopolysaccharide factor-like protein n=1 
+Tax=Procambarus clarkii TaxID=6728 RepID=F1ASU1_PROCL
+Length=123
+
+ Score = 67.8 bits (164),  Expect = 3e-13, Method: Compositional matrix adjust.
+ Identities = 26/58 (45%), Positives = 34/58 (59%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E L  ++ GKL GLW N  V+ +GH C +   P IRR++LY  G+ WCPGW    G  
+Sbjct  29  EGLAAAVTGKLAGLWRNGEVELLGHYCSYSVTPTIRRWQLYFRGRMWCPGWTSIRGEA  86
+
+
+>UniRef90_A0A0M4RDN2 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M4RDN2_MACNP
+Length=135
+
+ Score = 68.2 bits (165),  Expect = 3e-13, Method: Compositional matrix adjust.
+ Identities = 25/59 (42%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + LV S+  +L GLW    ++F+ H+C F+ +PKI+R++LY  G  WCPGW P  G  +
+Sbjct  40  DELVQSLTSQLVGLWETGDLEFLDHVCSFQVKPKIKRWELYFRGTMWCPGWTPIRGTSE  98
+
+
+>UniRef90_A0A0A8KB40 Antilipopolysaccharide factor n=3 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=A0A0A8KB40_MACRS
+Length=124
+
+ Score = 67.0 bits (162),  Expect = 7e-13, Method: Compositional matrix adjust.
+ Identities = 24/60 (40%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E +  ++  K+ GLW +D + F+GH C +   PKI+RF+LY +G+ WCPGW    G  +
+Sbjct  28  WEVVAAAVAEKIAGLWVDDQMVFLGHTCQYSVNPKIKRFELYFKGRMWCPGWTTIRGEAE  87
+
+
+>UniRef90_B2MVV6 Anti-lipopolysaccharide factor 2 n=1 Tax=Homarus 
+americanus TaxID=6706 RepID=B2MVV6_HOMAM
+Length=124
+
+ Score = 67.0 bits (162),  Expect = 8e-13, Method: Compositional matrix adjust.
+ Identities = 26/60 (43%), Positives = 36/60 (60%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E LV  +  +L  LWH   ++ MGH C F+ +PKIRR++LY  G  WCPGW    G  +
+Sbjct  29  WETLVAGVSSQLVSLWHQGELELMGHYCNFQVKPKIRRWQLYFVGSMWCPGWTNIRGSAQ  88
+
+
+>UniRef90_A5A3I5 Anti-lipopolysaccharide factor isoform 3 n=11 
+Tax=Decapoda TaxID=6683 RepID=A5A3I5_PENMO
+Length=123
+
+ Score = 66.6 bits (161),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 22/59 (37%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P ++RF++Y++G+ WCPGW    G  
+Sbjct  28  WEAVAAAVASKIVGLWRNEKTELLGHECKFTVKPYLKRFQVYYKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_A0A1B2ZDP5 Antilipolysacchride factor n=2 Tax=Cherax 
+quadricarinatus TaxID=27406 RepID=A0A1B2ZDP5_CHEQU
+Length=123
+
+ Score = 66.2 bits (160),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 25/59 (42%), Positives = 36/59 (61%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           EALVT+  GK+ GLW N  ++ +G+ C +  RP I++F+LY  G  +CPGW    G   
+Sbjct  29  EALVTAFAGKVAGLWDNGQLELLGNYCNYNVRPTIKKFQLYFNGSMYCPGWTTIRGEAS  87
+
+
+>UniRef90_W6MH75 Anti-LPS-factor-like-3 protein (Fragment) n=1 
+Tax=Coenobita clypeatus TaxID=474045 RepID=W6MH75_9EUCA
+Length=123
+
+ Score = 66.2 bits (160),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 24/60 (40%), Positives = 40/60 (67%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++A+V  ++ K+ GLW +   + MGHIC +   PKI+R++LY++G+ WCPGW    G  +
+Sbjct  27  WQAVVPVLVNKIKGLWRDGEFELMGHICNYSVTPKIKRWQLYYKGRMWCPGWTTIRGEAE  86
+
+
+>UniRef90_A0A1S5RQS7 ALF8 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS7_PROCL
+Length=122
+
+ Score = 65.9 bits (159),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 25/59 (42%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           E L  ++ GKL GLW N  V+ +GH C +   PK + F+LY  G+  CPGW P  G  +
+Sbjct  29  EGLAAAVTGKLAGLWRNGEVELLGHYCQYSVSPKFKSFELYFRGRMTCPGWTPIRGEAE  87
+
+
+>UniRef90_H2D5V5 Anti-lipopolysaccharide factor isoform 6 n=4 
+Tax=Penaeus TaxID=133894 RepID=H2D5V5_PENMO
+Length=122
+
+ Score = 65.5 bits (158),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 26/60 (43%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLT LW +   + +GH C F   PK +R++LY  G+ WCPGW    G+ +
+Sbjct  27  WEALVPAIANKLTSLWESGEFELLGHYCSFNVTPKFKRWQLYFRGRMWCPGWTTIRGQAE  86
+
+
+>UniRef90_G8A3H9 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=G8A3H9_MACRS
+Length=132
+
+ Score = 65.5 bits (158),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 21/53 (40%), Positives = 35/53 (66%), Gaps = 0/53 (0%)
+
+Query  7   SILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++  ++ GLW    + F+ H+C F+ +PK+R+ +LY +G FWCPGW P +G  
+Sbjct  43  ALTSRIVGLWRTGDIVFLDHVCSFQVKPKLRKLQLYFDGTFWCPGWTPIKGEA  95
+
+
+>UniRef90_D3JU55 Antilipopolysaccharide factor n=2 Tax=Penaeus 
+monodon TaxID=6687 RepID=D3JU55_PENMO
+Length=123
+
+ Score = 65.1 bits (157),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 21/59 (36%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P ++R+++Y++G+ WCPGW    G  
+Sbjct  28  WEAVAAAVASKIVGLWRNEKTELLGHECKFTVKPYLKRYQVYYKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_A0A0M4S7F5 Anti-lipopolysaccharide factor 4 n=3 Tax=Macrobrachium 
+TaxID=6696 RepID=A0A0M4S7F5_MACNP
+Length=124
+
+ Score = 65.1 bits (157),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 22/60 (37%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E +  ++  K+ GLW +D + F+GH C +   PKI++ +LY +G+ WCPGW    G  +
+Sbjct  28  WEVVAAAVAEKIAGLWVDDHMTFLGHTCQYSVNPKIKKLQLYFKGRMWCPGWTSIRGEAE  87
+
+
+>UniRef90_S4TVB5 Anti-lipopolysaccharide factor isoform 1 n=1 
+Tax=Palaemon carinicauda TaxID=392227 RepID=S4TVB5_PALCI
+Length=134
+
+ Score = 64.7 bits (156),  Expect = 6e-12, Method: Compositional matrix adjust.
+ Identities = 23/59 (39%), Positives = 40/59 (68%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           E+LV ++  ++ GLW +  ++F+ H+C F+ +PKI+R++LY  G  +CPGW P  G  +
+Sbjct  39  ESLVDAVASQIVGLWGSGDIEFLDHVCSFQVKPKIKRWQLYFIGTMYCPGWTPIRGTSE  97
+
+
+>UniRef90_I4BZJ5 Anti-lipopolysaccharide factor n=1 Tax=Portunus 
+pelagicus TaxID=80836 RepID=I4BZJ5_PORPE
+Length=123
+
+ Score = 64.7 bits (156),  Expect = 6e-12, Method: Compositional matrix adjust.
+ Identities = 29/59 (49%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L +S+L  L G  HN S D +G  C+ RR P IR F L+HEG FWC GW PF+G  +
+Sbjct  29  DPLASSLLEILAGRCHNSSDDLVGPCCFLRRPPIIRIFLLHHEGFFWCAGWPPFDGSTR  87
+
+
+>UniRef90_Q1XI22 ALF-C1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=Q1XI22_PENJP
+Length=123
+
+ Score = 64.3 bits (155),  Expect = 8e-12, Method: Compositional matrix adjust.
+ Identities = 27/59 (46%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EALV +I  KLTGLW N  ++ +GH C F   PK R ++L  +G+ WCPGW   +G  
+Sbjct  28  WEALVPAIAEKLTGLWENGELELLGHYCNFYVEPKFRNWQLRFKGRMWCPGWTIIKGEA  86
+
+
+>UniRef90_K9MP07 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=K9MP07_MACRS
+Length=133
+
+ Score = 64.3 bits (155),  Expect = 1e-11, Method: Compositional matrix adjust.
+ Identities = 22/56 (39%), Positives = 37/56 (66%), Gaps = 0/56 (0%)
+
+Query  5   VTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           V ++  +L GLW +  ++F+ H+C F+ +P+I+R++LY  G  WCPGW P  G  +
+Sbjct  41  VQALTSQLVGLWESGDLEFLDHVCSFQVKPRIKRWELYFRGTMWCPGWTPIRGTSE  96
+
+
+>UniRef90_UPI00084A8BCB uncharacterized protein LOC108676095 n=1 
+Tax=Hyalella azteca TaxID=294128 RepID=UPI00084A8BCB
+Length=272
+
+ Score = 66.2 bits (160),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 23/57 (40%), Positives = 38/57 (67%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           LV ++  +L  LW N+ + FMG  C++++ P+I+R++LY  G F CPGW   +GR +
+Sbjct  32  LVPALADQLVSLWQNNELQFMGFQCFYQQNPRIKRWQLYFRGNFMCPGWTAIQGRAE  88
+
+
+ Score = 50.4 bits (119),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 19/58 (33%), Positives = 36/58 (62%), Gaps = 0/58 (0%)
+
+Query  1    YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR  58
+            +  L+ +I  ++  LW N+++ FMG  C + ++P ++R++LY  G+F C  +A   GR
+Sbjct  175  WSDLLPAITQQINSLWQNNNLQFMGSECSYVQKPIVKRWQLYFNGRFTCNNFAGITGR  232
+
+
+>UniRef90_W6MNF6 Anti-LPS-factor-like-3 protein (Fragment) n=1 
+Tax=Pagurus bernhardus TaxID=174397 RepID=W6MNF6_PAGBR
+Length=101
+
+ Score = 61.2 bits (147),  Expect = 8e-11, Method: Compositional matrix adjust.
+ Identities = 22/59 (37%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++A+V  ++ K++GLW   S + +  +C +  +PK RR++LY+EG+ WCPGW    G  
+Sbjct  12  WQAIVPILVDKVSGLWQRGSFELLDQVCSYSVKPKFRRWQLYYEGRAWCPGWPGIRGEA  70
+
+
+>UniRef90_A0A1S5RQT4 ALF9 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT4_PROCL
+Length=123
+
+ Score = 61.2 bits (147),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 24/58 (41%), Positives = 37/58 (64%), Gaps = 0/58 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR  58
+           +EA+  ++  KL GL+ N+ V+ +G IC    +P I+RF+LYH+G   CPGW   +G 
+Sbjct  28  WEAVAAAVAQKLVGLFRNEEVELLGRICKLTVKPYIKRFQLYHKGTMSCPGWTHIKGE  85
+
+
+>UniRef90_A0A1S5RQT2 ALF5 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT2_PROCL
+Length=118
+
+ Score = 60.8 bits (146),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 23/59 (39%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L  +I  KL  LW +  V  + H C +   PK+R ++LY++G  WCPGW P  G  
+Sbjct  23  WETLAVAIAEKLVELWQHGEVRLLNHQCNYSVTPKVRSWELYYQGSMWCPGWTPIRGEA  81
+
+
+>UniRef90_W6MEN5 Anti-LPS-factor-like-1 protein n=1 Tax=Pagurus 
+bernhardus TaxID=174397 RepID=W6MEN5_PAGBR
+Length=122
+
+ Score = 60.8 bits (146),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 24/60 (40%), Positives = 40/60 (67%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +++LV ++ GK+ GLW   +++ +GH C +R RPKI R++L+++G   CPGW    G  K
+Sbjct  28  WQSLVPALAGKIIGLWRGGNLNILGHQCSYRVRPKIIRWRLWYKGTLACPGWTSITGSDK  87
+
+
+>UniRef90_A0A1S5RQU4 ALF11 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQU4_PROCL
+Length=123
+
+ Score = 60.5 bits (145),  Expect = 3e-10, Method: Compositional matrix adjust.
+ Identities = 22/59 (37%), Positives = 35/59 (59%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++L+ ++  +L GLW N  V+ +GH C +   PK + F+LY  G+  CPGW P  G  +
+Sbjct  30  QSLLGAVTQQLVGLWKNGEVELLGHYCQYSVSPKFKSFELYFRGRMTCPGWTPIRGEAE  88
+
+
+>UniRef90_A0A1S5RQT1 ALF2 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT1_PROCL
+Length=123
+
+ Score = 60.5 bits (145),  Expect = 3e-10, Method: Compositional matrix adjust.
+ Identities = 24/59 (41%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L  SI+   +  W N  ++FMG IC +   PK + + L + GK WCPGWAPF G  +
+Sbjct  30  KGLFGSIIDHFSNFWKNGEMEFMGQICRYSYSPKFQNWGLTYSGKMWCPGWAPFAGNSR  88
+
+
+>UniRef90_B2MVV5 Anti-lipopolysaccharide factor 1 n=1 Tax=Homarus 
+americanus TaxID=6706 RepID=B2MVV5_HOMAM
+Length=123
+
+ Score = 60.1 bits (144),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 23/47 (49%), Positives = 29/47 (62%), Gaps = 0/47 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           GLW N  VD + H C F  +P +RRF+LY +G+ WCPGW    G  K
+Sbjct  41  GLWQNGHVDLLDHPCRFSVKPTVRRFQLYFKGRMWCPGWTSIRGEAK  87
+
+
+>UniRef90_A0A222YUG6 Antilipopolysaccharide factor B1 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=A0A222YUG6_PENJP
+Length=123
+
+ Score = 59.7 bits (143),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 21/46 (46%), Positives = 31/46 (67%), Gaps = 0/46 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           GLW N+  + +GH C F  +P I++F+LY++G+ WCPGW P  G  
+Sbjct  41  GLWRNEKTELLGHECNFTVKPYIKKFQLYYKGRMWCPGWTPIRGEA  86
+
+
+>UniRef90_M4HYA8 Antilipopolysaccharide factor isoform 3 n=2 Tax=Penaeus 
+TaxID=133894 RepID=M4HYA8_PENCE
+Length=122
+
+ Score = 58.9 bits (141),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 23/55 (42%), Positives = 32/55 (58%), Gaps = 0/55 (0%)
+
+Query  3   ALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+           A + SI  +LTGLW    ++ +GH C    +P  +R++LY  G  WCPGW P  G
+Sbjct  29  AFMPSIATRLTGLWETGELELLGHYCVCSVKPTFQRWQLYFIGSMWCPGWTPIRG  83
+
+
+>UniRef90_A5Z0L0 Anti-lipopolysaccharide factor isoform 2 (Fragment) 
+n=2 Tax=Penaeus paulensis TaxID=71413 RepID=A5Z0L0_PENPU
+Length=82
+
+ Score = 57.8 bits (138),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 21/45 (47%), Positives = 28/45 (62%), Gaps = 0/45 (0%)
+
+Query  15  LWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           LW N+  + +GH C F  +P I+R +LY+ GK WCPGW P  G  
+Sbjct  1   LWRNEETELLGHKCRFTVKPYIKRIQLYYRGKMWCPGWTPIRGEA  45
+
+
+>UniRef90_P07087 Anti-lipopolysaccharide factor n=2 Tax=Tachypleus 
+tridentatus TaxID=6853 RepID=ALPS_TACTR
+Length=102
+
+ Score = 57.4 bits (137),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 21/59 (36%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  L  +++  L  LW +    F+GH C++R  P ++R K  ++GKFWCP W    GR 
+Sbjct  5   WTQLALALVKNLATLWQSGDFQFLGHECHYRVNPTVKRLKWKYKGKFWCPSWTSITGRA  63
+
+
+>UniRef90_A9YT52 Anti-lipopolysaccharide factor n=1 Tax=Macrobrachium 
+olfersii TaxID=249258 RepID=A9YT52_MACOL
+Length=124
+
+ Score = 57.4 bits (137),  Expect = 4e-09, Method: Compositional matrix adjust.
+ Identities = 20/49 (41%), Positives = 31/49 (63%), Gaps = 0/49 (0%)
+
+Query  11  KLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           K+ GLW ND + F+GH C +   P+I++ +L+ +G+ WCPGW    G  
+Sbjct  38  KIAGLWVNDHMVFLGHTCQYSVTPRIKKLELWFKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_P07086 Anti-lipopolysaccharide factor n=1 Tax=Limulus 
+polyphemus TaxID=6850 RepID=ALPS_LIMPO
+Length=101
+
+ Score = 55.5 bits (132),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 21/59 (36%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  L+ +++  L  LW +    F+ H C++R +P  RR K  ++GKFWCP W    GR 
+Sbjct  4   WTQLIFTLVKNLATLWQSGDFQFLDHECHYRIKPTFRRLKWKYKGKFWCPSWTSITGRA  62
+
+
+>UniRef90_UPI00084B56AB anti-lipopolysaccharide factor-like isoform 
+X1 n=1 Tax=Hyalella azteca TaxID=294128 RepID=UPI00084B56AB
+Length=120
+
+ Score = 55.5 bits (132),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 24/57 (42%), Positives = 36/57 (63%), Gaps = 0/57 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+           + A+   +L K+  LW  DSV FMG  C++R+RPK+ R++LY+ G F C  +   EG
+Sbjct  25  WSAVTNLLLNKILALWKEDSVQFMGSECHYRQRPKVIRWQLYYVGNFACDKFFGIEG  81
+
+
+>UniRef90_UPI00084B2FEC anti-lipopolysaccharide factor-like isoform 
+X2 n=1 Tax=Hyalella azteca TaxID=294128 RepID=UPI00084B2FEC
+Length=120
+
+ Score = 55.5 bits (132),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 25/60 (42%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + A+   +L K+  LW  DSV FMG  C++R++PKI R++LY+ G F C  +   EG  K
+Sbjct  25  WSAVTNLLLNKILALWKEDSVQFMGSECHYRQKPKIYRWQLYYVGNFSCNKFFGIEGSGK  84
+
+
+>UniRef90_A4UMS3 Anti-lipopolysaccharide factor (Fragment) n=1 
+Tax=Penaeus schmitti TaxID=122378 RepID=A4UMS3_PENSC
+Length=40
+
+ Score = 51.6 bits (122),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 19/40 (48%), Positives = 27/40 (68%), Gaps = 0/40 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWA  53
+           GLW N   + +GH C F  +P I+R +L+++GK WCPGW 
+Sbjct  1   GLWRNGETELLGHKCRFTVKPYIKRLQLHYKGKMWCPGWT  40
+
+
+>UniRef90_A0A444T4M0 Anti-lipopolysaccharide factor n=1 Tax=Armadillidium 
+vulgare TaxID=13347 RepID=A0A444T4M0_ARMVU
+Length=76
+
+ Score = 51.6 bits (122),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 19/39 (49%), Positives = 28/39 (72%), Gaps = 0/39 (0%)
+
+Query  21  VDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + F+GH C ++  P+I  F+L ++GKFWCPG+A F GR 
+Sbjct  1   MSFLGHPCQYQVEPRISSFELKYDGKFWCPGFASFTGRA  39
+
+
+>UniRef90_M4HYN1 Antilipopolysaccharide factor isoform 1 n=1 Tax=Penaeus 
+chinensis TaxID=139456 RepID=M4HYN1_PENCE
+Length=123
+
+ Score = 51.6 bits (122),  Expect = 7e-07, Method: Compositional matrix adjust.
+ Identities = 21/59 (36%), Positives = 32/59 (54%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EALV  I  ++ GLW N   +F GH C +   P ++ F+LY +G+  CP  +   G  
+Sbjct  28  WEALVPLITQQVVGLWKNGEREFFGHQCTYSVTPTVKSFELYFKGRMSCPSLSSVRGEA  86
+
+
+>UniRef90_W6MEV0 Anti-LPS-factor-like-1 protein (Fragment) n=1 
+Tax=Coenobita clypeatus TaxID=474045 RepID=W6MEV0_9EUCA
+Length=69
+
+ Score = 49.7 bits (117),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 21/57 (37%), Positives = 33/57 (58%), Gaps = 1/57 (2%)
+
+Query  5   VTSILG-KLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           V+SI+G +L GLW N  ++ +GH C +R +P +  ++L   G   CPGW    G  +
+Sbjct  1   VSSIIGDQLKGLWRNGELELLGHYCNYRVKPTLDGWELVFVGSVTCPGWTTIRGESR  57
+
+
+>UniRef90_M4HYN4 Antilipopolysaccharide factor isoform 6 n=1 Tax=Penaeus 
+chinensis TaxID=139456 RepID=M4HYN4_PENCE
+Length=124
+
+ Score = 50.4 bits (119),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 19/59 (32%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ ++  ++  LW N  VD + H C +  +P I+ F+LY  G   CPGW    G   
+Sbjct  31  DLLLPAVTDQVKDLWRNGDVDLVDHSCSYSVKPDIQGFELYFIGSVTCPGWTTIRGESN  89
+
+
+>UniRef90_A0A1S5RQS9 ALF6 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS9_PROCL
+Length=123
+
+ Score = 49.3 bits (116),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 19/57 (33%), Positives = 34/57 (60%), Gaps = 1/57 (2%)
+
+Query  4   LVTSILG-KLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++  +LG ++ GL+       + H C +  +PK R+++LY++G FWCPGW   +G  
+Sbjct  29  ILAPLLGDQVKGLFRQGEAVLLDHYCNYSVKPKFRKWELYYDGSFWCPGWTNIKGEA  85
+
+
+>UniRef90_H9MYY8 Anti-lipopolysaccharide factor isoform 6 n=2 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYY8_PORTR
+Length=115
+
+ Score = 47.8 bits (112),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 16/46 (35%), Positives = 26/46 (57%), Gaps = 0/46 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            L  + + + + H+C FR  P++R ++LY  G  WCPGW   +G  
+Sbjct  34  ALLEDGTTEILDHVCNFRVMPRLRSWELYFRGDVWCPGWTVIKGES  79
+
+
+>UniRef90_A0A423TC79 Anti-lipopolysaccharide factor n=3 Tax=Penaeus 
+TaxID=133894 RepID=A0A423TC79_PENVA
+Length=145
+
+ Score = 48.1 bits (113),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 19/59 (32%), Positives = 28/59 (47%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +  V  I  +++ LW    +D +GH C +  +P I  F+LY  G   CPGW    G   
+Sbjct  31  DLFVPVIKDQVSDLWRTGDIDLVGHSCTYNVKPDIDGFELYFIGSVTCPGWTTLRGESN  89
+
+
+>UniRef90_A0A0P4WDC5 Uncharacterized protein n=1 Tax=Scylla olivacea 
+TaxID=85551 RepID=A0A0P4WDC5_9EUCA
+Length=129
+
+ Score = 47.8 bits (112),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 24/57 (42%), Positives = 29/57 (51%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           LV  IL KLT  W  D +  +GH C++         K Y+ GKF CPG A F G  K
+Sbjct  30  LVAPILKKLTAQWKADKMSLLGHKCHYYGTLTGTGVKQYYYGKFSCPGLADFSGMSK  86
+
+
+>UniRef90_UPI000F67D186 anti-lipopolysaccharide factor-like n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F67D186
+Length=125
+
+ Score = 46.6 bits (109),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 18/50 (36%), Positives = 23/50 (46%), Gaps = 0/50 (0%)
+
+Query  11  KLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+            L  LW    +D +GH C +  +P I  F+LY  G   CPGW    G   
+Sbjct  41  SLHSLWRTGDIDLVGHSCTYNVKPDIDGFELYFIGSVTCPGWTTLRGESN  90
+
+
+>UniRef90_W6MES5 Anti-LPS-factor-like-4 protein (Fragment) n=1 
+Tax=Pagurus bernhardus TaxID=174397 RepID=W6MES5_PAGBR
+Length=83
+
+ Score = 45.4 bits (106),  Expect = 9e-05, Method: Compositional matrix adjust.
+ Identities = 19/52 (37%), Positives = 30/52 (58%), Gaps = 1/52 (2%)
+
+Query  3   ALVTSILGKL-TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWA  53
+           ++V S+   L TGLW N  +  +  +C +R +P +++FKL   G   CPGW 
+Sbjct  31  SIVKSVGADLFTGLWRNGEIILLDKVCAYRVKPVMKKFKLRFIGSLTCPGWT  82
+
+
+>UniRef90_A6XIA2 Anti-lipopolysaccharide factor n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=A6XIA2_ERISI
+Length=120
+
+ Score = 45.8 bits (107),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 15/39 (38%), Positives = 23/39 (59%), Gaps = 0/39 (0%)
+
+Query  20  SVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR  58
+           + + +  IC  R  P I++F+LY  G+ WCPGW   +G 
+Sbjct  44  TTNIVDQICNTRVMPTIKKFELYFRGRVWCPGWTTIQGE  82
+
+
+>UniRef90_D0V3Y7 Anti-lipopolysaccharide factor 2 n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=D0V3Y7_ERISI
+Length=120
+
+ Score = 45.4 bits (106),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 20/53 (38%), Positives = 29/53 (55%), Gaps = 1/53 (2%)
+
+Query  7   SILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR  58
+            I GK+T  L    + D  G+ C +R  P++ +F+LY  G  WCPGW   +G 
+Sbjct  30  DIFGKVTETLVDFGTTDIAGNPCNYRLSPRLIKFELYFVGLVWCPGWTTIQGE  82
+
+
+>UniRef90_A0A125S9L7 ALFD1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=A0A125S9L7_PENJP
+Length=123
+
+ Score = 45.4 bits (106),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 19/59 (32%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L+  I  ++  LW N   +  GH C +   PKI+ F+LY +G+  CP  +   G  
+Sbjct  28  WETLIPLITKEVVSLWKNGEREMFGHRCTYSVTPKIKSFELYFKGRMTCPSLSNERGEA  86
+
+
+>UniRef90_A0A1B3LHI9 Anti-lipopolysaccharide factor 4 (Fragment) 
+n=1 Tax=Macrobrachium rosenbergii TaxID=79674 RepID=A0A1B3LHI9_MACRS
+Length=135
+
+ Score = 45.8 bits (107),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 17/58 (29%), Positives = 35/58 (60%), Gaps = 1/58 (2%)
+
+Query  3   ALVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +L+T ++ K+  G+++   +D  GH C ++R P I+R ++++  +  C GW P  G+ 
+Sbjct  40  SLLTGVVPKIVDGMYNEGDLDLFGHPCQYKRVPYIKRLEVHYRAEVKCLGWTPIVGKA  97
+
+
+>UniRef90_A0A0M3ULR7 Anti-lipopolysaccharide factor 5 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M3ULR7_MACNP
+Length=135
+
+ Score = 44.7 bits (104),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 18/59 (31%), Positives = 33/59 (56%), Gaps = 1/59 (2%)
+
+Query  3   ALVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +LVT ++ K+  G++    +D  G  C ++R P I+R +L++  +  C GW P  G  +
+Sbjct  40  SLVTGVVPKIVDGVYDEGDIDLFGKPCQYKRIPYIKRLELHYRAEIRCLGWTPIVGEAR  98
+
+
+>UniRef90_A0A067YRQ4 Anti-lipopolysaccharide factor isoform 1 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A067YRQ4_PENVA
+Length=123
+
+ Score = 43.9 bits (102),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 18/59 (31%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L+  I  ++ GLW     +  GH C +   PK++ F+LY +G+  CP  +   G  
+Sbjct  28  WETLIPLITQQVVGLWKTGEREMFGHECTYFVTPKVKSFELYFKGRMTCPTLSNVRGEA  86
+
+
+
+Lambda      K        H        a         alpha
+   0.333    0.149    0.562    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 825669454512
+Results from round 2
+
+
+Query= AP02150
+
+Length=65
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+UniRef90_A0A125S9L6 ALFC2 n=2 Tax=Decapoda TaxID=6683 RepID=A0A12...  109        1e-29
+UniRef90_A0A423T909 Anti-lipopolysaccharide factor isoform 6 n=1 ...  106        1e-28
+UniRef90_A0A1S5RQS7 ALF8 n=1 Tax=Procambarus clarkii TaxID=6728 R...  106        3e-28
+UniRef90_C0KJQ4-2 Isoform 2 of Anti-lipopolysaccharide factor n=1...  104        4e-28
+UniRef90_F1ASU1 Anti-lipopolysaccharide factor-like protein n=1 T...  104        9e-28
+UniRef90_W6MH75 Anti-LPS-factor-like-3 protein (Fragment) n=1 Tax...  104        1e-27
+UniRef90_H2D5V5 Anti-lipopolysaccharide factor isoform 6 n=4 Tax=...  103        4e-27
+UniRef90_A0A1S5RQU4 ALF11 n=1 Tax=Procambarus clarkii TaxID=6728 ...  102        6e-27
+UniRef90_M4QV27 Anti-lipopolysaccharide factor-B1 n=7 Tax=Penaeus...  102        9e-27
+UniRef90_C0KJQ4 Anti-lipopolysaccharide factor n=1 Tax=Portunus t...  101        2e-26
+UniRef90_A0A1L2DC15 ALF-A1 n=1 Tax=Penaeus japonicus TaxID=27405 ...  101        4e-26
+UniRef90_A0A3G3CBB3 Anti-lipopolysaccharide factor n=1 Tax=Neocar...  100        5e-26
+UniRef90_A0A0A8KB40 Antilipopolysaccharide factor n=3 Tax=Macrobr...  100        6e-26
+UniRef90_I1VGP3 ALF1 n=3 Tax=Scylla TaxID=6760 RepID=I1VGP3_SCYPA     99.5       1e-25
+UniRef90_A0A0M4S7F5 Anti-lipopolysaccharide factor 4 n=3 Tax=Macr...  99.5       1e-25
+UniRef90_A5A3I7 Anti-lipopolysaccharide factor isoform 2 n=1 Tax=...  98.8       2e-25
+UniRef90_Q1XI22 ALF-C1 n=1 Tax=Penaeus japonicus TaxID=27405 RepI...  98.8       2e-25
+UniRef90_A0A1B2ZDP5 Antilipolysacchride factor n=2 Tax=Cherax qua...  98.8       2e-25
+UniRef90_M4HXT1 Antilipopolysaccharide factor isoform 4 n=4 Tax=P...  98.4       2e-25
+UniRef90_B2MVV6 Anti-lipopolysaccharide factor 2 n=1 Tax=Homarus ...  98.4       3e-25
+UniRef90_B9A7T8 Anti-lipopolysaccharide factor 2 n=1 Tax=Penaeus ...  98.0       3e-25
+UniRef90_A0A0M4RDN2 Anti-lipopolysaccharide factor 1 n=1 Tax=Macr...  98.8       3e-25
+UniRef90_A5Z0L1 Anti-lipopolysaccharide factor isoform 3 (Fragmen...  96.5       4e-25
+UniRef90_A5A3I5 Anti-lipopolysaccharide factor isoform 3 n=11 Tax...  97.6       6e-25
+UniRef90_B5TTX7 Anti-lipopolysaccharide factor n=6 Tax=Portunidae...  96.5       1e-24
+UniRef90_A0A1S5RQT2 ALF5 n=1 Tax=Procambarus clarkii TaxID=6728 R...  96.5       2e-24
+UniRef90_A0A0M3ULK7 Anti-lipopolysaccharide factor 2 n=1 Tax=Macr...  96.1       3e-24
+UniRef90_M4HYN1 Antilipopolysaccharide factor isoform 1 n=1 Tax=P...  95.7       3e-24
+UniRef90_D3JU55 Antilipopolysaccharide factor n=2 Tax=Penaeus mon...  95.7       4e-24
+UniRef90_S4TVB5 Anti-lipopolysaccharide factor isoform 1 n=1 Tax=...  95.7       5e-24
+UniRef90_H6TCF4 Anti-lipopolysaccharide factor 3 n=1 Tax=Eriochei...  95.3       5e-24
+UniRef90_A5A3I6 Anti-lipopolysaccharide factor isoform 1 n=1 Tax=...  93.0       1e-23
+UniRef90_K9MP07 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobra...  94.1       2e-23
+UniRef90_W6MNF6 Anti-LPS-factor-like-3 protein (Fragment) n=1 Tax...  93.0       2e-23
+UniRef90_A0A1S5RQT0 ALF3 n=1 Tax=Procambarus clarkii TaxID=6728 R...  93.4       3e-23
+UniRef90_M4HYA8 Antilipopolysaccharide factor isoform 3 n=2 Tax=P...  93.0       4e-23
+UniRef90_M4HYN4 Antilipopolysaccharide factor isoform 6 n=1 Tax=P...  92.6       5e-23
+UniRef90_A0A125S9L7 ALFD1 n=1 Tax=Penaeus japonicus TaxID=27405 R...  91.4       2e-22
+UniRef90_A5HES6 Anti-lipopolysaccharide factor n=1 Tax=Pacifastac...  91.1       2e-22
+UniRef90_H9MYZ3 Anti-lipopolysaccharide factor isoform 7 n=8 Tax=...  89.9       5e-22
+UniRef90_A0A1S5RQT4 ALF9 n=1 Tax=Procambarus clarkii TaxID=6728 R...  89.9       6e-22
+UniRef90_G8A3H9 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobra...  89.9       9e-22
+UniRef90_A0A067YRQ4 Anti-lipopolysaccharide factor isoform 1 n=1 ...  89.5       9e-22
+UniRef90_A0A1S5RQS9 ALF6 n=1 Tax=Procambarus clarkii TaxID=6728 R...  88.7       2e-21
+UniRef90_W6MEN5 Anti-LPS-factor-like-1 protein n=1 Tax=Pagurus be...  88.7       2e-21
+UniRef90_A0A385L4B5 Anti-lipopolysaccharide factor 1 (Fragment) n...  88.4       2e-21
+UniRef90_UPI00084A8BCB uncharacterized protein LOC108676095 n=1 T...  92.2       2e-21
+UniRef90_P07087 Anti-lipopolysaccharide factor n=2 Tax=Tachypleus...  86.1       1e-20
+UniRef90_B2MVV5 Anti-lipopolysaccharide factor 1 n=1 Tax=Homarus ...  86.1       2e-20
+UniRef90_W6MEV0 Anti-LPS-factor-like-1 protein (Fragment) n=1 Tax...  84.5       2e-20
+UniRef90_A0A222YUG6 Antilipopolysaccharide factor B1 n=1 Tax=Pena...  85.3       4e-20
+UniRef90_A0A423TC79 Anti-lipopolysaccharide factor n=3 Tax=Penaeu...  85.3       8e-20
+UniRef90_P07086 Anti-lipopolysaccharide factor n=1 Tax=Limulus po...  83.7       9e-20
+UniRef90_A5Z0L0 Anti-lipopolysaccharide factor isoform 2 (Fragmen...  83.4       9e-20
+UniRef90_A9YT52 Anti-lipopolysaccharide factor n=1 Tax=Macrobrach...  83.7       2e-19
+UniRef90_UPI00084B2FEC anti-lipopolysaccharide factor-like isofor...  81.0       2e-18
+UniRef90_UPI000F67D186 anti-lipopolysaccharide factor-like n=1 Ta...  81.0       2e-18
+UniRef90_UPI00084B56AB anti-lipopolysaccharide factor-like isofor...  78.7       1e-17
+UniRef90_A0A0M3ULR7 Anti-lipopolysaccharide factor 5 n=1 Tax=Macr...  79.1       1e-17
+UniRef90_A0A1B3LHI9 Anti-lipopolysaccharide factor 4 (Fragment) n...  77.2       8e-17
+UniRef90_H9MYY8 Anti-lipopolysaccharide factor isoform 6 n=2 Tax=...  76.4       1e-16
+UniRef90_A0A1S5RQT1 ALF2 n=1 Tax=Procambarus clarkii TaxID=6728 R...  76.4       1e-16
+UniRef90_I4BZJ5 Anti-lipopolysaccharide factor n=1 Tax=Portunus p...  73.3       2e-15
+UniRef90_D0V3Y7 Anti-lipopolysaccharide factor 2 n=1 Tax=Eriochei...  72.6       4e-15
+UniRef90_A4UMS3 Anti-lipopolysaccharide factor (Fragment) n=1 Tax...  68.7       2e-14
+UniRef90_A6XIA2 Anti-lipopolysaccharide factor n=1 Tax=Eriocheir ...  70.6       2e-14
+UniRef90_A0A0P4WDC5 Uncharacterized protein n=1 Tax=Scylla olivac...  69.9       5e-14
+UniRef90_A0A444T4M0 Anti-lipopolysaccharide factor n=1 Tax=Armadi...  64.9       1e-12
+UniRef90_W6MES5 Anti-LPS-factor-like-4 protein (Fragment) n=1 Tax...  64.5       2e-12
+
+Sequences not found previously or not previously below threshold:
+
+UniRef90_A0A3R7P2Z4 Anti-lipopolysaccharide factor isoform 1 n=1 ...  86.4       3e-19
+UniRef90_E7CN59 Antilipopolysaccharide factor 2 n=3 Tax=Scylla Ta...  77.2       6e-17
+UniRef90_K9MQ23 Anti-lipopolysaccharide factor 3 n=1 Tax=Macrobra...  73.3       2e-15
+UniRef90_A0A4P9IX27 Antilipopolysaccharide factor isoform 8 n=1 T...  71.8       9e-15
+UniRef90_A0A1S6PU24 Anti-lipopolysaccharide factor n=2 Tax=Scylla...  69.9       4e-14
+UniRef90_A0A1S5RQS5 ALF4 n=1 Tax=Procambarus clarkii TaxID=6728 R...  69.5       8e-14
+UniRef90_A0A1L1WKA6 Anti-lipopolysaccharide factor n=1 Tax=Portun...  67.6       3e-13
+UniRef90_A0A222YT35 Antilipopolysaccharide factor E1 n=1 Tax=Pena...  66.0       2e-12
+UniRef90_A0A0M5M1Q3 Anti-lipopolysaccharide factor 3 n=1 Tax=Macr...  65.3       3e-12
+UniRef90_A0A2R3SJY7 Anti-lipopolysaccharide factor 5 n=2 Tax=Pena...  62.9       3e-11
+UniRef90_G8A3I0 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobra...  62.2       4e-11
+UniRef90_A0A3R7PB52 Anti-lipopolysaccharide factor like protein n...  64.1       1e-10
+UniRef90_A0A385L4B1 Anti-lipopolysaccharide factor 12 (Fragment) ...  64.1       1e-10
+UniRef90_H9MYY2 Anti-lipopolysaccharide factor isoform 4 n=2 Tax=...  60.2       3e-10
+UniRef90_UPI000F68B9F0 anti-lipopolysaccharide factor-like n=1 Ta...  59.1       9e-10
+UniRef90_V5TCV4 Anti-lipopolysaccharide factor n=2 Tax=Scylla Tax...  57.9       3e-09
+UniRef90_A0A0N7ZD98 Uncharacterized protein n=1 Tax=Scylla olivac...  57.5       3e-09
+UniRef90_H9MYY3 Anti-lipopolysaccharide factor isoform 5 n=1 Tax=...  57.2       4e-09
+UniRef90_A0A1S5RQS8 ALF10 n=1 Tax=Procambarus clarkii TaxID=6728 ...  58.7       7e-09
+UniRef90_A0A222YSR1 Antilipopolysaccharide factor E2 n=1 Tax=Pena...  56.4       8e-09
+UniRef90_A0A423TFS2 Antilipopolysaccharide factor isoform 2 n=3 T...  55.6       2e-08
+UniRef90_A0A3R7Q9V9 Antilipopolysaccharide factor isoform 2 n=1 T...  57.5       3e-08
+UniRef90_M4HXU5 Antilipopolysaccharide factor isoform 5 n=1 Tax=P...  54.9       4e-08
+UniRef90_A0A2R3SJY5 Anti-lipopolysaccharide factor 4 n=1 Tax=Pena...  54.1       7e-08
+UniRef90_A0A3R7NC40 Antilipopolysaccharide factor isoform 5 n=2 T...  54.1       4e-07
+UniRef90_A0A2P0ZI15 Anti-lipopolysaccharide factor 4 n=1 Tax=Erio...  51.4       7e-07
+UniRef90_UPI00084A71CB anti-lipopolysaccharide factor-like n=1 Ta...  51.4       7e-07
+UniRef90_A0A3R7M7W8 Anti-lipopolysaccharide factor 2 n=2 Tax=Pena...  49.1       7e-06
+UniRef90_UPI000F67A6F4 anti-lipopolysaccharide factor-like n=1 Ta...  46.8       2e-05
+UniRef90_A0A444SJ42 Uncharacterized protein n=1 Tax=Armadillidium...  46.8       4e-05
+UniRef90_S6DQ29 Anti-lipopolysaccharide factor isoform 4 n=1 Tax=...  44.8       3e-04
+UniRef90_W6SJH5 ALF4 protein (Fragment) n=1 Tax=Scylla paramamosa...  44.1       4e-04
+UniRef90_UPI000F690E16 uncharacterized protein LOC113807194 n=1 T...  45.2       4e-04
+UniRef90_A0A423TFR6 Anti-lipopolysaccharide factor 2 n=1 Tax=Pena...  44.5       6e-04
+
+
+>UniRef90_A0A125S9L6 ALFC2 n=2 Tax=Decapoda TaxID=6683 RepID=A0A125S9L6_PENJP
+Length=122
+
+ Score = 109 bits (272),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 28/60 (47%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLTGLW    ++ +GH C F   PK +R++LY  G+ WCPGW P  G  +
+Sbjct  27  WEALVPAIAEKLTGLWQTGELELLGHYCNFSVTPKFKRWQLYFRGRMWCPGWTPIRGEAE  86
+
+
+>UniRef90_A0A423T909 Anti-lipopolysaccharide factor isoform 6 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A423T909_PENVA
+Length=122
+
+ Score = 106 bits (266),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 27/60 (45%), Positives = 39/60 (65%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLTGLW +  ++ +GH C F   PK +R++LY  G+ WCPGW    G+ +
+Sbjct  27  WEALVPAIANKLTGLWESGELELLGHYCNFSVTPKFKRWQLYFRGRMWCPGWTAIRGQAE  86
+
+
+>UniRef90_A0A1S5RQS7 ALF8 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS7_PROCL
+Length=122
+
+ Score = 106 bits (264),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 25/59 (42%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           E L  ++ GKL GLW N  V+ +GH C +   PK + F+LY  G+  CPGW P  G  +
+Sbjct  29  EGLAAAVTGKLAGLWRNGEVELLGHYCQYSVSPKFKSFELYFRGRMTCPGWTPIRGEAE  87
+
+
+>UniRef90_C0KJQ4-2 Isoform 2 of Anti-lipopolysaccharide factor 
+n=1 Tax=Portunus trituberculatus TaxID=210409 RepID=C0KJQ4-2
+Length=92
+
+ Score = 104 bits (261),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 65/65 (100%), Positives = 65/65 (100%), Gaps = 0/65 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK
+Sbjct  28  YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  87
+
+Query  61  YCVVF  65
+           YCVVF
+Sbjct  88  YCVVF  92
+
+
+>UniRef90_F1ASU1 Anti-lipopolysaccharide factor-like protein n=1 
+Tax=Procambarus clarkii TaxID=6728 RepID=F1ASU1_PROCL
+Length=123
+
+ Score = 104 bits (260),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 26/58 (45%), Positives = 34/58 (59%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E L  ++ GKL GLW N  V+ +GH C +   P IRR++LY  G+ WCPGW    G  
+Sbjct  29  EGLAAAVTGKLAGLWRNGEVELLGHYCSYSVTPTIRRWQLYFRGRMWCPGWTSIRGEA  86
+
+
+>UniRef90_W6MH75 Anti-LPS-factor-like-3 protein (Fragment) n=1 
+Tax=Coenobita clypeatus TaxID=474045 RepID=W6MH75_9EUCA
+Length=123
+
+ Score = 104 bits (260),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 24/60 (40%), Positives = 40/60 (67%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++A+V  ++ K+ GLW +   + MGHIC +   PKI+R++LY++G+ WCPGW    G  +
+Sbjct  27  WQAVVPVLVNKIKGLWRDGEFELMGHICNYSVTPKIKRWQLYYKGRMWCPGWTTIRGEAE  86
+
+
+>UniRef90_H2D5V5 Anti-lipopolysaccharide factor isoform 6 n=4 
+Tax=Penaeus TaxID=133894 RepID=H2D5V5_PENMO
+Length=122
+
+ Score = 103 bits (256),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 26/60 (43%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLT LW +   + +GH C F   PK +R++LY  G+ WCPGW    G+ +
+Sbjct  27  WEALVPAIANKLTSLWESGEFELLGHYCSFNVTPKFKRWQLYFRGRMWCPGWTTIRGQAE  86
+
+
+>UniRef90_A0A1S5RQU4 ALF11 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQU4_PROCL
+Length=123
+
+ Score = 102 bits (255),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 22/59 (37%), Positives = 35/59 (59%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++L+ ++  +L GLW N  V+ +GH C +   PK + F+LY  G+  CPGW P  G  +
+Sbjct  30  QSLLGAVTQQLVGLWKNGEVELLGHYCQYSVSPKFKSFELYFRGRMTCPGWTPIRGEAE  88
+
+
+>UniRef90_M4QV27 Anti-lipopolysaccharide factor-B1 n=7 Tax=Penaeus 
+TaxID=133894 RepID=M4QV27_PENSY
+Length=123
+
+ Score = 102 bits (254),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 23/60 (38%), Positives = 39/60 (65%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++A+  ++  K+ GLW N+  + +GH C F  +P I+R +L+++GK WCPGW P  G  +
+Sbjct  28  WQAVAAAVASKIVGLWRNEETELLGHKCRFTVKPYIKRIQLHYKGKMWCPGWTPITGEAR  87
+
+
+>UniRef90_C0KJQ4 Anti-lipopolysaccharide factor n=1 Tax=Portunus 
+trituberculatus TaxID=210409 RepID=ALPS_PORTR
+Length=123
+
+ Score = 101 bits (251),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 58/60 (97%), Positives = 59/60 (98%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR +
+Sbjct  28  YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRSR  87
+
+
+>UniRef90_A0A1L2DC15 ALF-A1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=A0A1L2DC15_PENJP
+Length=160
+
+ Score = 101 bits (252),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 28/58 (48%), Positives = 41/58 (71%), Gaps = 0/58 (0%)
+
+Query  2    EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G  WCPGWAPF GR 
+Sbjct  66   QDLIPALVQRIVGLWHSDEVEFMGHSCRYSQRPTFYRWELYFRGSMWCPGWAPFTGRS  123
+
+
+>UniRef90_A0A3G3CBB3 Anti-lipopolysaccharide factor n=1 Tax=Neocaridina 
+heteropoda TaxID=1789729 RepID=A0A3G3CBB3_9EUCA
+Length=124
+
+ Score = 100 bits (249),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 27/59 (46%), Positives = 39/59 (66%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EAL  ++  KL GLW+  +++FMG  C +  +P IRRF+LY +G+ WCPGW P  G  
+Sbjct  28  WEALAIAVGEKLVGLWNLGNLEFMGRSCEYSVKPTIRRFELYFKGRMWCPGWTPIRGEA  86
+
+
+>UniRef90_A0A0A8KB40 Antilipopolysaccharide factor n=3 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=A0A0A8KB40_MACRS
+Length=124
+
+ Score = 100 bits (249),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 24/60 (40%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E +  ++  K+ GLW +D + F+GH C +   PKI+RF+LY +G+ WCPGW    G  +
+Sbjct  28  WEVVAAAVAEKIAGLWVDDQMVFLGHTCQYSVNPKIKRFELYFKGRMWCPGWTTIRGEAE  87
+
+
+>UniRef90_I1VGP3 ALF1 n=3 Tax=Scylla TaxID=6760 RepID=I1VGP3_SCYPA
+Length=123
+
+ Score = 99.5 bits (247),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 49/60 (82%), Positives = 56/60 (93%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YE L+ S+LGKLTGLWHN+SVDFMGH C+FRRRPK+R+FKLYHEGKFWCPGWAPFEGR +
+Sbjct  28  YETLIASVLGKLTGLWHNNSVDFMGHTCHFRRRPKVRKFKLYHEGKFWCPGWAPFEGRSR  87
+
+
+>UniRef90_A0A0M4S7F5 Anti-lipopolysaccharide factor 4 n=3 Tax=Macrobrachium 
+TaxID=6696 RepID=A0A0M4S7F5_MACNP
+Length=124
+
+ Score = 99.5 bits (247),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/60 (37%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E +  ++  K+ GLW +D + F+GH C +   PKI++ +LY +G+ WCPGW    G  +
+Sbjct  28  WEVVAAAVAEKIAGLWVDDHMTFLGHTCQYSVNPKIKKLQLYFKGRMWCPGWTSIRGEAE  87
+
+
+>UniRef90_A5A3I7 Anti-lipopolysaccharide factor isoform 2 n=1 
+Tax=Penaeus monodon TaxID=6687 RepID=A5A3I7_PENMO
+Length=120
+
+ Score = 98.8 bits (245),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 28/59 (47%), Positives = 43/59 (73%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ K+ GLWH+D V+F+GH C + +RP   R++LY  G+ WCPGWAPF GR +
+Sbjct  26  QDLLPALVEKIAGLWHSDEVEFLGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRSR  84
+
+
+>UniRef90_Q1XI22 ALF-C1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=Q1XI22_PENJP
+Length=123
+
+ Score = 98.8 bits (245),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 27/59 (46%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EALV +I  KLTGLW N  ++ +GH C F   PK R ++L  +G+ WCPGW   +G  
+Sbjct  28  WEALVPAIAEKLTGLWENGELELLGHYCNFYVEPKFRNWQLRFKGRMWCPGWTIIKGEA  86
+
+
+>UniRef90_A0A1B2ZDP5 Antilipolysacchride factor n=2 Tax=Cherax 
+quadricarinatus TaxID=27406 RepID=A0A1B2ZDP5_CHEQU
+Length=123
+
+ Score = 98.8 bits (245),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 25/58 (43%), Positives = 36/58 (62%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           EALVT+  GK+ GLW N  ++ +G+ C +  RP I++F+LY  G  +CPGW    G  
+Sbjct  29  EALVTAFAGKVAGLWDNGQLELLGNYCNYNVRPTIKKFQLYFNGSMYCPGWTTIRGEA  86
+
+
+>UniRef90_M4HXT1 Antilipopolysaccharide factor isoform 4 n=4 Tax=Penaeus 
+TaxID=133894 RepID=M4HXT1_PENCE
+Length=120
+
+ Score = 98.4 bits (244),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 28/59 (47%), Positives = 43/59 (73%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G+ WCPGWAPF GR +
+Sbjct  26  QDLLPALVDRIVGLWHSDEVEFMGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRSR  84
+
+
+>UniRef90_B2MVV6 Anti-lipopolysaccharide factor 2 n=1 Tax=Homarus 
+americanus TaxID=6706 RepID=B2MVV6_HOMAM
+Length=124
+
+ Score = 98.4 bits (244),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 26/60 (43%), Positives = 36/60 (60%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E LV  +  +L  LWH   ++ MGH C F+ +PKIRR++LY  G  WCPGW    G  +
+Sbjct  29  WETLVAGVSSQLVSLWHQGELELMGHYCNFQVKPKIRRWQLYFVGSMWCPGWTNIRGSAQ  88
+
+
+>UniRef90_B9A7T8 Anti-lipopolysaccharide factor 2 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=B9A7T8_PENJP
+Length=120
+
+ Score = 98.0 bits (243),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 28/58 (48%), Positives = 41/58 (71%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G  WCPGWAPF GR 
+Sbjct  26  QDLIPALVQRIVGLWHSDEVEFMGHSCRYSQRPTFYRWELYFRGSMWCPGWAPFTGRS  83
+
+
+>UniRef90_A0A0M4RDN2 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M4RDN2_MACNP
+Length=135
+
+ Score = 98.8 bits (245),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 25/59 (42%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + LV S+  +L GLW    ++F+ H+C F+ +PKI+R++LY  G  WCPGW P  G  +
+Sbjct  40  DELVQSLTSQLVGLWETGDLEFLDHVCSFQVKPKIKRWELYFRGTMWCPGWTPIRGTSE  98
+
+
+>UniRef90_A5Z0L1 Anti-lipopolysaccharide factor isoform 3 (Fragment) 
+n=1 Tax=Penaeus paulensis TaxID=71413 RepID=A5Z0L1_PENPU
+Length=70
+
+ Score = 96.5 bits (239),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 25/59 (42%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P I+R +LY+ GK WCPGW P  G  
+Sbjct  1   WEAVAAAVGSKIVGLWRNEETELLGHKCRFTVKPYIKRIQLYYRGKMWCPGWTPIRGEA  59
+
+
+>UniRef90_A5A3I5 Anti-lipopolysaccharide factor isoform 3 n=11 
+Tax=Decapoda TaxID=6683 RepID=A5A3I5_PENMO
+Length=123
+
+ Score = 97.6 bits (242),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 22/59 (37%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P ++RF++Y++G+ WCPGW    G  
+Sbjct  28  WEAVAAAVASKIVGLWRNEKTELLGHECKFTVKPYLKRFQVYYKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_B5TTX7 Anti-lipopolysaccharide factor n=6 Tax=Portunidae 
+TaxID=6757 RepID=ALPS_SCYSE
+Length=123
+
+ Score = 96.5 bits (239),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 44/60 (73%), Positives = 51/60 (85%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALV SILGKL+GLWH+D+VDFMGH C+ RR+PK R+FKLYHEGKFWCPGW   EG  +
+Sbjct  28  YEALVASILGKLSGLWHSDTVDFMGHTCHIRRKPKFRKFKLYHEGKFWCPGWTHLEGNSR  87
+
+
+>UniRef90_A0A1S5RQT2 ALF5 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT2_PROCL
+Length=118
+
+ Score = 96.5 bits (239),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 23/59 (39%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L  +I  KL  LW +  V  + H C +   PK+R ++LY++G  WCPGW P  G  
+Sbjct  23  WETLAVAIAEKLVELWQHGEVRLLNHQCNYSVTPKVRSWELYYQGSMWCPGWTPIRGEA  81
+
+
+>UniRef90_A0A0M3ULK7 Anti-lipopolysaccharide factor 2 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M3ULK7_MACNP
+Length=133
+
+ Score = 96.1 bits (238),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 26/58 (45%), Positives = 39/58 (67%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+             LV ++  K+ GLW +  + F+ H+C F+ +PK+R+F+LY EGKFWCPGW   +G  
+Sbjct  39  SGLVEALTSKIVGLWRSGDIVFLDHVCSFQVKPKLRKFQLYFEGKFWCPGWTSIKGEA  96
+
+
+>UniRef90_M4HYN1 Antilipopolysaccharide factor isoform 1 n=1 Tax=Penaeus 
+chinensis TaxID=139456 RepID=M4HYN1_PENCE
+Length=123
+
+ Score = 95.7 bits (237),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 32/59 (54%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EALV  I  ++ GLW N   +F GH C +   P ++ F+LY +G+  CP  +   G  
+Sbjct  28  WEALVPLITQQVVGLWKNGEREFFGHQCTYSVTPTVKSFELYFKGRMSCPSLSSVRGEA  86
+
+
+>UniRef90_D3JU55 Antilipopolysaccharide factor n=2 Tax=Penaeus 
+monodon TaxID=6687 RepID=D3JU55_PENMO
+Length=123
+
+ Score = 95.7 bits (237),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P ++R+++Y++G+ WCPGW    G  
+Sbjct  28  WEAVAAAVASKIVGLWRNEKTELLGHECKFTVKPYLKRYQVYYKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_S4TVB5 Anti-lipopolysaccharide factor isoform 1 n=1 
+Tax=Palaemon carinicauda TaxID=392227 RepID=S4TVB5_PALCI
+Length=134
+
+ Score = 95.7 bits (237),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 23/59 (39%), Positives = 40/59 (68%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           E+LV ++  ++ GLW +  ++F+ H+C F+ +PKI+R++LY  G  +CPGW P  G  +
+Sbjct  39  ESLVDAVASQIVGLWGSGDIEFLDHVCSFQVKPKIKRWQLYFIGTMYCPGWTPIRGTSE  97
+
+
+>UniRef90_H6TCF4 Anti-lipopolysaccharide factor 3 n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=H6TCF4_ERISI
+Length=123
+
+ Score = 95.3 bits (236),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 39/59 (66%), Positives = 49/59 (83%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++ALV  ++ K++GLWHND+VDFMG  C FRR PKI+R++LYHEGKFWCPGWAPF G  
+Sbjct  28  WQALVGPLIEKVSGLWHNDTVDFMGRECKFRRSPKIKRWELYHEGKFWCPGWAPFSGNS  86
+
+
+>UniRef90_A5A3I6 Anti-lipopolysaccharide factor isoform 1 n=1 
+Tax=Penaeus monodon TaxID=6687 RepID=A5A3I6_PENMO
+Length=84
+
+ Score = 93.0 bits (230),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 29/59 (49%), Positives = 44/59 (75%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ K+ GLWH+D V+F+GH C + +RP   R++LY  G+ WCPGWAPF GRC+
+Sbjct  26  QDLLPALVEKIAGLWHSDEVEFLGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRCE  84
+
+
+>UniRef90_K9MP07 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=K9MP07_MACRS
+Length=133
+
+ Score = 94.1 bits (233),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 37/56 (66%), Gaps = 0/56 (0%)
+
+Query  5   VTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           V ++  +L GLW +  ++F+ H+C F+ +P+I+R++LY  G  WCPGW P  G  +
+Sbjct  41  VQALTSQLVGLWESGDLEFLDHVCSFQVKPRIKRWELYFRGTMWCPGWTPIRGTSE  96
+
+
+>UniRef90_W6MNF6 Anti-LPS-factor-like-3 protein (Fragment) n=1 
+Tax=Pagurus bernhardus TaxID=174397 RepID=W6MNF6_PAGBR
+Length=101
+
+ Score = 93.0 bits (230),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 22/59 (37%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++A+V  ++ K++GLW   S + +  +C +  +PK RR++LY+EG+ WCPGW    G  
+Sbjct  12  WQAIVPILVDKVSGLWQRGSFELLDQVCSYSVKPKFRRWQLYYEGRAWCPGWPGIRGEA  70
+
+
+>UniRef90_A0A1S5RQT0 ALF3 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT0_PROCL
+Length=122
+
+ Score = 93.4 bits (231),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 27/60 (45%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++  +T I+ KL GLWH     FMGH C +  +P   R+K+Y++GK WCPGW PF G  +
+Sbjct  27  WDDTITLIINKLAGLWHEGEAKFMGHSCRYSYKPTFYRWKMYYKGKMWCPGWVPFSGHSR  86
+
+
+>UniRef90_M4HYA8 Antilipopolysaccharide factor isoform 3 n=2 Tax=Penaeus 
+TaxID=133894 RepID=M4HYA8_PENCE
+Length=122
+
+ Score = 93.0 bits (230),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 23/60 (38%), Positives = 34/60 (57%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + A + SI  +LTGLW    ++ +GH C    +P  +R++LY  G  WCPGW P  G  +
+Sbjct  27  WGAFMPSIATRLTGLWETGELELLGHYCVCSVKPTFQRWQLYFIGSMWCPGWTPIRGVAE  86
+
+
+>UniRef90_M4HYN4 Antilipopolysaccharide factor isoform 6 n=1 Tax=Penaeus 
+chinensis TaxID=139456 RepID=M4HYN4_PENCE
+Length=124
+
+ Score = 92.6 bits (229),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 19/59 (32%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ ++  ++  LW N  VD + H C +  +P I+ F+LY  G   CPGW    G   
+Sbjct  31  DLLLPAVTDQVKDLWRNGDVDLVDHSCSYSVKPDIQGFELYFIGSVTCPGWTTIRGESN  89
+
+
+>UniRef90_A0A125S9L7 ALFD1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=A0A125S9L7_PENJP
+Length=123
+
+ Score = 91.4 bits (226),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 19/59 (32%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L+  I  ++  LW N   +  GH C +   PKI+ F+LY +G+  CP  +   G  
+Sbjct  28  WETLIPLITKEVVSLWKNGEREMFGHRCTYSVTPKIKSFELYFKGRMTCPSLSNERGEA  86
+
+
+>UniRef90_A5HES6 Anti-lipopolysaccharide factor n=1 Tax=Pacifastacus 
+leniusculus TaxID=6720 RepID=A5HES6_PACLE
+Length=120
+
+ Score = 91.1 bits (225),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 29/57 (51%), Positives = 39/57 (68%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +V+ I+ KL  LW +  V+FMGH C +   P I +F+LY++GK WCPGWAPF G  K
+Sbjct  28  VVSLIISKLVNLWSDGQVEFMGHTCNYSYSPTISKFQLYYKGKMWCPGWAPFSGNSK  84
+
+
+>UniRef90_H9MYZ3 Anti-lipopolysaccharide factor isoform 7 n=8 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYZ3_PORTR
+Length=123
+
+ Score = 89.9 bits (222),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 34/60 (57%), Positives = 47/60 (78%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEAL  +IL KL+ +WH+D+++F+GH C+  R P ++RFKLY +GKFWCPGWAPF G  +
+Sbjct  28  YEALTAAILTKLSKMWHSDTLNFLGHTCHVSRTPTVKRFKLYWKGKFWCPGWAPFSGTSR  87
+
+
+>UniRef90_A0A1S5RQT4 ALF9 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT4_PROCL
+Length=123
+
+ Score = 89.9 bits (222),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 24/59 (41%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  KL GL+ N+ V+ +G IC    +P I+RF+LYH+G   CPGW   +G  
+Sbjct  28  WEAVAAAVAQKLVGLFRNEEVELLGRICKLTVKPYIKRFQLYHKGTMSCPGWTHIKGEG  86
+
+
+>UniRef90_G8A3H9 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=G8A3H9_MACRS
+Length=132
+
+ Score = 89.9 bits (222),  Expect = 9e-22, Method: Composition-based stats.
+ Identities = 21/53 (40%), Positives = 35/53 (66%), Gaps = 0/53 (0%)
+
+Query  7   SILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++  ++ GLW    + F+ H+C F+ +PK+R+ +LY +G FWCPGW P +G  
+Sbjct  43  ALTSRIVGLWRTGDIVFLDHVCSFQVKPKLRKLQLYFDGTFWCPGWTPIKGEA  95
+
+
+>UniRef90_A0A067YRQ4 Anti-lipopolysaccharide factor isoform 1 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A067YRQ4_PENVA
+Length=123
+
+ Score = 89.5 bits (221),  Expect = 9e-22, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L+  I  ++ GLW     +  GH C +   PK++ F+LY +G+  CP  +   G  
+Sbjct  28  WETLIPLITQQVVGLWKTGEREMFGHECTYFVTPKVKSFELYFKGRMTCPTLSNVRGEA  86
+
+
+>UniRef90_A0A1S5RQS9 ALF6 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS9_PROCL
+Length=123
+
+ Score = 88.7 bits (219),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 18/58 (31%), Positives = 32/58 (55%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + L   +  ++ GL+       + H C +  +PK R+++LY++G FWCPGW   +G  
+Sbjct  28  DILAPLLGDQVKGLFRQGEAVLLDHYCNYSVKPKFRKWELYYDGSFWCPGWTNIKGEA  85
+
+
+>UniRef90_W6MEN5 Anti-LPS-factor-like-1 protein n=1 Tax=Pagurus 
+bernhardus TaxID=174397 RepID=W6MEN5_PAGBR
+Length=122
+
+ Score = 88.7 bits (219),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 24/60 (40%), Positives = 40/60 (67%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +++LV ++ GK+ GLW   +++ +GH C +R RPKI R++L+++G   CPGW    G  K
+Sbjct  28  WQSLVPALAGKIIGLWRGGNLNILGHQCSYRVRPKIIRWRLWYKGTLACPGWTSITGSDK  87
+
+
+>UniRef90_A0A385L4B5 Anti-lipopolysaccharide factor 1 (Fragment) 
+n=2 Tax=Procambarus clarkii TaxID=6728 RepID=A0A385L4B5_PROCL
+Length=122
+
+ Score = 88.4 bits (218),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 28/57 (49%), Positives = 38/57 (67%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L+  I+ KL GLW +  V+FMG  C +   PKI  ++LY++GK WCPGWAPF G  +
+Sbjct  30  LINLIINKLGGLWKDGEVEFMGRACNYSYSPKISGWRLYYKGKMWCPGWAPFSGDSQ  86
+
+
+>UniRef90_UPI00084A8BCB uncharacterized protein LOC108676095 n=1 
+Tax=Hyalella azteca TaxID=294128 RepID=UPI00084A8BCB
+Length=272
+
+ Score = 92.2 bits (228),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 23/58 (40%), Positives = 38/58 (66%), Gaps = 0/58 (0%)
+
+Query  3   ALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+            LV ++  +L  LW N+ + FMG  C++++ P+I+R++LY  G F CPGW   +GR +
+Sbjct  31  PLVPALADQLVSLWQNNELQFMGFQCFYQQNPRIKRWQLYFRGNFMCPGWTAIQGRAE  88
+
+
+ Score = 80.7 bits (198),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 19/60 (32%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1    YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+            +  L+ +I  ++  LW N+++ FMG  C + ++P ++R++LY  G+F C  +A   GR +
+Sbjct  175  WSDLLPAITQQINSLWQNNNLQFMGSECSYVQKPIVKRWQLYFNGRFTCNNFAGITGRSE  234
+
+
+>UniRef90_P07087 Anti-lipopolysaccharide factor n=2 Tax=Tachypleus 
+tridentatus TaxID=6853 RepID=ALPS_TACTR
+Length=102
+
+ Score = 86.1 bits (212),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  L  +++  L  LW +    F+GH C++R  P ++R K  ++GKFWCP W    GR 
+Sbjct  5   WTQLALALVKNLATLWQSGDFQFLGHECHYRVNPTVKRLKWKYKGKFWCPSWTSITGRA  63
+
+
+>UniRef90_B2MVV5 Anti-lipopolysaccharide factor 1 n=1 Tax=Homarus 
+americanus TaxID=6706 RepID=B2MVV5_HOMAM
+Length=123
+
+ Score = 86.1 bits (212),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 23/47 (49%), Positives = 29/47 (62%), Gaps = 0/47 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           GLW N  VD + H C F  +P +RRF+LY +G+ WCPGW    G  K
+Sbjct  41  GLWQNGHVDLLDHPCRFSVKPTVRRFQLYFKGRMWCPGWTSIRGEAK  87
+
+
+>UniRef90_W6MEV0 Anti-LPS-factor-like-1 protein (Fragment) n=1 
+Tax=Coenobita clypeatus TaxID=474045 RepID=W6MEV0_9EUCA
+Length=69
+
+ Score = 84.5 bits (208),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 18/57 (32%), Positives = 30/57 (53%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + + I  +L GLW N  ++ +GH C +R +P +  ++L   G   CPGW    G  +
+Sbjct  1   VSSIIGDQLKGLWRNGELELLGHYCNYRVKPTLDGWELVFVGSVTCPGWTTIRGESR  57
+
+
+>UniRef90_A0A222YUG6 Antilipopolysaccharide factor B1 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=A0A222YUG6_PENJP
+Length=123
+
+ Score = 85.3 bits (210),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 24/59 (41%), Positives = 39/59 (66%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P I++F+LY++G+ WCPGW P  G  
+Sbjct  28  WEAVAAAVASKVVGLWRNEKTELLGHECNFTVKPYIKKFQLYYKGRMWCPGWTPIRGEA  86
+
+
+>UniRef90_A0A423TC79 Anti-lipopolysaccharide factor n=3 Tax=Penaeus 
+TaxID=133894 RepID=A0A423TC79_PENVA
+Length=145
+
+ Score = 85.3 bits (210),  Expect = 8e-20, Method: Composition-based stats.
+ Identities = 19/59 (32%), Positives = 28/59 (47%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +  V  I  +++ LW    +D +GH C +  +P I  F+LY  G   CPGW    G   
+Sbjct  31  DLFVPVIKDQVSDLWRTGDIDLVGHSCTYNVKPDIDGFELYFIGSVTCPGWTTLRGESN  89
+
+
+>UniRef90_P07086 Anti-lipopolysaccharide factor n=1 Tax=Limulus 
+polyphemus TaxID=6850 RepID=ALPS_LIMPO
+Length=101
+
+ Score = 83.7 bits (206),  Expect = 9e-20, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  L+ +++  L  LW +    F+ H C++R +P  RR K  ++GKFWCP W    GR 
+Sbjct  4   WTQLIFTLVKNLATLWQSGDFQFLDHECHYRIKPTFRRLKWKYKGKFWCPSWTSITGRA  62
+
+
+>UniRef90_A5Z0L0 Anti-lipopolysaccharide factor isoform 2 (Fragment) 
+n=2 Tax=Penaeus paulensis TaxID=71413 RepID=A5Z0L0_PENPU
+Length=82
+
+ Score = 83.4 bits (205),  Expect = 9e-20, Method: Composition-based stats.
+ Identities = 21/45 (47%), Positives = 28/45 (62%), Gaps = 0/45 (0%)
+
+Query  15  LWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           LW N+  + +GH C F  +P I+R +LY+ GK WCPGW P  G  
+Sbjct  1   LWRNEETELLGHKCRFTVKPYIKRIQLYYRGKMWCPGWTPIRGEA  45
+
+
+>UniRef90_A9YT52 Anti-lipopolysaccharide factor n=1 Tax=Macrobrachium 
+olfersii TaxID=249258 RepID=A9YT52_MACOL
+Length=124
+
+ Score = 83.7 bits (206),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 22/59 (37%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW ND + F+GH C +   P+I++ +L+ +G+ WCPGW    G  
+Sbjct  28  WEAVAAAVAEKIAGLWVNDHMVFLGHTCQYSVTPRIKKLELWFKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_A0A3R7P2Z4 Anti-lipopolysaccharide factor isoform 1 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A3R7P2Z4_PENVA
+Length=264
+
+ Score = 86.4 bits (213),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 17/55 (31%), Positives = 29/55 (53%), Gaps = 0/55 (0%)
+
+Query  1    YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPF  55
+            +E L+  I  ++ GLW     +  GH C +   PK++ F+LY +G+  CP  +  
+Sbjct  97   WETLIPLITQQVVGLWKTGEREMFGHECTYFVTPKVKSFELYFKGRMTCPTLSNL  151
+
+
+>UniRef90_UPI00084B2FEC anti-lipopolysaccharide factor-like isoform 
+X2 n=1 Tax=Hyalella azteca TaxID=294128 RepID=UPI00084B2FEC
+Length=120
+
+ Score = 81.0 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 25/60 (42%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + A+   +L K+  LW  DSV FMG  C++R++PKI R++LY+ G F C  +   EG  K
+Sbjct  25  WSAVTNLLLNKILALWKEDSVQFMGSECHYRQKPKIYRWQLYYVGNFSCNKFFGIEGSGK  84
+
+
+>UniRef90_UPI000F67D186 anti-lipopolysaccharide factor-like n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F67D186
+Length=125
+
+ Score = 81.0 bits (199),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 20/57 (35%), Positives = 27/57 (47%), Gaps = 2/57 (4%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L+ S+   L  LW    +D +GH C +  +P I  F+LY  G   CPGW    G   
+Sbjct  36  LIPSLS--LHSLWRTGDIDLVGHSCTYNVKPDIDGFELYFIGSVTCPGWTTLRGESN  90
+
+
+>UniRef90_UPI00084B56AB anti-lipopolysaccharide factor-like isoform 
+X1 n=1 Tax=Hyalella azteca TaxID=294128 RepID=UPI00084B56AB
+Length=120
+
+ Score = 78.7 bits (193),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 24/60 (40%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + A+   +L K+  LW  DSV FMG  C++R+RPK+ R++LY+ G F C  +   EG  +
+Sbjct  25  WSAVTNLLLNKILALWKEDSVQFMGSECHYRQRPKVIRWQLYYVGNFACDKFFGIEGSGQ  84
+
+
+>UniRef90_A0A0M3ULR7 Anti-lipopolysaccharide factor 5 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M3ULR7_MACNP
+Length=135
+
+ Score = 79.1 bits (194),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 33/59 (56%), Gaps = 1/59 (2%)
+
+Query  3   ALVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +LVT ++ K+  G++    +D  G  C ++R P I+R +L++  +  C GW P  G  +
+Sbjct  40  SLVTGVVPKIVDGVYDEGDIDLFGKPCQYKRIPYIKRLELHYRAEIRCLGWTPIVGEAR  98
+
+
+>UniRef90_E7CN59 Antilipopolysaccharide factor 2 n=3 Tax=Scylla 
+TaxID=6760 RepID=E7CN59_SCYPA
+Length=115
+
+ Score = 77.2 bits (189),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 14/46 (30%), Positives = 25/46 (54%), Gaps = 0/46 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            L  + + + + H+C +R  P+ + ++LY  G  WCPGW   +G  
+Sbjct  34  ALLDDGNTEILDHVCNYRVMPRFKDWELYFRGDVWCPGWTIIKGES  79
+
+
+>UniRef90_A0A1B3LHI9 Anti-lipopolysaccharide factor 4 (Fragment) 
+n=1 Tax=Macrobrachium rosenbergii TaxID=79674 RepID=A0A1B3LHI9_MACRS
+Length=135
+
+ Score = 77.2 bits (189),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 17/58 (29%), Positives = 35/58 (60%), Gaps = 1/58 (2%)
+
+Query  3   ALVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +L+T ++ K+  G+++   +D  GH C ++R P I+R ++++  +  C GW P  G+ 
+Sbjct  40  SLLTGVVPKIVDGMYNEGDLDLFGHPCQYKRVPYIKRLEVHYRAEVKCLGWTPIVGKA  97
+
+
+>UniRef90_H9MYY8 Anti-lipopolysaccharide factor isoform 6 n=2 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYY8_PORTR
+Length=115
+
+ Score = 76.4 bits (187),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 16/46 (35%), Positives = 26/46 (57%), Gaps = 0/46 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            L  + + + + H+C FR  P++R ++LY  G  WCPGW   +G  
+Sbjct  34  ALLEDGTTEILDHVCNFRVMPRLRSWELYFRGDVWCPGWTVIKGES  79
+
+
+>UniRef90_A0A1S5RQT1 ALF2 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT1_PROCL
+Length=123
+
+ Score = 76.4 bits (187),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 24/59 (41%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L  SI+   +  W N  ++FMG IC +   PK + + L + GK WCPGWAPF G  +
+Sbjct  30  KGLFGSIIDHFSNFWKNGEMEFMGQICRYSYSPKFQNWGLTYSGKMWCPGWAPFAGNSR  88
+
+
+>UniRef90_K9MQ23 Anti-lipopolysaccharide factor 3 n=1 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=K9MQ23_MACRS
+Length=120
+
+ Score = 73.3 bits (179),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 15/59 (25%), Positives = 27/59 (46%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + ++ ++      LW    ++ +G  C +  RP  + +KLY+     CPGW    G  K
+Sbjct  26  DLILPTLTTHFVKLWRQGDLELLGKYCTYNMRPFFKNWKLYYSASVICPGWTQIRGSAK  84
+
+
+>UniRef90_I4BZJ5 Anti-lipopolysaccharide factor n=1 Tax=Portunus 
+pelagicus TaxID=80836 RepID=I4BZJ5_PORPE
+Length=123
+
+ Score = 73.3 bits (179),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 29/59 (49%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L +S+L  L G  HN S D +G  C+ RR P IR F L+HEG FWC GW PF+G  +
+Sbjct  29  DPLASSLLEILAGRCHNSSDDLVGPCCFLRRPPIIRIFLLHHEGFFWCAGWPPFDGSTR  87
+
+
+>UniRef90_D0V3Y7 Anti-lipopolysaccharide factor 2 n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=D0V3Y7_ERISI
+Length=120
+
+ Score = 72.6 bits (177),  Expect = 4e-15, Method: Composition-based stats.
+ Identities = 20/57 (35%), Positives = 30/57 (53%), Gaps = 1/57 (2%)
+
+Query  4   LVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +   I GK+T  L    + D  G+ C +R  P++ +F+LY  G  WCPGW   +G  
+Sbjct  27  IFDDIFGKVTETLVDFGTTDIAGNPCNYRLSPRLIKFELYFVGLVWCPGWTTIQGES  83
+
+
+>UniRef90_A0A4P9IX27 Antilipopolysaccharide factor isoform 8 n=1 
+Tax=Penaeus chinensis TaxID=139456 RepID=A0A4P9IX27_PENCE
+Length=130
+
+ Score = 71.8 bits (175),  Expect = 9e-15, Method: Composition-based stats.
+ Identities = 21/60 (35%), Positives = 30/60 (50%), Gaps = 1/60 (2%)
+
+Query  2   EALVTSILGKL-TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           E  V+ IL K+   L  N   + +GH C +  RP   R++L  + K WCPGW    G  +
+Sbjct  32  ENYVSDILSKIYNTLIRNGEFELLGHYCSYSTRPYFIRWQLKFKTKIWCPGWTLVYGTAR  91
+
+
+>UniRef90_A4UMS3 Anti-lipopolysaccharide factor (Fragment) n=1 
+Tax=Penaeus schmitti TaxID=122378 RepID=A4UMS3_PENSC
+Length=40
+
+ Score = 68.7 bits (167),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 27/40 (68%), Gaps = 0/40 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWA  53
+           GLW N   + +GH C F  +P I+R +L+++GK WCPGW 
+Sbjct  1   GLWRNGETELLGHKCRFTVKPYIKRLQLHYKGKMWCPGWT  40
+
+
+>UniRef90_A6XIA2 Anti-lipopolysaccharide factor n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=A6XIA2_ERISI
+Length=120
+
+ Score = 70.6 bits (172),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 15/41 (37%), Positives = 23/41 (56%), Gaps = 0/41 (0%)
+
+Query  19  DSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            + + +  IC  R  P I++F+LY  G+ WCPGW   +G  
+Sbjct  43  GTTNIVDQICNTRVMPTIKKFELYFRGRVWCPGWTTIQGES  83
+
+
+>UniRef90_A0A1S6PU24 Anti-lipopolysaccharide factor n=2 Tax=Scylla 
+paramamosain TaxID=85552 RepID=A0A1S6PU24_SCYPA
+Length=115
+
+ Score = 69.9 bits (170),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 13/46 (28%), Positives = 24/46 (52%), Gaps = 0/46 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            L  + + + + H+C +R  P ++  +LY +G  WCP W   +G  
+Sbjct  34  TLLEDGTTEILDHVCNYRVTPLLQNSELYFKGDVWCPSWTVIKGES  79
+
+
+>UniRef90_A0A0P4WDC5 Uncharacterized protein n=1 Tax=Scylla olivacea 
+TaxID=85551 RepID=A0A0P4WDC5_9EUCA
+Length=129
+
+ Score = 69.9 bits (170),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 24/57 (42%), Positives = 29/57 (51%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           LV  IL KLT  W  D +  +GH C++         K Y+ GKF CPG A F G  K
+Sbjct  30  LVAPILKKLTAQWKADKMSLLGHKCHYYGTLTGTGVKQYYYGKFSCPGLADFSGMSK  86
+
+
+>UniRef90_A0A1S5RQS5 ALF4 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS5_PROCL
+Length=130
+
+ Score = 69.5 bits (169),  Expect = 8e-14, Method: Composition-based stats.
+ Identities = 15/61 (25%), Positives = 32/61 (52%), Gaps = 1/61 (2%)
+
+Query  1   YEALVTSILGK-LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  +++++    +T L+    ++ +GH C + RRP   R++L +     CPGW    G+ 
+Sbjct  35  FSQIISTVADNVITRLYQEGEIELLGHYCNYSRRPYFHRWELNYRATTSCPGWTTAVGKA  94
+
+Query  60  K  60
+           +
+Sbjct  95  Q  95
+
+
+>UniRef90_A0A1L1WKA6 Anti-lipopolysaccharide factor n=1 Tax=Portunus 
+trituberculatus TaxID=210409 RepID=A0A1L1WKA6_PORTR
+Length=115
+
+ Score = 67.6 bits (164),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 12/46 (26%), Positives = 24/46 (52%), Gaps = 0/46 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            L+   +++ +  +C +R  P+   ++ Y +G  WCPGW   +G  
+Sbjct  34  ALFDFGAIEILDRVCNYRVMPRFENWRFYFKGDVWCPGWTFIKGES  79
+
+
+>UniRef90_A0A444T4M0 Anti-lipopolysaccharide factor n=1 Tax=Armadillidium 
+vulgare TaxID=13347 RepID=A0A444T4M0_ARMVU
+Length=76
+
+ Score = 64.9 bits (157),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 19/39 (49%), Positives = 28/39 (72%), Gaps = 0/39 (0%)
+
+Query  21  VDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + F+GH C ++  P+I  F+L ++GKFWCPG+A F GR 
+Sbjct  1   MSFLGHPCQYQVEPRISSFELKYDGKFWCPGFASFTGRA  39
+
+
+>UniRef90_A0A222YT35 Antilipopolysaccharide factor E1 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=A0A222YT35_PENJP
+Length=127
+
+ Score = 66.0 bits (160),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 20/58 (34%), Positives = 29/58 (50%), Gaps = 1/58 (2%)
+
+Query  4   LVTSILGKLTGLWHN-DSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L   I  +L G+W     + F+GH C     PK   + LY++G F CP W   EG+ +
+Sbjct  26  LQKDITRELAGMWLTRGEMTFLGHQCNLTLVPKFSFWNLYYDGTFTCPQWTDIEGKSE  83
+
+
+>UniRef90_W6MES5 Anti-LPS-factor-like-4 protein (Fragment) n=1 
+Tax=Pagurus bernhardus TaxID=174397 RepID=W6MES5_PAGBR
+Length=83
+
+ Score = 64.5 bits (156),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 19/52 (37%), Positives = 30/52 (58%), Gaps = 1/52 (2%)
+
+Query  3   ALVTSILGKL-TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWA  53
+           ++V S+   L TGLW N  +  +  +C +R +P +++FKL   G   CPGW 
+Sbjct  31  SIVKSVGADLFTGLWRNGEIILLDKVCAYRVKPVMKKFKLRFIGSLTCPGWT  82
+
+
+>UniRef90_A0A0M5M1Q3 Anti-lipopolysaccharide factor 3 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M5M1Q3_MACNP
+Length=121
+
+ Score = 65.3 bits (158),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 14/61 (23%), Positives = 32/61 (52%), Gaps = 1/61 (2%)
+
+Query  1   YEALVTSILGKL-TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  ++T I G   + L+    ++ + H C ++R     +++L+++ +  CPGW    G+ 
+Sbjct  25  WTEILTPIFGLARSALYTEGDMELLDHYCVYKRTGYFYKWELHYKAEVRCPGWTKIIGKA  84
+
+Query  60  K  60
+           K
+Sbjct  85  K  85
+
+
+>UniRef90_A0A2R3SJY7 Anti-lipopolysaccharide factor 5 n=2 Tax=Penaeus 
+vannamei TaxID=6689 RepID=A0A2R3SJY7_PENVA
+Length=132
+
+ Score = 62.9 bits (152),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 15/44 (34%), Positives = 23/44 (52%), Gaps = 0/44 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+            L  +  ++ +GH C +  RP   R++L  + K WCPGW    G
+Sbjct  47  SLVKDGEIELLGHYCSYSTRPYFLRWRLKFKSKVWCPGWTLVYG  90
+
+
+>UniRef90_G8A3I0 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=G8A3I0_MACRS
+Length=121
+
+ Score = 62.2 bits (150),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 11/46 (24%), Positives = 24/46 (52%), Gaps = 0/46 (0%)
+
+Query  15  LWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L+    ++ + H C ++R     +++L+++ +  CPGW    G  K
+Sbjct  40  LYVQGDMELLDHYCIYKRTGYFYKWELHYKAEVRCPGWTNIIGTAK  85
+
+
+>UniRef90_A0A3R7PB52 Anti-lipopolysaccharide factor like protein 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A3R7PB52_PENVA
+Length=284
+
+ Score = 64.1 bits (155),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 14/41 (34%), Positives = 22/41 (54%), Gaps = 0/41 (0%)
+
+Query  17   HNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+             +  ++ +GH C +  RP   R++L  + K WCPGW    G
+Sbjct  161  KDGEIELLGHYCSYSTRPYFLRWRLKFKSKVWCPGWTLVYG  201
+
+
+>UniRef90_A0A385L4B1 Anti-lipopolysaccharide factor 12 (Fragment) 
+n=1 Tax=Procambarus clarkii TaxID=6728 RepID=A0A385L4B1_PROCL
+Length=438
+
+ Score = 64.1 bits (155),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 28/60 (47%), Gaps = 1/60 (2%)
+
+Query  1    YEALVTSILGKLTG-LWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            +   +T+ + +L+  +  N+    + H C +  RP + R+K+      WCPGW    G  
+Sbjct  336  WGNFITAAVDELSARMIQNEEYVLLDHYCMYFTRPYLSRWKIRILADVWCPGWTTITGSA  395
+
+
+>UniRef90_H9MYY2 Anti-lipopolysaccharide factor isoform 4 n=2 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYY2_PORTR
+Length=125
+
+ Score = 60.2 bits (145),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 12/43 (28%), Positives = 19/43 (44%), Gaps = 0/43 (0%)
+
+Query  17  HNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+               +  + H C   R P I+  +L++  +  CPGW    GR 
+Sbjct  44  KTQEITLLDHYCTLSRSPYIKSLELHYRAEVTCPGWTIIRGRG  86
+
+
+>UniRef90_UPI000F68B9F0 anti-lipopolysaccharide factor-like n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F68B9F0
+Length=134
+
+ Score = 59.1 bits (142),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 14/41 (34%), Positives = 22/41 (54%), Gaps = 0/41 (0%)
+
+Query  17  HNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+            +  ++ +GH C +  RP   R++L  + K WCPGW    G
+Sbjct  7   KDGEIELLGHYCSYSTRPYFLRWRLKFKSKVWCPGWTLVYG  47
+
+
+>UniRef90_V5TCV4 Anti-lipopolysaccharide factor n=2 Tax=Scylla 
+TaxID=6760 RepID=V5TCV4_SCYPA
+Length=126
+
+ Score = 57.9 bits (139),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 16/49 (33%), Positives = 23/49 (47%), Gaps = 0/49 (0%)
+
+Query  12  LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +  L+    +D   H C   R P I  ++L  E    CPGW P +GR +
+Sbjct  43  IKRLFVEREIDLFDHYCVLSRSPHIYSWELKFEATVTCPGWTPEKGRVR  91
+
+
+>UniRef90_A0A0N7ZD98 Uncharacterized protein n=1 Tax=Scylla olivacea 
+TaxID=85551 RepID=A0A0N7ZD98_9EUCA
+Length=127
+
+ Score = 57.5 bits (138),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 27/58 (47%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + L + +   L        +  + + C   R+P I+ F++++  +  CPGW   +GR 
+Sbjct  31  DILGSVLGPILKEAIKTREIILLDNYCTMERQPYIKSFEVHYRAEVSCPGWTTIKGRG  88
+
+
+>UniRef90_H9MYY3 Anti-lipopolysaccharide factor isoform 5 n=1 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYY3_PORTR
+Length=120
+
+ Score = 57.2 bits (137),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 14/49 (29%), Positives = 25/49 (51%), Gaps = 0/49 (0%)
+
+Query  12  LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +  L+ +  ++   H C   R P I R++L  +    CPGW P +G+ +
+Sbjct  37  IKRLYVDREINLFDHYCIISRSPHISRWELKWQATVTCPGWTPVKGKVR  85
+
+
+>UniRef90_A0A1S5RQS8 ALF10 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS8_PROCL
+Length=242
+
+ Score = 58.7 bits (141),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 29/60 (48%), Gaps = 1/60 (2%)
+
+Query  1    YEALVTSILGKLTGLWHND-SVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            +++++  IL ++T   H     + + H C +  RP +  + ++   K WCPGW    G  
+Sbjct  144  WDSIIYMILDRVTHRMHVGNEFELLNHQCAYHTRPLLMNWSMHILAKVWCPGWVNLSGTA  203
+
+
+>UniRef90_A0A222YSR1 Antilipopolysaccharide factor E2 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=A0A222YSR1_PENJP
+Length=127
+
+ Score = 56.4 bits (135),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 10/45 (22%), Positives = 21/45 (47%), Gaps = 0/45 (0%)
+
+Query  16  WHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +    +    + C   R P ++R ++++     CPGW P  G+ +
+Sbjct  48  YETREITLFDNYCVLTRSPYVKRLEVHYRADVKCPGWTPIVGKGR  92
+
+
+>UniRef90_A0A423TFS2 Antilipopolysaccharide factor isoform 2 n=3 
+Tax=Penaeus vannamei TaxID=6689 RepID=A0A423TFS2_PENVA
+Length=129
+
+ Score = 55.6 bits (133),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 22/58 (38%), Positives = 27/58 (47%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E L+T I  +LT    N SV F+ + C F   PK   +  YHE  F CP W    G  
+Sbjct  22  EKLLTYIAQELTWHGRNGSVTFLHNKCEFSVTPKSIDWMPYHESNFSCPDWTNIVGEA  79
+
+
+>UniRef90_A0A3R7Q9V9 Antilipopolysaccharide factor isoform 2 n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=A0A3R7Q9V9_PENVA
+Length=385
+
+ Score = 57.5 bits (138),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 22/58 (38%), Positives = 28/58 (48%), Gaps = 0/58 (0%)
+
+Query  2    EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            E L+T I  +LT    N SV F+ + C F   PK + +  YHE  F CP W    G  
+Sbjct  205  EKLLTYIAQELTWHGRNGSVTFLHNKCEFSVTPKSKDWMPYHESNFSCPDWTNIVGEA  262
+
+
+>UniRef90_M4HXU5 Antilipopolysaccharide factor isoform 5 n=1 Tax=Penaeus 
+chinensis TaxID=139456 RepID=M4HXU5_PENCE
+Length=123
+
+ Score = 54.9 bits (131),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 11/58 (19%), Positives = 26/58 (45%), Gaps = 3/58 (5%)
+
+Query  3   ALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +LVT+ +              + + C   R P +++ ++++  +  CPGW    G+ +
+Sbjct  34  SLVTTFVENAV---KTTETTILDNYCLLSRSPYLKKLEVHYRAELKCPGWTTIVGKGR  88
+
+
+>UniRef90_A0A2R3SJY5 Anti-lipopolysaccharide factor 4 n=1 Tax=Penaeus 
+vannamei TaxID=6689 RepID=A0A2R3SJY5_PENVA
+Length=124
+
+ Score = 54.1 bits (129),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 11/43 (26%), Positives = 21/43 (49%), Gaps = 0/43 (0%)
+
+Query  17  HNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+               +  + + CY  R P +++F++++     CPGW    GR 
+Sbjct  46  KTSELTILDNYCYVNRSPYLKKFEVHYRADVKCPGWTIIVGRG  88
+
+
+>UniRef90_A0A3R7NC40 Antilipopolysaccharide factor isoform 5 n=2 
+Tax=Penaeus vannamei TaxID=6689 RepID=A0A3R7NC40_PENVA
+Length=415
+
+ Score = 54.1 bits (129),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 11/43 (26%), Positives = 21/43 (49%), Gaps = 0/43 (0%)
+
+Query  17   HNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+                +  + + CY  R P +++F++++     CPGW    GR 
+Sbjct  337  KTSELTILDNYCYVNRSPYLKKFEVHYRADVKCPGWTIIVGRG  379
+
+
+>UniRef90_A0A2P0ZI15 Anti-lipopolysaccharide factor 4 n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=A0A2P0ZI15_ERISI
+Length=125
+
+ Score = 51.4 bits (122),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 14/58 (24%), Positives = 21/58 (36%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E L+  +  KL        +DF+ H C   +   +    LY   +  C GW    G  
+Sbjct  28  EDLLDGVAVKLLAQGSLSGLDFLDHECELSKDFVLDGLNLYFTAEMTCSGWTEIVGEA  85
+
+
+>UniRef90_UPI00084A71CB anti-lipopolysaccharide factor-like n=1 
+Tax=Hyalella azteca TaxID=294128 RepID=UPI00084A71CB
+Length=119
+
+ Score = 51.4 bits (122),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 16/54 (30%), Positives = 27/54 (50%), Gaps = 0/54 (0%)
+
+Query  5   VTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR  58
+           +  I  +L   W ++ + F+G  CY+ +  + RR++    G F CPGW    G 
+Sbjct  27  ILPIAQQLGNFWQSNELQFLGFQCYYHQHLRFRRWRFRFHGSFSCPGWTNIHGE  80
+
+
+>UniRef90_A0A3R7M7W8 Anti-lipopolysaccharide factor 2 n=2 Tax=Penaeus 
+vannamei TaxID=6689 RepID=A0A3R7M7W8_PENVA
+Length=127
+
+ Score = 49.1 bits (116),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 16/56 (29%), Positives = 22/56 (39%), Gaps = 0/56 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           L   +   L G W    V FMGH C      +   + +YH+  F C  W    G+ 
+Sbjct  26  LTKEVARHLLGHWTTKRVTFMGHSCKIEVEHRFSHWTVYHQCTFTCDHWPNITGKA  81
+
+
+>UniRef90_UPI000F67A6F4 anti-lipopolysaccharide factor-like n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F67A6F4
+Length=86
+
+ Score = 46.8 bits (110),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 17/57 (30%), Positives = 23/57 (40%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L   +   L G W    V FMGH C      +   + +YH+  F C  W    G+ K
+Sbjct  26  LTKEVARHLLGHWTTKRVTFMGHSCKIEVEHRFSHWTVYHQCTFTCDHWPNITGKGK  82
+
+
+>UniRef90_A0A444SJ42 Uncharacterized protein n=1 Tax=Armadillidium 
+vulgare TaxID=13347 RepID=A0A444SJ42_ARMVU
+Length=106
+
+ Score = 46.8 bits (110),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 13/44 (30%), Positives = 18/44 (41%), Gaps = 0/44 (0%)
+
+Query  16  WHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + N      G  C +   P  R ++L+   KFWCP  A F    
+Sbjct  24  FRNAVNRVFGSQCLYTSTPTFRGWELHFLAKFWCPSLATFTATA  67
+
+
+>UniRef90_S6DQ29 Anti-lipopolysaccharide factor isoform 4 n=1 
+Tax=Scylla paramamosain TaxID=85552 RepID=S6DQ29_SCYPA
+Length=125
+
+ Score = 44.8 bits (105),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 12/48 (25%), Positives = 21/48 (44%), Gaps = 0/48 (0%)
+
+Query  12  LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++  +    +  + H C   R  K+R  KL +     CP W+  +GR 
+Sbjct  41  ISETFKVKEITLLDHYCVLSRYIKLRGLKLKYRATLTCPEWSTLKGRG  88
+
+
+>UniRef90_W6SJH5 ALF4 protein (Fragment) n=1 Tax=Scylla paramamosain 
+TaxID=85552 RepID=W6SJH5_SCYPA
+Length=103
+
+ Score = 44.1 bits (103),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 12/39 (31%), Positives = 18/39 (46%), Gaps = 0/39 (0%)
+
+Query  20   SVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR  58
+             +  + H C   R  K+R  KL +     CP W+  +GR
+Sbjct  65   EITLLDHYCVLSRYIKLRGLKLKYRATLTCPEWSTLKGR  103
+
+
+>UniRef90_UPI000F690E16 uncharacterized protein LOC113807194 n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F690E16
+Length=195
+
+ Score = 45.2 bits (106),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 14/50 (28%), Positives = 19/50 (38%), Gaps = 0/50 (0%)
+
+Query  10  GKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            +  G W   SV FMGH C          +  Y++  F C  W    G+ 
+Sbjct  32  QQPLGHWMTKSVTFMGHSCKTEVELGFSHWTGYYQCTFSCDPWTDITGKA  81
+
+
+>UniRef90_A0A423TFR6 Anti-lipopolysaccharide factor 2 n=1 Tax=Penaeus 
+vannamei TaxID=6689 RepID=A0A423TFR6_PENVA
+Length=148
+
+ Score = 44.5 bits (104),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 14/50 (28%), Positives = 19/50 (38%), Gaps = 0/50 (0%)
+
+Query  10  GKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            +  G W   SV FMGH C          +  Y++  F C  W    G+ 
+Sbjct  32  QQPLGHWMTKSVTFMGHSCKTEVELGFSHWTGYYQCTFSCDPWTDITGKA  81
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.154    0.584    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0471    0.140     1.90     42.6     43.6 
+
+Effective search space used: 825669454512
+Results from round 3
+
+
+Query= AP02150
+
+Length=65
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+UniRef90_A0A125S9L6 ALFC2 n=2 Tax=Decapoda TaxID=6683 RepID=A0A12...  107        4e-29
+UniRef90_A0A423T909 Anti-lipopolysaccharide factor isoform 6 n=1 ...  104        7e-28
+UniRef90_A0A1S5RQS7 ALF8 n=1 Tax=Procambarus clarkii TaxID=6728 R...  103        3e-27
+UniRef90_W6MH75 Anti-LPS-factor-like-3 protein (Fragment) n=1 Tax...  101        1e-26
+UniRef90_H2D5V5 Anti-lipopolysaccharide factor isoform 6 n=4 Tax=...  101        2e-26
+UniRef90_F1ASU1 Anti-lipopolysaccharide factor-like protein n=1 T...  101        2e-26
+UniRef90_A0A1S5RQU4 ALF11 n=1 Tax=Procambarus clarkii TaxID=6728 ...  101        2e-26
+UniRef90_C0KJQ4-2 Isoform 2 of Anti-lipopolysaccharide factor n=1...  99.1       6e-26
+UniRef90_Q1XI22 ALF-C1 n=1 Tax=Penaeus japonicus TaxID=27405 RepI...  98.7       2e-25
+UniRef90_M4QV27 Anti-lipopolysaccharide factor-B1 n=7 Tax=Penaeus...  98.4       3e-25
+UniRef90_A0A1L2DC15 ALF-A1 n=1 Tax=Penaeus japonicus TaxID=27405 ...  98.0       1e-24
+UniRef90_B2MVV6 Anti-lipopolysaccharide factor 2 n=1 Tax=Homarus ...  96.8       1e-24
+UniRef90_A0A0M4RDN2 Anti-lipopolysaccharide factor 1 n=1 Tax=Macr...  96.4       2e-24
+UniRef90_C0KJQ4 Anti-lipopolysaccharide factor n=1 Tax=Portunus t...  96.0       2e-24
+UniRef90_A0A1B2ZDP5 Antilipolysacchride factor n=2 Tax=Cherax qua...  96.0       3e-24
+UniRef90_A0A0A8KB40 Antilipopolysaccharide factor n=3 Tax=Macrobr...  95.7       3e-24
+UniRef90_A0A3G3CBB3 Anti-lipopolysaccharide factor n=1 Tax=Neocar...  95.7       4e-24
+UniRef90_M4HXT1 Antilipopolysaccharide factor isoform 4 n=4 Tax=P...  95.3       4e-24
+UniRef90_A5A3I7 Anti-lipopolysaccharide factor isoform 2 n=1 Tax=...  95.3       4e-24
+UniRef90_B9A7T8 Anti-lipopolysaccharide factor 2 n=1 Tax=Penaeus ...  95.3       5e-24
+UniRef90_A0A1S5RQT2 ALF5 n=1 Tax=Procambarus clarkii TaxID=6728 R...  94.9       6e-24
+UniRef90_A0A0M4S7F5 Anti-lipopolysaccharide factor 4 n=3 Tax=Macr...  94.9       7e-24
+UniRef90_A5A3I5 Anti-lipopolysaccharide factor isoform 3 n=11 Tax...  94.5       9e-24
+UniRef90_A5Z0L1 Anti-lipopolysaccharide factor isoform 3 (Fragmen...  92.2       2e-23
+UniRef90_I1VGP3 ALF1 n=3 Tax=Scylla TaxID=6760 RepID=I1VGP3_SCYPA     93.7       2e-23
+UniRef90_M4HYA8 Antilipopolysaccharide factor isoform 3 n=2 Tax=P...  93.3       3e-23
+UniRef90_A0A0M3ULK7 Anti-lipopolysaccharide factor 2 n=1 Tax=Macr...  93.3       4e-23
+UniRef90_S4TVB5 Anti-lipopolysaccharide factor isoform 1 n=1 Tax=...  93.0       5e-23
+UniRef90_A0A1S5RQS9 ALF6 n=1 Tax=Procambarus clarkii TaxID=6728 R...  92.6       5e-23
+UniRef90_D3JU55 Antilipopolysaccharide factor n=2 Tax=Penaeus mon...  92.2       7e-23
+UniRef90_M4HYN1 Antilipopolysaccharide factor isoform 1 n=1 Tax=P...  92.2       7e-23
+UniRef90_W6MNF6 Anti-LPS-factor-like-3 protein (Fragment) n=1 Tax...  91.8       7e-23
+UniRef90_K9MP07 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobra...  91.4       2e-22
+UniRef90_M4HYN4 Antilipopolysaccharide factor isoform 6 n=1 Tax=P...  91.0       2e-22
+UniRef90_B5TTX7 Anti-lipopolysaccharide factor n=6 Tax=Portunidae...  91.0       3e-22
+UniRef90_A5A3I6 Anti-lipopolysaccharide factor isoform 1 n=1 Tax=...  89.1       4e-22
+UniRef90_H6TCF4 Anti-lipopolysaccharide factor 3 n=1 Tax=Eriochei...  90.3       5e-22
+UniRef90_A0A1S5RQT4 ALF9 n=1 Tax=Procambarus clarkii TaxID=6728 R...  89.9       8e-22
+UniRef90_A0A1S5RQT0 ALF3 n=1 Tax=Procambarus clarkii TaxID=6728 R...  88.7       2e-21
+UniRef90_A0A125S9L7 ALFD1 n=1 Tax=Penaeus japonicus TaxID=27405 R...  88.3       3e-21
+UniRef90_G8A3H9 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobra...  88.0       5e-21
+UniRef90_W6MEV0 Anti-LPS-factor-like-1 protein (Fragment) n=1 Tax...  85.6       7e-21
+UniRef90_A0A067YRQ4 Anti-lipopolysaccharide factor isoform 1 n=1 ...  87.2       8e-21
+UniRef90_UPI00084A8BCB uncharacterized protein LOC108676095 n=1 T...  90.6       9e-21
+UniRef90_W6MEN5 Anti-LPS-factor-like-1 protein n=1 Tax=Pagurus be...  86.4       2e-20
+UniRef90_A5HES6 Anti-lipopolysaccharide factor n=1 Tax=Pacifastac...  86.0       2e-20
+UniRef90_A0A385L4B5 Anti-lipopolysaccharide factor 1 (Fragment) n...  85.6       3e-20
+UniRef90_H9MYZ3 Anti-lipopolysaccharide factor isoform 7 n=8 Tax=...  84.9       6e-20
+UniRef90_P07087 Anti-lipopolysaccharide factor n=2 Tax=Tachypleus...  82.9       2e-19
+UniRef90_P07086 Anti-lipopolysaccharide factor n=1 Tax=Limulus po...  82.6       3e-19
+UniRef90_A0A423TC79 Anti-lipopolysaccharide factor n=3 Tax=Penaeu...  83.7       4e-19
+UniRef90_A0A222YUG6 Antilipopolysaccharide factor B1 n=1 Tax=Pena...  82.2       6e-19
+UniRef90_B2MVV5 Anti-lipopolysaccharide factor 1 n=1 Tax=Homarus ...  81.4       1e-18
+UniRef90_A5Z0L0 Anti-lipopolysaccharide factor isoform 2 (Fragmen...  80.2       2e-18
+UniRef90_A0A3R7P2Z4 Anti-lipopolysaccharide factor isoform 1 n=1 ...  83.7       3e-18
+UniRef90_E7CN59 Antilipopolysaccharide factor 2 n=3 Tax=Scylla Ta...  79.9       5e-18
+UniRef90_A9YT52 Anti-lipopolysaccharide factor n=1 Tax=Macrobrach...  79.5       8e-18
+UniRef90_A0A4P9IX27 Antilipopolysaccharide factor isoform 8 n=1 T...  79.5       9e-18
+UniRef90_A0A1S5RQS5 ALF4 n=1 Tax=Procambarus clarkii TaxID=6728 R...  79.5       9e-18
+UniRef90_K9MQ23 Anti-lipopolysaccharide factor 3 n=1 Tax=Macrobra...  78.3       2e-17
+UniRef90_UPI000F67D186 anti-lipopolysaccharide factor-like n=1 Ta...  78.7       2e-17
+UniRef90_H9MYY8 Anti-lipopolysaccharide factor isoform 6 n=2 Tax=...  77.6       3e-17
+UniRef90_UPI00084B2FEC anti-lipopolysaccharide factor-like isofor...  77.2       6e-17
+UniRef90_A0A1B3LHI9 Anti-lipopolysaccharide factor 4 (Fragment) n...  77.2       1e-16
+UniRef90_A0A0M3ULR7 Anti-lipopolysaccharide factor 5 n=1 Tax=Macr...  76.4       2e-16
+UniRef90_UPI00084B56AB anti-lipopolysaccharide factor-like isofor...  76.0       2e-16
+UniRef90_A0A0M5M1Q3 Anti-lipopolysaccharide factor 3 n=1 Tax=Macr...  74.1       1e-15
+UniRef90_A0A385L4B1 Anti-lipopolysaccharide factor 12 (Fragment) ...  78.3       1e-15
+UniRef90_A0A1S5RQT1 ALF2 n=1 Tax=Procambarus clarkii TaxID=6728 R...  73.7       1e-15
+UniRef90_A0A222YT35 Antilipopolysaccharide factor E1 n=1 Tax=Pena...  73.3       2e-15
+UniRef90_A0A423TFS2 Antilipopolysaccharide factor isoform 2 n=3 T...  73.3       3e-15
+UniRef90_A0A1L1WKA6 Anti-lipopolysaccharide factor n=1 Tax=Portun...  71.4       1e-14
+UniRef90_A0A1S6PU24 Anti-lipopolysaccharide factor n=2 Tax=Scylla...  71.4       1e-14
+UniRef90_A0A3R7Q9V9 Antilipopolysaccharide factor isoform 2 n=1 T...  75.2       1e-14
+UniRef90_D0V3Y7 Anti-lipopolysaccharide factor 2 n=1 Tax=Eriochei...  71.0       1e-14
+UniRef90_A0A0N7ZD98 Uncharacterized protein n=1 Tax=Scylla olivac...  70.6       3e-14
+UniRef90_G8A3I0 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobra...  69.8       4e-14
+UniRef90_A0A1S5RQS8 ALF10 n=1 Tax=Procambarus clarkii TaxID=6728 ...  72.5       5e-14
+UniRef90_H9MYY2 Anti-lipopolysaccharide factor isoform 4 n=2 Tax=...  69.8       6e-14
+UniRef90_A4UMS3 Anti-lipopolysaccharide factor (Fragment) n=1 Tax...  66.4       1e-13
+UniRef90_A0A2R3SJY7 Anti-lipopolysaccharide factor 5 n=2 Tax=Pena...  68.7       2e-13
+UniRef90_I4BZJ5 Anti-lipopolysaccharide factor n=1 Tax=Portunus p...  68.7       2e-13
+UniRef90_A0A3R7M7W8 Anti-lipopolysaccharide factor 2 n=2 Tax=Pena...  68.7       2e-13
+UniRef90_A6XIA2 Anti-lipopolysaccharide factor n=1 Tax=Eriocheir ...  67.9       3e-13
+UniRef90_A0A3R7PB52 Anti-lipopolysaccharide factor like protein n...  70.2       5e-13
+UniRef90_H9MYY3 Anti-lipopolysaccharide factor isoform 5 n=1 Tax=...  67.2       6e-13
+UniRef90_A0A222YSR1 Antilipopolysaccharide factor E2 n=1 Tax=Pena...  67.2       7e-13
+UniRef90_M4HXU5 Antilipopolysaccharide factor isoform 5 n=1 Tax=P...  66.8       7e-13
+UniRef90_V5TCV4 Anti-lipopolysaccharide factor n=2 Tax=Scylla Tax...  66.8       7e-13
+UniRef90_UPI000F67A6F4 anti-lipopolysaccharide factor-like n=1 Ta...  65.6       9e-13
+UniRef90_A0A2R3SJY5 Anti-lipopolysaccharide factor 4 n=1 Tax=Pena...  65.6       2e-12
+UniRef90_W6MES5 Anti-LPS-factor-like-4 protein (Fragment) n=1 Tax...  64.1       3e-12
+UniRef90_UPI000F68B9F0 anti-lipopolysaccharide factor-like n=1 Ta...  65.2       4e-12
+UniRef90_A0A0P4WDC5 Uncharacterized protein n=1 Tax=Scylla olivac...  65.2       4e-12
+UniRef90_A0A444T4M0 Anti-lipopolysaccharide factor n=1 Tax=Armadi...  63.3       5e-12
+UniRef90_UPI000F690E16 uncharacterized protein LOC113807194 n=1 T...  65.6       9e-12
+UniRef90_A0A2P0ZI15 Anti-lipopolysaccharide factor 4 n=1 Tax=Erio...  64.1       9e-12
+UniRef90_A0A423TFR6 Anti-lipopolysaccharide factor 2 n=1 Tax=Pena...  64.5       1e-11
+UniRef90_A0A3R7NC40 Antilipopolysaccharide factor isoform 5 n=2 T...  65.6       3e-11
+UniRef90_S6DQ29 Anti-lipopolysaccharide factor isoform 4 n=1 Tax=...  58.3       2e-09
+UniRef90_W6SJH5 ALF4 protein (Fragment) n=1 Tax=Scylla paramamosa...  56.8       4e-09
+UniRef90_UPI00084A71CB anti-lipopolysaccharide factor-like n=1 Ta...  56.4       1e-08
+UniRef90_A0A444SJ42 Uncharacterized protein n=1 Tax=Armadillidium...  51.4       6e-07
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>UniRef90_A0A125S9L6 ALFC2 n=2 Tax=Decapoda TaxID=6683 RepID=A0A125S9L6_PENJP
+Length=122
+
+ Score = 107 bits (269),  Expect = 4e-29, Method: Composition-based stats.
+ Identities = 28/60 (47%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLTGLW    ++ +GH C F   PK +R++LY  G+ WCPGW P  G  +
+Sbjct  27  WEALVPAIAEKLTGLWQTGELELLGHYCNFSVTPKFKRWQLYFRGRMWCPGWTPIRGEAE  86
+
+
+>UniRef90_A0A423T909 Anti-lipopolysaccharide factor isoform 6 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A423T909_PENVA
+Length=122
+
+ Score = 104 bits (261),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 27/60 (45%), Positives = 39/60 (65%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLTGLW +  ++ +GH C F   PK +R++LY  G+ WCPGW    G+ +
+Sbjct  27  WEALVPAIANKLTGLWESGELELLGHYCNFSVTPKFKRWQLYFRGRMWCPGWTAIRGQAE  86
+
+
+>UniRef90_A0A1S5RQS7 ALF8 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS7_PROCL
+Length=122
+
+ Score = 103 bits (257),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 25/59 (42%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           E L  ++ GKL GLW N  V+ +GH C +   PK + F+LY  G+  CPGW P  G  +
+Sbjct  29  EGLAAAVTGKLAGLWRNGEVELLGHYCQYSVSPKFKSFELYFRGRMTCPGWTPIRGEAE  87
+
+
+>UniRef90_W6MH75 Anti-LPS-factor-like-3 protein (Fragment) n=1 
+Tax=Coenobita clypeatus TaxID=474045 RepID=W6MH75_9EUCA
+Length=123
+
+ Score = 101 bits (253),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 24/60 (40%), Positives = 40/60 (67%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++A+V  ++ K+ GLW +   + MGHIC +   PKI+R++LY++G+ WCPGW    G  +
+Sbjct  27  WQAVVPVLVNKIKGLWRDGEFELMGHICNYSVTPKIKRWQLYYKGRMWCPGWTTIRGEAE  86
+
+
+>UniRef90_H2D5V5 Anti-lipopolysaccharide factor isoform 6 n=4 
+Tax=Penaeus TaxID=133894 RepID=H2D5V5_PENMO
+Length=122
+
+ Score = 101 bits (252),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 26/60 (43%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +EALV +I  KLT LW +   + +GH C F   PK +R++LY  G+ WCPGW    G+ +
+Sbjct  27  WEALVPAIANKLTSLWESGEFELLGHYCSFNVTPKFKRWQLYFRGRMWCPGWTTIRGQAE  86
+
+
+>UniRef90_F1ASU1 Anti-lipopolysaccharide factor-like protein n=1 
+Tax=Procambarus clarkii TaxID=6728 RepID=F1ASU1_PROCL
+Length=123
+
+ Score = 101 bits (252),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 26/58 (45%), Positives = 34/58 (59%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E L  ++ GKL GLW N  V+ +GH C +   P IRR++LY  G+ WCPGW    G  
+Sbjct  29  EGLAAAVTGKLAGLWRNGEVELLGHYCSYSVTPTIRRWQLYFRGRMWCPGWTSIRGEA  86
+
+
+>UniRef90_A0A1S5RQU4 ALF11 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQU4_PROCL
+Length=123
+
+ Score = 101 bits (252),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 22/59 (37%), Positives = 35/59 (59%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++L+ ++  +L GLW N  V+ +GH C +   PK + F+LY  G+  CPGW P  G  +
+Sbjct  30  QSLLGAVTQQLVGLWKNGEVELLGHYCQYSVSPKFKSFELYFRGRMTCPGWTPIRGEAE  88
+
+
+>UniRef90_C0KJQ4-2 Isoform 2 of Anti-lipopolysaccharide factor 
+n=1 Tax=Portunus trituberculatus TaxID=210409 RepID=C0KJQ4-2
+Length=92
+
+ Score = 99.1 bits (246),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 65/65 (100%), Positives = 65/65 (100%), Gaps = 0/65 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK
+Sbjct  28  YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  87
+
+Query  61  YCVVF  65
+           YCVVF
+Sbjct  88  YCVVF  92
+
+
+>UniRef90_Q1XI22 ALF-C1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=Q1XI22_PENJP
+Length=123
+
+ Score = 98.7 bits (245),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 27/59 (46%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EALV +I  KLTGLW N  ++ +GH C F   PK R ++L  +G+ WCPGW   +G  
+Sbjct  28  WEALVPAIAEKLTGLWENGELELLGHYCNFYVEPKFRNWQLRFKGRMWCPGWTIIKGEA  86
+
+
+>UniRef90_M4QV27 Anti-lipopolysaccharide factor-B1 n=7 Tax=Penaeus 
+TaxID=133894 RepID=M4QV27_PENSY
+Length=123
+
+ Score = 98.4 bits (244),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 23/60 (38%), Positives = 39/60 (65%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++A+  ++  K+ GLW N+  + +GH C F  +P I+R +L+++GK WCPGW P  G  +
+Sbjct  28  WQAVAAAVASKIVGLWRNEETELLGHKCRFTVKPYIKRIQLHYKGKMWCPGWTPITGEAR  87
+
+
+>UniRef90_A0A1L2DC15 ALF-A1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=A0A1L2DC15_PENJP
+Length=160
+
+ Score = 98.0 bits (243),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 28/58 (48%), Positives = 41/58 (71%), Gaps = 0/58 (0%)
+
+Query  2    EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G  WCPGWAPF GR 
+Sbjct  66   QDLIPALVQRIVGLWHSDEVEFMGHSCRYSQRPTFYRWELYFRGSMWCPGWAPFTGRS  123
+
+
+>UniRef90_B2MVV6 Anti-lipopolysaccharide factor 2 n=1 Tax=Homarus 
+americanus TaxID=6706 RepID=B2MVV6_HOMAM
+Length=124
+
+ Score = 96.8 bits (240),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 26/60 (43%), Positives = 36/60 (60%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E LV  +  +L  LWH   ++ MGH C F+ +PKIRR++LY  G  WCPGW    G  +
+Sbjct  29  WETLVAGVSSQLVSLWHQGELELMGHYCNFQVKPKIRRWQLYFVGSMWCPGWTNIRGSAQ  88
+
+
+>UniRef90_A0A0M4RDN2 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M4RDN2_MACNP
+Length=135
+
+ Score = 96.4 bits (239),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 25/59 (42%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + LV S+  +L GLW    ++F+ H+C F+ +PKI+R++LY  G  WCPGW P  G  +
+Sbjct  40  DELVQSLTSQLVGLWETGDLEFLDHVCSFQVKPKIKRWELYFRGTMWCPGWTPIRGTSE  98
+
+
+>UniRef90_C0KJQ4 Anti-lipopolysaccharide factor n=1 Tax=Portunus 
+trituberculatus TaxID=210409 RepID=ALPS_PORTR
+Length=123
+
+ Score = 96.0 bits (238),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 58/60 (97%), Positives = 59/60 (98%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR +
+Sbjct  28  YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRSR  87
+
+
+>UniRef90_A0A1B2ZDP5 Antilipolysacchride factor n=2 Tax=Cherax 
+quadricarinatus TaxID=27406 RepID=A0A1B2ZDP5_CHEQU
+Length=123
+
+ Score = 96.0 bits (238),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 25/58 (43%), Positives = 36/58 (62%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           EALVT+  GK+ GLW N  ++ +G+ C +  RP I++F+LY  G  +CPGW    G  
+Sbjct  29  EALVTAFAGKVAGLWDNGQLELLGNYCNYNVRPTIKKFQLYFNGSMYCPGWTTIRGEA  86
+
+
+>UniRef90_A0A0A8KB40 Antilipopolysaccharide factor n=3 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=A0A0A8KB40_MACRS
+Length=124
+
+ Score = 95.7 bits (237),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 24/60 (40%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E +  ++  K+ GLW +D + F+GH C +   PKI+RF+LY +G+ WCPGW    G  +
+Sbjct  28  WEVVAAAVAEKIAGLWVDDQMVFLGHTCQYSVNPKIKRFELYFKGRMWCPGWTTIRGEAE  87
+
+
+>UniRef90_A0A3G3CBB3 Anti-lipopolysaccharide factor n=1 Tax=Neocaridina 
+heteropoda TaxID=1789729 RepID=A0A3G3CBB3_9EUCA
+Length=124
+
+ Score = 95.7 bits (237),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 27/59 (46%), Positives = 39/59 (66%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EAL  ++  KL GLW+  +++FMG  C +  +P IRRF+LY +G+ WCPGW P  G  
+Sbjct  28  WEALAIAVGEKLVGLWNLGNLEFMGRSCEYSVKPTIRRFELYFKGRMWCPGWTPIRGEA  86
+
+
+>UniRef90_M4HXT1 Antilipopolysaccharide factor isoform 4 n=4 Tax=Penaeus 
+TaxID=133894 RepID=M4HXT1_PENCE
+Length=120
+
+ Score = 95.3 bits (236),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 28/59 (47%), Positives = 43/59 (73%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G+ WCPGWAPF GR +
+Sbjct  26  QDLLPALVDRIVGLWHSDEVEFMGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRSR  84
+
+
+>UniRef90_A5A3I7 Anti-lipopolysaccharide factor isoform 2 n=1 
+Tax=Penaeus monodon TaxID=6687 RepID=A5A3I7_PENMO
+Length=120
+
+ Score = 95.3 bits (236),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 28/59 (47%), Positives = 43/59 (73%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ K+ GLWH+D V+F+GH C + +RP   R++LY  G+ WCPGWAPF GR +
+Sbjct  26  QDLLPALVEKIAGLWHSDEVEFLGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRSR  84
+
+
+>UniRef90_B9A7T8 Anti-lipopolysaccharide factor 2 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=B9A7T8_PENJP
+Length=120
+
+ Score = 95.3 bits (236),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 28/58 (48%), Positives = 41/58 (71%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + L+ +++ ++ GLWH+D V+FMGH C + +RP   R++LY  G  WCPGWAPF GR 
+Sbjct  26  QDLIPALVQRIVGLWHSDEVEFMGHSCRYSQRPTFYRWELYFRGSMWCPGWAPFTGRS  83
+
+
+>UniRef90_A0A1S5RQT2 ALF5 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT2_PROCL
+Length=118
+
+ Score = 94.9 bits (235),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 23/59 (39%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L  +I  KL  LW +  V  + H C +   PK+R ++LY++G  WCPGW P  G  
+Sbjct  23  WETLAVAIAEKLVELWQHGEVRLLNHQCNYSVTPKVRSWELYYQGSMWCPGWTPIRGEA  81
+
+
+>UniRef90_A0A0M4S7F5 Anti-lipopolysaccharide factor 4 n=3 Tax=Macrobrachium 
+TaxID=6696 RepID=A0A0M4S7F5_MACNP
+Length=124
+
+ Score = 94.9 bits (235),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 22/60 (37%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +E +  ++  K+ GLW +D + F+GH C +   PKI++ +LY +G+ WCPGW    G  +
+Sbjct  28  WEVVAAAVAEKIAGLWVDDHMTFLGHTCQYSVNPKIKKLQLYFKGRMWCPGWTSIRGEAE  87
+
+
+>UniRef90_A5A3I5 Anti-lipopolysaccharide factor isoform 3 n=11 
+Tax=Decapoda TaxID=6683 RepID=A5A3I5_PENMO
+Length=123
+
+ Score = 94.5 bits (234),  Expect = 9e-24, Method: Composition-based stats.
+ Identities = 22/59 (37%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P ++RF++Y++G+ WCPGW    G  
+Sbjct  28  WEAVAAAVASKIVGLWRNEKTELLGHECKFTVKPYLKRFQVYYKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_A5Z0L1 Anti-lipopolysaccharide factor isoform 3 (Fragment) 
+n=1 Tax=Penaeus paulensis TaxID=71413 RepID=A5Z0L1_PENPU
+Length=70
+
+ Score = 92.2 bits (228),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 25/59 (42%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P I+R +LY+ GK WCPGW P  G  
+Sbjct  1   WEAVAAAVGSKIVGLWRNEETELLGHKCRFTVKPYIKRIQLYYRGKMWCPGWTPIRGEA  59
+
+
+>UniRef90_I1VGP3 ALF1 n=3 Tax=Scylla TaxID=6760 RepID=I1VGP3_SCYPA
+Length=123
+
+ Score = 93.7 bits (232),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 49/60 (82%), Positives = 56/60 (93%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YE L+ S+LGKLTGLWHN+SVDFMGH C+FRRRPK+R+FKLYHEGKFWCPGWAPFEGR +
+Sbjct  28  YETLIASVLGKLTGLWHNNSVDFMGHTCHFRRRPKVRKFKLYHEGKFWCPGWAPFEGRSR  87
+
+
+>UniRef90_M4HYA8 Antilipopolysaccharide factor isoform 3 n=2 Tax=Penaeus 
+TaxID=133894 RepID=M4HYA8_PENCE
+Length=122
+
+ Score = 93.3 bits (231),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 23/60 (38%), Positives = 34/60 (57%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + A + SI  +LTGLW    ++ +GH C    +P  +R++LY  G  WCPGW P  G  +
+Sbjct  27  WGAFMPSIATRLTGLWETGELELLGHYCVCSVKPTFQRWQLYFIGSMWCPGWTPIRGVAE  86
+
+
+>UniRef90_A0A0M3ULK7 Anti-lipopolysaccharide factor 2 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M3ULK7_MACNP
+Length=133
+
+ Score = 93.3 bits (231),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 26/58 (45%), Positives = 39/58 (67%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+             LV ++  K+ GLW +  + F+ H+C F+ +PK+R+F+LY EGKFWCPGW   +G  
+Sbjct  39  SGLVEALTSKIVGLWRSGDIVFLDHVCSFQVKPKLRKFQLYFEGKFWCPGWTSIKGEA  96
+
+
+>UniRef90_S4TVB5 Anti-lipopolysaccharide factor isoform 1 n=1 
+Tax=Palaemon carinicauda TaxID=392227 RepID=S4TVB5_PALCI
+Length=134
+
+ Score = 93.0 bits (230),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 23/59 (39%), Positives = 40/59 (68%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           E+LV ++  ++ GLW +  ++F+ H+C F+ +PKI+R++LY  G  +CPGW P  G  +
+Sbjct  39  ESLVDAVASQIVGLWGSGDIEFLDHVCSFQVKPKIKRWQLYFIGTMYCPGWTPIRGTSE  97
+
+
+>UniRef90_A0A1S5RQS9 ALF6 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS9_PROCL
+Length=123
+
+ Score = 92.6 bits (229),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 18/58 (31%), Positives = 32/58 (55%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + L   +  ++ GL+       + H C +  +PK R+++LY++G FWCPGW   +G  
+Sbjct  28  DILAPLLGDQVKGLFRQGEAVLLDHYCNYSVKPKFRKWELYYDGSFWCPGWTNIKGEA  85
+
+
+>UniRef90_D3JU55 Antilipopolysaccharide factor n=2 Tax=Penaeus 
+monodon TaxID=6687 RepID=D3JU55_PENMO
+Length=123
+
+ Score = 92.2 bits (228),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P ++R+++Y++G+ WCPGW    G  
+Sbjct  28  WEAVAAAVASKIVGLWRNEKTELLGHECKFTVKPYLKRYQVYYKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_M4HYN1 Antilipopolysaccharide factor isoform 1 n=1 Tax=Penaeus 
+chinensis TaxID=139456 RepID=M4HYN1_PENCE
+Length=123
+
+ Score = 92.2 bits (228),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 32/59 (54%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EALV  I  ++ GLW N   +F GH C +   P ++ F+LY +G+  CP  +   G  
+Sbjct  28  WEALVPLITQQVVGLWKNGEREFFGHQCTYSVTPTVKSFELYFKGRMSCPSLSSVRGEA  86
+
+
+>UniRef90_W6MNF6 Anti-LPS-factor-like-3 protein (Fragment) n=1 
+Tax=Pagurus bernhardus TaxID=174397 RepID=W6MNF6_PAGBR
+Length=101
+
+ Score = 91.8 bits (227),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 22/59 (37%), Positives = 38/59 (64%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++A+V  ++ K++GLW   S + +  +C +  +PK RR++LY+EG+ WCPGW    G  
+Sbjct  12  WQAIVPILVDKVSGLWQRGSFELLDQVCSYSVKPKFRRWQLYYEGRAWCPGWPGIRGEA  70
+
+
+>UniRef90_K9MP07 Anti-lipopolysaccharide factor 1 n=1 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=K9MP07_MACRS
+Length=133
+
+ Score = 91.4 bits (226),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 37/56 (66%), Gaps = 0/56 (0%)
+
+Query  5   VTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           V ++  +L GLW +  ++F+ H+C F+ +P+I+R++LY  G  WCPGW P  G  +
+Sbjct  41  VQALTSQLVGLWESGDLEFLDHVCSFQVKPRIKRWELYFRGTMWCPGWTPIRGTSE  96
+
+
+>UniRef90_M4HYN4 Antilipopolysaccharide factor isoform 6 n=1 Tax=Penaeus 
+chinensis TaxID=139456 RepID=M4HYN4_PENCE
+Length=124
+
+ Score = 91.0 bits (225),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 19/59 (32%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ ++  ++  LW N  VD + H C +  +P I+ F+LY  G   CPGW    G   
+Sbjct  31  DLLLPAVTDQVKDLWRNGDVDLVDHSCSYSVKPDIQGFELYFIGSVTCPGWTTIRGESN  89
+
+
+>UniRef90_B5TTX7 Anti-lipopolysaccharide factor n=6 Tax=Portunidae 
+TaxID=6757 RepID=ALPS_SCYSE
+Length=123
+
+ Score = 91.0 bits (225),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 44/60 (73%), Positives = 51/60 (85%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEALV SILGKL+GLWH+D+VDFMGH C+ RR+PK R+FKLYHEGKFWCPGW   EG  +
+Sbjct  28  YEALVASILGKLSGLWHSDTVDFMGHTCHIRRKPKFRKFKLYHEGKFWCPGWTHLEGNSR  87
+
+
+>UniRef90_A5A3I6 Anti-lipopolysaccharide factor isoform 1 n=1 
+Tax=Penaeus monodon TaxID=6687 RepID=A5A3I6_PENMO
+Length=84
+
+ Score = 89.1 bits (220),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 29/59 (49%), Positives = 44/59 (75%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L+ +++ K+ GLWH+D V+F+GH C + +RP   R++LY  G+ WCPGWAPF GRC+
+Sbjct  26  QDLLPALVEKIAGLWHSDEVEFLGHSCRYSQRPSFYRWELYFNGRMWCPGWAPFTGRCE  84
+
+
+>UniRef90_H6TCF4 Anti-lipopolysaccharide factor 3 n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=H6TCF4_ERISI
+Length=123
+
+ Score = 90.3 bits (223),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 39/59 (66%), Positives = 49/59 (83%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++ALV  ++ K++GLWHND+VDFMG  C FRR PKI+R++LYHEGKFWCPGWAPF G  
+Sbjct  28  WQALVGPLIEKVSGLWHNDTVDFMGRECKFRRSPKIKRWELYHEGKFWCPGWAPFSGNS  86
+
+
+>UniRef90_A0A1S5RQT4 ALF9 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT4_PROCL
+Length=123
+
+ Score = 89.9 bits (222),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 24/59 (41%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  KL GL+ N+ V+ +G IC    +P I+RF+LYH+G   CPGW   +G  
+Sbjct  28  WEAVAAAVAQKLVGLFRNEEVELLGRICKLTVKPYIKRFQLYHKGTMSCPGWTHIKGEG  86
+
+
+>UniRef90_A0A1S5RQT0 ALF3 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT0_PROCL
+Length=122
+
+ Score = 88.7 bits (219),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 27/60 (45%), Positives = 38/60 (63%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           ++  +T I+ KL GLWH     FMGH C +  +P   R+K+Y++GK WCPGW PF G  +
+Sbjct  27  WDDTITLIINKLAGLWHEGEAKFMGHSCRYSYKPTFYRWKMYYKGKMWCPGWVPFSGHSR  86
+
+
+>UniRef90_A0A125S9L7 ALFD1 n=1 Tax=Penaeus japonicus TaxID=27405 
+RepID=A0A125S9L7_PENJP
+Length=123
+
+ Score = 88.3 bits (218),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 19/59 (32%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L+  I  ++  LW N   +  GH C +   PKI+ F+LY +G+  CP  +   G  
+Sbjct  28  WETLIPLITKEVVSLWKNGEREMFGHRCTYSVTPKIKSFELYFKGRMTCPSLSNERGEA  86
+
+
+>UniRef90_G8A3H9 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=G8A3H9_MACRS
+Length=132
+
+ Score = 88.0 bits (217),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 21/53 (40%), Positives = 35/53 (66%), Gaps = 0/53 (0%)
+
+Query  7   SILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++  ++ GLW    + F+ H+C F+ +PK+R+ +LY +G FWCPGW P +G  
+Sbjct  43  ALTSRIVGLWRTGDIVFLDHVCSFQVKPKLRKLQLYFDGTFWCPGWTPIKGEA  95
+
+
+>UniRef90_W6MEV0 Anti-LPS-factor-like-1 protein (Fragment) n=1 
+Tax=Coenobita clypeatus TaxID=474045 RepID=W6MEV0_9EUCA
+Length=69
+
+ Score = 85.6 bits (211),  Expect = 7e-21, Method: Composition-based stats.
+ Identities = 18/57 (32%), Positives = 30/57 (53%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + + I  +L GLW N  ++ +GH C +R +P +  ++L   G   CPGW    G  +
+Sbjct  1   VSSIIGDQLKGLWRNGELELLGHYCNYRVKPTLDGWELVFVGSVTCPGWTTIRGESR  57
+
+
+>UniRef90_A0A067YRQ4 Anti-lipopolysaccharide factor isoform 1 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A067YRQ4_PENVA
+Length=123
+
+ Score = 87.2 bits (215),  Expect = 8e-21, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 30/59 (51%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +E L+  I  ++ GLW     +  GH C +   PK++ F+LY +G+  CP  +   G  
+Sbjct  28  WETLIPLITQQVVGLWKTGEREMFGHECTYFVTPKVKSFELYFKGRMTCPTLSNVRGEA  86
+
+
+>UniRef90_UPI00084A8BCB uncharacterized protein LOC108676095 n=1 
+Tax=Hyalella azteca TaxID=294128 RepID=UPI00084A8BCB
+Length=272
+
+ Score = 90.6 bits (224),  Expect = 9e-21, Method: Composition-based stats.
+ Identities = 23/58 (40%), Positives = 38/58 (66%), Gaps = 0/58 (0%)
+
+Query  3   ALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+            LV ++  +L  LW N+ + FMG  C++++ P+I+R++LY  G F CPGW   +GR +
+Sbjct  31  PLVPALADQLVSLWQNNELQFMGFQCFYQQNPRIKRWQLYFRGNFMCPGWTAIQGRAE  88
+
+
+ Score = 78.7 bits (193),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 19/60 (32%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1    YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+            +  L+ +I  ++  LW N+++ FMG  C + ++P ++R++LY  G+F C  +A   GR +
+Sbjct  175  WSDLLPAITQQINSLWQNNNLQFMGSECSYVQKPIVKRWQLYFNGRFTCNNFAGITGRSE  234
+
+
+>UniRef90_W6MEN5 Anti-LPS-factor-like-1 protein n=1 Tax=Pagurus 
+bernhardus TaxID=174397 RepID=W6MEN5_PAGBR
+Length=122
+
+ Score = 86.4 bits (213),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 24/60 (40%), Positives = 40/60 (67%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +++LV ++ GK+ GLW   +++ +GH C +R RPKI R++L+++G   CPGW    G  K
+Sbjct  28  WQSLVPALAGKIIGLWRGGNLNILGHQCSYRVRPKIIRWRLWYKGTLACPGWTSITGSDK  87
+
+
+>UniRef90_A5HES6 Anti-lipopolysaccharide factor n=1 Tax=Pacifastacus 
+leniusculus TaxID=6720 RepID=A5HES6_PACLE
+Length=120
+
+ Score = 86.0 bits (212),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 29/57 (51%), Positives = 39/57 (68%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +V+ I+ KL  LW +  V+FMGH C +   P I +F+LY++GK WCPGWAPF G  K
+Sbjct  28  VVSLIISKLVNLWSDGQVEFMGHTCNYSYSPTISKFQLYYKGKMWCPGWAPFSGNSK  84
+
+
+>UniRef90_A0A385L4B5 Anti-lipopolysaccharide factor 1 (Fragment) 
+n=2 Tax=Procambarus clarkii TaxID=6728 RepID=A0A385L4B5_PROCL
+Length=122
+
+ Score = 85.6 bits (211),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 28/57 (49%), Positives = 38/57 (67%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L+  I+ KL GLW +  V+FMG  C +   PKI  ++LY++GK WCPGWAPF G  +
+Sbjct  30  LINLIINKLGGLWKDGEVEFMGRACNYSYSPKISGWRLYYKGKMWCPGWAPFSGDSQ  86
+
+
+>UniRef90_H9MYZ3 Anti-lipopolysaccharide factor isoform 7 n=8 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYZ3_PORTR
+Length=123
+
+ Score = 84.9 bits (209),  Expect = 6e-20, Method: Composition-based stats.
+ Identities = 34/60 (57%), Positives = 47/60 (78%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           YEAL  +IL KL+ +WH+D+++F+GH C+  R P ++RFKLY +GKFWCPGWAPF G  +
+Sbjct  28  YEALTAAILTKLSKMWHSDTLNFLGHTCHVSRTPTVKRFKLYWKGKFWCPGWAPFSGTSR  87
+
+
+>UniRef90_P07087 Anti-lipopolysaccharide factor n=2 Tax=Tachypleus 
+tridentatus TaxID=6853 RepID=ALPS_TACTR
+Length=102
+
+ Score = 82.9 bits (204),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  L  +++  L  LW +    F+GH C++R  P ++R K  ++GKFWCP W    GR 
+Sbjct  5   WTQLALALVKNLATLWQSGDFQFLGHECHYRVNPTVKRLKWKYKGKFWCPSWTSITGRA  63
+
+
+>UniRef90_P07086 Anti-lipopolysaccharide factor n=1 Tax=Limulus 
+polyphemus TaxID=6850 RepID=ALPS_LIMPO
+Length=101
+
+ Score = 82.6 bits (203),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 33/59 (56%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  L+ +++  L  LW +    F+ H C++R +P  RR K  ++GKFWCP W    GR 
+Sbjct  4   WTQLIFTLVKNLATLWQSGDFQFLDHECHYRIKPTFRRLKWKYKGKFWCPSWTSITGRA  62
+
+
+>UniRef90_A0A423TC79 Anti-lipopolysaccharide factor n=3 Tax=Penaeus 
+TaxID=133894 RepID=A0A423TC79_PENVA
+Length=145
+
+ Score = 83.7 bits (206),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 19/59 (32%), Positives = 28/59 (47%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +  V  I  +++ LW    +D +GH C +  +P I  F+LY  G   CPGW    G   
+Sbjct  31  DLFVPVIKDQVSDLWRTGDIDLVGHSCTYNVKPDIDGFELYFIGSVTCPGWTTLRGESN  89
+
+
+>UniRef90_A0A222YUG6 Antilipopolysaccharide factor B1 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=A0A222YUG6_PENJP
+Length=123
+
+ Score = 82.2 bits (202),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 24/59 (41%), Positives = 39/59 (66%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW N+  + +GH C F  +P I++F+LY++G+ WCPGW P  G  
+Sbjct  28  WEAVAAAVASKVVGLWRNEKTELLGHECNFTVKPYIKKFQLYYKGRMWCPGWTPIRGEA  86
+
+
+>UniRef90_B2MVV5 Anti-lipopolysaccharide factor 1 n=1 Tax=Homarus 
+americanus TaxID=6706 RepID=B2MVV5_HOMAM
+Length=123
+
+ Score = 81.4 bits (200),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 23/47 (49%), Positives = 29/47 (62%), Gaps = 0/47 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           GLW N  VD + H C F  +P +RRF+LY +G+ WCPGW    G  K
+Sbjct  41  GLWQNGHVDLLDHPCRFSVKPTVRRFQLYFKGRMWCPGWTSIRGEAK  87
+
+
+>UniRef90_A5Z0L0 Anti-lipopolysaccharide factor isoform 2 (Fragment) 
+n=2 Tax=Penaeus paulensis TaxID=71413 RepID=A5Z0L0_PENPU
+Length=82
+
+ Score = 80.2 bits (197),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 21/45 (47%), Positives = 28/45 (62%), Gaps = 0/45 (0%)
+
+Query  15  LWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           LW N+  + +GH C F  +P I+R +LY+ GK WCPGW P  G  
+Sbjct  1   LWRNEETELLGHKCRFTVKPYIKRIQLYYRGKMWCPGWTPIRGEA  45
+
+
+>UniRef90_A0A3R7P2Z4 Anti-lipopolysaccharide factor isoform 1 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A3R7P2Z4_PENVA
+Length=264
+
+ Score = 83.7 bits (206),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 17/55 (31%), Positives = 29/55 (53%), Gaps = 0/55 (0%)
+
+Query  1    YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPF  55
+            +E L+  I  ++ GLW     +  GH C +   PK++ F+LY +G+  CP  +  
+Sbjct  97   WETLIPLITQQVVGLWKTGEREMFGHECTYFVTPKVKSFELYFKGRMTCPTLSNL  151
+
+
+>UniRef90_E7CN59 Antilipopolysaccharide factor 2 n=3 Tax=Scylla 
+TaxID=6760 RepID=E7CN59_SCYPA
+Length=115
+
+ Score = 79.9 bits (196),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 14/47 (30%), Positives = 25/47 (53%), Gaps = 0/47 (0%)
+
+Query  13  TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+             L  + + + + H+C +R  P+ + ++LY  G  WCPGW   +G  
+Sbjct  33  KALLDDGNTEILDHVCNYRVMPRFKDWELYFRGDVWCPGWTIIKGES  79
+
+
+>UniRef90_A9YT52 Anti-lipopolysaccharide factor n=1 Tax=Macrobrachium 
+olfersii TaxID=249258 RepID=A9YT52_MACOL
+Length=124
+
+ Score = 79.5 bits (195),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 22/59 (37%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +EA+  ++  K+ GLW ND + F+GH C +   P+I++ +L+ +G+ WCPGW    G  
+Sbjct  28  WEAVAAAVAEKIAGLWVNDHMVFLGHTCQYSVTPRIKKLELWFKGRMWCPGWTAIRGEA  86
+
+
+>UniRef90_A0A4P9IX27 Antilipopolysaccharide factor isoform 8 n=1 
+Tax=Penaeus chinensis TaxID=139456 RepID=A0A4P9IX27_PENCE
+Length=130
+
+ Score = 79.5 bits (195),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 21/60 (35%), Positives = 30/60 (50%), Gaps = 1/60 (2%)
+
+Query  2   EALVTSILGKL-TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           E  V+ IL K+   L  N   + +GH C +  RP   R++L  + K WCPGW    G  +
+Sbjct  32  ENYVSDILSKIYNTLIRNGEFELLGHYCSYSTRPYFIRWQLKFKTKIWCPGWTLVYGTAR  91
+
+
+>UniRef90_A0A1S5RQS5 ALF4 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS5_PROCL
+Length=130
+
+ Score = 79.5 bits (195),  Expect = 9e-18, Method: Composition-based stats.
+ Identities = 15/61 (25%), Positives = 32/61 (52%), Gaps = 1/61 (2%)
+
+Query  1   YEALVTSILGK-LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  +++++    +T L+    ++ +GH C + RRP   R++L +     CPGW    G+ 
+Sbjct  35  FSQIISTVADNVITRLYQEGEIELLGHYCNYSRRPYFHRWELNYRATTSCPGWTTAVGKA  94
+
+Query  60  K  60
+           +
+Sbjct  95  Q  95
+
+
+>UniRef90_K9MQ23 Anti-lipopolysaccharide factor 3 n=1 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=K9MQ23_MACRS
+Length=120
+
+ Score = 78.3 bits (192),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 15/59 (25%), Positives = 27/59 (46%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + ++ ++      LW    ++ +G  C +  RP  + +KLY+     CPGW    G  K
+Sbjct  26  DLILPTLTTHFVKLWRQGDLELLGKYCTYNMRPFFKNWKLYYSASVICPGWTQIRGSAK  84
+
+
+>UniRef90_UPI000F67D186 anti-lipopolysaccharide factor-like n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F67D186
+Length=125
+
+ Score = 78.7 bits (193),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 20/57 (35%), Positives = 27/57 (47%), Gaps = 2/57 (4%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L+ S+   L  LW    +D +GH C +  +P I  F+LY  G   CPGW    G   
+Sbjct  36  LIPSLS--LHSLWRTGDIDLVGHSCTYNVKPDIDGFELYFIGSVTCPGWTTLRGESN  90
+
+
+>UniRef90_H9MYY8 Anti-lipopolysaccharide factor isoform 6 n=2 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYY8_PORTR
+Length=115
+
+ Score = 77.6 bits (190),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 16/47 (34%), Positives = 26/47 (55%), Gaps = 0/47 (0%)
+
+Query  13  TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+             L  + + + + H+C FR  P++R ++LY  G  WCPGW   +G  
+Sbjct  33  KALLEDGTTEILDHVCNFRVMPRLRSWELYFRGDVWCPGWTVIKGES  79
+
+
+>UniRef90_UPI00084B2FEC anti-lipopolysaccharide factor-like isoform 
+X2 n=1 Tax=Hyalella azteca TaxID=294128 RepID=UPI00084B2FEC
+Length=120
+
+ Score = 77.2 bits (189),  Expect = 6e-17, Method: Composition-based stats.
+ Identities = 25/60 (42%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + A+   +L K+  LW  DSV FMG  C++R++PKI R++LY+ G F C  +   EG  K
+Sbjct  25  WSAVTNLLLNKILALWKEDSVQFMGSECHYRQKPKIYRWQLYYVGNFSCNKFFGIEGSGK  84
+
+
+>UniRef90_A0A1B3LHI9 Anti-lipopolysaccharide factor 4 (Fragment) 
+n=1 Tax=Macrobrachium rosenbergii TaxID=79674 RepID=A0A1B3LHI9_MACRS
+Length=135
+
+ Score = 77.2 bits (189),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 17/58 (29%), Positives = 35/58 (60%), Gaps = 1/58 (2%)
+
+Query  3   ALVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +L+T ++ K+  G+++   +D  GH C ++R P I+R ++++  +  C GW P  G+ 
+Sbjct  40  SLLTGVVPKIVDGMYNEGDLDLFGHPCQYKRVPYIKRLEVHYRAEVKCLGWTPIVGKA  97
+
+
+>UniRef90_A0A0M3ULR7 Anti-lipopolysaccharide factor 5 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M3ULR7_MACNP
+Length=135
+
+ Score = 76.4 bits (187),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 33/59 (56%), Gaps = 1/59 (2%)
+
+Query  3   ALVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +LVT ++ K+  G++    +D  G  C ++R P I+R +L++  +  C GW P  G  +
+Sbjct  40  SLVTGVVPKIVDGVYDEGDIDLFGKPCQYKRIPYIKRLELHYRAEIRCLGWTPIVGEAR  98
+
+
+>UniRef90_UPI00084B56AB anti-lipopolysaccharide factor-like isoform 
+X1 n=1 Tax=Hyalella azteca TaxID=294128 RepID=UPI00084B56AB
+Length=120
+
+ Score = 76.0 bits (186),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 24/60 (40%), Positives = 37/60 (62%), Gaps = 0/60 (0%)
+
+Query  1   YEALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + A+   +L K+  LW  DSV FMG  C++R+RPK+ R++LY+ G F C  +   EG  +
+Sbjct  25  WSAVTNLLLNKILALWKEDSVQFMGSECHYRQRPKVIRWQLYYVGNFACDKFFGIEGSGQ  84
+
+
+>UniRef90_A0A0M5M1Q3 Anti-lipopolysaccharide factor 3 n=1 Tax=Macrobrachium 
+nipponense TaxID=159736 RepID=A0A0M5M1Q3_MACNP
+Length=121
+
+ Score = 74.1 bits (181),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 14/61 (23%), Positives = 32/61 (52%), Gaps = 1/61 (2%)
+
+Query  1   YEALVTSILGKL-TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  ++T I G   + L+    ++ + H C ++R     +++L+++ +  CPGW    G+ 
+Sbjct  25  WTEILTPIFGLARSALYTEGDMELLDHYCVYKRTGYFYKWELHYKAEVRCPGWTKIIGKA  84
+
+Query  60  K  60
+           K
+Sbjct  85  K  85
+
+
+>UniRef90_A0A385L4B1 Anti-lipopolysaccharide factor 12 (Fragment) 
+n=1 Tax=Procambarus clarkii TaxID=6728 RepID=A0A385L4B1_PROCL
+Length=438
+
+ Score = 78.3 bits (192),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 28/60 (47%), Gaps = 1/60 (2%)
+
+Query  1    YEALVTSILGKLTG-LWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            +   +T+ + +L+  +  N+    + H C +  RP + R+K+      WCPGW    G  
+Sbjct  336  WGNFITAAVDELSARMIQNEEYVLLDHYCMYFTRPYLSRWKIRILADVWCPGWTTITGSA  395
+
+
+>UniRef90_A0A1S5RQT1 ALF2 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQT1_PROCL
+Length=123
+
+ Score = 73.7 bits (180),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 24/59 (41%), Positives = 34/59 (58%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L  SI+   +  W N  ++FMG IC +   PK + + L + GK WCPGWAPF G  +
+Sbjct  30  KGLFGSIIDHFSNFWKNGEMEFMGQICRYSYSPKFQNWGLTYSGKMWCPGWAPFAGNSR  88
+
+
+>UniRef90_A0A222YT35 Antilipopolysaccharide factor E1 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=A0A222YT35_PENJP
+Length=127
+
+ Score = 73.3 bits (179),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 20/58 (34%), Positives = 29/58 (50%), Gaps = 1/58 (2%)
+
+Query  4   LVTSILGKLTGLWHN-DSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L   I  +L G+W     + F+GH C     PK   + LY++G F CP W   EG+ +
+Sbjct  26  LQKDITRELAGMWLTRGEMTFLGHQCNLTLVPKFSFWNLYYDGTFTCPQWTDIEGKSE  83
+
+
+>UniRef90_A0A423TFS2 Antilipopolysaccharide factor isoform 2 n=3 
+Tax=Penaeus vannamei TaxID=6689 RepID=A0A423TFS2_PENVA
+Length=129
+
+ Score = 73.3 bits (179),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 22/58 (38%), Positives = 27/58 (47%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E L+T I  +LT    N SV F+ + C F   PK   +  YHE  F CP W    G  
+Sbjct  22  EKLLTYIAQELTWHGRNGSVTFLHNKCEFSVTPKSIDWMPYHESNFSCPDWTNIVGEA  79
+
+
+>UniRef90_A0A1L1WKA6 Anti-lipopolysaccharide factor n=1 Tax=Portunus 
+trituberculatus TaxID=210409 RepID=A0A1L1WKA6_PORTR
+Length=115
+
+ Score = 71.4 bits (174),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 12/46 (26%), Positives = 24/46 (52%), Gaps = 0/46 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            L+   +++ +  +C +R  P+   ++ Y +G  WCPGW   +G  
+Sbjct  34  ALFDFGAIEILDRVCNYRVMPRFENWRFYFKGDVWCPGWTFIKGES  79
+
+
+>UniRef90_A0A1S6PU24 Anti-lipopolysaccharide factor n=2 Tax=Scylla 
+paramamosain TaxID=85552 RepID=A0A1S6PU24_SCYPA
+Length=115
+
+ Score = 71.4 bits (174),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 13/46 (28%), Positives = 24/46 (52%), Gaps = 0/46 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            L  + + + + H+C +R  P ++  +LY +G  WCP W   +G  
+Sbjct  34  TLLEDGTTEILDHVCNYRVTPLLQNSELYFKGDVWCPSWTVIKGES  79
+
+
+>UniRef90_A0A3R7Q9V9 Antilipopolysaccharide factor isoform 2 n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=A0A3R7Q9V9_PENVA
+Length=385
+
+ Score = 75.2 bits (184),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 22/58 (38%), Positives = 28/58 (48%), Gaps = 0/58 (0%)
+
+Query  2    EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            E L+T I  +LT    N SV F+ + C F   PK + +  YHE  F CP W    G  
+Sbjct  205  EKLLTYIAQELTWHGRNGSVTFLHNKCEFSVTPKSKDWMPYHESNFSCPDWTNIVGEA  262
+
+
+>UniRef90_D0V3Y7 Anti-lipopolysaccharide factor 2 n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=D0V3Y7_ERISI
+Length=120
+
+ Score = 71.0 bits (173),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 20/58 (34%), Positives = 30/58 (52%), Gaps = 1/58 (2%)
+
+Query  3   ALVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            +   I GK+T  L    + D  G+ C +R  P++ +F+LY  G  WCPGW   +G  
+Sbjct  26  NIFDDIFGKVTETLVDFGTTDIAGNPCNYRLSPRLIKFELYFVGLVWCPGWTTIQGES  83
+
+
+>UniRef90_A0A0N7ZD98 Uncharacterized protein n=1 Tax=Scylla olivacea 
+TaxID=85551 RepID=A0A0N7ZD98_9EUCA
+Length=127
+
+ Score = 70.6 bits (172),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 27/58 (47%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + L + +   L        +  + + C   R+P I+ F++++  +  CPGW   +GR 
+Sbjct  31  DILGSVLGPILKEAIKTREIILLDNYCTMERQPYIKSFEVHYRAEVSCPGWTTIKGRG  88
+
+
+>UniRef90_G8A3I0 Anti-lipopolysaccharide factor 2 n=2 Tax=Macrobrachium 
+rosenbergii TaxID=79674 RepID=G8A3I0_MACRS
+Length=121
+
+ Score = 69.8 bits (170),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 12/61 (20%), Positives = 29/61 (48%), Gaps = 1/61 (2%)
+
+Query  1   YEALVTSILG-KLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  ++ S      + L+    ++ + H C ++R     +++L+++ +  CPGW    G  
+Sbjct  25  WSDILKSTFEFTRSQLYVQGDMELLDHYCIYKRTGYFYKWELHYKAEVRCPGWTNIIGTA  84
+
+Query  60  K  60
+           K
+Sbjct  85  K  85
+
+
+>UniRef90_A0A1S5RQS8 ALF10 n=1 Tax=Procambarus clarkii TaxID=6728 
+RepID=A0A1S5RQS8_PROCL
+Length=242
+
+ Score = 72.5 bits (177),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 15/60 (25%), Positives = 29/60 (48%), Gaps = 1/60 (2%)
+
+Query  1    YEALVTSILGKLTGLWHND-SVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            +++++  IL ++T   H     + + H C +  RP +  + ++   K WCPGW    G  
+Sbjct  144  WDSIIYMILDRVTHRMHVGNEFELLNHQCAYHTRPLLMNWSMHILAKVWCPGWVNLSGTA  203
+
+
+>UniRef90_H9MYY2 Anti-lipopolysaccharide factor isoform 4 n=2 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYY2_PORTR
+Length=125
+
+ Score = 69.8 bits (170),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 14/60 (23%), Positives = 25/60 (42%), Gaps = 1/60 (2%)
+
+Query  1   YEALVTSILGKLT-GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           +  +V +I+            +  + H C   R P I+  +L++  +  CPGW    GR 
+Sbjct  27  WLDIVKAIVVPAARETIKTQEITLLDHYCTLSRSPYIKSLELHYRAEVTCPGWTIIRGRG  86
+
+
+>UniRef90_A4UMS3 Anti-lipopolysaccharide factor (Fragment) n=1 
+Tax=Penaeus schmitti TaxID=122378 RepID=A4UMS3_PENSC
+Length=40
+
+ Score = 66.4 bits (161),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 27/40 (68%), Gaps = 0/40 (0%)
+
+Query  14  GLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWA  53
+           GLW N   + +GH C F  +P I+R +L+++GK WCPGW 
+Sbjct  1   GLWRNGETELLGHKCRFTVKPYIKRLQLHYKGKMWCPGWT  40
+
+
+>UniRef90_A0A2R3SJY7 Anti-lipopolysaccharide factor 5 n=2 Tax=Penaeus 
+vannamei TaxID=6689 RepID=A0A2R3SJY7_PENVA
+Length=132
+
+ Score = 68.7 bits (167),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 16/57 (28%), Positives = 27/57 (47%), Gaps = 1/57 (2%)
+
+Query  2   EALVTSILGKL-TGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+           +   + I   +   L  +  ++ +GH C +  RP   R++L  + K WCPGW    G
+Sbjct  34  DNYASDIFSNIFNSLVKDGEIELLGHYCSYSTRPYFLRWRLKFKSKVWCPGWTLVYG  90
+
+
+>UniRef90_I4BZJ5 Anti-lipopolysaccharide factor n=1 Tax=Portunus 
+pelagicus TaxID=80836 RepID=I4BZJ5_PORPE
+Length=123
+
+ Score = 68.7 bits (167),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 29/59 (49%), Positives = 37/59 (63%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L +S+L  L G  HN S D +G  C+ RR P IR F L+HEG FWC GW PF+G  +
+Sbjct  29  DPLASSLLEILAGRCHNSSDDLVGPCCFLRRPPIIRIFLLHHEGFFWCAGWPPFDGSTR  87
+
+
+>UniRef90_A0A3R7M7W8 Anti-lipopolysaccharide factor 2 n=2 Tax=Penaeus 
+vannamei TaxID=6689 RepID=A0A3R7M7W8_PENVA
+Length=127
+
+ Score = 68.7 bits (167),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 16/56 (29%), Positives = 22/56 (39%), Gaps = 0/56 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           L   +   L G W    V FMGH C      +   + +YH+  F C  W    G+ 
+Sbjct  26  LTKEVARHLLGHWTTKRVTFMGHSCKIEVEHRFSHWTVYHQCTFTCDHWPNITGKA  81
+
+
+>UniRef90_A6XIA2 Anti-lipopolysaccharide factor n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=A6XIA2_ERISI
+Length=120
+
+ Score = 67.9 bits (165),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 15/41 (37%), Positives = 23/41 (56%), Gaps = 0/41 (0%)
+
+Query  19  DSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            + + +  IC  R  P I++F+LY  G+ WCPGW   +G  
+Sbjct  43  GTTNIVDQICNTRVMPTIKKFELYFRGRVWCPGWTTIQGES  83
+
+
+>UniRef90_A0A3R7PB52 Anti-lipopolysaccharide factor like protein 
+n=1 Tax=Penaeus vannamei TaxID=6689 RepID=A0A3R7PB52_PENVA
+Length=284
+
+ Score = 70.2 bits (171),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 14/41 (34%), Positives = 22/41 (54%), Gaps = 0/41 (0%)
+
+Query  17   HNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+             +  ++ +GH C +  RP   R++L  + K WCPGW    G
+Sbjct  161  KDGEIELLGHYCSYSTRPYFLRWRLKFKSKVWCPGWTLVYG  201
+
+
+>UniRef90_H9MYY3 Anti-lipopolysaccharide factor isoform 5 n=1 
+Tax=Portunus trituberculatus TaxID=210409 RepID=H9MYY3_PORTR
+Length=120
+
+ Score = 67.2 bits (163),  Expect = 6e-13, Method: Composition-based stats.
+ Identities = 14/49 (29%), Positives = 25/49 (51%), Gaps = 0/49 (0%)
+
+Query  12  LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +  L+ +  ++   H C   R P I R++L  +    CPGW P +G+ +
+Sbjct  37  IKRLYVDREINLFDHYCIISRSPHISRWELKWQATVTCPGWTPVKGKVR  85
+
+
+>UniRef90_A0A222YSR1 Antilipopolysaccharide factor E2 n=1 Tax=Penaeus 
+japonicus TaxID=27405 RepID=A0A222YSR1_PENJP
+Length=127
+
+ Score = 67.2 bits (163),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 10/45 (22%), Positives = 21/45 (47%), Gaps = 0/45 (0%)
+
+Query  16  WHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +    +    + C   R P ++R ++++     CPGW P  G+ +
+Sbjct  48  YETREITLFDNYCVLTRSPYVKRLEVHYRADVKCPGWTPIVGKGR  92
+
+
+>UniRef90_M4HXU5 Antilipopolysaccharide factor isoform 5 n=1 Tax=Penaeus 
+chinensis TaxID=139456 RepID=M4HXU5_PENCE
+Length=123
+
+ Score = 66.8 bits (162),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 9/59 (15%), Positives = 25/59 (42%), Gaps = 0/59 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           + L + +   +           + + C   R P +++ ++++  +  CPGW    G+ +
+Sbjct  30  DILGSLVTTFVENAVKTTETTILDNYCLLSRSPYLKKLEVHYRAELKCPGWTTIVGKGR  88
+
+
+>UniRef90_V5TCV4 Anti-lipopolysaccharide factor n=2 Tax=Scylla 
+TaxID=6760 RepID=V5TCV4_SCYPA
+Length=126
+
+ Score = 66.8 bits (162),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 16/49 (33%), Positives = 23/49 (47%), Gaps = 0/49 (0%)
+
+Query  12  LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           +  L+    +D   H C   R P I  ++L  E    CPGW P +GR +
+Sbjct  43  IKRLFVEREIDLFDHYCVLSRSPHIYSWELKFEATVTCPGWTPEKGRVR  91
+
+
+>UniRef90_UPI000F67A6F4 anti-lipopolysaccharide factor-like n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F67A6F4
+Length=86
+
+ Score = 65.6 bits (159),  Expect = 9e-13, Method: Composition-based stats.
+ Identities = 17/57 (30%), Positives = 23/57 (40%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           L   +   L G W    V FMGH C      +   + +YH+  F C  W    G+ K
+Sbjct  26  LTKEVARHLLGHWTTKRVTFMGHSCKIEVEHRFSHWTVYHQCTFTCDHWPNITGKGK  82
+
+
+>UniRef90_A0A2R3SJY5 Anti-lipopolysaccharide factor 4 n=1 Tax=Penaeus 
+vannamei TaxID=6689 RepID=A0A2R3SJY5_PENVA
+Length=124
+
+ Score = 65.6 bits (159),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 26/58 (45%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + L + +   L        +  + + CY  R P +++F++++     CPGW    GR 
+Sbjct  31  DVLGSVVETFLKNAVKTSELTILDNYCYVNRSPYLKKFEVHYRADVKCPGWTIIVGRG  88
+
+
+>UniRef90_W6MES5 Anti-LPS-factor-like-4 protein (Fragment) n=1 
+Tax=Pagurus bernhardus TaxID=174397 RepID=W6MES5_PAGBR
+Length=83
+
+ Score = 64.1 bits (155),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 16/45 (36%), Positives = 24/45 (53%), Gaps = 0/45 (0%)
+
+Query  9   LGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWA  53
+               TGLW N  +  +  +C +R +P +++FKL   G   CPGW 
+Sbjct  38  ADLFTGLWRNGEIILLDKVCAYRVKPVMKKFKLRFIGSLTCPGWT  82
+
+
+>UniRef90_UPI000F68B9F0 anti-lipopolysaccharide factor-like n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F68B9F0
+Length=134
+
+ Score = 65.2 bits (158),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 14/41 (34%), Positives = 22/41 (54%), Gaps = 0/41 (0%)
+
+Query  17  HNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEG  57
+            +  ++ +GH C +  RP   R++L  + K WCPGW    G
+Sbjct  7   KDGEIELLGHYCSYSTRPYFLRWRLKFKSKVWCPGWTLVYG  47
+
+
+>UniRef90_A0A0P4WDC5 Uncharacterized protein n=1 Tax=Scylla olivacea 
+TaxID=85551 RepID=A0A0P4WDC5_9EUCA
+Length=129
+
+ Score = 65.2 bits (158),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 24/57 (42%), Positives = 29/57 (51%), Gaps = 0/57 (0%)
+
+Query  4   LVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRCK  60
+           LV  IL KLT  W  D +  +GH C++         K Y+ GKF CPG A F G  K
+Sbjct  30  LVAPILKKLTAQWKADKMSLLGHKCHYYGTLTGTGVKQYYYGKFSCPGLADFSGMSK  86
+
+
+>UniRef90_A0A444T4M0 Anti-lipopolysaccharide factor n=1 Tax=Armadillidium 
+vulgare TaxID=13347 RepID=A0A444T4M0_ARMVU
+Length=76
+
+ Score = 63.3 bits (153),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 19/39 (49%), Positives = 28/39 (72%), Gaps = 0/39 (0%)
+
+Query  21  VDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + F+GH C ++  P+I  F+L ++GKFWCPG+A F GR 
+Sbjct  1   MSFLGHPCQYQVEPRISSFELKYDGKFWCPGFASFTGRA  39
+
+
+>UniRef90_UPI000F690E16 uncharacterized protein LOC113807194 n=1 
+Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F690E16
+Length=195
+
+ Score = 65.6 bits (159),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 15/58 (26%), Positives = 22/58 (38%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E ++     +  G W   SV FMGH C          +  Y++  F C  W    G+ 
+Sbjct  24  EKILKEADQQPLGHWMTKSVTFMGHSCKTEVELGFSHWTGYYQCTFSCDPWTDITGKA  81
+
+
+>UniRef90_A0A2P0ZI15 Anti-lipopolysaccharide factor 4 n=1 Tax=Eriocheir 
+sinensis TaxID=95602 RepID=A0A2P0ZI15_ERISI
+Length=125
+
+ Score = 64.1 bits (155),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 14/58 (24%), Positives = 21/58 (36%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E L+  +  KL        +DF+ H C   +   +    LY   +  C GW    G  
+Sbjct  28  EDLLDGVAVKLLAQGSLSGLDFLDHECELSKDFVLDGLNLYFTAEMTCSGWTEIVGEA  85
+
+
+>UniRef90_A0A423TFR6 Anti-lipopolysaccharide factor 2 n=1 Tax=Penaeus 
+vannamei TaxID=6689 RepID=A0A423TFR6_PENVA
+Length=148
+
+ Score = 64.5 bits (156),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 15/58 (26%), Positives = 22/58 (38%), Gaps = 0/58 (0%)
+
+Query  2   EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           E ++     +  G W   SV FMGH C          +  Y++  F C  W    G+ 
+Sbjct  24  EKILKEADQQPLGHWMTKSVTFMGHSCKTEVELGFSHWTGYYQCTFSCDPWTDITGKA  81
+
+
+>UniRef90_A0A3R7NC40 Antilipopolysaccharide factor isoform 5 n=2 
+Tax=Penaeus vannamei TaxID=6689 RepID=A0A3R7NC40_PENVA
+Length=415
+
+ Score = 65.6 bits (159),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 26/58 (45%), Gaps = 0/58 (0%)
+
+Query  2    EALVTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+            + L + +   L        +  + + CY  R P +++F++++     CPGW    GR 
+Sbjct  322  DVLGSVVETFLKNAVKTSELTILDNYCYVNRSPYLKKFEVHYRADVKCPGWTIIVGRG  379
+
+
+>UniRef90_S6DQ29 Anti-lipopolysaccharide factor isoform 4 n=1 
+Tax=Scylla paramamosain TaxID=85552 RepID=S6DQ29_SCYPA
+Length=125
+
+ Score = 58.3 bits (140),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 12/48 (25%), Positives = 21/48 (44%), Gaps = 0/48 (0%)
+
+Query  12  LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           ++  +    +  + H C   R  K+R  KL +     CP W+  +GR 
+Sbjct  41  ISETFKVKEITLLDHYCVLSRYIKLRGLKLKYRATLTCPEWSTLKGRG  88
+
+
+>UniRef90_W6SJH5 ALF4 protein (Fragment) n=1 Tax=Scylla paramamosain 
+TaxID=85552 RepID=W6SJH5_SCYPA
+Length=103
+
+ Score = 56.8 bits (136),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 12/47 (26%), Positives = 21/47 (45%), Gaps = 0/47 (0%)
+
+Query  12   LTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR  58
+            ++  +    +  + H C   R  K+R  KL +     CP W+  +GR
+Sbjct  57   ISETFKVKEITLLDHYCVLSRYIKLRGLKLKYRATLTCPEWSTLKGR  103
+
+
+>UniRef90_UPI00084A71CB anti-lipopolysaccharide factor-like n=1 
+Tax=Hyalella azteca TaxID=294128 RepID=UPI00084A71CB
+Length=119
+
+ Score = 56.4 bits (135),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 16/54 (30%), Positives = 27/54 (50%), Gaps = 0/54 (0%)
+
+Query  5   VTSILGKLTGLWHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGR  58
+           +  I  +L   W ++ + F+G  CY+ +  + RR++    G F CPGW    G 
+Sbjct  27  ILPIAQQLGNFWQSNELQFLGFQCYYHQHLRFRRWRFRFHGSFSCPGWTNIHGE  80
+
+
+>UniRef90_A0A444SJ42 Uncharacterized protein n=1 Tax=Armadillidium 
+vulgare TaxID=13347 RepID=A0A444SJ42_ARMVU
+Length=106
+
+ Score = 51.4 bits (122),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 13/44 (30%), Positives = 18/44 (41%), Gaps = 0/44 (0%)
+
+Query  16  WHNDSVDFMGHICYFRRRPKIRRFKLYHEGKFWCPGWAPFEGRC  59
+           + N      G  C +   P  R ++L+   KFWCP  A F    
+Sbjct  24  FRNAVNRVFGSQCLYTSTPTFRGWELHFLAKFWCPSLATFTATA  67
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.159    0.601    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0488    0.140     1.90     42.6     43.6 
+
+Effective search space used: 825669454512
+
+Search has CONVERGED!
+
+
+  Database: refseq_protein.fasta
+    Posted date:  Jul 1, 2020  8:37 PM
+  Number of letters in database: 33,175,535,772
+  Number of sequences in database:  99,657,864
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
