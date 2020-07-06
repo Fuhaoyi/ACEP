@@ -38,7 +38,7 @@ Note: if you want to use POSSUM online service, you have to fill the short seque
 
     Three parameters need to be set in the localBLASTgetPSSMs.py program.<br />
     path0: the path of psiblast program (eg. path0 ='E:/blast-2.9.0/bin/psiblast').<br />
-    path1: the path of the BLAST sequence query database (eg. path1 ='E:/blast-2.9.0 /bin/uniref90.db').<br />
+    path1: the path of BLAST database (eg. path1 ='E:/blast-2.9.0 /bin/uniref90.db').<br />
     path2: the path where the localBLASTgetPSSMs.py program is located (eg. path2 ='E:/ACEP/ACME_codes/localBLASTgetPSSMs/').
 
 
@@ -51,15 +51,15 @@ We recommend using a GPU to speed up the calculations; if you use GPU accelerati
 
 ### 1.4 Starting a prediction
 
-* **Step 1.** Download all files in the folderthe ACME_codes folder. 
+* **Step 1.** Download all the files in ACME_codes folder. 
 
-* **Step 2.** Enter the sequences into the AMP_prediction/inputs/sequences.csv file and put the PSSM files into the AMP_prediction/inputs/PSSM_files/ directory.
+* **Step 2.** Enter sequences into the ‘AMP_prediction/inputs/sequences.csv’ file and put the PSSM files into the ‘AMP_prediction/inputs/PSSM_files/’ directory.
 
-   Note: In order to increase the speed of high-throughput sequence prediction without generating additional errors, the PSSM files placed in the directory can only be named using numbers, such as 00001.pssm, 00002.pssm, 0003.pssm ..., and the order of these files that are sorted by file names must be the same as the order of sequences in the sequences.csv file. The refun() function in Data_pre_processing.py file will help to do this.
+   Note: In order to increase the speed of high-throughput sequence prediction without generating additional errors, the PSSM files placed in the directory can only be named using numbers, such as 00001.pssm, 00002.pssm, 00003.pssm ..., and the order of these files that are sorted by file names must be the same as the order of sequences in the sequences.csv file. The refun() function in Data_pre_processing.py file will help to do this.
 
 * **Step 3.** Run ACEP_prediction.py.
 
-* **Step 4.** View predicted results in AMP_prediction/outputs/outputs.csv file. And sequences with probability greater than or equal to 0.5 are identified as AMPs, and sequences with probability less than 0.5 are identified as non-AMPs.
+* **Step 4.** View predicted results in ‘AMP_prediction/outputs/outputs.csv’ file. And sequences with probability greater than or equal to 0.5 are identified as AMPs, and sequences with probability less than 0.5 are identified as non-AMPs.
 
 ## 2.Architecture of the ACEP modle.
 
