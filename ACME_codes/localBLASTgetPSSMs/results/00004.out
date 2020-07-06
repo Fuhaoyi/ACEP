@@ -1,0 +1,2850 @@
+PSIBLAST 2.9.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: refseq_protein.fasta
+           99,657,864 sequences; 33,175,535,772 total letters
+
+Results from round 1
+
+
+Query= AP00842
+
+Length=43
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+UniRef90_Q9Z4J1 Divercin V41 n=1 Tax=Carnobacterium divergens Tax...  88.6       2e-22
+UniRef90_P80493 Bacteriocin bavaricin-MN n=1 Tax=Lactobacillus sa...  78.2       1e-18
+UniRef90_I7H7S7 Enterocin NKR-5-3C prepeptide n=3 Tax=Enterococca...  69.3       7e-15
+UniRef90_P84962 Bacteriocin divergicin M35 n=1 Tax=Carnobacterium...  62.4       3e-12
+UniRef90_Q9L658 Class IIa bacteriocin EntA n=30 Tax=Firmicutes Ta...  62.4       4e-12
+UniRef90_B6DSR3 EntA (Fragment) n=2 Tax=Enterococcus faecium TaxI...  58.5       1e-10
+UniRef90_B6DSR7 EntA (Fragment) n=1 Tax=Enterococcus mundtii TaxI...  57.0       4e-10
+UniRef90_F8UWQ8 Enterocin A (Fragment) n=4 Tax=Enterococcus TaxID...  57.0       6e-10
+UniRef90_R2SRR0 Bacteriocin-type signal sequence n=1 Tax=Enteroco...  56.6       8e-10
+UniRef90_UPI000A26D3FD bacteriocin n=1 Tax=Bacilli TaxID=91061 Re...  53.1       1e-08
+UniRef90_Q0Z8B6 Bacteriocin hiracin-JM79 n=7 Tax=Firmicutes TaxID...  53.1       2e-08
+UniRef90_A0A2G0E7I6 Bacteriocin n=2 Tax=Enterococcus TaxID=1350 R...  52.0       4e-08
+UniRef90_UPI0003355AF5 bacteriocin SRCAM 602 n=4 Tax=Enterococcus...  52.4       5e-08
+UniRef90_E9NQ39 Duracin GL n=3 Tax=Enterococcaceae TaxID=81852 Re...  52.0       6e-08
+UniRef90_A0A4S2C0C4 Bacteriocin n=1 Tax=Enterococcus faecalis Tax...  51.2       7e-08
+UniRef90_Q47778 BacA protein n=4 Tax=Enterococcus faecalis TaxID=...  51.2       1e-07
+UniRef90_A8J8T1 Predicted protein n=1 Tax=Chlamydomonas reinhardt...  50.4       2e-07
+UniRef90_UPI000A353192 bacteriocin n=1 Tax=Enterococcus faecium T...  49.7       4e-07
+UniRef90_A0A1Y0VR55 Bacteriocin mesentericin Y105 n=3 Tax=Pedioco...  49.7       4e-07
+UniRef90_UPI000A3337A6 hypothetical protein n=1 Tax=Enterococcus ...  48.9       6e-07
+UniRef90_O30434 Bacteriocin enterocin-P n=19 Tax=Enterococcus Tax...  48.9       1e-06
+UniRef90_A0A2S7RP79 Bacteriocin n=18 Tax=Enterococcaceae TaxID=81...  48.5       1e-06
+UniRef90_Q8GR37 Uncharacterized protein n=9 Tax=Enterococcus faec...  48.1       2e-06
+UniRef90_UPI00098D4D1E bacteriocin n=1 Tax=Enterococcus faecalis ...  48.1       2e-06
+UniRef90_A0A3T1Z287 Bacteriocin n=1 Tax=Listeria monocytogenes Ta...  47.4       3e-06
+UniRef90_A0A242FT09 Bacteriocin enterocin-P n=3 Tax=Enterococcus ...  47.0       5e-06
+UniRef90_A0A4Q1U0B4 Bacteriocin n=3 Tax=Lactobacillaceae TaxID=33...  47.0       5e-06
+UniRef90_Q644A0 Putative enterocin P bacteriocin (Fragment) n=2 T...  46.2       6e-06
+UniRef90_S4C0J6 Bacteriocin hiracin-JM79 n=2 Tax=Enterococcus fae...  46.6       9e-06
+UniRef90_A0A1H0XI18 Class II bacteriocin n=2 Tax=Carnobacterium T...  46.2       9e-06
+UniRef90_Q9AGM4 Listeriocin 743A n=3 Tax=Listeria TaxID=1637 RepI...  46.2       1e-05
+UniRef90_UPI0009B29F58 hypothetical protein n=1 Tax=Chlamydia tra...  45.4       3e-05
+UniRef90_B7U212 Enterocin (Fragment) n=1 Tax=Enterococcus sp. DF1...  44.7       3e-05
+UniRef90_W1I5E9 Uncultured bacterium plasmid pRGF00004 n=3 Tax=ro...  45.1       5e-05
+UniRef90_A0A1G6KS48 Bacteriocin-type signal sequence-containing p...  44.3       5e-05
+UniRef90_A0A2V2KZC5 Bacteriocin n=2 Tax=Enterococcus faecium TaxI...  44.3       6e-05
+UniRef90_A0A0R2BCK1 Uncharacterized protein n=1 Tax=Lactobacillus...  44.3       6e-05
+UniRef90_A0A448A397 Bacteriocin ubericin-A n=11 Tax=Streptococcus...  44.3       8e-05
+UniRef90_R9R6P4 Enterocin TW21 n=5 Tax=Enterococcus TaxID=1350 Re...  44.3       8e-05
+UniRef90_A0A380KP32 Bacteriocin ubericin-A n=8 Tax=Streptococcus ...  43.9       9e-05
+UniRef90_UPI000BA6E812 bacteriocin carnobacteriocin BM1 n=1 Tax=T...  43.9       1e-04
+UniRef90_A0A229NE30 Enterocin n=7 Tax=Enterococcaceae TaxID=81852...  43.5       1e-04
+UniRef90_P0A311 Bacteriocin curvacin-A n=3 Tax=Lactobacillus TaxI...  43.5       1e-04
+UniRef90_P86393 Bacteriocin SRCAM 602 n=1 Tax=Paenibacillus polym...  42.7       1e-04
+UniRef90_A0A372KM42 ComC/BlpC family peptide pheromone/bacterioci...  43.5       1e-04
+UniRef90_W7BE23 PapA n=1 Tax=Listeria aquatica FSL S10-1188 TaxID...  42.7       3e-04
+UniRef90_A0A368UB43 Bacteriocin n=1 Tax=Streptococcus gallolyticu...  42.7       3e-04
+UniRef90_Q8GR39 Enterocin SE-K4 n=6 Tax=Enterococcus faecalis Tax...  42.4       4e-04
+UniRef90_U6S4G6 Putative bacteriocin hiracin-JM79 n=22 Tax=Bacter...  42.4       5e-04
+UniRef90_UPI000CF10929 enterocin n=1 Tax=Enterococcus mundtii Tax...  42.0       6e-04
+
+
+>UniRef90_Q9Z4J1 Divercin V41 n=1 Tax=Carnobacterium divergens 
+TaxID=2748 RepID=Q9Z4J1_CARDV
+Length=66
+
+ Score = 88.6 bits (218),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 43/43 (100%), Positives = 43/43 (100%), Gaps = 0/43 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC
+Sbjct  24  TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  66
+
+
+>UniRef90_P80493 Bacteriocin bavaricin-MN n=1 Tax=Lactobacillus 
+sakei TaxID=1599 RepID=BAVM_LACSK
+Length=42
+
+ Score = 78.2 bits (191),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 39/42 (93%), Positives = 40/42 (95%), Gaps = 0/42 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           TKYYGNGVYCNSKKCWVDWGQA+G IGQTVV GWLGGAIPGK
+Sbjct  1   TKYYGNGVYCNSKKCWVDWGQAAGGIGQTVVXGWLGGAIPGK  42
+
+
+>UniRef90_I7H7S7 Enterocin NKR-5-3C prepeptide n=3 Tax=Enterococcaceae 
+TaxID=81852 RepID=I7H7S7_ENTFC
+Length=61
+
+ Score = 69.3 bits (168),  Expect = 7e-15, Method: Compositional matrix adjust.
+ Identities = 30/41 (73%), Positives = 35/41 (85%), Gaps = 0/41 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           YYGNG+YCNSKKCWV+WG   GC+ Q  +GGWLGGA+PGKC
+Sbjct  21  YYGNGLYCNSKKCWVEWGITGGCLAQYAIGGWLGGAVPGKC  61
+
+
+>UniRef90_P84962 Bacteriocin divergicin M35 n=1 Tax=Carnobacterium 
+divergens TaxID=2748 RepID=DIV35_CARDV
+Length=43
+
+ Score = 62.4 bits (150),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 34/42 (81%), Positives = 34/42 (81%), Gaps = 2/42 (5%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           TKYYGNGVYCNSKKCWVDWG A GCI   VV G LGG IPGK
+Sbjct  1   TKYYGNGVYCNSKKCWVDWGTAQGCI--DVVIGQLGGGIPGK  40
+
+
+>UniRef90_Q9L658 Class IIa bacteriocin EntA n=30 Tax=Firmicutes 
+TaxID=1239 RepID=Q9L658_ENTFC
+Length=65
+
+ Score = 62.4 bits (150),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 28/42 (67%), Positives = 32/42 (76%), Gaps = 0/42 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIPGKC
+Sbjct  24  KYYGNGVYCTKNKCTVDWAKATTCIAGMSIGGFLGGAIPGKC  65
+
+
+>UniRef90_B6DSR3 EntA (Fragment) n=2 Tax=Enterococcus faecium 
+TaxID=1352 RepID=B6DSR3_ENTFC
+Length=50
+
+ Score = 58.5 bits (140),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 27/41 (66%), Positives = 31/41 (76%), Gaps = 0/41 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIPGK
+Sbjct  8   KYYGNGVYCTKIKCTVDWAKATTCIAGMSIGGFLGGAIPGK  48
+
+
+>UniRef90_B6DSR7 EntA (Fragment) n=1 Tax=Enterococcus mundtii 
+TaxID=53346 RepID=B6DSR7_ENTMU
+Length=49
+
+ Score = 57.0 bits (136),  Expect = 4e-10, Method: Compositional matrix adjust.
+ Identities = 27/41 (66%), Positives = 30/41 (73%), Gaps = 0/41 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           KYYGNGVYC   KC VDW Q + CI    +GG+LGGAIPGK
+Sbjct  7   KYYGNGVYCTKNKCTVDWAQGNYCIAGMSIGGFLGGAIPGK  47
+
+
+>UniRef90_F8UWQ8 Enterocin A (Fragment) n=4 Tax=Enterococcus TaxID=1350 
+RepID=F8UWQ8_ENTFL
+Length=63
+
+ Score = 57.0 bits (136),  Expect = 6e-10, Method: Compositional matrix adjust.
+ Identities = 25/39 (64%), Positives = 29/39 (74%), Gaps = 0/39 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIP  40
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIP
+Sbjct  24  KYYGNGVYCTKNKCTVDWAKATTCIAGMSIGGFLGGAIP  62
+
+
+>UniRef90_R2SRR0 Bacteriocin-type signal sequence n=1 Tax=Enterococcus 
+pallens ATCC BAA-351 TaxID=1158607 RepID=R2SRR0_9ENTE
+Length=60
+
+ Score = 56.6 bits (135),  Expect = 8e-10, Method: Compositional matrix adjust.
+ Identities = 26/41 (63%), Positives = 28/41 (68%), Gaps = 0/41 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           YYGNGV C    C VDW  A  CI Q  +GG+LGGAIPGKC
+Sbjct  20  YYGNGVSCGKTTCTVDWAAAGTCIAQISIGGFLGGAIPGKC  60
+
+
+>UniRef90_UPI000A26D3FD bacteriocin n=1 Tax=Bacilli TaxID=91061 
+RepID=UPI000A26D3FD
+Length=53
+
+ Score = 53.1 bits (126),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 22/33 (67%), Positives = 27/33 (82%), Gaps = 0/33 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           YYGNG+YCN +KCWVDW QA G IG+ +V GW+
+Sbjct  12  YYGNGLYCNKEKCWVDWNQAKGEIGKIIVNGWV  44
+
+
+>UniRef90_Q0Z8B6 Bacteriocin hiracin-JM79 n=7 Tax=Firmicutes TaxID=1239 
+RepID=HJM79_ENTHR
+Length=74
+
+ Score = 53.1 bits (126),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 22/33 (67%), Positives = 27/33 (82%), Gaps = 0/33 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           YYGNG+YCN +KCWVDW QA G IG+ +V GW+
+Sbjct  33  YYGNGLYCNKEKCWVDWNQAKGEIGKIIVNGWV  65
+
+
+>UniRef90_A0A2G0E7I6 Bacteriocin n=2 Tax=Enterococcus TaxID=1350 
+RepID=A0A2G0E7I6_ENTFC
+Length=55
+
+ Score = 52.0 bits (123),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 22/33 (67%), Positives = 27/33 (82%), Gaps = 0/33 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           YYGNGVYCN +KCWVDW +AS  IG+ +V GW+
+Sbjct  15  YYGNGVYCNKQKCWVDWNKASKEIGKIIVNGWV  47
+
+
+>UniRef90_UPI0003355AF5 bacteriocin SRCAM 602 n=4 Tax=Enterococcus 
+TaxID=1350 RepID=UPI0003355AF5
+Length=71
+
+ Score = 52.4 bits (124),  Expect = 5e-08, Method: Compositional matrix adjust.
+ Identities = 22/33 (67%), Positives = 27/33 (82%), Gaps = 0/33 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           YYGNGVYCN +KCWVDW +AS  IG+ +V GW+
+Sbjct  31  YYGNGVYCNKQKCWVDWNKASKEIGKIIVNGWV  63
+
+
+>UniRef90_E9NQ39 Duracin GL n=3 Tax=Enterococcaceae TaxID=81852 
+RepID=E9NQ39_9ENTE
+Length=71
+
+ Score = 52.0 bits (123),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 21/33 (64%), Positives = 27/33 (82%), Gaps = 0/33 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           YYGNGVYCN ++CWVDW +AS  IG+ +V GW+
+Sbjct  31  YYGNGVYCNKQECWVDWNKASKEIGKIIVNGWV  63
+
+
+>UniRef90_A0A4S2C0C4 Bacteriocin n=1 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=A0A4S2C0C4_ENTFL
+Length=48
+
+ Score = 51.2 bits (121),  Expect = 7e-08, Method: Compositional matrix adjust.
+ Identities = 21/33 (64%), Positives = 27/33 (82%), Gaps = 0/33 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           YYGNG+YCN +KCWVDW +AS  IG+ +V GW+
+Sbjct  8   YYGNGLYCNKQKCWVDWNKASREIGKIIVNGWV  40
+
+
+>UniRef90_Q47778 BacA protein n=4 Tax=Enterococcus faecalis TaxID=1351 
+RepID=Q47778_ENTFL
+Length=67
+
+ Score = 51.2 bits (121),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 21/33 (64%), Positives = 27/33 (82%), Gaps = 0/33 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           YYGNG+YCN +KCWVDW +AS  IG+ +V GW+
+Sbjct  27  YYGNGLYCNKQKCWVDWNKASREIGKIIVNGWV  59
+
+
+>UniRef90_A8J8T1 Predicted protein n=1 Tax=Chlamydomonas reinhardtii 
+TaxID=3055 RepID=A8J8T1_CHLRE
+Length=59
+
+ Score = 50.4 bits (119),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 21/33 (64%), Positives = 26/33 (79%), Gaps = 0/33 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGW  34
+           KYYGNGV+C  K C+VDWGQA+  IG+ +V GW
+Sbjct  19  KYYGNGVHCGKKTCYVDWGQATASIGKIIVNGW  51
+
+
+>UniRef90_UPI000A353192 bacteriocin n=1 Tax=Enterococcus faecium 
+TaxID=1352 RepID=UPI000A353192
+Length=62
+
+ Score = 49.7 bits (117),  Expect = 4e-07, Method: Compositional matrix adjust.
+ Identities = 20/37 (54%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I +  + GW  G
+Sbjct  17  TRSYGNGVYCNNSKCWVNWGKAKENIAEIFISGWASG  53
+
+
+>UniRef90_A0A1Y0VR55 Bacteriocin mesentericin Y105 n=3 Tax=Pediococcus 
+pentosaceus TaxID=1255 RepID=A0A1Y0VR55_PEDPE
+Length=60
+
+ Score = 49.7 bits (117),  Expect = 4e-07, Method: Compositional matrix adjust.
+ Identities = 21/33 (64%), Positives = 26/33 (79%), Gaps = 0/33 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGW  34
+           KYYGNGV+C  K C+VDWGQA+  IG+ +V GW
+Sbjct  19  KYYGNGVHCGKKTCYVDWGQATASIGKIIVNGW  51
+
+
+>UniRef90_UPI000A3337A6 hypothetical protein n=1 Tax=Enterococcus 
+faecium TaxID=1352 RepID=UPI000A3337A6
+Length=50
+
+ Score = 48.9 bits (115),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 21/35 (60%), Positives = 25/35 (71%), Gaps = 0/35 (0%)
+
+Query  9   YCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           YC   KC VDW +A+ CI    +GG+LGGAIPGKC
+Sbjct  16  YCTKNKCTVDWAKATTCIAGMSIGGFLGGAIPGKC  50
+
+
+>UniRef90_O30434 Bacteriocin enterocin-P n=19 Tax=Enterococcus 
+TaxID=1350 RepID=ETCP_ENTFC
+Length=71
+
+ Score = 48.9 bits (115),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 21/37 (57%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I   V+ GW  G
+Sbjct  29  TRSYGNGVYCNNSKCWVNWGEAKENIAGIVISGWASG  65
+
+
+>UniRef90_A0A2S7RP79 Bacteriocin n=18 Tax=Enterococcaceae TaxID=81852 
+RepID=A0A2S7RP79_ENTFC
+Length=54
+
+ Score = 48.5 bits (114),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 21/37 (57%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I   V+ GW  G
+Sbjct  12  TRSYGNGVYCNNSKCWVNWGEAKENIAGIVISGWASG  48
+
+
+>UniRef90_Q8GR37 Uncharacterized protein n=9 Tax=Enterococcus 
+faecalis TaxID=1351 RepID=Q8GR37_ENTFL
+Length=72
+
+ Score = 48.1 bits (113),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 20/34 (59%), Positives = 25/34 (74%), Gaps = 0/34 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGW  34
+           T+ YGNGVYCN +KCWV+W +A   I   V+GGW
+Sbjct  30  TRSYGNGVYCNKQKCWVNWNEAKQQIAGIVIGGW  63
+
+
+>UniRef90_UPI00098D4D1E bacteriocin n=1 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=UPI00098D4D1E
+Length=72
+
+ Score = 48.1 bits (113),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 21/34 (62%), Positives = 25/34 (74%), Gaps = 0/34 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGW  34
+           TK YGNGVYCN +KCWV+W +A   I   V+GGW
+Sbjct  30  TKSYGNGVYCNKQKCWVNWDEAKQQIAGIVIGGW  63
+
+
+>UniRef90_A0A3T1Z287 Bacteriocin n=1 Tax=Listeria monocytogenes 
+TaxID=1639 RepID=A0A3T1Z287_LISMN
+Length=48
+
+ Score = 47.4 bits (111),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 22/40 (55%), Positives = 23/40 (58%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           K YGNGV+CN KKCWVDWG A   IG      W  G   G
+Sbjct  6   KSYGNGVHCNKKKCWVDWGSAISTIGNNSAANWATGGAAG  45
+
+
+>UniRef90_A0A242FT09 Bacteriocin enterocin-P n=3 Tax=Enterococcus 
+TaxID=1350 RepID=A0A242FT09_ENTFC
+Length=69
+
+ Score = 47.0 bits (110),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 20/37 (54%), Positives = 25/37 (68%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN  KCWV+W +A+  I   V+ GW  G
+Sbjct  29  TRSYGNGVYCNDDKCWVNWNEANQQIAGIVISGWASG  65
+
+
+>UniRef90_A0A4Q1U0B4 Bacteriocin n=3 Tax=Lactobacillaceae TaxID=33958 
+RepID=A0A4Q1U0B4_9LACO
+Length=69
+
+ Score = 47.0 bits (110),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 20/36 (56%), Positives = 24/36 (67%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           KYYGNGVYC  KKC+V+WG+A   IG  +   W  G
+Sbjct  24  KYYGNGVYCTKKKCYVNWGEAINSIGNNMAANWFTG  59
+
+
+>UniRef90_Q644A0 Putative enterocin P bacteriocin (Fragment) n=2 
+Tax=Enterococcus faecium TaxID=1352 RepID=Q644A0_ENTFC
+Length=44
+
+ Score = 46.2 bits (108),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 20/37 (54%), Positives = 25/37 (68%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN  KCWV+W +A+  I   V+ GW  G
+Sbjct  2   TRSYGNGVYCNDDKCWVNWNEANQQIAGIVISGWASG  38
+
+
+>UniRef90_S4C0J6 Bacteriocin hiracin-JM79 n=2 Tax=Enterococcus 
+faecalis TaxID=1351 RepID=S4C0J6_ENTFL
+Length=72
+
+ Score = 46.6 bits (109),  Expect = 9e-06, Method: Compositional matrix adjust.
+ Identities = 19/32 (59%), Positives = 22/32 (69%), Gaps = 0/32 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGW  34
+           YYGNG+YCN +KCWVDW +A   IG   V  W
+Sbjct  31  YYGNGLYCNKQKCWVDWSKAITIIGNNAVANW  62
+
+
+>UniRef90_A0A1H0XI18 Class II bacteriocin n=2 Tax=Carnobacterium 
+TaxID=2747 RepID=A0A1H0XI18_9LACT
+Length=57
+
+ Score = 46.2 bits (108),  Expect = 9e-06, Method: Compositional matrix adjust.
+ Identities = 19/32 (59%), Positives = 23/32 (72%), Gaps = 0/32 (0%)
+
+Query  4   YGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           Y NGVYCN  KCWVDW +A   IG+ +V GW+
+Sbjct  20  YPNGVYCNKTKCWVDWNKAQSEIGKIIVNGWV  51
+
+
+>UniRef90_Q9AGM4 Listeriocin 743A n=3 Tax=Listeria TaxID=1637 
+RepID=Q9AGM4_LISIO
+Length=71
+
+ Score = 46.2 bits (108),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 22/41 (54%), Positives = 22/41 (54%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+            K YGNGV CN KKCWVDWG A   IG      W  G   G
+Sbjct  28  AKSYGNGVQCNKKKCWVDWGSAISTIGNNSAANWATGGAAG  68
+
+
+>UniRef90_UPI0009B29F58 hypothetical protein n=1 Tax=Chlamydia 
+trachomatis TaxID=813 RepID=UPI0009B29F58
+Length=70
+
+ Score = 45.4 bits (106),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 25/45 (56%), Positives = 27/45 (60%), Gaps = 3/45 (7%)
+
+Query  1   TKYYGNGVYCNSKK--CWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           T YYGNGV CNSK   C V+W +  GCIG   V  W G  I GKC
+Sbjct  27  TTYYGNGVSCNSKTKTCSVNWAKTVGCIGNISVASWAGATI-GKC  70
+
+
+>UniRef90_B7U212 Enterocin (Fragment) n=1 Tax=Enterococcus sp. 
+DF14 TaxID=574085 RepID=B7U212_9ENTE
+Length=35
+
+ Score = 44.7 bits (104),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 20/35 (57%), Positives = 24/35 (69%), Gaps = 0/35 (0%)
+
+Query  7   GVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           GVYC   KC VD  +A+ CI    +GG+LGGAIPG
+Sbjct  1   GVYCTKNKCTVDRAKATTCIAGMSIGGFLGGAIPG  35
+
+
+>UniRef90_W1I5E9 Uncultured bacterium plasmid pRGF00004 n=3 Tax=root 
+TaxID=1 RepID=W1I5E9_9BACT
+Length=89
+
+ Score = 45.1 bits (105),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 19/36 (53%), Positives = 22/36 (61%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           KYY NG+YCN   C VDW QA   IG+    GW+ G
+Sbjct  45  KYYANGLYCNQFTCRVDWNQARQSIGEISYRGWMNG  80
+
+
+>UniRef90_A0A1G6KS48 Bacteriocin-type signal sequence-containing 
+protein n=1 Tax=Marinilactibacillus psychrotolerans TaxID=191770 
+RepID=A0A1G6KS48_9LACT
+Length=61
+
+ Score = 44.3 bits (103),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 22/40 (55%), Positives = 23/40 (58%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN K C VDWG+A G IG      W  G   G
+Sbjct  19  KYYGNGVSCNKKGCTVDWGKAIGIIGNNAAANWATGGAAG  58
+
+
+>UniRef90_A0A2V2KZC5 Bacteriocin n=2 Tax=Enterococcus faecium 
+TaxID=1352 RepID=A0A2V2KZC5_ENTFC
+Length=56
+
+ Score = 44.3 bits (103),  Expect = 6e-05, Method: Compositional matrix adjust.
+ Identities = 19/31 (61%), Positives = 22/31 (71%), Gaps = 0/31 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVG  32
+           KYYGNGVYC  +KC VDW +AS CI    +G
+Sbjct  24  KYYGNGVYCTKEKCTVDWAKASTCIAGMSIG  54
+
+
+>UniRef90_A0A0R2BCK1 Uncharacterized protein n=1 Tax=Lactobacillus 
+murinus DSM 20452 = NBRC 14221 TaxID=1423772 RepID=A0A0R2BCK1_9LACO
+Length=70
+
+ Score = 44.3 bits (103),  Expect = 6e-05, Method: Compositional matrix adjust.
+ Identities = 19/36 (53%), Positives = 22/36 (61%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           KYY NG+YCN   C VDW QA   IG+    GW+ G
+Sbjct  26  KYYANGLYCNQFTCRVDWNQARQSIGEISYRGWMNG  61
+
+
+>UniRef90_A0A448A397 Bacteriocin ubericin-A n=11 Tax=Streptococcus 
+equi TaxID=1336 RepID=A0A448A397_9STRE
+Length=72
+
+ Score = 44.3 bits (103),  Expect = 8e-05, Method: Compositional matrix adjust.
+ Identities = 20/38 (53%), Positives = 27/38 (71%), Gaps = 1/38 (3%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCI-GQTVVGGWLGG  37
+           T YYGNG+YCN++KCWV+W +A   I   +V+ G  GG
+Sbjct  25  TTYYGNGLYCNTQKCWVNWSEAVNIILNNSVMNGLTGG  62
+
+
+>UniRef90_R9R6P4 Enterocin TW21 n=5 Tax=Enterococcus TaxID=1350 
+RepID=R9R6P4_ENTFC
+Length=76
+
+ Score = 44.3 bits (103),  Expect = 8e-05, Method: Compositional matrix adjust.
+ Identities = 19/35 (54%), Positives = 24/35 (69%), Gaps = 0/35 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           YYGNGVYCN++KCWVDW +A   I    V  ++ G
+Sbjct  31  YYGNGVYCNTQKCWVDWSRARSEIVDRGVKAYVNG  65
+
+
+>UniRef90_A0A380KP32 Bacteriocin ubericin-A n=8 Tax=Streptococcus 
+TaxID=1301 RepID=A0A380KP32_9STRE
+Length=72
+
+ Score = 43.9 bits (102),  Expect = 9e-05, Method: Compositional matrix adjust.
+ Identities = 20/38 (53%), Positives = 26/38 (68%), Gaps = 1/38 (3%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIG-QTVVGGWLGG  37
+           T YYGNG+YCN+ KCWV+W Q +  I   +V+ G  GG
+Sbjct  25  TIYYGNGLYCNANKCWVNWSQTATTIANNSVINGLTGG  62
+
+
+>UniRef90_UPI000BA6E812 bacteriocin carnobacteriocin BM1 n=1 Tax=Terribacillus 
+saccharophilus TaxID=361277 RepID=UPI000BA6E812
+Length=69
+
+ Score = 43.9 bits (102),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 16/35 (46%), Positives = 24/35 (69%), Gaps = 0/35 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           T+ YGNGVYCN  KCWV+W + +  + +  + GW+
+Sbjct  30  TRSYGNGVYCNRSKCWVNWNETTQSVVKISIDGWV  64
+
+
+>UniRef90_A0A229NE30 Enterocin n=7 Tax=Enterococcaceae TaxID=81852 
+RepID=A0A229NE30_ENTFC
+Length=60
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 19/35 (54%), Positives = 24/35 (69%), Gaps = 0/35 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           YYGNGVYCN++KCWVDW +A   I    V  ++ G
+Sbjct  15  YYGNGVYCNTQKCWVDWSRARSEIVDRGVKAYVNG  49
+
+
+>UniRef90_P0A311 Bacteriocin curvacin-A n=3 Tax=Lactobacillus 
+TaxID=1578 RepID=SAKA_LACCU
+Length=59
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 19/36 (53%), Positives = 28/36 (78%), Gaps = 4/36 (11%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           + YGNGVYCN+KKCWV+ G+A+    Q+++GG + G
+Sbjct  20  RSYGNGVYCNNKKCWVNRGEAT----QSIIGGMISG  51
+
+
+>UniRef90_P86393 Bacteriocin SRCAM 602 n=1 Tax=Paenibacillus polymyxa 
+TaxID=1406 RepID=BCN02_PAEPO
+Length=39
+
+ Score = 42.7 bits (99),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 20/35 (57%), Positives = 25/35 (71%), Gaps = 2/35 (6%)
+
+Query  3   YYGNGVYCNSKK--CWVDWGQASGCIGQTVVGGWL  35
+           YYGNG+YCN +K   WVDW +AS  IG+  V GW+
+Sbjct  3   YYGNGLYCNKQKHYTWVDWNKASREIGKITVNGWV  37
+
+
+>UniRef90_A0A372KM42 ComC/BlpC family peptide pheromone/bacteriocin 
+n=3 Tax=Streptococcus TaxID=1301 RepID=A0A372KM42_9STRE
+Length=72
+
+ Score = 43.5 bits (101),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 19/41 (46%), Positives = 22/41 (54%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN  KCWV+W Q +  I        L G   G
+Sbjct  25  TTYYGNGLYCNENKCWVNWSQTATTIANNSAMNLLTGGNAG  65
+
+
+>UniRef90_W7BE23 PapA n=1 Tax=Listeria aquatica FSL S10-1188 TaxID=1265818 
+RepID=W7BE23_9LIST
+Length=61
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 21/40 (53%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN KKC VDWG+  G IG         G   G
+Sbjct  19  KYYGNGVSCNKKKCSVDWGKTIGIIGNNSAANLATGGAAG  58
+
+
+>UniRef90_A0A368UB43 Bacteriocin n=1 Tax=Streptococcus gallolyticus 
+TaxID=315405 RepID=A0A368UB43_9STRE
+Length=72
+
+ Score = 42.7 bits (99),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 19/38 (50%), Positives = 26/38 (68%), Gaps = 1/38 (3%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQA-SGCIGQTVVGGWLGG  37
+           T YYGNG+YCN+ KCWV+W Q  +  +  +V+ G  GG
+Sbjct  25  TIYYGNGLYCNANKCWVNWSQTVTTIVNNSVMNGLTGG  62
+
+
+>UniRef90_Q8GR39 Enterocin SE-K4 n=6 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=Q8GR39_ENTFL
+Length=76
+
+ Score = 42.4 bits (98),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 19/35 (54%), Positives = 23/35 (66%), Gaps = 0/35 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           YYGNGVYCN +KCWVDW +A   I    V  ++ G
+Sbjct  31  YYGNGVYCNKQKCWVDWSRARSEIIDRGVKAYVNG  65
+
+
+>UniRef90_U6S4G6 Putative bacteriocin hiracin-JM79 n=22 Tax=Bacteria 
+TaxID=2 RepID=U6S4G6_ENTFL
+Length=71
+
+ Score = 42.4 bits (98),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 17/20 (85%), Positives = 19/20 (95%), Gaps = 0/20 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQA  22
+           YYGNGVYCN +KCWV+WGQA
+Sbjct  31  YYGNGVYCNKQKCWVNWGQA  50
+
+
+>UniRef90_UPI000CF10929 enterocin n=1 Tax=Enterococcus mundtii 
+TaxID=53346 RepID=UPI000CF10929
+Length=76
+
+ Score = 42.0 bits (97),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 18/35 (51%), Positives = 23/35 (66%), Gaps = 0/35 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           YYGNGVYCN +KCWV+W +A   I    V  ++ G
+Sbjct  31  YYGNGVYCNKQKCWVNWSKARSAIIDRGVKAYVNG  65
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.143    0.545    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 818515154184
+Results from round 2
+
+
+Query= AP00842
+
+Length=43
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+UniRef90_Q9L658 Class IIa bacteriocin EntA n=30 Tax=Firmicutes Ta...  59.9       5e-11
+UniRef90_Q9Z4J1 Divercin V41 n=1 Tax=Carnobacterium divergens Tax...  59.2       8e-11
+UniRef90_F8UWQ8 Enterocin A (Fragment) n=4 Tax=Enterococcus TaxID...  56.5       8e-10
+UniRef90_E9NQ39 Duracin GL n=3 Tax=Enterococcaceae TaxID=81852 Re...  54.5       6e-09
+UniRef90_UPI000A353192 bacteriocin n=1 Tax=Enterococcus faecium T...  54.2       8e-09
+UniRef90_I7H7S7 Enterocin NKR-5-3C prepeptide n=3 Tax=Enterococca...  53.8       1e-08
+UniRef90_B6DSR3 EntA (Fragment) n=2 Tax=Enterococcus faecium TaxI...  52.6       2e-08
+UniRef90_A0A242FT09 Bacteriocin enterocin-P n=3 Tax=Enterococcus ...  53.0       3e-08
+UniRef90_B6DSR7 EntA (Fragment) n=1 Tax=Enterococcus mundtii TaxI...  52.2       3e-08
+UniRef90_W1I5E9 Uncultured bacterium plasmid pRGF00004 n=3 Tax=ro...  52.6       5e-08
+UniRef90_UPI000A3337A6 hypothetical protein n=1 Tax=Enterococcus ...  51.5       5e-08
+UniRef90_R2SRR0 Bacteriocin-type signal sequence n=1 Tax=Enteroco...  51.5       7e-08
+UniRef90_O30434 Bacteriocin enterocin-P n=19 Tax=Enterococcus Tax...  51.8       7e-08
+UniRef90_Q0Z8B6 Bacteriocin hiracin-JM79 n=7 Tax=Firmicutes TaxID...  51.8       8e-08
+UniRef90_UPI0003355AF5 bacteriocin SRCAM 602 n=4 Tax=Enterococcus...  51.5       9e-08
+UniRef90_UPI000BA6E812 bacteriocin carnobacteriocin BM1 n=1 Tax=T...  51.5       1e-07
+UniRef90_P80493 Bacteriocin bavaricin-MN n=1 Tax=Lactobacillus sa...  50.7       1e-07
+UniRef90_Q8GR37 Uncharacterized protein n=9 Tax=Enterococcus faec...  51.5       1e-07
+UniRef90_A0A4S2C0C4 Bacteriocin n=1 Tax=Enterococcus faecalis Tax...  50.7       1e-07
+UniRef90_Q47778 BacA protein n=4 Tax=Enterococcus faecalis TaxID=...  50.7       2e-07
+UniRef90_A0A372KM42 ComC/BlpC family peptide pheromone/bacterioci...  50.3       3e-07
+UniRef90_UPI000A26D3FD bacteriocin n=1 Tax=Bacilli TaxID=91061 Re...  49.9       3e-07
+UniRef90_A0A2G0E7I6 Bacteriocin n=2 Tax=Enterococcus TaxID=1350 R...  49.9       3e-07
+UniRef90_UPI00098D4D1E bacteriocin n=1 Tax=Enterococcus faecalis ...  50.3       3e-07
+UniRef90_R9R6P4 Enterocin TW21 n=5 Tax=Enterococcus TaxID=1350 Re...  49.9       4e-07
+UniRef90_A0A2V2KZC5 Bacteriocin n=2 Tax=Enterococcus faecium TaxI...  48.4       1e-06
+UniRef90_A0A1H0XI18 Class II bacteriocin n=2 Tax=Carnobacterium T...  48.0       2e-06
+UniRef90_A0A0R2BCK1 Uncharacterized protein n=1 Tax=Lactobacillus...  48.0       2e-06
+UniRef90_Q9AGM4 Listeriocin 743A n=3 Tax=Listeria TaxID=1637 RepI...  48.0       2e-06
+UniRef90_S4C0J6 Bacteriocin hiracin-JM79 n=2 Tax=Enterococcus fae...  48.0       3e-06
+UniRef90_A0A368UB43 Bacteriocin n=1 Tax=Streptococcus gallolyticu...  47.6       3e-06
+UniRef90_A0A1Y0VR55 Bacteriocin mesentericin Y105 n=3 Tax=Pedioco...  47.2       4e-06
+UniRef90_A8J8T1 Predicted protein n=1 Tax=Chlamydomonas reinhardt...  47.2       4e-06
+UniRef90_A0A448A397 Bacteriocin ubericin-A n=11 Tax=Streptococcus...  47.6       4e-06
+UniRef90_A0A380KP32 Bacteriocin ubericin-A n=8 Tax=Streptococcus ...  47.2       5e-06
+UniRef90_Q644A0 Putative enterocin P bacteriocin (Fragment) n=2 T...  46.5       5e-06
+UniRef90_A0A2S7RP79 Bacteriocin n=18 Tax=Enterococcaceae TaxID=81...  46.1       8e-06
+UniRef90_UPI000CF10929 enterocin n=1 Tax=Enterococcus mundtii Tax...  46.5       9e-06
+UniRef90_Q8GR39 Enterocin SE-K4 n=6 Tax=Enterococcus faecalis Tax...  46.5       9e-06
+UniRef90_A0A229NE30 Enterocin n=7 Tax=Enterococcaceae TaxID=81852...  45.7       1e-05
+UniRef90_A0A4Q1U0B4 Bacteriocin n=3 Tax=Lactobacillaceae TaxID=33...  46.1       2e-05
+UniRef90_A0A1G6KS48 Bacteriocin-type signal sequence-containing p...  44.5       5e-05
+UniRef90_A0A3T1Z287 Bacteriocin n=1 Tax=Listeria monocytogenes Ta...  44.1       5e-05
+UniRef90_W7BE23 PapA n=1 Tax=Listeria aquatica FSL S10-1188 TaxID...  43.8       8e-05
+UniRef90_P84962 Bacteriocin divergicin M35 n=1 Tax=Carnobacterium...  43.4       8e-05
+UniRef90_P0A311 Bacteriocin curvacin-A n=3 Tax=Lactobacillus TaxI...  43.4       1e-04
+UniRef90_B7U212 Enterocin (Fragment) n=1 Tax=Enterococcus sp. DF1...  41.8       3e-04
+UniRef90_UPI0009B29F58 hypothetical protein n=1 Tax=Chlamydia tra...  42.6       3e-04
+UniRef90_P86393 Bacteriocin SRCAM 602 n=1 Tax=Paenibacillus polym...  41.4       6e-04
+
+Sequences not found previously or not previously below threshold:
+
+UniRef90_A0A1E5KT44 Bacteriocin n=2 Tax=Enterococcus rivorum TaxI...  46.5       1e-05
+UniRef90_A9Q0M7 Bacteriocin ubericin-A n=1 Tax=Streptococcus uber...  44.5       5e-05
+UniRef90_A0A0H5Q4Y2 Uncharacterized protein n=1 Tax=uncultured pr...  44.5       6e-05
+UniRef90_K4Q8P9 UbaA protein n=10 Tax=Bacteria TaxID=2 RepID=K4Q8...  44.5       6e-05
+UniRef90_G5JN10 Bacteriocin sakacin-P n=1 Tax=Streptococcus crice...  44.1       7e-05
+UniRef90_M9QVZ1 Pediocin BA 28 n=3 Tax=Pediococcus TaxID=1253 Rep...  44.1       8e-05
+UniRef90_Q6XVH0 SakX n=2 Tax=Lactobacillus TaxID=1578 RepID=Q6XVH...  43.8       1e-04
+UniRef90_A0A380JE35 Bacteriocin ubericin-A n=1 Tax=Streptococcus ...  43.8       1e-04
+UniRef90_P35618 Bacteriocin sakacin-P n=3 Tax=Lactobacillus TaxID...  43.0       2e-04
+UniRef90_UPI000A33474A enterocin n=1 Tax=Enterococcus faecium Tax...  42.6       2e-04
+UniRef90_D2DXK5 Avicin A n=2 Tax=Enterococcus TaxID=1350 RepID=D2...  42.6       3e-04
+UniRef90_UPI000733B030 bacteriocin n=2 Tax=Streptococcus TaxID=13...  42.6       3e-04
+UniRef90_Q6TGQ7 Enterocin CRL35 n=8 Tax=Enterococcus TaxID=1350 R...  42.2       4e-04
+UniRef90_P80569 Bacteriocin piscicolin-126 n=3 Tax=Carnobacterium...  42.2       4e-04
+UniRef90_P29430 Bacteriocin pediocin PA-1 n=12 Tax=Bacilli TaxID=...  41.8       6e-04
+UniRef90_UPI000BE23263 CCRG-2 family RiPP n=1 Tax=Leuconostoc gel...  41.4       8e-04
+
+
+>UniRef90_Q9L658 Class IIa bacteriocin EntA n=30 Tax=Firmicutes 
+TaxID=1239 RepID=Q9L658_ENTFC
+Length=65
+
+ Score = 59.9 bits (144),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 28/42 (67%), Positives = 32/42 (76%), Gaps = 0/42 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIPGKC
+Sbjct  24  KYYGNGVYCTKNKCTVDWAKATTCIAGMSIGGFLGGAIPGKC  65
+
+
+>UniRef90_Q9Z4J1 Divercin V41 n=1 Tax=Carnobacterium divergens 
+TaxID=2748 RepID=Q9Z4J1_CARDV
+Length=66
+
+ Score = 59.2 bits (142),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 43/43 (100%), Positives = 43/43 (100%), Gaps = 0/43 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC
+Sbjct  24  TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  66
+
+
+>UniRef90_F8UWQ8 Enterocin A (Fragment) n=4 Tax=Enterococcus TaxID=1350 
+RepID=F8UWQ8_ENTFL
+Length=63
+
+ Score = 56.5 bits (135),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 25/39 (64%), Positives = 29/39 (74%), Gaps = 0/39 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIP  40
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIP
+Sbjct  24  KYYGNGVYCTKNKCTVDWAKATTCIAGMSIGGFLGGAIP  62
+
+
+>UniRef90_E9NQ39 Duracin GL n=3 Tax=Enterococcaceae TaxID=81852 
+RepID=E9NQ39_9ENTE
+Length=71
+
+ Score = 54.5 bits (130),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 21/34 (62%), Positives = 27/34 (79%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+            YYGNGVYCN ++CWVDW +AS  IG+ +V GW+
+Sbjct  30  TYYGNGVYCNKQECWVDWNKASKEIGKIIVNGWV  63
+
+
+>UniRef90_UPI000A353192 bacteriocin n=1 Tax=Enterococcus faecium 
+TaxID=1352 RepID=UPI000A353192
+Length=62
+
+ Score = 54.2 bits (129),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I +  + GW  G
+Sbjct  17  TRSYGNGVYCNNSKCWVNWGKAKENIAEIFISGWASG  53
+
+
+>UniRef90_I7H7S7 Enterocin NKR-5-3C prepeptide n=3 Tax=Enterococcaceae 
+TaxID=81852 RepID=I7H7S7_ENTFC
+Length=61
+
+ Score = 53.8 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 30/42 (71%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+            YYGNG+YCNSKKCWV+WG   GC+ Q  +GGWLGGA+PGKC
+Sbjct  20  TYYGNGLYCNSKKCWVEWGITGGCLAQYAIGGWLGGAVPGKC  61
+
+
+>UniRef90_B6DSR3 EntA (Fragment) n=2 Tax=Enterococcus faecium 
+TaxID=1352 RepID=B6DSR3_ENTFC
+Length=50
+
+ Score = 52.6 bits (125),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 27/41 (66%), Positives = 31/41 (76%), Gaps = 0/41 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIPGK
+Sbjct  8   KYYGNGVYCTKIKCTVDWAKATTCIAGMSIGGFLGGAIPGK  48
+
+
+>UniRef90_A0A242FT09 Bacteriocin enterocin-P n=3 Tax=Enterococcus 
+TaxID=1350 RepID=A0A242FT09_ENTFC
+Length=69
+
+ Score = 53.0 bits (126),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 25/37 (68%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN  KCWV+W +A+  I   V+ GW  G
+Sbjct  29  TRSYGNGVYCNDDKCWVNWNEANQQIAGIVISGWASG  65
+
+
+>UniRef90_B6DSR7 EntA (Fragment) n=1 Tax=Enterococcus mundtii 
+TaxID=53346 RepID=B6DSR7_ENTMU
+Length=49
+
+ Score = 52.2 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 27/41 (66%), Positives = 30/41 (73%), Gaps = 0/41 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           KYYGNGVYC   KC VDW Q + CI    +GG+LGGAIPGK
+Sbjct  7   KYYGNGVYCTKNKCTVDWAQGNYCIAGMSIGGFLGGAIPGK  47
+
+
+>UniRef90_W1I5E9 Uncultured bacterium plasmid pRGF00004 n=3 Tax=root 
+TaxID=1 RepID=W1I5E9_9BACT
+Length=89
+
+ Score = 52.6 bits (125),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 22/36 (61%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           KYY NG+YCN   C VDW QA   IG+    GW+ G
+Sbjct  45  KYYANGLYCNQFTCRVDWNQARQSIGEISYRGWMNG  80
+
+
+>UniRef90_UPI000A3337A6 hypothetical protein n=1 Tax=Enterococcus 
+faecium TaxID=1352 RepID=UPI000A3337A6
+Length=50
+
+ Score = 51.5 bits (122),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 21/35 (60%), Positives = 25/35 (71%), Gaps = 0/35 (0%)
+
+Query  9   YCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           YC   KC VDW +A+ CI    +GG+LGGAIPGKC
+Sbjct  16  YCTKNKCTVDWAKATTCIAGMSIGGFLGGAIPGKC  50
+
+
+>UniRef90_R2SRR0 Bacteriocin-type signal sequence n=1 Tax=Enterococcus 
+pallens ATCC BAA-351 TaxID=1158607 RepID=R2SRR0_9ENTE
+Length=60
+
+ Score = 51.5 bits (122),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 26/42 (62%), Positives = 28/42 (67%), Gaps = 0/42 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+            YYGNGV C    C VDW  A  CI Q  +GG+LGGAIPGKC
+Sbjct  19  TYYGNGVSCGKTTCTVDWAAAGTCIAQISIGGFLGGAIPGKC  60
+
+
+>UniRef90_O30434 Bacteriocin enterocin-P n=19 Tax=Enterococcus 
+TaxID=1350 RepID=ETCP_ENTFC
+Length=71
+
+ Score = 51.8 bits (123),  Expect = 7e-08, Method: Composition-based stats.
+ Identities = 21/37 (57%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I   V+ GW  G
+Sbjct  29  TRSYGNGVYCNNSKCWVNWGEAKENIAGIVISGWASG  65
+
+
+>UniRef90_Q0Z8B6 Bacteriocin hiracin-JM79 n=7 Tax=Firmicutes TaxID=1239 
+RepID=HJM79_ENTHR
+Length=74
+
+ Score = 51.8 bits (123),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 22/37 (59%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNG+YCN +KCWVDW QA G IG+ +V GW+   
+Sbjct  32  TYYGNGLYCNKEKCWVDWNQAKGEIGKIIVNGWVNHG  68
+
+
+>UniRef90_UPI0003355AF5 bacteriocin SRCAM 602 n=4 Tax=Enterococcus 
+TaxID=1350 RepID=UPI0003355AF5
+Length=71
+
+ Score = 51.5 bits (122),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 22/34 (65%), Positives = 27/34 (79%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+            YYGNGVYCN +KCWVDW +AS  IG+ +V GW+
+Sbjct  30  TYYGNGVYCNKQKCWVDWNKASKEIGKIIVNGWV  63
+
+
+>UniRef90_UPI000BA6E812 bacteriocin carnobacteriocin BM1 n=1 Tax=Terribacillus 
+saccharophilus TaxID=361277 RepID=UPI000BA6E812
+Length=69
+
+ Score = 51.5 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 16/35 (46%), Positives = 24/35 (69%), Gaps = 0/35 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           T+ YGNGVYCN  KCWV+W + +  + +  + GW+
+Sbjct  30  TRSYGNGVYCNRSKCWVNWNETTQSVVKISIDGWV  64
+
+
+>UniRef90_P80493 Bacteriocin bavaricin-MN n=1 Tax=Lactobacillus 
+sakei TaxID=1599 RepID=BAVM_LACSK
+Length=42
+
+ Score = 50.7 bits (120),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 39/42 (93%), Positives = 40/42 (95%), Gaps = 0/42 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           TKYYGNGVYCNSKKCWVDWGQA+G IGQTVV GWLGGAIPGK
+Sbjct  1   TKYYGNGVYCNSKKCWVDWGQAAGGIGQTVVXGWLGGAIPGK  42
+
+
+>UniRef90_Q8GR37 Uncharacterized protein n=9 Tax=Enterococcus 
+faecalis TaxID=1351 RepID=Q8GR37_ENTFL
+Length=72
+
+ Score = 51.5 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 20/36 (56%), Positives = 25/36 (69%), Gaps = 0/36 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLG  36
+           T+ YGNGVYCN +KCWV+W +A   I   V+GGW  
+Sbjct  30  TRSYGNGVYCNKQKCWVNWNEAKQQIAGIVIGGWAS  65
+
+
+>UniRef90_A0A4S2C0C4 Bacteriocin n=1 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=A0A4S2C0C4_ENTFL
+Length=48
+
+ Score = 50.7 bits (120),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 21/34 (62%), Positives = 27/34 (79%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+            YYGNG+YCN +KCWVDW +AS  IG+ +V GW+
+Sbjct  7   TYYGNGLYCNKQKCWVDWNKASREIGKIIVNGWV  40
+
+
+>UniRef90_Q47778 BacA protein n=4 Tax=Enterococcus faecalis TaxID=1351 
+RepID=Q47778_ENTFL
+Length=67
+
+ Score = 50.7 bits (120),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 21/34 (62%), Positives = 27/34 (79%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+            YYGNG+YCN +KCWVDW +AS  IG+ +V GW+
+Sbjct  26  TYYGNGLYCNKQKCWVDWNKASREIGKIIVNGWV  59
+
+
+>UniRef90_A0A372KM42 ComC/BlpC family peptide pheromone/bacteriocin 
+n=3 Tax=Streptococcus TaxID=1301 RepID=A0A372KM42_9STRE
+Length=72
+
+ Score = 50.3 bits (119),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 19/41 (46%), Positives = 22/41 (54%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN  KCWV+W Q +  I        L G   G
+Sbjct  25  TTYYGNGLYCNENKCWVNWSQTATTIANNSAMNLLTGGNAG  65
+
+
+>UniRef90_UPI000A26D3FD bacteriocin n=1 Tax=Bacilli TaxID=91061 
+RepID=UPI000A26D3FD
+Length=53
+
+ Score = 49.9 bits (118),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 22/37 (59%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNG+YCN +KCWVDW QA G IG+ +V GW+   
+Sbjct  11  TYYGNGLYCNKEKCWVDWNQAKGEIGKIIVNGWVNHG  47
+
+
+>UniRef90_A0A2G0E7I6 Bacteriocin n=2 Tax=Enterococcus TaxID=1350 
+RepID=A0A2G0E7I6_ENTFC
+Length=55
+
+ Score = 49.9 bits (118),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 22/34 (65%), Positives = 27/34 (79%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+            YYGNGVYCN +KCWVDW +AS  IG+ +V GW+
+Sbjct  14  TYYGNGVYCNKQKCWVDWNKASKEIGKIIVNGWV  47
+
+
+>UniRef90_UPI00098D4D1E bacteriocin n=1 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=UPI00098D4D1E
+Length=72
+
+ Score = 50.3 bits (119),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 21/36 (58%), Positives = 25/36 (69%), Gaps = 0/36 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLG  36
+           TK YGNGVYCN +KCWV+W +A   I   V+GGW  
+Sbjct  30  TKSYGNGVYCNKQKCWVNWDEAKQQIAGIVIGGWSS  65
+
+
+>UniRef90_R9R6P4 Enterocin TW21 n=5 Tax=Enterococcus TaxID=1350 
+RepID=R9R6P4_ENTFC
+Length=76
+
+ Score = 49.9 bits (118),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 24/36 (67%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYCN++KCWVDW +A   I    V  ++ G
+Sbjct  30  TYYGNGVYCNTQKCWVDWSRARSEIVDRGVKAYVNG  65
+
+
+>UniRef90_A0A2V2KZC5 Bacteriocin n=2 Tax=Enterococcus faecium 
+TaxID=1352 RepID=A0A2V2KZC5_ENTFC
+Length=56
+
+ Score = 48.4 bits (114),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 19/31 (61%), Positives = 22/31 (71%), Gaps = 0/31 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVG  32
+           KYYGNGVYC  +KC VDW +AS CI    +G
+Sbjct  24  KYYGNGVYCTKEKCTVDWAKASTCIAGMSIG  54
+
+
+>UniRef90_A0A1H0XI18 Class II bacteriocin n=2 Tax=Carnobacterium 
+TaxID=2747 RepID=A0A1H0XI18_9LACT
+Length=57
+
+ Score = 48.0 bits (113),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 19/35 (54%), Positives = 23/35 (66%), Gaps = 0/35 (0%)
+
+Query  4   YGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+           Y NGVYCN  KCWVDW +A   IG+ +V GW+   
+Sbjct  20  YPNGVYCNKTKCWVDWNKAQSEIGKIIVNGWVQSG  54
+
+
+>UniRef90_A0A0R2BCK1 Uncharacterized protein n=1 Tax=Lactobacillus 
+murinus DSM 20452 = NBRC 14221 TaxID=1423772 RepID=A0A0R2BCK1_9LACO
+Length=70
+
+ Score = 48.0 bits (113),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 22/36 (61%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           KYY NG+YCN   C VDW QA   IG+    GW+ G
+Sbjct  26  KYYANGLYCNQFTCRVDWNQARQSIGEISYRGWMNG  61
+
+
+>UniRef90_Q9AGM4 Listeriocin 743A n=3 Tax=Listeria TaxID=1637 
+RepID=Q9AGM4_LISIO
+Length=71
+
+ Score = 48.0 bits (113),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 22/40 (55%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           K YGNGV CN KKCWVDWG A   IG      W  G   G
+Sbjct  29  KSYGNGVQCNKKKCWVDWGSAISTIGNNSAANWATGGAAG  68
+
+
+>UniRef90_S4C0J6 Bacteriocin hiracin-JM79 n=2 Tax=Enterococcus 
+faecalis TaxID=1351 RepID=S4C0J6_ENTFL
+Length=72
+
+ Score = 48.0 bits (113),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 23/40 (58%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+            YYGNG+YCN +KCWVDW +A   IG   V  W      G
+Sbjct  30  TYYGNGLYCNKQKCWVDWSKAITIIGNNAVANWATRGHAG  69
+
+
+>UniRef90_A0A368UB43 Bacteriocin n=1 Tax=Streptococcus gallolyticus 
+TaxID=315405 RepID=A0A368UB43_9STRE
+Length=72
+
+ Score = 47.6 bits (112),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 23/41 (56%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN+ KCWV+W Q    I    V   L G   G
+Sbjct  25  TIYYGNGLYCNANKCWVNWSQTVTTIVNNSVMNGLTGGNAG  65
+
+
+>UniRef90_A0A1Y0VR55 Bacteriocin mesentericin Y105 n=3 Tax=Pediococcus 
+pentosaceus TaxID=1255 RepID=A0A1Y0VR55_PEDPE
+Length=60
+
+ Score = 47.2 bits (111),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 21/34 (62%), Positives = 26/34 (76%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           KYYGNGV+C  K C+VDWGQA+  IG+ +V GW 
+Sbjct  19  KYYGNGVHCGKKTCYVDWGQATASIGKIIVNGWT  52
+
+
+>UniRef90_A8J8T1 Predicted protein n=1 Tax=Chlamydomonas reinhardtii 
+TaxID=3055 RepID=A8J8T1_CHLRE
+Length=59
+
+ Score = 47.2 bits (111),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 21/34 (62%), Positives = 26/34 (76%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           KYYGNGV+C  K C+VDWGQA+  IG+ +V GW 
+Sbjct  19  KYYGNGVHCGKKTCYVDWGQATASIGKIIVNGWT  52
+
+
+>UniRef90_A0A448A397 Bacteriocin ubericin-A n=11 Tax=Streptococcus 
+equi TaxID=1336 RepID=A0A448A397_9STRE
+Length=72
+
+ Score = 47.6 bits (112),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 25/41 (61%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN++KCWV+W +A   I    V   L G   G
+Sbjct  25  TTYYGNGLYCNTQKCWVNWSEAVNIILNNSVMNGLTGGNAG  65
+
+
+>UniRef90_A0A380KP32 Bacteriocin ubericin-A n=8 Tax=Streptococcus 
+TaxID=1301 RepID=A0A380KP32_9STRE
+Length=72
+
+ Score = 47.2 bits (111),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 24/41 (59%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN+ KCWV+W Q +  I    V   L G   G
+Sbjct  25  TIYYGNGLYCNANKCWVNWSQTATTIANNSVINGLTGGNAG  65
+
+
+>UniRef90_Q644A0 Putative enterocin P bacteriocin (Fragment) n=2 
+Tax=Enterococcus faecium TaxID=1352 RepID=Q644A0_ENTFC
+Length=44
+
+ Score = 46.5 bits (109),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 25/37 (68%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN  KCWV+W +A+  I   V+ GW  G
+Sbjct  2   TRSYGNGVYCNDDKCWVNWNEANQQIAGIVISGWASG  38
+
+
+>UniRef90_A0A2S7RP79 Bacteriocin n=18 Tax=Enterococcaceae TaxID=81852 
+RepID=A0A2S7RP79_ENTFC
+Length=54
+
+ Score = 46.1 bits (108),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 21/37 (57%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I   V+ GW  G
+Sbjct  12  TRSYGNGVYCNNSKCWVNWGEAKENIAGIVISGWASG  48
+
+
+>UniRef90_UPI000CF10929 enterocin n=1 Tax=Enterococcus mundtii 
+TaxID=53346 RepID=UPI000CF10929
+Length=76
+
+ Score = 46.5 bits (109),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 18/36 (50%), Positives = 23/36 (64%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYCN +KCWV+W +A   I    V  ++ G
+Sbjct  30  TYYGNGVYCNKQKCWVNWSKARSAIIDRGVKAYVNG  65
+
+
+>UniRef90_Q8GR39 Enterocin SE-K4 n=6 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=Q8GR39_ENTFL
+Length=76
+
+ Score = 46.5 bits (109),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 23/36 (64%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYCN +KCWVDW +A   I    V  ++ G
+Sbjct  30  TYYGNGVYCNKQKCWVDWSRARSEIIDRGVKAYVNG  65
+
+
+>UniRef90_A0A1E5KT44 Bacteriocin n=2 Tax=Enterococcus rivorum 
+TaxID=762845 RepID=A0A1E5KT44_9ENTE
+Length=66
+
+ Score = 46.5 bits (109),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+            YYGNGV CN K C VDWG+A   IG      W  G   G
+Sbjct  24  TYYGNGVSCNKKGCSVDWGKAISNIGNNAAANWYTGGAAG  63
+
+
+>UniRef90_A0A229NE30 Enterocin n=7 Tax=Enterococcaceae TaxID=81852 
+RepID=A0A229NE30_ENTFC
+Length=60
+
+ Score = 45.7 bits (107),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 24/36 (67%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYCN++KCWVDW +A   I    V  ++ G
+Sbjct  14  TYYGNGVYCNTQKCWVDWSRARSEIVDRGVKAYVNG  49
+
+
+>UniRef90_A0A4Q1U0B4 Bacteriocin n=3 Tax=Lactobacillaceae TaxID=33958 
+RepID=A0A4Q1U0B4_9LACO
+Length=69
+
+ Score = 46.1 bits (108),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 24/37 (65%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+           KYYGNGVYC  KKC+V+WG+A   IG  +   W  G 
+Sbjct  24  KYYGNGVYCTKKKCYVNWGEAINSIGNNMAANWFTGG  60
+
+
+>UniRef90_A0A1G6KS48 Bacteriocin-type signal sequence-containing 
+protein n=1 Tax=Marinilactibacillus psychrotolerans TaxID=191770 
+RepID=A0A1G6KS48_9LACT
+Length=61
+
+ Score = 44.5 bits (104),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 22/40 (55%), Positives = 23/40 (58%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN K C VDWG+A G IG      W  G   G
+Sbjct  19  KYYGNGVSCNKKGCTVDWGKAIGIIGNNAAANWATGGAAG  58
+
+
+>UniRef90_A0A3T1Z287 Bacteriocin n=1 Tax=Listeria monocytogenes 
+TaxID=1639 RepID=A0A3T1Z287_LISMN
+Length=48
+
+ Score = 44.1 bits (103),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 22/40 (55%), Positives = 23/40 (58%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           K YGNGV+CN KKCWVDWG A   IG      W  G   G
+Sbjct  6   KSYGNGVHCNKKKCWVDWGSAISTIGNNSAANWATGGAAG  45
+
+
+>UniRef90_A9Q0M7 Bacteriocin ubericin-A n=1 Tax=Streptococcus 
+uberis TaxID=1349 RepID=UBAA_STRUB
+Length=70
+
+ Score = 44.5 bits (104),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 18/41 (44%), Positives = 23/41 (56%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T  YGNG+YCN KKCWV+W + +  I    +   L G   G
+Sbjct  23  TVNYGNGLYCNQKKCWVNWSETATTIVNNSIMNGLTGGNAG  63
+
+
+>UniRef90_A0A0H5Q4Y2 Uncharacterized protein n=1 Tax=uncultured 
+prokaryote TaxID=198431 RepID=A0A0H5Q4Y2_9ZZZZ
+Length=72
+
+ Score = 44.5 bits (104),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 18/34 (53%), Positives = 21/34 (62%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+            YYGNG+YC    C V+WGQA   +G   V GWL
+Sbjct  30  TYYGNGLYCGKHYCHVNWGQAWQSVGHIAVNGWL  63
+
+
+>UniRef90_K4Q8P9 UbaA protein n=10 Tax=Bacteria TaxID=2 RepID=K4Q8P9_STREQ
+Length=76
+
+ Score = 44.5 bits (104),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 17/39 (44%), Positives = 20/39 (51%), Gaps = 0/39 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           Y GNG+YCN  KCWV+W +    I    V   L G   G
+Sbjct  31  YQGNGLYCNKVKCWVNWAETWTTIANNSVMNVLTGGNAG  69
+
+
+>UniRef90_G5JN10 Bacteriocin sakacin-P n=1 Tax=Streptococcus criceti 
+HS-6 TaxID=873449 RepID=G5JN10_STRCG
+Length=71
+
+ Score = 44.1 bits (103),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 20/41 (49%), Gaps = 1/41 (2%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNGVYCN   CWVDWGQ    I       W      G
+Sbjct  25  TIYYGNGVYCNK-TCWVDWGQTINSIATNSAMNWATQGNAG  64
+
+
+>UniRef90_W7BE23 PapA n=1 Tax=Listeria aquatica FSL S10-1188 TaxID=1265818 
+RepID=W7BE23_9LIST
+Length=61
+
+ Score = 43.8 bits (102),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 21/40 (53%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN KKC VDWG+  G IG         G   G
+Sbjct  19  KYYGNGVSCNKKKCSVDWGKTIGIIGNNSAANLATGGAAG  58
+
+
+>UniRef90_M9QVZ1 Pediocin BA 28 n=3 Tax=Pediococcus TaxID=1253 
+RepID=M9QVZ1_PEDAC
+Length=66
+
+ Score = 44.1 bits (103),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV C    C VDWG+A+ CI       W  G   G
+Sbjct  8   KYYGNGVTCGKHSCSVDWGKATTCIINNGAMAWATGGHQG  47
+
+
+>UniRef90_P84962 Bacteriocin divergicin M35 n=1 Tax=Carnobacterium 
+divergens TaxID=2748 RepID=DIV35_CARDV
+Length=43
+
+ Score = 43.4 bits (101),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 34/42 (81%), Positives = 34/42 (81%), Gaps = 2/42 (5%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           TKYYGNGVYCNSKKCWVDWG A GCI   VV G LGG IPGK
+Sbjct  1   TKYYGNGVYCNSKKCWVDWGTAQGCI--DVVIGQLGGGIPGK  40
+
+
+>UniRef90_Q6XVH0 SakX n=2 Tax=Lactobacillus TaxID=1578 RepID=Q6XVH0_LACSK
+Length=61
+
+ Score = 43.8 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/40 (45%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNG+ CN   C VDW +A   IG   V     G   G
+Sbjct  19  KYYGNGLSCNKSGCSVDWSKAISIIGNNAVANLTTGGAAG  58
+
+
+>UniRef90_A0A380JE35 Bacteriocin ubericin-A n=1 Tax=Streptococcus 
+downei MFe28 TaxID=764290 RepID=A0A380JE35_STRDO
+Length=71
+
+ Score = 43.8 bits (102),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 20/41 (49%), Gaps = 1/41 (2%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNGVYCN   CWVDWGQ    I       W      G
+Sbjct  25  TIYYGNGVYCNK-TCWVDWGQTINSIATNSAMNWATQGNAG  64
+
+
+>UniRef90_P0A311 Bacteriocin curvacin-A n=3 Tax=Lactobacillus 
+TaxID=1578 RepID=SAKA_LACCU
+Length=59
+
+ Score = 43.4 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 26/36 (72%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           + YGNGVYCN+KKCWV+ G+A+  I   ++ GW  G
+Sbjct  20  RSYGNGVYCNNKKCWVNRGEATQSIIGGMISGWASG  55
+
+
+>UniRef90_P35618 Bacteriocin sakacin-P n=3 Tax=Lactobacillus TaxID=1578 
+RepID=SAKP_LACSK
+Length=61
+
+ Score = 43.0 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV+C    C VDWG A G IG      W  G   G
+Sbjct  19  KYYGNGVHCGKHSCTVDWGTAIGNIGNNAAANWATGGNAG  58
+
+
+>UniRef90_UPI000A33474A enterocin n=1 Tax=Enterococcus faecium 
+TaxID=1352 RepID=UPI000A33474A
+Length=60
+
+ Score = 42.6 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 23/36 (64%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYC+++KCW+DW +A   I       ++ G
+Sbjct  14  TYYGNGVYCSTQKCWLDWSRARSEIVDKGAKAYVNG  49
+
+
+>UniRef90_B7U212 Enterocin (Fragment) n=1 Tax=Enterococcus sp. 
+DF14 TaxID=574085 RepID=B7U212_9ENTE
+Length=35
+
+ Score = 41.8 bits (97),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 20/35 (57%), Positives = 24/35 (69%), Gaps = 0/35 (0%)
+
+Query  7   GVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           GVYC   KC VD  +A+ CI    +GG+LGGAIPG
+Sbjct  1   GVYCTKNKCTVDRAKATTCIAGMSIGGFLGGAIPG  35
+
+
+>UniRef90_UPI0009B29F58 hypothetical protein n=1 Tax=Chlamydia 
+trachomatis TaxID=813 RepID=UPI0009B29F58
+Length=70
+
+ Score = 42.6 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 25/45 (56%), Positives = 27/45 (60%), Gaps = 3/45 (7%)
+
+Query  1   TKYYGNGVYCNSKK--CWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           T YYGNGV CNSK   C V+W +  GCIG   V  W G  I GKC
+Sbjct  27  TTYYGNGVSCNSKTKTCSVNWAKTVGCIGNISVASWAGATI-GKC  70
+
+
+>UniRef90_D2DXK5 Avicin A n=2 Tax=Enterococcus TaxID=1350 RepID=D2DXK5_ENTAV
+Length=61
+
+ Score = 42.6 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+            YYGNGV CN K C VDWG+A   IG         G   G
+Sbjct  19  TYYGNGVSCNKKGCSVDWGKAISIIGNNSAANLATGGAAG  58
+
+
+>UniRef90_UPI000733B030 bacteriocin n=2 Tax=Streptococcus TaxID=1301 
+RepID=UPI000733B030
+Length=73
+
+ Score = 42.6 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 19/42 (45%), Positives = 23/42 (55%), Gaps = 1/42 (2%)
+
+Query  1   TKYYGNGVYCNSKK-CWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN+KK CWV+W +    I        L G   G
+Sbjct  25  TIYYGNGLYCNNKKGCWVNWAETINIIANNSAMNSLTGGNAG  66
+
+
+>UniRef90_Q6TGQ7 Enterocin CRL35 n=8 Tax=Enterococcus TaxID=1350 
+RepID=Q6TGQ7_ENTMU
+Length=58
+
+ Score = 42.2 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 21/40 (53%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN K C VDWG+A G IG         G   G
+Sbjct  16  KYYGNGVSCNKKGCSVDWGKAIGIIGNNSAANLATGGAAG  55
+
+
+>UniRef90_P80569 Bacteriocin piscicolin-126 n=3 Tax=Carnobacterium 
+TaxID=2747 RepID=PIS1_CARML
+Length=62
+
+ Score = 42.2 bits (98),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN   C VDW +A G IG         G   G
+Sbjct  19  KYYGNGVSCNKNGCTVDWSKAIGIIGNNAAANLTTGGAAG  58
+
+
+>UniRef90_P86393 Bacteriocin SRCAM 602 n=1 Tax=Paenibacillus polymyxa 
+TaxID=1406 RepID=BCN02_PAEPO
+Length=39
+
+ Score = 41.4 bits (96),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 20/36 (56%), Positives = 25/36 (69%), Gaps = 2/36 (6%)
+
+Query  2   KYYGNGVYCNSKK--CWVDWGQASGCIGQTVVGGWL  35
+            YYGNG+YCN +K   WVDW +AS  IG+  V GW+
+Sbjct  2   TYYGNGLYCNKQKHYTWVDWNKASREIGKITVNGWV  37
+
+
+>UniRef90_P29430 Bacteriocin pediocin PA-1 n=12 Tax=Bacilli TaxID=91061 
+RepID=PPA1_PEDAC
+Length=62
+
+ Score = 41.8 bits (97),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV C    C VDWG+A+ CI       W  G   G
+Sbjct  19  KYYGNGVTCGKHSCSVDWGKATTCIINNGAMAWATGGHQG  58
+
+
+>UniRef90_UPI000BE23263 CCRG-2 family RiPP n=1 Tax=Leuconostoc 
+gelidum TaxID=1244 RepID=UPI000BE23263
+Length=66
+
+ Score = 41.4 bits (96),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 19/39 (49%), Positives = 20/39 (51%), Gaps = 0/39 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           YYGNG+ C    C VDWG A G IG      WL G   G
+Sbjct  21  YYGNGLTCTKHGCSVDWGTAIGTIGNNSAANWLTGGAAG  59
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.148    0.549    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0451    0.140     1.90     42.6     43.6 
+
+Effective search space used: 818515154184
+Results from round 3
+
+
+Query= AP00842
+
+Length=43
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+UniRef90_Q9L658 Class IIa bacteriocin EntA n=30 Tax=Firmicutes Ta...  63.3       2e-12
+UniRef90_Q9Z4J1 Divercin V41 n=1 Tax=Carnobacterium divergens Tax...  62.9       3e-12
+UniRef90_E9NQ39 Duracin GL n=3 Tax=Enterococcaceae TaxID=81852 Re...  61.8       8e-12
+UniRef90_F8UWQ8 Enterocin A (Fragment) n=4 Tax=Enterococcus TaxID...  59.8       4e-11
+UniRef90_A0A372KM42 ComC/BlpC family peptide pheromone/bacterioci...  60.2       4e-11
+UniRef90_UPI000A353192 bacteriocin n=1 Tax=Enterococcus faecium T...  59.1       8e-11
+UniRef90_A0A448A397 Bacteriocin ubericin-A n=11 Tax=Streptococcus...  58.7       2e-10
+UniRef90_R9R6P4 Enterocin TW21 n=5 Tax=Enterococcus TaxID=1350 Re...  58.7       2e-10
+UniRef90_UPI0003355AF5 bacteriocin SRCAM 602 n=4 Tax=Enterococcus...  58.3       2e-10
+UniRef90_Q0Z8B6 Bacteriocin hiracin-JM79 n=7 Tax=Firmicutes TaxID...  58.3       2e-10
+UniRef90_S4C0J6 Bacteriocin hiracin-JM79 n=2 Tax=Enterococcus fae...  58.3       2e-10
+UniRef90_I7H7S7 Enterocin NKR-5-3C prepeptide n=3 Tax=Enterococca...  57.9       2e-10
+UniRef90_A0A368UB43 Bacteriocin n=1 Tax=Streptococcus gallolyticu...  57.9       3e-10
+UniRef90_A0A242FT09 Bacteriocin enterocin-P n=3 Tax=Enterococcus ...  57.9       3e-10
+UniRef90_Q47778 BacA protein n=4 Tax=Enterococcus faecalis TaxID=...  57.5       3e-10
+UniRef90_A0A4S2C0C4 Bacteriocin n=1 Tax=Enterococcus faecalis Tax...  56.4       6e-10
+UniRef90_Q9AGM4 Listeriocin 743A n=3 Tax=Listeria TaxID=1637 RepI...  57.1       6e-10
+UniRef90_O30434 Bacteriocin enterocin-P n=19 Tax=Enterococcus Tax...  57.1       6e-10
+UniRef90_B6DSR3 EntA (Fragment) n=2 Tax=Enterococcus faecium TaxI...  56.4       7e-10
+UniRef90_Q8GR37 Uncharacterized protein n=9 Tax=Enterococcus faec...  56.8       7e-10
+UniRef90_W1I5E9 Uncultured bacterium plasmid pRGF00004 n=3 Tax=ro...  57.1       7e-10
+UniRef90_A0A0H5Q4Y2 Uncharacterized protein n=1 Tax=uncultured pr...  56.8       8e-10
+UniRef90_A0A2G0E7I6 Bacteriocin n=2 Tax=Enterococcus TaxID=1350 R...  56.0       1e-09
+UniRef90_UPI000BA6E812 bacteriocin carnobacteriocin BM1 n=1 Tax=T...  56.4       1e-09
+UniRef90_A0A380KP32 Bacteriocin ubericin-A n=8 Tax=Streptococcus ...  56.4       1e-09
+UniRef90_UPI000A26D3FD bacteriocin n=1 Tax=Bacilli TaxID=91061 Re...  56.0       1e-09
+UniRef90_A0A1E5KT44 Bacteriocin n=2 Tax=Enterococcus rivorum TaxI...  56.0       1e-09
+UniRef90_R2SRR0 Bacteriocin-type signal sequence n=1 Tax=Enteroco...  55.6       1e-09
+UniRef90_UPI00098D4D1E bacteriocin n=1 Tax=Enterococcus faecalis ...  56.0       2e-09
+UniRef90_K4Q8P9 UbaA protein n=10 Tax=Bacteria TaxID=2 RepID=K4Q8...  55.6       2e-09
+UniRef90_M9QVZ1 Pediocin BA 28 n=3 Tax=Pediococcus TaxID=1253 Rep...  55.2       3e-09
+UniRef90_B6DSR7 EntA (Fragment) n=1 Tax=Enterococcus mundtii TaxI...  54.8       3e-09
+UniRef90_A9Q0M7 Bacteriocin ubericin-A n=1 Tax=Streptococcus uber...  55.2       4e-09
+UniRef90_G5JN10 Bacteriocin sakacin-P n=1 Tax=Streptococcus crice...  54.8       4e-09
+UniRef90_P80493 Bacteriocin bavaricin-MN n=1 Tax=Lactobacillus sa...  54.1       4e-09
+UniRef90_Q8GR39 Enterocin SE-K4 n=6 Tax=Enterococcus faecalis Tax...  54.8       5e-09
+UniRef90_UPI000A3337A6 hypothetical protein n=1 Tax=Enterococcus ...  54.1       6e-09
+UniRef90_UPI000CF10929 enterocin n=1 Tax=Enterococcus mundtii Tax...  54.4       8e-09
+UniRef90_A0A380JE35 Bacteriocin ubericin-A n=1 Tax=Streptococcus ...  54.1       8e-09
+UniRef90_A0A4Q1U0B4 Bacteriocin n=3 Tax=Lactobacillaceae TaxID=33...  54.1       1e-08
+UniRef90_A0A229NE30 Enterocin n=7 Tax=Enterococcaceae TaxID=81852...  53.7       1e-08
+UniRef90_A0A1H0XI18 Class II bacteriocin n=2 Tax=Carnobacterium T...  52.9       2e-08
+UniRef90_A0A2V2KZC5 Bacteriocin n=2 Tax=Enterococcus faecium TaxI...  52.9       2e-08
+UniRef90_P29430 Bacteriocin pediocin PA-1 n=12 Tax=Bacilli TaxID=...  52.5       4e-08
+UniRef90_A0A0R2BCK1 Uncharacterized protein n=1 Tax=Lactobacillus...  52.5       4e-08
+UniRef90_UPI000733B030 bacteriocin n=2 Tax=Streptococcus TaxID=13...  52.5       4e-08
+UniRef90_A0A1G6KS48 Bacteriocin-type signal sequence-containing p...  52.1       5e-08
+UniRef90_P35618 Bacteriocin sakacin-P n=3 Tax=Lactobacillus TaxID...  51.7       6e-08
+UniRef90_A0A3T1Z287 Bacteriocin n=1 Tax=Listeria monocytogenes Ta...  51.4       6e-08
+UniRef90_W7BE23 PapA n=1 Tax=Listeria aquatica FSL S10-1188 TaxID...  51.4       8e-08
+UniRef90_A0A1Y0VR55 Bacteriocin mesentericin Y105 n=3 Tax=Pedioco...  51.4       8e-08
+UniRef90_Q6XVH0 SakX n=2 Tax=Lactobacillus TaxID=1578 RepID=Q6XVH...  51.0       1e-07
+UniRef90_D2DXK5 Avicin A n=2 Tax=Enterococcus TaxID=1350 RepID=D2...  51.0       1e-07
+UniRef90_UPI000A33474A enterocin n=1 Tax=Enterococcus faecium Tax...  51.0       1e-07
+UniRef90_A0A2S7RP79 Bacteriocin n=18 Tax=Enterococcaceae TaxID=81...  50.6       1e-07
+UniRef90_Q644A0 Putative enterocin P bacteriocin (Fragment) n=2 T...  50.2       2e-07
+UniRef90_A8J8T1 Predicted protein n=1 Tax=Chlamydomonas reinhardt...  50.2       2e-07
+UniRef90_UPI000BE23263 CCRG-2 family RiPP n=1 Tax=Leuconostoc gel...  50.2       3e-07
+UniRef90_Q6TGQ7 Enterocin CRL35 n=8 Tax=Enterococcus TaxID=1350 R...  49.8       4e-07
+UniRef90_P0A311 Bacteriocin curvacin-A n=3 Tax=Lactobacillus TaxI...  49.0       7e-07
+UniRef90_P80569 Bacteriocin piscicolin-126 n=3 Tax=Carnobacterium...  48.7       9e-07
+UniRef90_P84962 Bacteriocin divergicin M35 n=1 Tax=Carnobacterium...  47.9       1e-06
+UniRef90_UPI0009B29F58 hypothetical protein n=1 Tax=Chlamydia tra...  48.7       1e-06
+UniRef90_P86393 Bacteriocin SRCAM 602 n=1 Tax=Paenibacillus polym...  44.8       2e-05
+UniRef90_B7U212 Enterocin (Fragment) n=1 Tax=Enterococcus sp. DF1...  44.8       2e-05
+
+Sequences not found previously or not previously below threshold:
+
+UniRef90_G5JUX3 Bacteriocin sakacin-P n=2 Tax=Streptococcus TaxID...  51.0       1e-07
+UniRef90_A0A3R9JZQ9 Bacteriocin ubericin-A n=6 Tax=Streptococcus ...  49.8       4e-07
+UniRef90_A0A358LW02 Uncharacterized protein n=4 Tax=Lactobacillus...  49.8       6e-07
+UniRef90_UPI00047701A8 ComC/BlpC family leader-containing pheromo...  49.4       7e-07
+UniRef90_A0A0R2CZY5 Uncharacterized protein n=3 Tax=Lactobacillus...  48.7       9e-07
+UniRef90_R2Q705 Bacteriocin mundticin n=1 Tax=Enterococcus pallen...  48.3       1e-06
+UniRef90_P86183 Enterocin-HF n=2 Tax=Enterococcus faecium TaxID=1...  48.3       1e-06
+UniRef90_A0A0S3QR16 Bacteriocin-II (Fragment) n=2 Tax=Lactobacill...  47.9       1e-06
+UniRef90_E9DL22 Bacteriocin sakacin-P n=1 Tax=Streptococcus sp. C...  46.7       8e-06
+UniRef90_U6S4G6 Putative bacteriocin hiracin-JM79 n=22 Tax=Bacter...  45.6       2e-05
+UniRef90_P80925 Bacteriocin mundticin n=1 Tax=Enterococcus mundti...  44.4       3e-05
+UniRef90_U5MN99 Class II bacteriocin n=2 Tax=Clostridium saccharo...  44.8       4e-05
+UniRef90_P38579 Bacteriocin carnobacteriocin BM1 n=5 Tax=Carnobac...  44.4       4e-05
+UniRef90_A0A109DGD3 Uncharacterized protein n=1 Tax=Lactobacillus...  44.4       7e-05
+UniRef90_A0A1L3K9U6 Uncharacterized protein n=1 Tax=Lactobacillus...  44.0       7e-05
+UniRef90_G5JMW2 Bacteriocin sakacin-P n=1 Tax=Streptococcus crice...  44.4       8e-05
+UniRef90_A0A2U9QI36 Enterocin (Fragment) n=2 Tax=Enterococcus fae...  44.4       1e-04
+UniRef90_A0A0A1MNL7 Class II bacteriocin n=1 Tax=Oceanobacillus o...  44.4       1e-04
+UniRef90_A0A1H0XID5 Class II bacteriocin n=1 Tax=Carnobacterium v...  43.3       1e-04
+UniRef90_A0A1I2SKM3 Bacteriocin-type signal sequence-containing p...  43.3       1e-04
+UniRef90_UPI00097E570B bacteriocin n=2 Tax=Enterococcus faecium T...  42.9       2e-04
+UniRef90_A0A4Q1TJD2 Uncharacterized protein n=1 Tax=Lactobacillus...  42.9       2e-04
+UniRef90_A0A2Z4W2D4 Bacteriocin n=1 Tax=Lactobacillus murinus Tax...  42.1       3e-04
+UniRef90_W7BP40 Uncharacterized protein n=1 Tax=Listeria aquatica...  42.5       3e-04
+UniRef90_A0A2C9NPM8 Bacteriocin n=13 Tax=Enterococcus TaxID=1350 ...  42.5       3e-04
+UniRef90_P81053 Bacteriocin leucocin-C n=2 Tax=Leuconostoc TaxID=...  41.3       5e-04
+UniRef90_UPI00047CB6F2 bacteriocin n=1 Tax=Clostridium beijerinck...  41.7       6e-04
+UniRef90_A0A224WXC1 Uncharacterized protein n=3 Tax=Lactococcus T...  42.9       6e-04
+UniRef90_UPI000B60040B bacteriocin n=1 Tax=Lactobacillus plantaru...  41.3       7e-04
+UniRef90_UPI000A186739 hypothetical protein n=1 Tax=Enterococcus ...  41.3       8e-04
+UniRef90_A0A0R1LPA5 Uncharacterized protein n=2 Tax=Lactobacillus...  41.3       9e-04
+
+
+>UniRef90_Q9L658 Class IIa bacteriocin EntA n=30 Tax=Firmicutes 
+TaxID=1239 RepID=Q9L658_ENTFC
+Length=65
+
+ Score = 63.3 bits (153),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 28/42 (67%), Positives = 32/42 (76%), Gaps = 0/42 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIPGKC
+Sbjct  24  KYYGNGVYCTKNKCTVDWAKATTCIAGMSIGGFLGGAIPGKC  65
+
+
+>UniRef90_Q9Z4J1 Divercin V41 n=1 Tax=Carnobacterium divergens 
+TaxID=2748 RepID=Q9Z4J1_CARDV
+Length=66
+
+ Score = 62.9 bits (152),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 43/43 (100%), Positives = 43/43 (100%), Gaps = 0/43 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC
+Sbjct  24  TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  66
+
+
+>UniRef90_E9NQ39 Duracin GL n=3 Tax=Enterococcaceae TaxID=81852 
+RepID=E9NQ39_9ENTE
+Length=71
+
+ Score = 61.8 bits (149),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 21/37 (57%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNGVYCN ++CWVDW +AS  IG+ +V GW+   
+Sbjct  30  TYYGNGVYCNKQECWVDWNKASKEIGKIIVNGWVQHG  66
+
+
+>UniRef90_F8UWQ8 Enterocin A (Fragment) n=4 Tax=Enterococcus TaxID=1350 
+RepID=F8UWQ8_ENTFL
+Length=63
+
+ Score = 59.8 bits (144),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 25/39 (64%), Positives = 29/39 (74%), Gaps = 0/39 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIP  40
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIP
+Sbjct  24  KYYGNGVYCTKNKCTVDWAKATTCIAGMSIGGFLGGAIP  62
+
+
+>UniRef90_A0A372KM42 ComC/BlpC family peptide pheromone/bacteriocin 
+n=3 Tax=Streptococcus TaxID=1301 RepID=A0A372KM42_9STRE
+Length=72
+
+ Score = 60.2 bits (145),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/41 (46%), Positives = 22/41 (54%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN  KCWV+W Q +  I        L G   G
+Sbjct  25  TTYYGNGLYCNENKCWVNWSQTATTIANNSAMNLLTGGNAG  65
+
+
+>UniRef90_UPI000A353192 bacteriocin n=1 Tax=Enterococcus faecium 
+TaxID=1352 RepID=UPI000A353192
+Length=62
+
+ Score = 59.1 bits (142),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I +  + GW  G
+Sbjct  17  TRSYGNGVYCNNSKCWVNWGKAKENIAEIFISGWASG  53
+
+
+>UniRef90_A0A448A397 Bacteriocin ubericin-A n=11 Tax=Streptococcus 
+equi TaxID=1336 RepID=A0A448A397_9STRE
+Length=72
+
+ Score = 58.7 bits (141),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 25/41 (61%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN++KCWV+W +A   I    V   L G   G
+Sbjct  25  TTYYGNGLYCNTQKCWVNWSEAVNIILNNSVMNGLTGGNAG  65
+
+
+>UniRef90_R9R6P4 Enterocin TW21 n=5 Tax=Enterococcus TaxID=1350 
+RepID=R9R6P4_ENTFC
+Length=76
+
+ Score = 58.7 bits (141),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 24/36 (67%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYCN++KCWVDW +A   I    V  ++ G
+Sbjct  30  TYYGNGVYCNTQKCWVDWSRARSEIVDRGVKAYVNG  65
+
+
+>UniRef90_UPI0003355AF5 bacteriocin SRCAM 602 n=4 Tax=Enterococcus 
+TaxID=1350 RepID=UPI0003355AF5
+Length=71
+
+ Score = 58.3 bits (140),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 22/37 (59%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNGVYCN +KCWVDW +AS  IG+ +V GW+   
+Sbjct  30  TYYGNGVYCNKQKCWVDWNKASKEIGKIIVNGWVQHG  66
+
+
+>UniRef90_Q0Z8B6 Bacteriocin hiracin-JM79 n=7 Tax=Firmicutes TaxID=1239 
+RepID=HJM79_ENTHR
+Length=74
+
+ Score = 58.3 bits (140),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 22/37 (59%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNG+YCN +KCWVDW QA G IG+ +V GW+   
+Sbjct  32  TYYGNGLYCNKEKCWVDWNQAKGEIGKIIVNGWVNHG  68
+
+
+>UniRef90_S4C0J6 Bacteriocin hiracin-JM79 n=2 Tax=Enterococcus 
+faecalis TaxID=1351 RepID=S4C0J6_ENTFL
+Length=72
+
+ Score = 58.3 bits (140),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 23/40 (58%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+            YYGNG+YCN +KCWVDW +A   IG   V  W      G
+Sbjct  30  TYYGNGLYCNKQKCWVDWSKAITIIGNNAVANWATRGHAG  69
+
+
+>UniRef90_I7H7S7 Enterocin NKR-5-3C prepeptide n=3 Tax=Enterococcaceae 
+TaxID=81852 RepID=I7H7S7_ENTFC
+Length=61
+
+ Score = 57.9 bits (139),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 30/42 (71%), Positives = 35/42 (83%), Gaps = 0/42 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+            YYGNG+YCNSKKCWV+WG   GC+ Q  +GGWLGGA+PGKC
+Sbjct  20  TYYGNGLYCNSKKCWVEWGITGGCLAQYAIGGWLGGAVPGKC  61
+
+
+>UniRef90_A0A368UB43 Bacteriocin n=1 Tax=Streptococcus gallolyticus 
+TaxID=315405 RepID=A0A368UB43_9STRE
+Length=72
+
+ Score = 57.9 bits (139),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 23/41 (56%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN+ KCWV+W Q    I    V   L G   G
+Sbjct  25  TIYYGNGLYCNANKCWVNWSQTVTTIVNNSVMNGLTGGNAG  65
+
+
+>UniRef90_A0A242FT09 Bacteriocin enterocin-P n=3 Tax=Enterococcus 
+TaxID=1350 RepID=A0A242FT09_ENTFC
+Length=69
+
+ Score = 57.9 bits (139),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 25/37 (68%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN  KCWV+W +A+  I   V+ GW  G
+Sbjct  29  TRSYGNGVYCNDDKCWVNWNEANQQIAGIVISGWASG  65
+
+
+>UniRef90_Q47778 BacA protein n=4 Tax=Enterococcus faecalis TaxID=1351 
+RepID=Q47778_ENTFL
+Length=67
+
+ Score = 57.5 bits (138),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 21/37 (57%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNG+YCN +KCWVDW +AS  IG+ +V GW+   
+Sbjct  26  TYYGNGLYCNKQKCWVDWNKASREIGKIIVNGWVQHG  62
+
+
+>UniRef90_A0A4S2C0C4 Bacteriocin n=1 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=A0A4S2C0C4_ENTFL
+Length=48
+
+ Score = 56.4 bits (135),  Expect = 6e-10, Method: Composition-based stats.
+ Identities = 21/37 (57%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNG+YCN +KCWVDW +AS  IG+ +V GW+   
+Sbjct  7   TYYGNGLYCNKQKCWVDWNKASREIGKIIVNGWVQHG  43
+
+
+>UniRef90_Q9AGM4 Listeriocin 743A n=3 Tax=Listeria TaxID=1637 
+RepID=Q9AGM4_LISIO
+Length=71
+
+ Score = 57.1 bits (137),  Expect = 6e-10, Method: Composition-based stats.
+ Identities = 22/40 (55%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           K YGNGV CN KKCWVDWG A   IG      W  G   G
+Sbjct  29  KSYGNGVQCNKKKCWVDWGSAISTIGNNSAANWATGGAAG  68
+
+
+>UniRef90_O30434 Bacteriocin enterocin-P n=19 Tax=Enterococcus 
+TaxID=1350 RepID=ETCP_ENTFC
+Length=71
+
+ Score = 57.1 bits (137),  Expect = 6e-10, Method: Composition-based stats.
+ Identities = 21/37 (57%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I   V+ GW  G
+Sbjct  29  TRSYGNGVYCNNSKCWVNWGEAKENIAGIVISGWASG  65
+
+
+>UniRef90_B6DSR3 EntA (Fragment) n=2 Tax=Enterococcus faecium 
+TaxID=1352 RepID=B6DSR3_ENTFC
+Length=50
+
+ Score = 56.4 bits (135),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 27/41 (66%), Positives = 31/41 (76%), Gaps = 0/41 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           KYYGNGVYC   KC VDW +A+ CI    +GG+LGGAIPGK
+Sbjct  8   KYYGNGVYCTKIKCTVDWAKATTCIAGMSIGGFLGGAIPGK  48
+
+
+>UniRef90_Q8GR37 Uncharacterized protein n=9 Tax=Enterococcus 
+faecalis TaxID=1351 RepID=Q8GR37_ENTFL
+Length=72
+
+ Score = 56.8 bits (136),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 20/36 (56%), Positives = 25/36 (69%), Gaps = 0/36 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLG  36
+           T+ YGNGVYCN +KCWV+W +A   I   V+GGW  
+Sbjct  30  TRSYGNGVYCNKQKCWVNWNEAKQQIAGIVIGGWAS  65
+
+
+>UniRef90_W1I5E9 Uncultured bacterium plasmid pRGF00004 n=3 Tax=root 
+TaxID=1 RepID=W1I5E9_9BACT
+Length=89
+
+ Score = 57.1 bits (137),  Expect = 7e-10, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 22/36 (61%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           KYY NG+YCN   C VDW QA   IG+    GW+ G
+Sbjct  45  KYYANGLYCNQFTCRVDWNQARQSIGEISYRGWMNG  80
+
+
+>UniRef90_A0A0H5Q4Y2 Uncharacterized protein n=1 Tax=uncultured 
+prokaryote TaxID=198431 RepID=A0A0H5Q4Y2_9ZZZZ
+Length=72
+
+ Score = 56.8 bits (136),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 18/37 (49%), Positives = 21/37 (57%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNG+YC    C V+WGQA   +G   V GWL   
+Sbjct  30  TYYGNGLYCGKHYCHVNWGQAWQSVGHIAVNGWLEHG  66
+
+
+>UniRef90_A0A2G0E7I6 Bacteriocin n=2 Tax=Enterococcus TaxID=1350 
+RepID=A0A2G0E7I6_ENTFC
+Length=55
+
+ Score = 56.0 bits (134),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 22/37 (59%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNGVYCN +KCWVDW +AS  IG+ +V GW+   
+Sbjct  14  TYYGNGVYCNKQKCWVDWNKASKEIGKIIVNGWVQHG  50
+
+
+>UniRef90_UPI000BA6E812 bacteriocin carnobacteriocin BM1 n=1 Tax=Terribacillus 
+saccharophilus TaxID=361277 RepID=UPI000BA6E812
+Length=69
+
+ Score = 56.4 bits (135),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 16/35 (46%), Positives = 24/35 (69%), Gaps = 0/35 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           T+ YGNGVYCN  KCWV+W + +  + +  + GW+
+Sbjct  30  TRSYGNGVYCNRSKCWVNWNETTQSVVKISIDGWV  64
+
+
+>UniRef90_A0A380KP32 Bacteriocin ubericin-A n=8 Tax=Streptococcus 
+TaxID=1301 RepID=A0A380KP32_9STRE
+Length=72
+
+ Score = 56.4 bits (135),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 24/41 (59%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN+ KCWV+W Q +  I    V   L G   G
+Sbjct  25  TIYYGNGLYCNANKCWVNWSQTATTIANNSVINGLTGGNAG  65
+
+
+>UniRef90_UPI000A26D3FD bacteriocin n=1 Tax=Bacilli TaxID=91061 
+RepID=UPI000A26D3FD
+Length=53
+
+ Score = 56.0 bits (134),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 22/37 (59%), Positives = 27/37 (73%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+            YYGNG+YCN +KCWVDW QA G IG+ +V GW+   
+Sbjct  11  TYYGNGLYCNKEKCWVDWNQAKGEIGKIIVNGWVNHG  47
+
+
+>UniRef90_A0A1E5KT44 Bacteriocin n=2 Tax=Enterococcus rivorum 
+TaxID=762845 RepID=A0A1E5KT44_9ENTE
+Length=66
+
+ Score = 56.0 bits (134),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+            YYGNGV CN K C VDWG+A   IG      W  G   G
+Sbjct  24  TYYGNGVSCNKKGCSVDWGKAISNIGNNAAANWYTGGAAG  63
+
+
+>UniRef90_R2SRR0 Bacteriocin-type signal sequence n=1 Tax=Enterococcus 
+pallens ATCC BAA-351 TaxID=1158607 RepID=R2SRR0_9ENTE
+Length=60
+
+ Score = 55.6 bits (133),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 26/42 (62%), Positives = 28/42 (67%), Gaps = 0/42 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+            YYGNGV C    C VDW  A  CI Q  +GG+LGGAIPGKC
+Sbjct  19  TYYGNGVSCGKTTCTVDWAAAGTCIAQISIGGFLGGAIPGKC  60
+
+
+>UniRef90_UPI00098D4D1E bacteriocin n=1 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=UPI00098D4D1E
+Length=72
+
+ Score = 56.0 bits (134),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 21/36 (58%), Positives = 25/36 (69%), Gaps = 0/36 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLG  36
+           TK YGNGVYCN +KCWV+W +A   I   V+GGW  
+Sbjct  30  TKSYGNGVYCNKQKCWVNWDEAKQQIAGIVIGGWSS  65
+
+
+>UniRef90_K4Q8P9 UbaA protein n=10 Tax=Bacteria TaxID=2 RepID=K4Q8P9_STREQ
+Length=76
+
+ Score = 55.6 bits (133),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 17/39 (44%), Positives = 20/39 (51%), Gaps = 0/39 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           Y GNG+YCN  KCWV+W +    I    V   L G   G
+Sbjct  31  YQGNGLYCNKVKCWVNWAETWTTIANNSVMNVLTGGNAG  69
+
+
+>UniRef90_M9QVZ1 Pediocin BA 28 n=3 Tax=Pediococcus TaxID=1253 
+RepID=M9QVZ1_PEDAC
+Length=66
+
+ Score = 55.2 bits (132),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV C    C VDWG+A+ CI       W  G   G
+Sbjct  8   KYYGNGVTCGKHSCSVDWGKATTCIINNGAMAWATGGHQG  47
+
+
+>UniRef90_B6DSR7 EntA (Fragment) n=1 Tax=Enterococcus mundtii 
+TaxID=53346 RepID=B6DSR7_ENTMU
+Length=49
+
+ Score = 54.8 bits (131),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 27/41 (66%), Positives = 30/41 (73%), Gaps = 0/41 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           KYYGNGVYC   KC VDW Q + CI    +GG+LGGAIPGK
+Sbjct  7   KYYGNGVYCTKNKCTVDWAQGNYCIAGMSIGGFLGGAIPGK  47
+
+
+>UniRef90_A9Q0M7 Bacteriocin ubericin-A n=1 Tax=Streptococcus 
+uberis TaxID=1349 RepID=UBAA_STRUB
+Length=70
+
+ Score = 55.2 bits (132),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 18/41 (44%), Positives = 23/41 (56%), Gaps = 0/41 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T  YGNG+YCN KKCWV+W + +  I    +   L G   G
+Sbjct  23  TVNYGNGLYCNQKKCWVNWSETATTIVNNSIMNGLTGGNAG  63
+
+
+>UniRef90_G5JN10 Bacteriocin sakacin-P n=1 Tax=Streptococcus criceti 
+HS-6 TaxID=873449 RepID=G5JN10_STRCG
+Length=71
+
+ Score = 54.8 bits (131),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 20/41 (49%), Gaps = 1/41 (2%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNGVYCN   CWVDWGQ    I       W      G
+Sbjct  25  TIYYGNGVYCNK-TCWVDWGQTINSIATNSAMNWATQGNAG  64
+
+
+>UniRef90_P80493 Bacteriocin bavaricin-MN n=1 Tax=Lactobacillus 
+sakei TaxID=1599 RepID=BAVM_LACSK
+Length=42
+
+ Score = 54.1 bits (129),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 39/42 (93%), Positives = 40/42 (95%), Gaps = 0/42 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           TKYYGNGVYCNSKKCWVDWGQA+G IGQTVV GWLGGAIPGK
+Sbjct  1   TKYYGNGVYCNSKKCWVDWGQAAGGIGQTVVXGWLGGAIPGK  42
+
+
+>UniRef90_Q8GR39 Enterocin SE-K4 n=6 Tax=Enterococcus faecalis 
+TaxID=1351 RepID=Q8GR39_ENTFL
+Length=76
+
+ Score = 54.8 bits (131),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 23/36 (64%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYCN +KCWVDW +A   I    V  ++ G
+Sbjct  30  TYYGNGVYCNKQKCWVDWSRARSEIIDRGVKAYVNG  65
+
+
+>UniRef90_UPI000A3337A6 hypothetical protein n=1 Tax=Enterococcus 
+faecium TaxID=1352 RepID=UPI000A3337A6
+Length=50
+
+ Score = 54.1 bits (129),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 21/35 (60%), Positives = 25/35 (71%), Gaps = 0/35 (0%)
+
+Query  9   YCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           YC   KC VDW +A+ CI    +GG+LGGAIPGKC
+Sbjct  16  YCTKNKCTVDWAKATTCIAGMSIGGFLGGAIPGKC  50
+
+
+>UniRef90_UPI000CF10929 enterocin n=1 Tax=Enterococcus mundtii 
+TaxID=53346 RepID=UPI000CF10929
+Length=76
+
+ Score = 54.4 bits (130),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 18/36 (50%), Positives = 23/36 (64%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYCN +KCWV+W +A   I    V  ++ G
+Sbjct  30  TYYGNGVYCNKQKCWVNWSKARSAIIDRGVKAYVNG  65
+
+
+>UniRef90_A0A380JE35 Bacteriocin ubericin-A n=1 Tax=Streptococcus 
+downei MFe28 TaxID=764290 RepID=A0A380JE35_STRDO
+Length=71
+
+ Score = 54.1 bits (129),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 20/41 (49%), Gaps = 1/41 (2%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNGVYCN   CWVDWGQ    I       W      G
+Sbjct  25  TIYYGNGVYCNK-TCWVDWGQTINSIATNSAMNWATQGNAG  64
+
+
+>UniRef90_A0A4Q1U0B4 Bacteriocin n=3 Tax=Lactobacillaceae TaxID=33958 
+RepID=A0A4Q1U0B4_9LACO
+Length=69
+
+ Score = 54.1 bits (129),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 20/39 (51%), Positives = 24/39 (62%), Gaps = 0/39 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIP  40
+           KYYGNGVYC  KKC+V+WG+A   IG  +   W  G   
+Sbjct  24  KYYGNGVYCTKKKCYVNWGEAINSIGNNMAANWFTGGQA  62
+
+
+>UniRef90_A0A229NE30 Enterocin n=7 Tax=Enterococcaceae TaxID=81852 
+RepID=A0A229NE30_ENTFC
+Length=60
+
+ Score = 53.7 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 24/36 (67%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYCN++KCWVDW +A   I    V  ++ G
+Sbjct  14  TYYGNGVYCNTQKCWVDWSRARSEIVDRGVKAYVNG  49
+
+
+>UniRef90_A0A1H0XI18 Class II bacteriocin n=2 Tax=Carnobacterium 
+TaxID=2747 RepID=A0A1H0XI18_9LACT
+Length=57
+
+ Score = 52.9 bits (126),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 19/37 (51%), Positives = 23/37 (62%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+             Y NGVYCN  KCWVDW +A   IG+ +V GW+   
+Sbjct  18  TAYPNGVYCNKTKCWVDWNKAQSEIGKIIVNGWVQSG  54
+
+
+>UniRef90_A0A2V2KZC5 Bacteriocin n=2 Tax=Enterococcus faecium 
+TaxID=1352 RepID=A0A2V2KZC5_ENTFC
+Length=56
+
+ Score = 52.9 bits (126),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 19/31 (61%), Positives = 22/31 (71%), Gaps = 0/31 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVG  32
+           KYYGNGVYC  +KC VDW +AS CI    +G
+Sbjct  24  KYYGNGVYCTKEKCTVDWAKASTCIAGMSIG  54
+
+
+>UniRef90_P29430 Bacteriocin pediocin PA-1 n=12 Tax=Bacilli TaxID=91061 
+RepID=PPA1_PEDAC
+Length=62
+
+ Score = 52.5 bits (125),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV C    C VDWG+A+ CI       W  G   G
+Sbjct  19  KYYGNGVTCGKHSCSVDWGKATTCIINNGAMAWATGGHQG  58
+
+
+>UniRef90_A0A0R2BCK1 Uncharacterized protein n=1 Tax=Lactobacillus 
+murinus DSM 20452 = NBRC 14221 TaxID=1423772 RepID=A0A0R2BCK1_9LACO
+Length=70
+
+ Score = 52.5 bits (125),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 22/36 (61%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           KYY NG+YCN   C VDW QA   IG+    GW+ G
+Sbjct  26  KYYANGLYCNQFTCRVDWNQARQSIGEISYRGWMNG  61
+
+
+>UniRef90_UPI000733B030 bacteriocin n=2 Tax=Streptococcus TaxID=1301 
+RepID=UPI000733B030
+Length=73
+
+ Score = 52.5 bits (125),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 19/42 (45%), Positives = 23/42 (55%), Gaps = 1/42 (2%)
+
+Query  1   TKYYGNGVYCNSKK-CWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN+KK CWV+W +    I        L G   G
+Sbjct  25  TIYYGNGLYCNNKKGCWVNWAETINIIANNSAMNSLTGGNAG  66
+
+
+>UniRef90_A0A1G6KS48 Bacteriocin-type signal sequence-containing 
+protein n=1 Tax=Marinilactibacillus psychrotolerans TaxID=191770 
+RepID=A0A1G6KS48_9LACT
+Length=61
+
+ Score = 52.1 bits (124),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 22/40 (55%), Positives = 23/40 (58%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN K C VDWG+A G IG      W  G   G
+Sbjct  19  KYYGNGVSCNKKGCTVDWGKAIGIIGNNAAANWATGGAAG  58
+
+
+>UniRef90_P35618 Bacteriocin sakacin-P n=3 Tax=Lactobacillus TaxID=1578 
+RepID=SAKP_LACSK
+Length=61
+
+ Score = 51.7 bits (123),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 20/40 (50%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV+C    C VDWG A G IG      W  G   G
+Sbjct  19  KYYGNGVHCGKHSCTVDWGTAIGNIGNNAAANWATGGNAG  58
+
+
+>UniRef90_A0A3T1Z287 Bacteriocin n=1 Tax=Listeria monocytogenes 
+TaxID=1639 RepID=A0A3T1Z287_LISMN
+Length=48
+
+ Score = 51.4 bits (122),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 22/40 (55%), Positives = 23/40 (58%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           K YGNGV+CN KKCWVDWG A   IG      W  G   G
+Sbjct  6   KSYGNGVHCNKKKCWVDWGSAISTIGNNSAANWATGGAAG  45
+
+
+>UniRef90_W7BE23 PapA n=1 Tax=Listeria aquatica FSL S10-1188 TaxID=1265818 
+RepID=W7BE23_9LIST
+Length=61
+
+ Score = 51.4 bits (122),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 21/40 (53%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN KKC VDWG+  G IG         G   G
+Sbjct  19  KYYGNGVSCNKKKCSVDWGKTIGIIGNNSAANLATGGAAG  58
+
+
+>UniRef90_A0A1Y0VR55 Bacteriocin mesentericin Y105 n=3 Tax=Pediococcus 
+pentosaceus TaxID=1255 RepID=A0A1Y0VR55_PEDPE
+Length=60
+
+ Score = 51.4 bits (122),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 21/37 (57%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+           KYYGNGV+C  K C+VDWGQA+  IG+ +V GW    
+Sbjct  19  KYYGNGVHCGKKTCYVDWGQATASIGKIIVNGWTQHG  55
+
+
+>UniRef90_Q6XVH0 SakX n=2 Tax=Lactobacillus TaxID=1578 RepID=Q6XVH0_LACSK
+Length=61
+
+ Score = 51.0 bits (121),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 18/40 (45%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNG+ CN   C VDW +A   IG   V     G   G
+Sbjct  19  KYYGNGLSCNKSGCSVDWSKAISIIGNNAVANLTTGGAAG  58
+
+
+>UniRef90_D2DXK5 Avicin A n=2 Tax=Enterococcus TaxID=1350 RepID=D2DXK5_ENTAV
+Length=61
+
+ Score = 51.0 bits (121),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+            YYGNGV CN K C VDWG+A   IG         G   G
+Sbjct  19  TYYGNGVSCNKKGCSVDWGKAISIIGNNSAANLATGGAAG  58
+
+
+>UniRef90_UPI000A33474A enterocin n=1 Tax=Enterococcus faecium 
+TaxID=1352 RepID=UPI000A33474A
+Length=60
+
+ Score = 51.0 bits (121),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 23/36 (64%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+            YYGNGVYC+++KCW+DW +A   I       ++ G
+Sbjct  14  TYYGNGVYCSTQKCWLDWSRARSEIVDKGAKAYVNG  49
+
+
+>UniRef90_G5JUX3 Bacteriocin sakacin-P n=2 Tax=Streptococcus TaxID=1301 
+RepID=G5JUX3_9STRE
+Length=70
+
+ Score = 51.0 bits (121),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 16/40 (40%), Positives = 16/40 (40%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+            YYGNGV C  K C  DWG A   I       W      G
+Sbjct  24  TYYGNGVTCTKKGCTTDWGTAITTILNNSAMNWATDGKAG  63
+
+
+>UniRef90_A0A2S7RP79 Bacteriocin n=18 Tax=Enterococcaceae TaxID=81852 
+RepID=A0A2S7RP79_ENTFC
+Length=54
+
+ Score = 50.6 bits (120),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 21/37 (57%), Positives = 26/37 (70%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN+ KCWV+WG+A   I   V+ GW  G
+Sbjct  12  TRSYGNGVYCNNSKCWVNWGEAKENIAGIVISGWASG  48
+
+
+>UniRef90_Q644A0 Putative enterocin P bacteriocin (Fragment) n=2 
+Tax=Enterococcus faecium TaxID=1352 RepID=Q644A0_ENTFC
+Length=44
+
+ Score = 50.2 bits (119),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 20/37 (54%), Positives = 25/37 (68%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           T+ YGNGVYCN  KCWV+W +A+  I   V+ GW  G
+Sbjct  2   TRSYGNGVYCNDDKCWVNWNEANQQIAGIVISGWASG  38
+
+
+>UniRef90_A8J8T1 Predicted protein n=1 Tax=Chlamydomonas reinhardtii 
+TaxID=3055 RepID=A8J8T1_CHLRE
+Length=59
+
+ Score = 50.2 bits (119),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 21/34 (62%), Positives = 26/34 (76%), Gaps = 0/34 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWL  35
+           KYYGNGV+C  K C+VDWGQA+  IG+ +V GW 
+Sbjct  19  KYYGNGVHCGKKTCYVDWGQATASIGKIIVNGWT  52
+
+
+>UniRef90_UPI000BE23263 CCRG-2 family RiPP n=1 Tax=Leuconostoc 
+gelidum TaxID=1244 RepID=UPI000BE23263
+Length=66
+
+ Score = 50.2 bits (119),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 19/39 (49%), Positives = 20/39 (51%), Gaps = 0/39 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           YYGNG+ C    C VDWG A G IG      WL G   G
+Sbjct  21  YYGNGLTCTKHGCSVDWGTAIGTIGNNSAANWLTGGAAG  59
+
+
+>UniRef90_Q6TGQ7 Enterocin CRL35 n=8 Tax=Enterococcus TaxID=1350 
+RepID=Q6TGQ7_ENTMU
+Length=58
+
+ Score = 49.8 bits (118),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 21/40 (53%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN K C VDWG+A G IG         G   G
+Sbjct  16  KYYGNGVSCNKKGCSVDWGKAIGIIGNNSAANLATGGAAG  55
+
+
+>UniRef90_A0A3R9JZQ9 Bacteriocin ubericin-A n=6 Tax=Streptococcus 
+TaxID=1301 RepID=A0A3R9JZQ9_STROR
+Length=73
+
+ Score = 49.8 bits (118),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 19/42 (45%), Positives = 23/42 (55%), Gaps = 1/42 (2%)
+
+Query  1   TKYYGNGVYC-NSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YC NSK CWV+W +A   I    +     G   G
+Sbjct  25  TIYYGNGLYCDNSKGCWVNWPEAINKILTNSIVNGFSGGNAG  66
+
+
+>UniRef90_A0A358LW02 Uncharacterized protein n=4 Tax=Lactobacillus 
+TaxID=1578 RepID=A0A358LW02_9LACO
+Length=87
+
+ Score = 49.8 bits (118),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 17/40 (43%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNG+YCN   C VDW +   C       G+  G   G
+Sbjct  44  KYYGNGLYCNQLGCKVDWSRTWYCGVNNAAAGYATGGKAG  83
+
+
+>UniRef90_UPI00047701A8 ComC/BlpC family leader-containing pheromone/bacteriocin 
+n=1 Tax=Streptococcus henryi TaxID=439219 
+RepID=UPI00047701A8
+Length=71
+
+ Score = 49.4 bits (117),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 19/42 (45%), Positives = 22/42 (52%), Gaps = 1/42 (2%)
+
+Query  1   TKYYGNGVYCNSKK-CWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           T YYGNG+YCN  K CWV+W +A   I        L G   G
+Sbjct  23  TVYYGNGLYCNETKGCWVNWAEAINIIITNSTMNGLSGGNAG  64
+
+
+>UniRef90_P0A311 Bacteriocin curvacin-A n=3 Tax=Lactobacillus 
+TaxID=1578 RepID=SAKA_LACCU
+Length=59
+
+ Score = 49.0 bits (116),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 19/36 (53%), Positives = 26/36 (72%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           + YGNGVYCN+KKCWV+ G+A+  I   ++ GW  G
+Sbjct  20  RSYGNGVYCNNKKCWVNRGEATQSIIGGMISGWASG  55
+
+
+>UniRef90_P80569 Bacteriocin piscicolin-126 n=3 Tax=Carnobacterium 
+TaxID=2747 RepID=PIS1_CARML
+Length=62
+
+ Score = 48.7 bits (115),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN   C VDW +A G IG         G   G
+Sbjct  19  KYYGNGVSCNKNGCTVDWSKAIGIIGNNAAANLTTGGAAG  58
+
+
+>UniRef90_A0A0R2CZY5 Uncharacterized protein n=3 Tax=Lactobacillus 
+rennini TaxID=238013 RepID=A0A0R2CZY5_9LACO
+Length=57
+
+ Score = 48.7 bits (115),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 18/40 (45%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV C+   C VDWG+A  C        W  G   G
+Sbjct  14  KYYGNGVSCSKHSCSVDWGKALTCTINNGAMAWTTGGHQG  53
+
+
+>UniRef90_R2Q705 Bacteriocin mundticin n=1 Tax=Enterococcus pallens 
+ATCC BAA-351 TaxID=1158607 RepID=R2Q705_9ENTE
+Length=62
+
+ Score = 48.3 bits (114),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 21/40 (53%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNG+ C    C VDWG+A G IG      W  G   G
+Sbjct  19  KYYGNGLSCGKYSCSVDWGKAIGIIGNNAAANWATGGAAG  58
+
+
+>UniRef90_P84962 Bacteriocin divergicin M35 n=1 Tax=Carnobacterium 
+divergens TaxID=2748 RepID=DIV35_CARDV
+Length=43
+
+ Score = 47.9 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 34/42 (81%), Positives = 34/42 (81%), Gaps = 2/42 (5%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPGK  42
+           TKYYGNGVYCNSKKCWVDWG A GCI   VV G LGG IPGK
+Sbjct  1   TKYYGNGVYCNSKKCWVDWGTAQGCI--DVVIGQLGGGIPGK  40
+
+
+>UniRef90_P86183 Enterocin-HF n=2 Tax=Enterococcus faecium TaxID=1352 
+RepID=ETCHF_ENTFC
+Length=58
+
+ Score = 48.3 bits (114),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 21/40 (53%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN K C VDWG+A G IG         G   G
+Sbjct  16  KYYGNGVSCNKKGCSVDWGKAIGIIGNNAAANLTTGGKAG  55
+
+
+>UniRef90_A0A0S3QR16 Bacteriocin-II (Fragment) n=2 Tax=Lactobacillaceae 
+TaxID=33958 RepID=A0A0S3QR16_PEDPE
+Length=46
+
+ Score = 47.9 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 18/37 (49%), Positives = 21/37 (57%), Gaps = 0/37 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGA  38
+           KYYGNG+YC    C VDWG+A+ CI       W  G 
+Sbjct  10  KYYGNGLYCGKHPCSVDWGKATTCIINNGAMAWATGG  46
+
+
+>UniRef90_UPI0009B29F58 hypothetical protein n=1 Tax=Chlamydia 
+trachomatis TaxID=813 RepID=UPI0009B29F58
+Length=70
+
+ Score = 48.7 bits (115),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 25/45 (56%), Positives = 27/45 (60%), Gaps = 3/45 (7%)
+
+Query  1   TKYYGNGVYCNSKK--CWVDWGQASGCIGQTVVGGWLGGAIPGKC  43
+           T YYGNGV CNSK   C V+W +  GCIG   V  W  GA  GKC
+Sbjct  27  TTYYGNGVSCNSKTKTCSVNWAKTVGCIGNISVASWA-GATIGKC  70
+
+
+>UniRef90_E9DL22 Bacteriocin sakacin-P n=1 Tax=Streptococcus sp. 
+C150 TaxID=435842 RepID=E9DL22_9STRE
+Length=74
+
+ Score = 46.7 bits (110),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 17/40 (43%), Positives = 18/40 (45%), Gaps = 1/40 (3%)
+
+Query  3   YYGNGVYCNSKK-CWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           YYGNG+YC S   CWVDW Q    I       W      G
+Sbjct  27  YYGNGLYCKSNGGCWVDWSQTINSILTNSAMNWGTQGHAG  66
+
+
+>UniRef90_P86393 Bacteriocin SRCAM 602 n=1 Tax=Paenibacillus polymyxa 
+TaxID=1406 RepID=BCN02_PAEPO
+Length=39
+
+ Score = 44.8 bits (105),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 20/36 (56%), Positives = 25/36 (69%), Gaps = 2/36 (6%)
+
+Query  2   KYYGNGVYCNSKK--CWVDWGQASGCIGQTVVGGWL  35
+            YYGNG+YCN +K   WVDW +AS  IG+  V GW+
+Sbjct  2   TYYGNGLYCNKQKHYTWVDWNKASREIGKITVNGWV  37
+
+
+>UniRef90_B7U212 Enterocin (Fragment) n=1 Tax=Enterococcus sp. 
+DF14 TaxID=574085 RepID=B7U212_9ENTE
+Length=35
+
+ Score = 44.8 bits (105),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 20/35 (57%), Positives = 24/35 (69%), Gaps = 0/35 (0%)
+
+Query  7   GVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           GVYC   KC VD  +A+ CI    +GG+LGGAIPG
+Sbjct  1   GVYCTKNKCTVDRAKATTCIAGMSIGGFLGGAIPG  35
+
+
+>UniRef90_U6S4G6 Putative bacteriocin hiracin-JM79 n=22 Tax=Bacteria 
+TaxID=2 RepID=U6S4G6_ENTFL
+Length=71
+
+ Score = 45.6 bits (107),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 17/24 (71%), Positives = 19/24 (79%), Gaps = 0/24 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGC  25
+            YYGNGVYCN +KCWV+WGQA   
+Sbjct  30  TYYGNGVYCNKQKCWVNWGQAWSE  53
+
+
+>UniRef90_P80925 Bacteriocin mundticin n=1 Tax=Enterococcus mundtii 
+TaxID=53346 RepID=MUTI_ENTMU
+Length=43
+
+ Score = 44.4 bits (104),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 21/40 (53%), Positives = 22/40 (55%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNGV CN K C VDWG+A G IG         G   G
+Sbjct  1   KYYGNGVSCNKKGCSVDWGKAIGIIGNNSAANLATGGAAG  40
+
+
+>UniRef90_U5MN99 Class II bacteriocin n=2 Tax=Clostridium saccharobutylicum 
+TaxID=169679 RepID=U5MN99_CLOSA
+Length=64
+
+ Score = 44.8 bits (105),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 17/39 (44%), Positives = 22/39 (56%), Gaps = 2/39 (5%)
+
+Query  2   KYYGNGVYCNSKK--CWVDWGQASGCIGQTVVGGWLGGA  38
+             Y NG+YC+     C VDW +A+  IGQ VV GW+   
+Sbjct  21  TKYPNGLYCDDSTGHCHVDWSEATSSIGQIVVNGWVQNG  59
+
+
+>UniRef90_P38579 Bacteriocin carnobacteriocin BM1 n=5 Tax=Carnobacterium 
+TaxID=2747 RepID=CBB1_CARML
+Length=61
+
+ Score = 44.4 bits (104),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 17/34 (50%), Positives = 21/34 (62%), Gaps = 0/34 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLG  36
+            YGNGVYCN +KCWV+  +    I   V+GGW  
+Sbjct  21  SYGNGVYCNKEKCWVNKAENKQAITGIVIGGWAS  54
+
+
+>UniRef90_A0A109DGD3 Uncharacterized protein n=1 Tax=Lactobacillus 
+crispatus TaxID=47770 RepID=A0A109DGD3_9LACO
+Length=72
+
+ Score = 44.4 bits (104),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 16/38 (42%), Positives = 19/38 (50%), Gaps = 0/38 (0%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIP  40
+           YYGNGV CN   C VDW ++  CI     G +  G   
+Sbjct  30  YYGNGVSCNRYHCRVDWSRSWYCIVNRAGGAYATGGQA  67
+
+
+>UniRef90_A0A1L3K9U6 Uncharacterized protein n=1 Tax=Lactobacillus 
+delbrueckii subsp. sunkii TaxID=1050107 RepID=A0A1L3K9U6_9LACO
+Length=69
+
+ Score = 44.0 bits (103),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 17/43 (40%), Positives = 21/43 (49%), Gaps = 2/43 (5%)
+
+Query  3   YYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIP--GKC  43
+           YYGNGV CN   C  DW +A  CI   +   +  G     G+C
+Sbjct  27  YYGNGVSCNRYHCRTDWSKAWYCIANRMGAAYATGGKATIGRC  69
+
+
+>UniRef90_G5JMW2 Bacteriocin sakacin-P n=1 Tax=Streptococcus criceti 
+HS-6 TaxID=873449 RepID=G5JMW2_STRCG
+Length=77
+
+ Score = 44.4 bits (104),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 16/42 (38%), Positives = 22/42 (52%), Gaps = 1/42 (2%)
+
+Query  1   TKYYGNGVYCNSKK-CWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           + YYGNG+YC+  K CWVD G+    +   +   W  G   G
+Sbjct  31  STYYGNGLYCSEDKGCWVDTGRLITSLVNNIPAQWFTGGKSG  72
+
+
+>UniRef90_A0A2U9QI36 Enterocin (Fragment) n=2 Tax=Enterococcus 
+faecalis TaxID=1351 RepID=A0A2U9QI36_ENTFL
+Length=92
+
+ Score = 44.4 bits (104),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 15/22 (68%), Positives = 18/22 (82%), Gaps = 0/22 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQAS  23
+           KYYGNGVYC  + C V+WGQA+
+Sbjct  40  KYYGNGVYCTKQGCSVNWGQAN  61
+
+
+>UniRef90_A0A0A1MNL7 Class II bacteriocin n=1 Tax=Oceanobacillus 
+oncorhynchi TaxID=545501 RepID=A0A0A1MNL7_9BACI
+Length=100
+
+ Score = 44.4 bits (104),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 12/37 (32%), Positives = 18/37 (49%), Gaps = 0/37 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           +  YGNGV+C+ K C V+W +         +  W  G
+Sbjct  28  STDYGNGVHCDEKTCSVNWSETFQQSTDRAIESWATG  64
+
+
+>UniRef90_A0A1H0XID5 Class II bacteriocin n=1 Tax=Carnobacterium 
+viridans TaxID=174587 RepID=A0A1H0XID5_9LACT
+Length=65
+
+ Score = 43.3 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 14/25 (56%), Positives = 17/25 (68%), Gaps = 0/25 (0%)
+
+Query  1   TKYYGNGVYCNSKKCWVDWGQASGC  25
+           + YYGNGV C  KKC V+WGQ+   
+Sbjct  30  STYYGNGVSCTKKKCSVNWGQSWTE  54
+
+
+>UniRef90_A0A1I2SKM3 Bacteriocin-type signal sequence-containing 
+protein n=3 Tax=Lactobacillus ruminis TaxID=1623 RepID=A0A1I2SKM3_9LACO
+Length=59
+
+ Score = 43.3 bits (101),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 20/39 (51%), Positives = 20/39 (51%), Gaps = 0/39 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIP  40
+           KYYGNGVYC   KC VDWGQA GC           G   
+Sbjct  16  KYYGNGVYCGKHKCRVDWGQAWGCSVNRWGAAVGTGGKA  54
+
+
+>UniRef90_UPI00097E570B bacteriocin n=2 Tax=Enterococcus faecium 
+TaxID=1352 RepID=UPI00097E570B
+Length=54
+
+ Score = 42.9 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/23 (65%), Positives = 19/23 (83%), Gaps = 0/23 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASG  24
+            YYGNG+YCN +KCWV+WGQ+  
+Sbjct  32  TYYGNGLYCNKEKCWVNWGQSWS  54
+
+
+>UniRef90_A0A4Q1TJD2 Uncharacterized protein n=1 Tax=Lactobacillus 
+chiayiensis TaxID=2100821 RepID=A0A4Q1TJD2_9LACO
+Length=55
+
+ Score = 42.9 bits (100),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 17/32 (53%), Positives = 20/32 (63%), Gaps = 0/32 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGG  33
+           KYYGNGVYC  KKC V+WG+    IG  +   
+Sbjct  24  KYYGNGVYCIKKKCCVNWGEDINRIGNNMAAN  55
+
+
+>UniRef90_A0A2Z4W2D4 Bacteriocin n=1 Tax=Lactobacillus murinus 
+TaxID=1622 RepID=A0A2Z4W2D4_9LACO
+Length=54
+
+ Score = 42.1 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 17/40 (43%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           KYYGNG+YCN   C VDW +   C       G+  G   G
+Sbjct  11  KYYGNGLYCNQLGCKVDWSRTWYCGVNNAAAGYATGGKAG  50
+
+
+>UniRef90_W7BP40 Uncharacterized protein n=1 Tax=Listeria aquatica 
+FSL S10-1188 TaxID=1265818 RepID=W7BP40_9LIST
+Length=68
+
+ Score = 42.5 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 16/24 (67%), Positives = 18/24 (75%), Gaps = 0/24 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGC  25
+           KYYGNGV C+ KKC V+WGQA   
+Sbjct  30  KYYGNGVSCSKKKCSVNWGQAWTE  53
+
+
+>UniRef90_A0A2C9NPM8 Bacteriocin n=13 Tax=Enterococcus TaxID=1350 
+RepID=A0A2C9NPM8_ENTFC
+Length=67
+
+ Score = 42.5 bits (99),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 15/24 (63%), Positives = 19/24 (79%), Gaps = 0/24 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGC  25
+            YYGNG+YCN +KCWV+WGQ+   
+Sbjct  27  TYYGNGLYCNKEKCWVNWGQSWSE  50
+
+
+>UniRef90_P81053 Bacteriocin leucocin-C n=2 Tax=Leuconostoc TaxID=1243 
+RepID=LCCC_LEUME
+Length=43
+
+ Score = 41.3 bits (96),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 19/40 (48%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIPG  41
+           K YGNGV+C  K C VDWG A   I    V   L G   G
+Sbjct  1   KNYGNGVHCTKKGCSVDWGYAWTNIANNSVMNGLTGGNAG  40
+
+
+>UniRef90_UPI00047CB6F2 bacteriocin n=1 Tax=Clostridium beijerinckii 
+TaxID=1520 RepID=UPI00047CB6F2
+Length=62
+
+ Score = 41.7 bits (97),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 18/39 (46%), Positives = 20/39 (51%), Gaps = 0/39 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGGAIP  40
+            YYGNGV C+ KKC VDWG+A  C      G    G   
+Sbjct  19  TYYGNGVSCDDKKCTVDWGKAWSCGADRWGGEVASGGKA  57
+
+
+>UniRef90_A0A224WXC1 Uncharacterized protein n=3 Tax=Lactococcus 
+TaxID=1357 RepID=A0A224WXC1_9LACT
+Length=118
+
+ Score = 42.9 bits (100),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 13/28 (46%), Positives = 18/28 (64%), Gaps = 0/28 (0%)
+
+Query  5    GNGVYCNSKKCWVDWGQASGCIGQTVVG  32
+            GNG+ C+   CWV+WGQ +  IG  +V 
+Sbjct  74   GNGLNCDKNHCWVNWGQTATAIGHNLVN  101
+
+
+>UniRef90_UPI000B60040B bacteriocin n=1 Tax=Lactobacillus plantarum 
+TaxID=1590 RepID=UPI000B60040B
+Length=59
+
+ Score = 41.3 bits (96),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 15/24 (63%), Positives = 16/24 (67%), Gaps = 0/24 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGC  25
+           KYYGNGV C    C VDWG+A  C
+Sbjct  23  KYYGNGVSCGKHTCTVDWGEAFSC  46
+
+
+>UniRef90_UPI000A186739 hypothetical protein n=1 Tax=Enterococcus 
+faecium TaxID=1352 RepID=UPI000A186739
+Length=63
+
+ Score = 41.3 bits (96),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 14/18 (78%), Positives = 16/18 (89%), Gaps = 0/18 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDW  19
+            YYGNG+YCN +KCWVDW
+Sbjct  32  TYYGNGLYCNKEKCWVDW  49
+
+
+>UniRef90_A0A0R1LPA5 Uncharacterized protein n=2 Tax=Lactobacillus 
+futsaii TaxID=938155 RepID=A0A0R1LPA5_9LACO
+Length=66
+
+ Score = 41.3 bits (96),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 16/36 (44%), Positives = 18/36 (50%), Gaps = 0/36 (0%)
+
+Query  2   KYYGNGVYCNSKKCWVDWGQASGCIGQTVVGGWLGG  37
+           KYYGNGV C    C V+WGQA           W+ G
+Sbjct  24  KYYGNGVSCGKHTCKVNWGQAWNESVNRWGNSWVNG  59
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.157    0.642    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0481    0.140     1.90     42.6     43.6 
+
+Effective search space used: 818515154184
+
+
+  Database: refseq_protein.fasta
+    Posted date:  Jul 1, 2020  8:37 PM
+  Number of letters in database: 33,175,535,772
+  Number of sequences in database:  99,657,864
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
