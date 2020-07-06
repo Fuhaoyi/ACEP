@@ -1,0 +1,525 @@
+PSIBLAST 2.9.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: refseq_protein.fasta
+           99,657,864 sequences; 33,175,535,772 total letters
+
+Results from round 1
+
+
+Query= AP02103
+
+Length=31
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+UniRef90_A6MBT7 Palustrin-OG1 antimicrobial peptide n=1 Tax=Odorr...  65.9       1e-13
+UniRef90_B4ERK4 Brevinin-2HS n=7 Tax=Odorrana TaxID=121155 RepID=...  58.9       6e-11
+UniRef90_G5ELM2 Palustrin-2ISb protein n=9 Tax=Odorrana TaxID=121...  56.2       9e-10
+UniRef90_E1B231 Palustrin-2CG1 n=1 Tax=Amolops chunganensis TaxID...  55.8       1e-09
+UniRef90_C0ILK5 Brevinin-2-RN antimicrobial peptide n=5 Tax=Sylvi...  54.3       4e-09
+UniRef90_E1B236 Palustrin-2GN1 antimicrobial peptide n=1 Tax=Amol...  53.5       1e-08
+UniRef90_B9W1Q2 Palustrin-2LTa antimicrobial peptide n=1 Tax=Sylv...  52.8       2e-08
+UniRef90_A0A2G9QJY4 Uncharacterized protein n=1 Tax=Lithobates ca...  48.1       1e-06
+UniRef90_G4Y021 Palustrin-2AM protein (Fragment) n=6 Tax=Rana amu...  47.8       1e-06
+UniRef90_A0A0A0RAM2 Palustrin-2HB1 n=1 Tax=Pelophylax hubeiensis ...  47.8       2e-06
+UniRef90_P82234 Brevinin-2Tc n=2 Tax=Rana temporaria TaxID=8407 R...  45.4       7e-06
+UniRef90_J7FJG0 Prepropalustrin-2Ka n=3 Tax=Rana kukunoris TaxID=...  45.4       1e-05
+UniRef90_A0AEI6 Brevinin-2GHc n=2 Tax=Ranidae TaxID=8397 RepID=BR...  45.4       1e-05
+UniRef90_F1AEK6 Prepropalustrin-2CE n=3 Tax=Rana chensinensis Tax...  45.4       1e-05
+UniRef90_A0AAS1 Amurin-1 protein n=1 Tax=Rana amurensis TaxID=109...  44.3       4e-05
+UniRef90_E7EKF7 Antimicrobial peptide n=3 Tax=Amolops hainanensis...  42.0       4e-04
+UniRef90_D1MYB9 Prepropalustrin-2Oa n=1 Tax=Rana ornativentris Ta...  41.6       4e-04
+
+
+>UniRef90_A6MBT7 Palustrin-OG1 antimicrobial peptide n=1 Tax=Odorrana 
+grahami TaxID=167935 RepID=A6MBT7_ODOGR
+Length=73
+
+ Score = 65.9 bits (159),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 30/31 (97%), Positives = 30/31 (97%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           G WDTIKQAGKKFFLNVLDKIRCKVAGGCRT
+Sbjct  43  GFWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  73
+
+
+>UniRef90_B4ERK4 Brevinin-2HS n=7 Tax=Odorrana TaxID=121155 RepID=B4ERK4_ODOSH
+Length=70
+
+ Score = 58.9 bits (141),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 27/29 (93%), Positives = 28/29 (97%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLWDTIKQAGKK FL+VLDKIRCKVAGGC
+Sbjct  42  GLWDTIKQAGKKIFLSVLDKIRCKVAGGC  70
+
+
+>UniRef90_G5ELM2 Palustrin-2ISb protein n=9 Tax=Odorrana TaxID=121155 
+RepID=G5ELM2_ODOIS
+Length=80
+
+ Score = 56.2 bits (134),  Expect = 9e-10, Method: Compositional matrix adjust.
+ Identities = 25/31 (81%), Positives = 29/31 (94%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           GLW++IK AGKK F+NVLDKIRCKVAGGC+T
+Sbjct  42  GLWNSIKIAGKKLFVNVLDKIRCKVAGGCKT  72
+
+
+>UniRef90_E1B231 Palustrin-2CG1 n=1 Tax=Amolops chunganensis TaxID=325556 
+RepID=P2CG1_AMOCU
+Length=72
+
+ Score = 55.8 bits (133),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 24/31 (77%), Positives = 29/31 (94%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           GLW+TIK+AGKKF +NVLDKIRC +AGGC+T
+Sbjct  42  GLWNTIKEAGKKFAINVLDKIRCGIAGGCKT  72
+
+
+>UniRef90_C0ILK5 Brevinin-2-RN antimicrobial peptide n=5 Tax=Sylvirana 
+TaxID=1659747 RepID=C0ILK5_SYLVI
+Length=72
+
+ Score = 54.3 bits (129),  Expect = 4e-09, Method: Compositional matrix adjust.
+ Identities = 24/30 (80%), Positives = 27/30 (90%), Gaps = 0/30 (0%)
+
+Query  2   LWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           LW+TIK AGK F LN+LDKIRCKVAGGC+T
+Sbjct  43  LWETIKNAGKGFILNILDKIRCKVAGGCKT  72
+
+
+>UniRef90_E1B236 Palustrin-2GN1 antimicrobial peptide n=1 Tax=Amolops 
+granulosus TaxID=325557 RepID=E1B236_9NEOB
+Length=72
+
+ Score = 53.5 bits (127),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 23/30 (77%), Positives = 28/30 (93%), Gaps = 0/30 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCR  30
+           GLW+TIK+AGKKF LN+LDKIRC +AGGC+
+Sbjct  42  GLWNTIKEAGKKFALNLLDKIRCGIAGGCK  71
+
+
+>UniRef90_B9W1Q2 Palustrin-2LTa antimicrobial peptide n=1 Tax=Sylvirana 
+latouchii TaxID=156873 RepID=B9W1Q2_9NEOB
+Length=72
+
+ Score = 52.8 bits (125),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 22/31 (71%), Positives = 26/31 (84%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+            LW+  K AGK+F LN+LDKIRC+VAGGCRT
+Sbjct  42  SLWENFKNAGKQFILNILDKIRCRVAGGCRT  72
+
+
+>UniRef90_A0A2G9QJY4 Uncharacterized protein n=1 Tax=Lithobates 
+catesbeiana TaxID=8400 RepID=A0A2G9QJY4_LITCT
+Length=55
+
+ Score = 48.1 bits (113),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 20/29 (69%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW+TIK  GK   LN+LDKI+CK+AGGC
+Sbjct  25  GLWETIKTTGKSIALNLLDKIKCKIAGGC  53
+
+
+>UniRef90_G4Y021 Palustrin-2AM protein (Fragment) n=6 Tax=Rana 
+amurensis TaxID=109177 RepID=G4Y021_RANAM
+Length=56
+
+ Score = 47.8 bits (112),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 19/29 (66%), Positives = 25/29 (86%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           G+WD+IK  GKKF LN++DKI+CK+ GGC
+Sbjct  26  GIWDSIKTFGKKFALNIMDKIKCKIGGGC  54
+
+
+>UniRef90_A0A0A0RAM2 Palustrin-2HB1 n=1 Tax=Pelophylax hubeiensis 
+TaxID=121165 RepID=A0A0A0RAM2_9NEOB
+Length=68
+
+ Score = 47.8 bits (112),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 22/29 (76%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW TIK+  KKF L VLDKIRCK+AGGC
+Sbjct  40  GLWTTIKEGLKKFSLGVLDKIRCKIAGGC  68
+
+
+>UniRef90_P82234 Brevinin-2Tc n=2 Tax=Rana temporaria TaxID=8407 
+RepID=BR2TC_RANTE
+Length=29
+
+ Score = 45.4 bits (106),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 19/29 (66%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW+TIK  GKKF LN+L K++CK+ GGC
+Sbjct  1   GLWETIKNFGKKFTLNILHKLKCKIGGGC  29
+
+
+>UniRef90_J7FJG0 Prepropalustrin-2Ka n=3 Tax=Rana kukunoris TaxID=670907 
+RepID=J7FJG0_9NEOB
+Length=70
+
+ Score = 45.4 bits (106),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 18/29 (62%), Positives = 25/29 (86%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW++IK  GKKF LN+++KI+CK+ GGC
+Sbjct  40  GLWESIKNFGKKFALNMMNKIKCKIGGGC  68
+
+
+>UniRef90_A0AEI6 Brevinin-2GHc n=2 Tax=Ranidae TaxID=8397 RepID=BR2GC_SYLGU
+Length=72
+
+ Score = 45.4 bits (106),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 18/28 (64%), Positives = 24/28 (86%), Gaps = 0/28 (0%)
+
+Query  2   LWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           +W+ IK AGK F +++LDK+RCKVAGGC
+Sbjct  43  IWEGIKNAGKGFLVSILDKVRCKVAGGC  70
+
+
+>UniRef90_F1AEK6 Prepropalustrin-2CE n=3 Tax=Rana chensinensis 
+TaxID=79015 RepID=F1AEK6_9NEOB
+Length=70
+
+ Score = 45.4 bits (106),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 19/29 (66%), Positives = 23/29 (79%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLWD+IK  GK   LNV+DKI+CK+ GGC
+Sbjct  40  GLWDSIKNFGKTIALNVMDKIKCKIGGGC  68
+
+
+>UniRef90_A0AAS1 Amurin-1 protein n=1 Tax=Rana amurensis TaxID=109177 
+RepID=A0AAS1_RANAM
+Length=70
+
+ Score = 44.3 bits (103),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 17/29 (59%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW++IK  GKKF LN+++K++CK  GGC
+Sbjct  40  GLWESIKNLGKKFALNIMEKLKCKFGGGC  68
+
+
+>UniRef90_E7EKF7 Antimicrobial peptide n=3 Tax=Amolops hainanensis 
+TaxID=327960 RepID=E7EKF7_9NEOB
+Length=72
+
+ Score = 42.0 bits (97),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 17/30 (57%), Positives = 24/30 (80%), Gaps = 0/30 (0%)
+
+Query  2   LWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           LW+TIK+ GKKF + +LDKI+C + G C+T
+Sbjct  43  LWNTIKETGKKFAVGLLDKIKCGITGTCKT  72
+
+
+>UniRef90_D1MYB9 Prepropalustrin-2Oa n=1 Tax=Rana ornativentris 
+TaxID=79016 RepID=D1MYB9_9NEOB
+Length=70
+
+ Score = 41.6 bits (96),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 16/29 (55%), Positives = 21/29 (72%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           G WD IK  GK F LN ++K++CK+ GGC
+Sbjct  40  GFWDNIKNFGKTFALNAIEKLKCKITGGC  68
+
+
+
+Lambda      K        H        a         alpha
+   0.328    0.145    0.485    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 814439714700
+Results from round 2
+
+
+Query= AP02103
+
+Length=31
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+UniRef90_A6MBT7 Palustrin-OG1 antimicrobial peptide n=1 Tax=Odorr...  56.8       4e-10
+UniRef90_G5ELM2 Palustrin-2ISb protein n=9 Tax=Odorrana TaxID=121...  53.4       1e-08
+UniRef90_F1AEK6 Prepropalustrin-2CE n=3 Tax=Rana chensinensis Tax...  52.2       3e-08
+UniRef90_E1B231 Palustrin-2CG1 n=1 Tax=Amolops chunganensis TaxID...  52.2       3e-08
+UniRef90_E1B236 Palustrin-2GN1 antimicrobial peptide n=1 Tax=Amol...  51.8       5e-08
+UniRef90_J7FJG0 Prepropalustrin-2Ka n=3 Tax=Rana kukunoris TaxID=...  51.4       6e-08
+UniRef90_G4Y021 Palustrin-2AM protein (Fragment) n=6 Tax=Rana amu...  50.7       9e-08
+UniRef90_C0ILK5 Brevinin-2-RN antimicrobial peptide n=5 Tax=Sylvi...  49.5       3e-07
+UniRef90_B4ERK4 Brevinin-2HS n=7 Tax=Odorrana TaxID=121155 RepID=...  49.5       4e-07
+UniRef90_D1MYB9 Prepropalustrin-2Oa n=1 Tax=Rana ornativentris Ta...  49.1       5e-07
+UniRef90_B9W1Q2 Palustrin-2LTa antimicrobial peptide n=1 Tax=Sylv...  48.7       6e-07
+UniRef90_A0AAS1 Amurin-1 protein n=1 Tax=Rana amurensis TaxID=109...  48.4       9e-07
+UniRef90_A0A2G9QJY4 Uncharacterized protein n=1 Tax=Lithobates ca...  46.4       3e-06
+UniRef90_A0A0A0RAM2 Palustrin-2HB1 n=1 Tax=Pelophylax hubeiensis ...  46.8       4e-06
+UniRef90_A0AEI6 Brevinin-2GHc n=2 Tax=Ranidae TaxID=8397 RepID=BR...  45.7       1e-05
+UniRef90_E7EKF7 Antimicrobial peptide n=3 Tax=Amolops hainanensis...  42.2       2e-04
+UniRef90_P82234 Brevinin-2Tc n=2 Tax=Rana temporaria TaxID=8407 R...  41.0       4e-04
+
+Sequences not found previously or not previously below threshold:
+
+
+
+>UniRef90_A6MBT7 Palustrin-OG1 antimicrobial peptide n=1 Tax=Odorrana 
+grahami TaxID=167935 RepID=A6MBT7_ODOGR
+Length=73
+
+ Score = 56.8 bits (136),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 30/31 (97%), Positives = 30/31 (97%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           G WDTIKQAGKKFFLNVLDKIRCKVAGGCRT
+Sbjct  43  GFWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  73
+
+
+>UniRef90_G5ELM2 Palustrin-2ISb protein n=9 Tax=Odorrana TaxID=121155 
+RepID=G5ELM2_ODOIS
+Length=80
+
+ Score = 53.4 bits (127),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 25/31 (81%), Positives = 29/31 (94%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           GLW++IK AGKK F+NVLDKIRCKVAGGC+T
+Sbjct  42  GLWNSIKIAGKKLFVNVLDKIRCKVAGGCKT  72
+
+
+>UniRef90_F1AEK6 Prepropalustrin-2CE n=3 Tax=Rana chensinensis 
+TaxID=79015 RepID=F1AEK6_9NEOB
+Length=70
+
+ Score = 52.2 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 19/29 (66%), Positives = 23/29 (79%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLWD+IK  GK   LNV+DKI+CK+ GGC
+Sbjct  40  GLWDSIKNFGKTIALNVMDKIKCKIGGGC  68
+
+
+>UniRef90_E1B231 Palustrin-2CG1 n=1 Tax=Amolops chunganensis TaxID=325556 
+RepID=P2CG1_AMOCU
+Length=72
+
+ Score = 52.2 bits (124),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 24/31 (77%), Positives = 29/31 (94%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           GLW+TIK+AGKKF +NVLDKIRC +AGGC+T
+Sbjct  42  GLWNTIKEAGKKFAINVLDKIRCGIAGGCKT  72
+
+
+>UniRef90_E1B236 Palustrin-2GN1 antimicrobial peptide n=1 Tax=Amolops 
+granulosus TaxID=325557 RepID=E1B236_9NEOB
+Length=72
+
+ Score = 51.8 bits (123),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 23/30 (77%), Positives = 28/30 (93%), Gaps = 0/30 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCR  30
+           GLW+TIK+AGKKF LN+LDKIRC +AGGC+
+Sbjct  42  GLWNTIKEAGKKFALNLLDKIRCGIAGGCK  71
+
+
+>UniRef90_J7FJG0 Prepropalustrin-2Ka n=3 Tax=Rana kukunoris TaxID=670907 
+RepID=J7FJG0_9NEOB
+Length=70
+
+ Score = 51.4 bits (122),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 18/29 (62%), Positives = 25/29 (86%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW++IK  GKKF LN+++KI+CK+ GGC
+Sbjct  40  GLWESIKNFGKKFALNMMNKIKCKIGGGC  68
+
+
+>UniRef90_G4Y021 Palustrin-2AM protein (Fragment) n=6 Tax=Rana 
+amurensis TaxID=109177 RepID=G4Y021_RANAM
+Length=56
+
+ Score = 50.7 bits (120),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 19/29 (66%), Positives = 25/29 (86%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           G+WD+IK  GKKF LN++DKI+CK+ GGC
+Sbjct  26  GIWDSIKTFGKKFALNIMDKIKCKIGGGC  54
+
+
+>UniRef90_C0ILK5 Brevinin-2-RN antimicrobial peptide n=5 Tax=Sylvirana 
+TaxID=1659747 RepID=C0ILK5_SYLVI
+Length=72
+
+ Score = 49.5 bits (117),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 24/31 (77%), Positives = 27/31 (87%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+            LW+TIK AGK F LN+LDKIRCKVAGGC+T
+Sbjct  42  SLWETIKNAGKGFILNILDKIRCKVAGGCKT  72
+
+
+>UniRef90_B4ERK4 Brevinin-2HS n=7 Tax=Odorrana TaxID=121155 RepID=B4ERK4_ODOSH
+Length=70
+
+ Score = 49.5 bits (117),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 27/29 (93%), Positives = 28/29 (97%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLWDTIKQAGKK FL+VLDKIRCKVAGGC
+Sbjct  42  GLWDTIKQAGKKIFLSVLDKIRCKVAGGC  70
+
+
+>UniRef90_D1MYB9 Prepropalustrin-2Oa n=1 Tax=Rana ornativentris 
+TaxID=79016 RepID=D1MYB9_9NEOB
+Length=70
+
+ Score = 49.1 bits (116),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 16/29 (55%), Positives = 21/29 (72%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           G WD IK  GK F LN ++K++CK+ GGC
+Sbjct  40  GFWDNIKNFGKTFALNAIEKLKCKITGGC  68
+
+
+>UniRef90_B9W1Q2 Palustrin-2LTa antimicrobial peptide n=1 Tax=Sylvirana 
+latouchii TaxID=156873 RepID=B9W1Q2_9NEOB
+Length=72
+
+ Score = 48.7 bits (115),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 22/31 (71%), Positives = 26/31 (84%), Gaps = 0/31 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+            LW+  K AGK+F LN+LDKIRC+VAGGCRT
+Sbjct  42  SLWENFKNAGKQFILNILDKIRCRVAGGCRT  72
+
+
+>UniRef90_A0AAS1 Amurin-1 protein n=1 Tax=Rana amurensis TaxID=109177 
+RepID=A0AAS1_RANAM
+Length=70
+
+ Score = 48.4 bits (114),  Expect = 9e-07, Method: Composition-based stats.
+ Identities = 17/29 (59%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW++IK  GKKF LN+++K++CK  GGC
+Sbjct  40  GLWESIKNLGKKFALNIMEKLKCKFGGGC  68
+
+
+>UniRef90_A0A2G9QJY4 Uncharacterized protein n=1 Tax=Lithobates 
+catesbeiana TaxID=8400 RepID=A0A2G9QJY4_LITCT
+Length=55
+
+ Score = 46.4 bits (109),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 20/29 (69%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW+TIK  GK   LN+LDKI+CK+AGGC
+Sbjct  25  GLWETIKTTGKSIALNLLDKIKCKIAGGC  53
+
+
+>UniRef90_A0A0A0RAM2 Palustrin-2HB1 n=1 Tax=Pelophylax hubeiensis 
+TaxID=121165 RepID=A0A0A0RAM2_9NEOB
+Length=68
+
+ Score = 46.8 bits (110),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 22/29 (76%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW TIK+  KKF L VLDKIRCK+AGGC
+Sbjct  40  GLWTTIKEGLKKFSLGVLDKIRCKIAGGC  68
+
+
+>UniRef90_A0AEI6 Brevinin-2GHc n=2 Tax=Ranidae TaxID=8397 RepID=BR2GC_SYLGU
+Length=72
+
+ Score = 45.7 bits (107),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 18/29 (62%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+            +W+ IK AGK F +++LDK+RCKVAGGC
+Sbjct  42  SIWEGIKNAGKGFLVSILDKVRCKVAGGC  70
+
+
+>UniRef90_E7EKF7 Antimicrobial peptide n=3 Tax=Amolops hainanensis 
+TaxID=327960 RepID=E7EKF7_9NEOB
+Length=72
+
+ Score = 42.2 bits (98),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 17/30 (57%), Positives = 24/30 (80%), Gaps = 0/30 (0%)
+
+Query  2   LWDTIKQAGKKFFLNVLDKIRCKVAGGCRT  31
+           LW+TIK+ GKKF + +LDKI+C + G C+T
+Sbjct  43  LWNTIKETGKKFAVGLLDKIKCGITGTCKT  72
+
+
+>UniRef90_P82234 Brevinin-2Tc n=2 Tax=Rana temporaria TaxID=8407 
+RepID=BR2TC_RANTE
+Length=29
+
+ Score = 41.0 bits (95),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 19/29 (66%), Positives = 24/29 (83%), Gaps = 0/29 (0%)
+
+Query  1   GLWDTIKQAGKKFFLNVLDKIRCKVAGGC  29
+           GLW+TIK  GKKF LN+L K++CK+ GGC
+Sbjct  1   GLWETIKNFGKKFTLNILHKLKCKIGGGC  29
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.151    0.519    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0461    0.140     1.90     42.6     43.6 
+
+Effective search space used: 814439714700
+
+Search has CONVERGED!
+
+
+  Database: refseq_protein.fasta
+    Posted date:  Jul 1, 2020  8:37 PM
+  Number of letters in database: 33,175,535,772
+  Number of sequences in database:  99,657,864
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
