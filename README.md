@@ -16,7 +16,7 @@ There are two ways to obtain PSSMs, a web servers or a standalone BLAST program.
 
 PSSM profiles of sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). 
 
-On POSSUM server page, the parameters of descriptors are all set to ‘off’ and the parameters for BLAST are set to defaults. After submitting sequences, wait for the server to finish calculation and download original PSSM profiles. 
+On POSSUM server page, the parameters of descriptors are all set to 'off' and the parameters for BLAST are set to defaults. After submitting sequences, wait for the server to finish calculation and download original PSSM profiles. 
 
 Note: if you want to use POSSUM online service, you have to fill the short sequence less than 50AA to more than 50AA in length by repeatedly copying the sequence, due to server restrictions on sequence length. (Or splicing signal peptide and propeptide to sequences to extend them.)
 
@@ -53,25 +53,25 @@ We recommend using a GPU to speed up the calculations; if you use GPU accelerati
 
 * **Step 1.** Download all the files in ACME_codes folder. 
 
-* **Step 2.** Enter sequences into the ‘AMP_prediction/inputs/sequences.csv’ file and put the PSSM files into the ‘AMP_prediction/inputs/PSSM_files/’ directory.
+* **Step 2.** Enter sequences into the 'AMP_prediction/inputs/sequences.csv' file and put the PSSM files into the 'AMP_prediction/inputs/PSSM_files/' directory.
 
    Note: In order to increase the speed of high-throughput sequence prediction without generating additional errors, the PSSM files placed in the directory can only be named using numbers, such as 00001.pssm, 00002.pssm, 00003.pssm ..., and the order of these files that are sorted by file names must be the same as the order of sequences in the sequences.csv file. The refun() function in Data_pre_processing.py file will help to do this.
 
 * **Step 3.** Run ACEP_prediction.py.
 
-* **Step 4.** View predicted results in ‘AMP_prediction/outputs/outputs.csv’ file. And sequences with probability greater than or equal to 0.5 are identified as AMPs, and sequences with probability less than 0.5 are identified as non-AMPs.
+* **Step 4.** View predicted results in 'AMP_prediction/outputs/outputs.csv' file. And sequences with probability greater than or equal to 0.5 are identified as AMPs, and sequences with probability less than 0.5 are identified as non-AMPs.
 
 ## 2.Architecture of the ACEP modle.
 
 We use convolutional layer, pooling layer, LSTM layer, fully connected layer and attention mechanism to build the model.
-The yellow module, the blue module and the red module are used to generate features. The green module is used to fuse features; the purple module corresponds to the sigmoid node that outputs the prediction results.
+The yellow module, the blue module and the red module are used to generate features. The green module is used to fuse features; the purple module corresponds to sigmoid node that outputs the prediction results.
 
 <div align=center><img width="50%" height="50%" alt="Model_Structure" src="https://raw.githubusercontent.com/Fuhaoyi/ACEP/master/model_structure.png"/></div>
 
 
-## 3.Repeating the experiments in the paper.
+## 3.Repeating experiments in the paper.
 
-Experiments in the paper can be repeated by running the code in the ACME_codes/ folder. When running the codes, all experimental results will be displayed and stored in the ACME_codes/experiment_results/ folder.
+Experiments in the paper can be repeated by running the code in the ACME_codes/ folder. When running the codes, all experimental results will be displayed and stored in the 'ACME_codes/experiment_results/ folder'.
 
 ### 3.1 Training model
 
@@ -79,16 +79,15 @@ You can train a new model by running ACEP_model_train.py files. And the code for
 
 ### 3.2 Experimental comparison
 
-You can view the performance of the model by running ACEP_model_performance.py. It can also be compared with other state-of-the-art antimicrobial peptides recognition methods by running ACEP_comparison_test.py and ACEP_ROC.py. In addition, run ACEP_R1_xxx.py to understand the role of different functional modules. Evaluate model performance using cross validation on all datasets by running ACEP_model_CV.py
+You can view the performance of the model by running ACEP_model_performance.py. And it can also be compared with other state-of-the-art antimicrobial peptides recognition methods by running ACEP_comparison_test.py and ACEP_ROC.py. In addition, run ACEP_R1_xxx.py to understand the role of different functional modules. And evaluate model performance using cross validation on all datasets by running ACEP_model_CV.py
 
 ### 3.3 Experimental analysis and visualization
 
-Observe the amino acid clustering by running ACEP_cluster.py. Observe the attention intensity and the the fusion ratio by running ACEP_attention_intensity.py and ACEM_fusion_ratio.py. Observe the distribution of fusion features in space by running ACEP_fusion_feature.py.
+Observe amino acid clustering by running ACEP_cluster.py. Observe attention scores and motifs by running ACEP_attention_scores.py and ACEP_attention_motif.py. Observe the distribution of fusion features in space by running ACEP_fusion_feature.py.
 
 ### 3.4 Others
 
-
-If your sequence is a fasta file, you can call the function in Data_pre_processing.py to convert the fasta file to a csv file so that it can be imported into the model.
+If your sequence is a '.fasta' file, you can call the function in Data_pre_processing.py to convert the fasta file to a '.csv' file so that it can be imported into the model.
 If you want to see false negative sequences, you can run ACEP_false_negtive.py file.
 
 ## Contact Us
