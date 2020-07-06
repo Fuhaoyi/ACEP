@@ -5,18 +5,27 @@ Open source software and datasets for the ACEP algorithm
 
 ### 1.1 Description
 
-Input the peptide sequences and PSSM file, the model can predict whether the sequences are AMPs or non-AMPs. PSSM files of sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). This software supports high-throughput predictions. The prediction results are stored in a file.
+ACEP is a deep learning model for high-throughput antibacterial peptide recognition. By loading a pre-trained model, the software can be deployed on a common computer to realize antimicrobial peptide recognition, important motif discovery, and visualization analysis.
+Both the peptide sequences and PSSM profiles need to be input the model.
+
+### 1.2 Get PSSM profiles
+
+### 1.2.1 Get PSSM through online server
+
+PSSM files of sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). This software supports high-throughput predictions. The prediction results are stored in a file.
 
 Note：On the POSSUM server page, the parameters of descriptors are all set to ‘off’ and the parameters for Blast are set to defaults. After submitting the sequence, wait for the server to complete the calculation and download the original PSSM profiles. PSSMs can also be obtained in any ways, such as the local Blast service, if you want to use the POSSUM online service, you have to fill the short sequence less than 50AA to more than 50AA in length by repeatedly copying the sequence, due to server restrictions on sequence length(Or splicing signal peptide and propeptide to the sequence to extend the sequence.). 
 
-### 1.2 Requirements
+### 1.2.2 Get PSSM through local BLAST service
+
+### 1.3 Requirements
 
 Python3
 Python packages: Tensorfollow(vr.1.6.0), Keras(vr.2.15), Matplotlib, scikit-learn, numpy, pandas and senborn(The senborn package is used for visualization).
 
 We recommend using a GPU to speed up the calculations; if you use GPU acceleration, you also need to install cuda and cudnn.
 
-### 1.3 Starting a prediction
+### 1.4 Starting a prediction
 
 * **Step 1.** Download all files in the folderthe ACME_codes folder. 
 
