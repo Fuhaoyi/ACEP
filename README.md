@@ -5,18 +5,30 @@ Open source software and datasets for the ACEP algorithm
 
 ### 1.1 Description
 
-ACEP is a deep learning model for high-throughput antibacterial peptide recognition. By loading a pre-trained model, the software can be deployed on a common computer to realize antimicrobial peptide recognition, important motif discovery, and visualization analysis.
+ACEP is a deep learning model for high-throughput antibacterial peptide recognition. By loading a pre-trained model, the software can be deployed on a common computer to perform antimicrobial peptide recognition, important motif discovery, and visualization analysis.
 Both the peptide sequences and PSSM profiles need to be input the model.
 
 ### 1.2 Get PSSM profiles
 
+There are two ways to obtain PSSMs, a web servers or a standalone BLAST program. If your computer's memory is large enough (about 64GB), then you can run the standalone BLAST as described in section 1.2.2, otherwise we recommend to use an online server to obtain PSSMs.
+
 ### 1.2.1 Get PSSM through online server
 
-PSSM files of sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). This software supports high-throughput predictions. The prediction results are stored in a file.
+PSSM profiles of sequences can be obtained through POSSUM website (http://possum.erc.monash.edu/). 
 
-Note：On the POSSUM server page, the parameters of descriptors are all set to ‘off’ and the parameters for Blast are set to defaults. After submitting the sequence, wait for the server to complete the calculation and download the original PSSM profiles. PSSMs can also be obtained in any ways, such as the local Blast service, if you want to use the POSSUM online service, you have to fill the short sequence less than 50AA to more than 50AA in length by repeatedly copying the sequence, due to server restrictions on sequence length(Or splicing signal peptide and propeptide to the sequence to extend the sequence.). 
+On POSSUM server page, the parameters of descriptors are all set to ‘off’ and the parameters for BLAST are set to defaults. After submitting sequences, wait for the server to finish calculation and download original PSSM profiles. 
 
-### 1.2.2 Get PSSM through local BLAST service
+Note: if you want to use POSSUM online service, you have to fill the short sequence less than 50AA to more than 50AA in length by repeatedly copying the sequence, due to server restrictions on sequence length. (Or splicing signal peptide and propeptide to sequences to extend them.)
+
+### 1.2.2 Get PSSM through standalone BLAST program
+
+* **Step 1.** 
+
+* **Step 1.** 
+
+* **Step 1.** 
+
+* **Step 1.** 
 
 ### 1.3 Requirements
 
