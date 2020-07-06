@@ -1,0 +1,8 @@
+ncbi-blast-2.9.0+-win64.exe
+
+makeblastdb -in uniref90.fasta -out uniref90.db -dbtype prot
+
+blastp –db uniref90.db –query queryseq.fasta –out results.out
+
+psiblast -db uniref90.db -query queryseq.fasta -out result1.out -out_ascii_pssm 0001.pssm -num_iterations 3 -evalue 1e-3
+
