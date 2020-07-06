@@ -39,10 +39,12 @@ Note: if you want to use POSSUM online service, you have to fill the short seque
 * **Step 4.** If you need to generate PSSM profiles for a large number of sequences, you can store all the sequences in the queryseq.fasta file, and then execute ACEP/ACME_codes/localBLASTgetPSSMs/localBLASTgetPSSMs.py.
 
     Three parameters need to be set in the localBLASTgetPSSMs.py program.
+    
     path0: the path of psiblast program (eg. path0 ='E:/blast-2.9.0/bin/psiblast')
+    
     path1: the path of the BLAST sequence query database (eg. path1 ='E:/blast-2.9.0 /bin/uniref90.db')
+    
     path2: the path where the localBLASTgetPSSMs.py program is located (eg. path2 ='E:/ACEP/ACME_codes/localBLASTgetPSSMs/').
-
 
 
 ### 1.3 Requirements
