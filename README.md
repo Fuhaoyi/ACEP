@@ -30,11 +30,18 @@ Note: if you want to use POSSUM online service, you have to fill the short seque
 
 * **Step 2.** Use command line to enter the E:\blast-2.9.0\bin folder, run the following command to establish a local BLAST database.
 
-        makeblastdb -in uniref90.fasta -out uniref90.db -dbtype prot
+            makeblastdb -in uniref90.fasta -out uniref90.db -dbtype prot
 
-* **Step 3.** 
+* **Step 3.** Put a single sequence into the queryseq.fasta file, run the following command to generate a single PSSM 0001.pssm.
 
-* **Step 4.** 
+            psiblast -db uniref90.db -query queryseq.fasta -out result1.out -out_ascii_pssm 0001.pssm -num_iterations 3 -evalue 1e-3
+
+* **Step 4.** If you need to generate PSSM profiles for a large number of sequences, you can store all the sequences in the queryseq.fasta file, and then execute ACEP/ACME_codes/localBLASTgetPSSMs/localBLASTgetPSSMs.py.
+
+    the localBLASTgetPSSMs.py program 
+
+
+
 
 ### 1.3 Requirements
 
