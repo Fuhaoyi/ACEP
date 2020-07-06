@@ -5,7 +5,8 @@ Open source software and datasets for the ACEP algorithm
 
 ### 1.1 Description
 
-Input the peptide sequences and PSSM file, the model can predict whether the sequences are AMPs or non-AMPs. 
+ACEP is a deep learning model for high-throughput antibacterial peptide recognition. By loading a pre-trained model, the software can be deployed on a common computer to realize antimicrobial peptide recognition, important motif discovery, and visualization analysis.
+Both the peptide sequences and PSSM profiles need to be input the model.
 
 ### 1.2 Get PSSM profiles
 
