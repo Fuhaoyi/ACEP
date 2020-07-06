@@ -22,13 +22,14 @@ Note: if you want to use POSSUM online service, you have to fill the short seque
 
 ### 1.2.2 Get PSSM through standalone BLAST program
 
-* **Step 1.** 
+* **Step 1.** Go to the NCBI website to download the BLAST program (ncbi-blast-2.10.1+-win64.exe, https://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/).
+              Go to UniProt's website to download protein sequences (UniRef90 or UniRef50, https://www.uniprot.org/downloads).    
 
-* **Step 1.** 
+* **Step 2.** 
 
-* **Step 1.** 
+* **Step 3.** 
 
-* **Step 1.** 
+* **Step 4.** 
 
 ### 1.3 Requirements
 
