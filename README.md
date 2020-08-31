@@ -98,4 +98,12 @@ Haoyi Fu
 
 School of Information Science and Engineering, Yunnan University
 
+## Cite
+
+Fu, H., Cao, Z., Li, M. et al. ACEP: improving antimicrobial peptides recognition through automatic feature fusion and amino acid embedding. BMC Genomics 21, 597 (2020). https://doi.org/10.1186/s12864-020-06978-0
+
+https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-06978-0
+
+
+
 
